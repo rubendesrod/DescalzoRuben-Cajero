@@ -17,25 +17,101 @@ xmlns:rem="http://rem.lsi.us.es">
 <rem:comments>
 Ninguno
 </rem:comments>
-<rem:actor
- oid = "ACT-0001">
+<rem:section
+ oid = "SEC-0001">
 <rem:name>
-Administrador</rem:name>
+Autores</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>1 </rem:number>
+<rem:stakeholder
+ oid = "STK-0001">
+<rem:name>
+Ruben Descalzo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
 </rem:date>
 </rem:version>
 <rem:comments>
+Desarrollador del Sistema<br/></rem:comments>
+<rem:stakeholderRole><rem:tbd/></rem:stakeholderRole>
+<rem:isDeveloper/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0002">
+<rem:name>
+Raul Rubio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Administrador del Sistema<br/></rem:comments>
+<rem:stakeholderRole><rem:tbd/></rem:stakeholderRole>
+<rem:isDeveloper/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0003">
+<rem:name>
+Cliente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Cliente del Banco<br/></rem:comments>
+<rem:stakeholderRole><rem:tbd/></rem:stakeholderRole>
+<rem:isCustomer/>
+</rem:stakeholder>
+</rem:section>
+<rem:section
+ oid = "SEC-0002">
+<rem:name>
+Actores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
 Ninguno</rem:comments>
-<rem:actorRole><rem:tbd/></rem:actorRole>
-</rem:actor>
+<rem:level>1</rem:level>
+<rem:number>2 </rem:number>
 <rem:actor
- oid = "ACT-0002">
+ oid = "ACT-0001">
 <rem:name>
 Usuario-NoLogeado</rem:name>
 <rem:version>
@@ -44,15 +120,17 @@ Usuario-NoLogeado</rem:name>
 <rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>26</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0002 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:actorRole><rem:tbd/></rem:actorRole>
 </rem:actor>
 <rem:actor
- oid = "ACT-0003">
+ oid = "ACT-0002">
 <rem:name>
 Usuario-Logeado</rem:name>
 <rem:version>
@@ -61,26 +139,69 @@ Usuario-Logeado</rem:name>
 <rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>26</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0003 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:actorRole><rem:tbd/></rem:actorRole>
 </rem:actor>
-<rem:objective
- oid = "OBJ-0001">
+<rem:actor
+ oid = "ACT-0003">
 <rem:name>
-Retirar Dinero</rem:name>
+Administrador</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>26</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole><rem:tbd/></rem:actorRole>
+</rem:actor>
+</rem:section>
+<rem:section
+ oid = "SEC-0003">
+<rem:name>
+Objetivos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+<rem:objective
+ oid = "OBJ-0001">
+<rem:name>
+Inicio de Sesion</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:importance>
@@ -96,21 +217,23 @@ Ninguno</rem:comments>
 <rem:tbd/>
 </rem:stability>
 <rem:description>
-<rem:tbd/></rem:description>
+indicar al Cliente que al  inciar sesion el usuario tiene que poner su DNI y su contraseña, Si e usuario ha fallado tiene que darle opción a que pueda volver a meter la contraseña y le ponga por pantalla un error de que la contraseña o el DNI no son correctos</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0002">
 <rem:name>
-Ingresar Dinero</rem:name>
+Retirar el Dinero</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>26</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:importance>
@@ -126,26 +249,24 @@ Ninguno</rem:comments>
 <rem:tbd/>
 </rem:stability>
 <rem:description>
-<rem:tbd/></rem:description>
+comprobar primero si tiene suficiente dinero para hacer la retirada de dicha cantidad.<br/>En el caso de que no disponga de tanto dinero se mostrará un mensaje por pantalla el cual dirá &quot;No tienes saldo suficiente en la cuenta para hacer el trámite&quot;</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0003">
 <rem:name>
-Cambiar número secreto</rem:name>
+Cambiar número Secreto</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>26</rem:day>
 </rem:date>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
+<rem:importance value = "IMV-0002"/>
 <rem:urgency>
 <rem:tbd/>
 </rem:urgency>
@@ -156,21 +277,83 @@ Ninguno</rem:comments>
 <rem:tbd/>
 </rem:stability>
 <rem:description>
-<rem:tbd/></rem:description>
+decir al Usuario-Logeado que introduzca su numero secreto actual y luego introduzca dos veces el numero numero, si el numero secreto que ha puesto al principio concuerda con el número actual, lo siguiente que tiene que comprobar es que los dos nuevos PIN que ha introduce coinciden y ya actulizar el PIN</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0004">
 <rem:name>
-Ver movimientos y saldo de la cuenta</rem:name>
+Ver movimientos y Saldo de la cuenta</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>26</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+mostrar por pantalla un listado con los movimientos realizados de ese dicho Usuario-Logeado y arriba del lista el saldo que le queda en la cuenta</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0005">
+<rem:name>
+Administrar Usuarios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+mostrara un listado con el dni y el nombre  con el primero y segundo apellido de cada cliente y el administrador tendrá que esrcibir el DNI del usuario que quiere modificar y se mostrará un menú para modificar lo que se necesite del usuario</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0006">
+<rem:name>
+Administrar tarjetas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:importance>
@@ -186,8 +369,163 @@ Ninguno</rem:comments>
 <rem:tbd/>
 </rem:stability>
 <rem:description>
-<rem:tbd/></rem:description>
+Primero se volvera a mostrar el mismo meno que en Administrar usuario y luego se mostrará un listado con las tarjeta del usuario introduce y para acceder a esa dicha tarjeta tendrás que poner su numero de tarjeta y ya podrá acceder a la modificacion de esta, podrá bloquearla, desbloquearla, cambiar PIN.</rem:description>
 </rem:objective>
+</rem:section>
+<rem:section
+ oid = "SEC-0004">
+<rem:name>
+Casos de Uso</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>4 </rem:number>
+<rem:useCase
+ oid = "UC-0001">
+<rem:name>
+Login</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Inciar el programa</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0001">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+Se inica el programa y aparece la primera ventana para logear</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0002">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+puede elegir entre iniciar como administrador en la parte arriba de la derecha con un boton invisible o como cliente</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0003">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+para acceder como usuario escribira en un campo de texto su DNI y en otro su contraseña</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0002">
+<rem:condition>
+falla el login</rem:condition>
+<rem:systemAction>
+<rem:description>
+sacara por pantalla un error de &quot;El usuario y/o contraseña no son correctos&quot;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0004">
+<rem:number>4</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+para acceder como administrador una vez se de al boton invisble de arriba a la derecha le pedira el nombre administrador y la contraseña de este</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0003">
+<rem:condition>
+falla el login</rem:condition>
+<rem:systemAction>
+<rem:description>
+sacara por pantalla un error de &quot;El usuario y/o contraseña administrador no son correctos&quot;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0002">
+<rem:name>
+Retirar dinero</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+<rem:tbd/></rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+</rem:section>
 </rem:c_requirementsSpecification>
 <rem:d_requirementsSpecification oid = "DRS-0002">
 <rem:name>Documento de Análisis del Sistema</rem:name>
@@ -363,52 +701,94 @@ Hour:minutes:seconds</rem:description>
 </rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
-<rem:changeRequestStatusValue oid = "CRV-0005">
-<rem:name>verificado</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0006">
-<rem:name>rechazado</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0004">
-<rem:name>pendiente de realización</rem:name>
+<rem:changeRequestStatusValue oid = "CRV-0002">
+<rem:name>pendiente de análisis</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0001">
 <rem:name>PD</rem:name>
 </rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0002">
-<rem:name>pendiente de análisis</rem:name>
-</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0003">
 <rem:name>pendiente de aprobar/rechazar</rem:name>
 </rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
+</rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
 </rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0002">
-<rem:name>no resuelto</rem:name>
-</rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0004">
-<rem:name>resuelto</rem:name>
-</rem:conflictStatusValue>
-<rem:defectStatusValue oid = "DSV-0001">
-<rem:name>PD</rem:name>
+<rem:defectStatusValue oid = "DSV-0003">
+<rem:name>en proceso de negociación</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
 </rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectStatusValue oid = "DSV-0003">
-<rem:name>en proceso de negociación</rem:name>
-</rem:defectStatusValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0002">
 <rem:name>Ambigüedad</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0004">
@@ -423,34 +803,10 @@ Hour:minutes:seconds</rem:description>
 <![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
 <rem:description>
-<![CDATA[Por Determinar]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0011">
-<rem:name>Imprecisión</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0023">
-<rem:name>Otro</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0007">
@@ -459,28 +815,10 @@ Hour:minutes:seconds</rem:description>
 <![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0017">
-<rem:name>Organización incorrecta</rem:name>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0012">
-<rem:name>Incompleción</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0016">
-<rem:name>No rastreabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0006">
-<rem:name>Inconsistencia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0015">
@@ -489,28 +827,28 @@ Hour:minutes:seconds</rem:description>
 <![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0008">
-<rem:name>Verbosidad excesiva</rem:name>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0009">
-<rem:name>Dependiente del diseño</rem:name>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0010">
-<rem:name>Redundancia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0014">
 <rem:name>Estabilidad no establecida</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:importanceValue oid = "IMV-0001">
@@ -525,32 +863,32 @@ Hour:minutes:seconds</rem:description>
 <rem:importanceValue oid = "IMV-0004">
 <rem:name>quedaría bien</rem:name>
 </rem:importanceValue>
-<rem:stabilityValue oid = "SBV-0001">
-<rem:name>PD</rem:name>
-</rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0002">
-<rem:name>baja</rem:name>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0003">
 <rem:name>media</rem:name>
 </rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0004">
-<rem:name>alta</rem:name>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
 </rem:stabilityValue>
-<rem:statusValue oid = "STV-0002">
-<rem:name>en construcción</rem:name>
-</rem:statusValue>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
+</rem:stabilityValue>
 <rem:statusValue oid = "STV-0005">
 <rem:name>validado</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0004">
+<rem:name>pendiente de validación</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0001">
 <rem:name>PD</rem:name>
 </rem:statusValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
 <rem:statusValue oid = "STV-0003">
 <rem:name>pendiente de verificación</rem:name>
-</rem:statusValue>
-<rem:statusValue oid = "STV-0004">
-<rem:name>pendiente de validación</rem:name>
 </rem:statusValue>
 <rem:terminationValue oid = "TEV-0001">
 <rem:name>PD</rem:name>
@@ -561,14 +899,8 @@ Hour:minutes:seconds</rem:description>
 <rem:terminationValue oid = "TEV-0002">
 <rem:name>continúa</rem:name>
 </rem:terminationValue>
-<rem:timeUnitValue oid = "TUV-0008">
-<rem:name>día(s)</rem:name>
-</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0005">
 <rem:name>mes(es)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0009">
-<rem:name>hora(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0001">
 <rem:name>PD</rem:name>
@@ -576,32 +908,38 @@ Hour:minutes:seconds</rem:description>
 <rem:timeUnitValue oid = "TUV-0002">
 <rem:name>año(s)</rem:name>
 </rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0008">
+<rem:name>día(s)</rem:name>
+</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0007">
 <rem:name>semana(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0010">
-<rem:name>minuto(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0012">
 <rem:name>décima(s) de segundo</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0013">
-<rem:name>centésima(s) de segundo</rem:name>
+<rem:timeUnitValue oid = "TUV-0009">
+<rem:name>hora(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0011">
 <rem:name>segundo(s)</rem:name>
 </rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0014">
 <rem:name>milisegundo(s)</rem:name>
 </rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0013">
+<rem:name>centésima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:urgencyValue oid = "URV-0001">
+<rem:name>PD</rem:name>
+</rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0002">
 <rem:name>inmediatamente</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0003">
 <rem:name>hay presión</rem:name>
-</rem:urgencyValue>
-<rem:urgencyValue oid = "URV-0001">
-<rem:name>PD</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0004">
 <rem:name>puede esperar</rem:name>
