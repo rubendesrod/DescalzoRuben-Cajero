@@ -79,6 +79,13 @@ Objetivos</a>
 Casos de Uso</a>
 </th>
 </tr>
+<tr><td />
+<td align="left" valign="top">4.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0005">
+Usuario-Logeado</a>
+</td>
+</tr>
 </table>
 <p />
 <hr size="4" />
@@ -207,13 +214,8 @@ Usuario-NoLogeado</th>
 <td align="left" valign="top" colspan="1">
 <ul>
 <li>
-<a href="#STK-0003">
-Cliente</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Raul Rubio</a>
+<a href="#STK-0001">
+Ruben Descalzo</a>
 <br />
 </li>
 </ul>
@@ -265,13 +267,8 @@ Usuario-Logeado</th>
 <td align="left" valign="top" colspan="1">
 <ul>
 <li>
-<a href="#STK-0003">
-Cliente</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Raul Rubio</a>
+<a href="#STK-0001">
+Ruben Descalzo</a>
 <br />
 </li>
 </ul>
@@ -282,8 +279,8 @@ Raul Rubio</a>
 <td align="left" valign="top" colspan="1">
 <ul>
 <li>
-<a href="#STK-0003">
-Cliente</a>
+<a href="#STK-0002">
+Raul Rubio</a>
 <br />
 </li>
 </ul>
@@ -322,11 +319,6 @@ Administrador</th>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="1">
 <ul>
-<li>
-<a href="#STK-0002">
-Raul Rubio</a>
-<br />
-</li>
 <li>
 <a href="#STK-0001">
 Ruben Descalzo</a>
@@ -407,7 +399,7 @@ Raul Rubio</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-indicar al Cliente que al  inciar sesion el usuario tiene que poner su DNI y su contraseña, Si e usuario ha fallado tiene que darle opción a que pueda volver a meter la contraseña y le ponga por pantalla un error de que la contraseña o el DNI no son correctos</em>
+indicar al Cliente que al  inciar sesion el usuario tiene que poner su numero de la tarjeta, primero se validará que dicho numero existe en la entidad bancaria</em>
 </td>
 </tr>
 <tr>
@@ -542,13 +534,25 @@ Cambiar número Secreto</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="1">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0001">
+Ruben Descalzo</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="1">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0002">
+Raul Rubio</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -828,6 +832,168 @@ Ninguno</td>
 </tr>
 </table>
 <p />
+<a name="OBJ-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0007</th>
+<th align="left" valign="top" width="100%">
+Administrar Cuentas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 26/04/2023 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Ruben Descalzo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Raul Rubio</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+enseñar una lista con todos los numeros de cuenta y el DNI a quien pertenece, una vez seleccione la cuenta que quiere modificar, dentro de esto y que se valide el DNI escrito del titular de la cuenta, el sistema muestre las opciones, vincular nuevo cliente, desvincular nuevo cliente, bloquear cuenta, desbloquear cuenta
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0008</th>
+<th align="left" valign="top" width="100%">
+Administrar Cajero</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 26/04/2023 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Ruben Descalzo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Raul Rubio</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+dar la opcion de apagar o encender dicho cajero</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
 <a name="SEC-0004" />
 <h1 align="left">4 
 Casos de Uso</h1><a name="UC-0001" />
@@ -898,7 +1064,7 @@ Inciar el programa</em>
 <td>El
      
     sistema<em>
-Se inica el programa y aparece la primera ventana para logear</em>
+ inica el programa y aparece la primera ventana para logear</em>
 </td>
 </tr>
 <tr>
@@ -918,7 +1084,7 @@ puede elegir entre iniciar como administrador en la parte arriba de la derecha c
 Usuario-NoLogeado (ACT-0001)
     </a>
 <em>
-para acceder como usuario escribira en un campo de texto su DNI y en otro su contraseña</em>
+para acceder como usuario debera escribir el numero de la tarjeta en en campo de texto y una vez se valide que la tarjeta existe saldra una nueva ventana para que introduzcas su numero secreto</em>
 </td>
 </tr>
 <tr>
@@ -928,7 +1094,7 @@ para acceder como usuario escribira en un campo de texto su DNI y en otro su con
 Usuario-NoLogeado (ACT-0001)
     </a>
 <em>
-para acceder como administrador una vez se de al boton invisble de arriba a la derecha le pedira el nombre administrador y la contraseña de este</em>
+para acceder como administrador una vez se de al boton invisible de arriba a la derecha le pedira el nombre administrador y la contraseña de este</em>
 </td>
 </tr>
 <tr>
@@ -938,7 +1104,7 @@ para acceder como administrador una vez se de al boton invisble de arriba a la d
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="3">Excepciones</th>
+<th align="left" valign="top" rowspan="4">Excepciones</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -946,14 +1112,30 @@ para acceder como administrador una vez se de al boton invisble de arriba a la d
 <a name="STX-0002" />
 <td align="center" valign="top">3</td>
 <td>Si<em>
-falla el login,
+falla el numero de la tajeta,
                             </em>el
      
     sistema<em>
-sacara por pantalla un error de "El usuario y/o contraseña no son correctos"</em>,
+sacara por pantalla un error de "El numero de la tarjeta que ha escrito no existe"</em>,
                             a continuación este caso de uso
                              
                             <em>continúa</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0008" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+si fallo 3 veces el numero secreto,
+                            </em>el
+     
+    sistema<em>
+sacara un mensaje por pantalla "Su tarjeta ha sido bloqueada por el exceso de intentos erroneos" la cual tiene que ser desbloqueada por un administrador</em>,
+                            a continuación este caso de uso
+                             
+                            <em>
+<font color="red"><b>PD</b></font>
+</em>
 </td>
 </tr>
 <tr>
@@ -1018,7 +1200,9 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="UC-0002" />
+<a name="SEC-0005" />
+<h2 align="left">4.1 
+Usuario-Logeado</h2><a name="UC-0002" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0002</th>
@@ -1066,8 +1250,7 @@ Raul Rubio</a>
 
     caso de uso cuando
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+pulse el boton de 'Retirar Dinero'</em>
 </td>
 </tr>
 <tr>
@@ -1077,9 +1260,99 @@ Raul Rubio</a>
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0005" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+dara al boton de la ventana principal de "Retirar Dinero"</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0006" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+deberá ingresar la canrtidad de dinero que desea retirar de la cuenta</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0009" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+mostrará un mensaje de confirmacion del trámite y un boton con el podras obtener un mensaje flotante con el saldo que te queda en la cuenta</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0010" />
+<td align="center" valign="top">4</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+da al boton mostrar saldo, se le mostrará un mensaje flotante del saldo restante de la cuenta, y se le devolverá al menú de inicio
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="3">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0004" />
+<td align="center" valign="top">2</td>
+<td>Si<em>
+el dinero indicado es mayor que el de la cuenta
+<br />,
+                            </em>el
+     
+    sistema<em>
+sacará un mensaje por pantalla que indicara que dicha cantidad no hay en la cuenta y el tramite no se ha podido realizar</em>,
+                            a continuación este caso de uso
+                             
+                            <em>
+<font color="red"><b>PD</b></font>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0005" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+da al boton cancelar,
+                            </em>el
+     
+    sistema<em>
+sacará al usuario a la ventana de inicio</em>,
+                            a continuación este caso de uso
+                             
+                            <em>
+<font color="red"><b>PD</b></font>
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
 </tr>
 <tr>
 <td align="center" valign="top">
@@ -1088,6 +1361,133 @@ Raul Rubio</a>
 <td>
                         -
                     </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Ingresar Dinero</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 26/04/2023 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Ruben Descalzo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Raul Rubio</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+pulsar botón de "Ingresar Dinero" en el menú de inicio</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="4">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0012" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+hará clic en el boton de "Ingresar Dinero" y le llevará a la nueva pantalla</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0013" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+el usuario tendrá la opcion de dar al botón "Cuenta de la Tarjeta" o "A otra de mis cuentas"</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0014" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+da clic en el botón "Cuenta de la Tarjera" y metera en la siguiente ventana la cantidad de dinero que desea ingresar en su cuenta y a continuación se le pedirá el numero secreta de la tarjeta para realizar el trámite</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
@@ -1101,12 +1501,20 @@ Raul Rubio</a>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STX-0009" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+fallar el PIN,
+                            </em>el
+     
+    sistema<em>
+le sacará por pantalla un mensaje que al tercer intento fallido se bloqueará la tarjeta</em>,
+                            a continuación este caso de uso
+                             
+                            <em>
+<font color="red"><b>PD</b></font>
+</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Rendimiento</th>
