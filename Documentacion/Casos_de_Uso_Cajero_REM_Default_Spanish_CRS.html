@@ -86,6 +86,13 @@ Casos de Uso</a>
 Usuario-Logeado</a>
 </td>
 </tr>
+<tr><td />
+<td align="left" valign="top">4.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0006">
+Administrador</a>
+</td>
+</tr>
 </table>
 <p />
 <hr size="4" />
@@ -149,7 +156,7 @@ Raul Rubio</th>
 <td align="left" valign="top">No</td>
 </tr>
 <tr><th align="left" valign="top">Es usuario</th>
-<td align="left" valign="top">No</td>
+<td align="left" valign="top">Sí</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -183,7 +190,7 @@ Cliente</th>
 <td align="left" valign="top">Sí</td>
 </tr>
 <tr><th align="left" valign="top">Es usuario</th>
-<td align="left" valign="top">No</td>
+<td align="left" valign="top">Sí</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -237,9 +244,7 @@ Raul Rubio</a>
 <th align="left" valign="top">Descripción</th>
 <td align="left" valign="top">
     Este actor representa
-<em>
-<font color="red"><b>PD</b></font>
-</em>
+<em>al usuario de la ventana principal que esta sin logear</em>
 </td>
 </tr>
 <tr>
@@ -290,9 +295,7 @@ Raul Rubio</a>
 <th align="left" valign="top">Descripción</th>
 <td align="left" valign="top">
     Este actor representa
-<em>
-<font color="red"><b>PD</b></font>
-</em>
+<em>Al usuario una vez esté logeado</em>
 </td>
 </tr>
 <tr>
@@ -343,9 +346,7 @@ Raul Rubio</a>
 <th align="left" valign="top">Descripción</th>
 <td align="left" valign="top">
     Este actor representa
-<em>
-<font color="red"><b>PD</b></font>
-</em>
+<em>Al usuario en modo Administrador</em>
 </td>
 </tr>
 <tr>
@@ -1044,7 +1045,7 @@ Raul Rubio</a>
 
     caso de uso cuando
 <em>
-Inciar el programa</em>
+ se inicie el programa</em>
 </td>
 </tr>
 <tr>
@@ -1064,13 +1065,13 @@ Inciar el programa</em>
 <td>El
      
     sistema<em>
- inica el programa y aparece la primera ventana para logear</em>
+muestra la primera ventana para logear</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0002" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa ">
+<td>El actor<a href="#ACT-0001" title="Este actor representa al usuario de la ventana principal que esta sin logear">
 Usuario-NoLogeado (ACT-0001)
     </a>
 <em>
@@ -1080,7 +1081,7 @@ puede elegir entre iniciar como administrador en la parte arriba de la derecha c
 <tr>
 <a name="STP-0003" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa ">
+<td>El actor<a href="#ACT-0001" title="Este actor representa al usuario de la ventana principal que esta sin logear">
 Usuario-NoLogeado (ACT-0001)
     </a>
 <em>
@@ -1090,7 +1091,7 @@ para acceder como usuario debera escribir el numero de la tarjeta en en campo de
 <tr>
 <a name="STP-0004" />
 <td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa ">
+<td>El actor<a href="#ACT-0001" title="Este actor representa al usuario de la ventana principal que esta sin logear">
 Usuario-NoLogeado (ACT-0001)
     </a>
 <em>
@@ -1133,9 +1134,7 @@ si fallo 3 veces el numero secreto,
 sacara un mensaje por pantalla "Su tarjeta ha sido bloqueada por el exceso de intentos erroneos" la cual tiene que ser desbloqueada por un administrador</em>,
                             a continuación este caso de uso
                              
-                            <em>
-<font color="red"><b>PD</b></font>
-</em>
+                            <em>continúa</em>
 </td>
 </tr>
 <tr>
@@ -1267,7 +1266,7 @@ pulse el boton de 'Retirar Dinero'</em>
 <tr>
 <a name="STP-0005" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+<td>El actor<a href="#ACT-0002" title="Este actor representa Al usuario una vez esté logeado">
 Usuario-Logeado (ACT-0002)
     </a>
 <em>
@@ -1277,7 +1276,7 @@ dara al boton de la ventana principal de "Retirar Dinero"</em>
 <tr>
 <a name="STP-0006" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+<td>El actor<a href="#ACT-0002" title="Este actor representa Al usuario una vez esté logeado">
 Usuario-Logeado (ACT-0002)
     </a>
 <em>
@@ -1285,24 +1284,21 @@ deberá ingresar la canrtidad de dinero que desea retirar de la cuenta</em>
 </td>
 </tr>
 <tr>
-<a name="STP-0009" />
+<a name="STP-0015" />
 <td align="center" valign="top">3</td>
 <td>El
      
     sistema<em>
-mostrará un mensaje de confirmacion del trámite y un boton con el podras obtener un mensaje flotante con el saldo que te queda en la cuenta</em>
+mostrará por pantalla un mensaje de que el trámite ha sido realizado con éxito</em>
 </td>
 </tr>
 <tr>
-<a name="STP-0010" />
+<a name="STP-0016" />
 <td align="center" valign="top">4</td>
-<td>El actor<a href="#ACT-0002" title="Este actor representa ">
-Usuario-Logeado (ACT-0002)
-    </a>
-<em>
-da al boton mostrar saldo, se le mostrará un mensaje flotante del saldo restante de la cuenta, y se le devolverá al menú de inicio
-<br />
-</em>
+<td>El
+     
+    sistema<em>
+una vez muestre el mensaje y des al boton aceptar el sistema sacará al usuario al la ventana principal</em>
 </td>
 </tr>
 <tr>
@@ -1312,7 +1308,7 @@ da al boton mostrar saldo, se le mostrará un mensaje flotante del saldo restante
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="3">Excepciones</th>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -1328,25 +1324,7 @@ el dinero indicado es mayor que el de la cuenta
 sacará un mensaje por pantalla que indicara que dicha cantidad no hay en la cuenta y el tramite no se ha podido realizar</em>,
                             a continuación este caso de uso
                              
-                            <em>
-<font color="red"><b>PD</b></font>
-</em>
-</td>
-</tr>
-<tr>
-<a name="STX-0005" />
-<td align="center" valign="top">3</td>
-<td>Si<em>
-da al boton cancelar,
-                            </em>el
-     
-    sistema<em>
-sacará al usuario a la ventana de inicio</em>,
-                            a continuación este caso de uso
-                             
-                            <em>
-<font color="red"><b>PD</b></font>
-</em>
+                            <em>continúa</em>
 </td>
 </tr>
 <tr>
@@ -1402,7 +1380,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0003</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Ingresar Dinero</th>
+Ingresar dinero</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1445,7 +1423,7 @@ Raul Rubio</a>
 
     caso de uso cuando
 <em>
-pulsar botón de "Ingresar Dinero" en el menú de inicio</em>
+pulse botón de "Ingresar Dinero" en el menú de inicio</em>
 </td>
 </tr>
 <tr>
@@ -1455,14 +1433,14 @@ pulsar botón de "Ingresar Dinero" en el menú de inicio</em>
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="4">Secuencia normal</th>
+<th align="left" valign="top" rowspan="6">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
 <a name="STP-0012" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+<td>El actor<a href="#ACT-0002" title="Este actor representa Al usuario una vez esté logeado">
 Usuario-Logeado (ACT-0002)
     </a>
 <em>
@@ -1472,7 +1450,7 @@ hará clic en el boton de "Ingresar Dinero" y le llevará a la nueva pantalla</em>
 <tr>
 <a name="STP-0013" />
 <td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+<td>El actor<a href="#ACT-0002" title="Este actor representa Al usuario una vez esté logeado">
 Usuario-Logeado (ACT-0002)
     </a>
 <em>
@@ -1482,11 +1460,30 @@ el usuario tendrá la opcion de dar al botón "Cuenta de la Tarjeta" o "A otra de 
 <tr>
 <a name="STP-0014" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0002" title="Este actor representa ">
+<td>El actor<a href="#ACT-0002" title="Este actor representa Al usuario una vez esté logeado">
 Usuario-Logeado (ACT-0002)
     </a>
 <em>
-da clic en el botón "Cuenta de la Tarjera" y metera en la siguiente ventana la cantidad de dinero que desea ingresar en su cuenta y a continuación se le pedirá el numero secreta de la tarjeta para realizar el trámite</em>
+da clic en el botón "Cuenta de la Tarjera" y metera en la siguiente ventana la cantidad de dinero que desea ingresar en su cuenta y a continuación se le pedirá el numero secreto de la tarjeta para realizar el trámite</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0017" />
+<td align="center" valign="top">4</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa Al usuario una vez esté logeado">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+da clic en el boton "A otra de mis cuentas" y le aparecera una ventana para que inserte el numero de cuenta </em>
+</td>
+</tr>
+<tr>
+<a name="STP-0018" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+una vez valore que esta bien introducido el numero de cuenta mostrará por pantalla el mensaje "El trámite ha sido realizado con éxito" y sacará al usuario a la ventana principal del programa</em>
 </td>
 </tr>
 <tr>
@@ -1496,7 +1493,7 @@ da clic en el botón "Cuenta de la Tarjera" y metera en la siguiente ventana la c
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="left" valign="top" rowspan="3">Excepciones</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -1511,9 +1508,21 @@ fallar el PIN,
 le sacará por pantalla un mensaje que al tercer intento fallido se bloqueará la tarjeta</em>,
                             a continuación este caso de uso
                              
-                            <em>
-<font color="red"><b>PD</b></font>
-</em>
+                            <em>continúa</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0010" />
+<td align="center" valign="top">4</td>
+<td>Si<em>
+no existe el numero de cuenta,
+                            </em>el
+     
+    sistema<em>
+le enviará un mensaje "El numero de cuenta introducido no existe" el usuario podrá volver a insertar un nuevo numero de cuenta</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
 </td>
 </tr>
 <tr>
@@ -1537,9 +1546,7 @@ le sacará por pantalla un mensaje que al tercer intento fallido se bloqueará la 
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
@@ -1566,5 +1573,365 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-</body>
+<a name="UC-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0004</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Cambiar numero secreto</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 27/04/2023 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Ruben Descalzo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Raul Rubio</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+pulse el botón "Cambiar numero secreto"</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0020" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa Al usuario una vez esté logeado">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+hará clic en el botón "Cambiar numero secreto" le llevará a la nueva ventana que le saldrá 3 campos de texto:
+<br />    1- Inserte su numero actual
+<br />    2- Inserte el nuevo numero
+<br />    3- Vuelve a introducir el nuevo numero
+<br />y a mayores un boton para aceptar el cambio.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0021" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa Al usuario una vez esté logeado">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+Introducirá su numero su nuevo numero las dos veces y dará al boton de aceptar</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0024" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+validará que su numero secreto actual esta bien escrito</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0025" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+validará que el numero secreto nuevo esta escribo igual las dos veces</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0026" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+mostrará por pantalla un mensaje "Su número secreto ha sido cambiado con éxito"</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0027" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+sacará al usuario a la ventana principal</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="3">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0012" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+pone mal el numero secreto actual,
+                            </em>el
+     
+    sistema<em>
+mostrará por pantalla el mensaje que se ha introducido mal el numero secreto actual</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0013" />
+<td align="center" valign="top">4</td>
+<td>Si<em>
+los numeros nuevos no coinciden uno con el otro,
+                            </em>el
+     
+    sistema<em>
+mostrará por pantalla el mensaje "Has introducido mal tu nuevo numero"</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0005</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Movimiento y Saldo de la Cuenta</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 27/04/2023 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Ruben Descalzo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Raul Rubio</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el usuario pulse el botón 'Saldo y Movimientos'</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="3">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0030" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa Al usuario una vez esté logeado">
+Usuario-Logeado (ACT-0002)
+    </a>
+<em>
+hará clic en el botón 'Saldo y Movimientos' de la pantalla principal </em>
+</td>
+</tr>
+<tr>
+<a name="STP-0031" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+mostrará la nueva pantalla en la que el usuario logeado podrá ver una lista con todos los movimientos (fecha, tipo movimiento, si el dinero es restante[colro rojo] si el dienero es entrante [color verde], y el numero de los movimiento que lleva la cuenta).
+<br />Y encima de la lista de los movimiento el saldo restante de la cuenta</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0006" />
+<h2 align="left">4.2 
+Administrador</h2></body>
 </html>
