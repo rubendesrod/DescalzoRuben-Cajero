@@ -114,6 +114,13 @@ Administrar Cuentas</a>
 Adnministrar Tarjeta</a>
 </td>
 </tr>
+<tr><td /><td />
+<td albgn="left" valign="top">4.2.4 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0013">
+Administrar Cajero</a>
+</td>
+</tr>
 </table>
 <p />
 <hr size="4" />
@@ -3679,296 +3686,7 @@ Ninguno</td>
 <p />
 <a name="SEC-0011" />
 <h3 align="left">4.2.3 
-Adnministrar Tarjeta</h3><a name="UC-0014" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">UC-0014</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Modificar Tarjeta</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0
-            ( 28/04/2023 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0001">
-Ruben Descalzo</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0002">
-Raul Rubio</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá comportarse tal como se describe en el siguiente
-
-    caso de uso cuando
-<em>
-pulse el botón 'Modificar Tarjeta'</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Precondición</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="14">Secuencia normal</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<a name="STP-0062" />
-<td align="center" valign="top">1</td>
-<td>El
-     
-    sistema<em>
-el sistema mostrará una nueva pantalla para que el administrrador inserte el numero de tarjeta que quiere modificar</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0064" />
-<td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
-Administrador (ACT-0003)
-    </a>
-<em>
-insertará el numero de la tarjeta que quiere modificar y hará clic en el botón 'Aceptar'</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0065" />
-<td align="center" valign="top">3</td>
-<td>El
-     
-    sistema<em>
-validará el numero de la tarjeta introducido</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0066" />
-<td align="center" valign="top">4</td>
-<td>El
-     
-    sistema<em>
-mostrará la opciones que puede modificar:
-<br />1- Bloquear/Desbloquear
-<br />2- Cambiar PIN</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0067" />
-<td align="center" valign="top">5</td>
-<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
-Administrador (ACT-0003)
-    </a>
-<em>
-hará clic en el botón 'Bloquear/Desbloquear'</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0068" />
-<td align="center" valign="top">6</td>
-<td>El
-     
-    sistema<em>
-mostrará una nueva pantalla en la cual el usuario dará al boton Bloquear o Desbloquear tarjeta</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0069" />
-<td align="center" valign="top">7</td>
-<td>El
-     
-    sistema<em>
-sacará al usuario a la ventana de modificación de la tarjeta</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0071" />
-<td align="center" valign="top">8</td>
-<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
-Administrador (ACT-0003)
-    </a>
-<em>
-hará clic en el botón cambiar de numero PIN de la tarjeta</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0072" />
-<td align="center" valign="top">9</td>
-<td>El
-     
-    sistema<em>
-mostrará al usuario una ventana en la cual mostrará dos campo en los cuales seran insertados los datos(Nuevo PIN y repetir el Nuevo PIN)</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0073" />
-<td align="center" valign="top">10</td>
-<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
-Administrador (ACT-0003)
-    </a>
-<em>
-escribirá en los dos campos de texto y hará clic en el botón 'Cambiar'</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0074" />
-<td align="center" valign="top">11</td>
-<td>El
-     
-    sistema<em>
-el sistema mostrará por pantalla que el PIN de la tarjeta ha sido actualizado correctamente</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0075" />
-<td align="center" valign="top">12</td>
-<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
-Administrador (ACT-0003)
-    </a>
-<em>
-hará clic en el botón 'vovler'</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0076" />
-<td align="center" valign="top">13</td>
-<td>El
-     
-    sistema<em>
-sacará al usuario a la ventana principal del administrador</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Postcondición</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="4">Excepciones</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<a name="STX-0021" />
-<td align="center" valign="top">3</td>
-<td>Si<em>
-el número de la tarjeta introducido no existe,
-                            </em>el
-     
-    sistema<em>
-mostrará por pantalla que el número de la tarjeta introducido no existe y tendrá que volver a insertar un número válido</em>,
-                            a continuación este caso de uso
-                             
-                            <em>continúa</em>
-</td>
-</tr>
-<tr>
-<a name="STX-0022" />
-<td align="center" valign="top">6</td>
-<td>Si<em>
-la tarjeta ya esta Bloqueada o Desbloqueada,
-                            </em>el
-     
-    sistema<em>
-mostrará un mensaje por pantalla de que el la tarjeta ya se encuentra en ese estado</em>,
-                            a continuación este caso de uso
-                             
-                            <em>
-<font color="red"><b>PD</b></font>
-</em>
-</td>
-</tr>
-<tr>
-<a name="STX-0025" />
-<td align="center" valign="top">10</td>
-<td>Si<em>
-el PIN no es el mismo en los dos campo,
-                            </em>el
-     
-    sistema<em>
-mostrará por pantalla que el PIN no ha sido correctamente escrito y el usuario volverá a meter el PIN</em>,
-                            a continuación este caso de uso
-                             
-                            <em>continúa</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Rendimiento</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Tiempo máximo</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top">Frecuencia esperada</th>
-<td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">vital</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
-<a name="UC-0021" />
+Adnministrar Tarjeta</h3><a name="UC-0021" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0021</th>
@@ -4039,7 +3757,8 @@ pulse el botón 'Modificar Tarjeta'</em>
 mostrará por una ventana con los botones:
 <br />1- cambiar PIN
 <br />2- Bloquear/desbloquear
-<br />3- Volver</em>
+<br />3- Vincular tarjeta a una Cuenta
+<br />4- Volver</em>
 </td>
 </tr>
 <tr>
@@ -4111,12 +3830,435 @@ Ninguno</td>
 <p />
 <a name="SEC-0012" />
 <h4 align="left">4.2.3.1 
-botones</h4><a name="UC-0015" />
+botones</h4><a name="UC-0023" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0023</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Cambiar PIN</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 30/04/2023 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Ruben Descalzo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Raul Rubio</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+se pulse el botón 'Cambiar PIN'</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="6">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0072" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+mostrará al usuario una ventana en la cual mostrará dos campo en los cuales seran insertados los datos(Nuevo PIN y repetir el Nuevo PIN)</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0073" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
+Administrador (ACT-0003)
+    </a>
+<em>
+escribirá en los dos campos de texto y hará clic en el botón 'Cambiar'</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0074" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+el sistema mostrará por pantalla que el PIN de la tarjeta ha sido actualizado correctamente</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0075" />
+<td align="center" valign="top">4</td>
+<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
+Administrador (ACT-0003)
+    </a>
+<em>
+hará clic en el botón 'vovler'</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0076" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+sacará al usuario a la ventana de administracion de tarjeta</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0025" />
+<td align="center" valign="top">2</td>
+<td>Si<em>
+el PIN no es el mismo en los dos campo,
+                            </em>el
+     
+    sistema<em>
+mostrará por pantalla que el PIN no ha sido correctamente escrito y el usuario volverá a meter el PIN</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0022" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0022</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Bloquear/Desbloquear</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 30/04/2023 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Ruben Descalzo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Raul Rubio</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+pulse el botón 'Bloquear/Desbloquear'</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="9">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0067" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
+Administrador (ACT-0003)
+    </a>
+<em>
+hará clic en el botón 'Bloquear/Desbloquear'</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0095" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+abrirá una nueva pantalla en la cuál habrá un campo de texto para insertar el numero de tarjeta de la cual se quiere bloquear o desbloquear </em>
+</td>
+</tr>
+<tr>
+<a name="STP-0096" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
+Administrador (ACT-0003)
+    </a>
+<em>
+escribirá el numero y dará al botón de aceptar</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0097" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+validará que el numero de la tarjeta existe o no </em>
+</td>
+</tr>
+<tr>
+<a name="STP-0098" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+mostrará un pantalla con tres botones 'Volver, Desbloquear, Bloquear'</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0099" />
+<td align="center" valign="top">6</td>
+<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
+Administrador (ACT-0003)
+    </a>
+<em>
+hará clic en el botón 'Bloquear' o 'Desbloquear'</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0101" />
+<td align="center" valign="top">7</td>
+<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
+Administrador (ACT-0003)
+    </a>
+<em>
+hará clic en el botón 'Volver'</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0102" />
+<td align="center" valign="top">8</td>
+<td>El
+     
+    sistema<em>
+llevará al usuario a la ventana ed administración de la tarjeta</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="4">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0038" />
+<td align="center" valign="top">4</td>
+<td>Si<em>
+n exista el numero de la tarjeta,
+                            </em>el
+     
+    sistema<em>
+mostrará un mensaje por la pantalla 'El numero de la tarjeta introducida no existe'</em>,
+                            a continuación este caso de uso
+                             
+                            <em>
+<font color="red"><b>PD</b></font>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0039" />
+<td align="center" valign="top">6</td>
+<td>Si<em>
+ya esté bloqueada la tarjeta,
+                            </em>el
+     
+    sistema<em>
+mostrará un mensaje por la pantalla 'Esta tarjeta ya se encuentra bloqueada'</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0040" />
+<td align="center" valign="top">6</td>
+<td>Si<em>
+ya se encuentra desbloqueada la tarjeta,
+                            </em>el
+     
+    sistema<em>
+mostrará por pantalla 'Esta tarjeta se encuentra desbloqueada'</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0015" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0015</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Vincular cuenta a una tarjeta</th>
+Vincular tarjeta a una cuenta</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -4478,5 +4620,7 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-</body>
+<a name="SEC-0013" />
+<h3 align="left">4.2.4 
+Administrar Cajero</h3></body>
 </html>
