@@ -2,10 +2,28 @@
 <rem:log xmlns:rem="http://rem.lsi.us.es">
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -14,7 +32,259 @@
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº9 (El sistema mostrará al usuario...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -23,25 +293,16 @@
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [ACT-0001] Rubén con 0 hijos y 0 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [SEC-0007] Administrar Clientes con 0 hijos y 3 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>27</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -50,7 +311,70 @@
 <rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -59,25 +383,52 @@
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [OBJ-0001] Administrar Usuarios con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [UC-0008]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>27</rem:day>
 </rem:date>
-<rem:description><![CDATA[Documento creado]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -86,25 +437,25 @@
 <rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento creado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -113,43 +464,313 @@
 <rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 (El sistema validará el numero ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº6 (El sistema sacará al Administr...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº5 (Actor Administrador hará clic ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0013</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 (El sistema mostrará al usuario...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº8 (El sistema sacará al administr...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0013</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 (El sistema validará si el núme...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0013</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 (Actor Administrador escribe el...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº10 actualizada: [escribirá en los tres campos de texto y hará clic en el botón 'Cambiar'] -> [escribirá en los dos campos de texto y hará clic en el botón 'Cambiar']]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [OBJ-0002]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [UC-0017] Volver con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento creado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -158,7 +779,124 @@
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0013</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº4 (El sistema mostrará por pantal...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 (El sistema llevará al administ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0013</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº6 actualizada: [mostrará un mensaje por pantalla 'El nuevo número de cuenta ha sido modificado correctamente'] -> [mostrará un mensaje por pantalla 'El nuevo número de cuenta ha sido modificado correctamente' y sacará al usuario a la ventana de modificar el número de cuenta]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº5 (Actor Administrador escribirá ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº4 (Actor Administrador escribirá ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0013</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº5 (Actor Administrador escribirá ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -167,7 +905,7 @@
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -176,7 +914,34 @@
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -185,34 +950,169 @@
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 (Actor Administrador insertará ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº9 actualizada: [mostrará al usuario una ventana en la cual mostrará tres campo en los cuales seran insertados los datos(PIN actual, Nuevo PIN y repetir el Nuevo PIN)] -> [mostrará al usuario una ventana en la cual mostrará dos campo en los cuales seran insertados los datos(Nuevo PIN y repetir el Nuevo PIN)]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº7 (Actor Administrador hará clic ...)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:owner>SEC-0009</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
-<rem:description><![CDATA[Documento creado]]></rem:description>
+<rem:description><![CDATA[Creación]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>19</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº8 (Actor Administrador hará clic ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº4 (El sistema mostrará la opcione...)]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>S</rem:type>
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 (Actor Administrador insertará ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -221,27 +1121,488 @@
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº6 (El sistema mostrará una nueva ...)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0012]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0021</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0012] Administracion de Cuentas del proyecto F:\eclipseworkspace\DescalzoRuben-Cajero\Documentacion\Casos_de_Uso_Cajero.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Modificar Tarjeta] -> [Vincular cuenta a una tarjeta]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº4 actualizada: [mostrará la opciones que puede modificar ] -> [mostrará la opciones que puede modificar:
+1- Bloquear/Desbloquear
+2- Cambiar PIN]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [pulse el botón 'Modificar Tarjeta'] -> [pulse el botón 'Vincular Tarjeta a una Cuenta']]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0009</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0010] Botones)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0009</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([UC-0012] Administracion de Cuentas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº7 (El sistema sacará al usuario a...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº2 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0014] Modificar Tarjeta del proyecto F:\eclipseworkspace\DescalzoRuben-Cajero\Documentacion\Casos_de_Uso_Cajero.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0013</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº6 (El sistema mostrará un mensaje...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 (El sistema sacará al usuario a...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº5 actualizada: [escribirá el DNI hará clic en el botón Vincular] -> [escribirá el DNI hará clic en el botón Desvincular]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº2 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] de la excepción nº1 del paso #4 actualizada: [PD] -> [mostrará por pantalla un mensaje de que el DNI es incorrecto]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0009</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([UC-0021] Copia de Administracion de Cuentas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
 <rem:day>26</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [SEC-0002] Objetivos con 0 hijos y 9 cambios]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -253,134 +1614,8 @@
 <rem:description><![CDATA[Eliminado el objeto [OBJ-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [SEC-0003] Autores con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [OBJ-0001] Retirar Dinero con 0 hijos y 0 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [OBJ-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [SEC-0001] Actores con 3 hijos y 6 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [OBJ-0004] Ver movimientos y saldo de la cuenta con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [ACT-0001] Administrador con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [ACT-0003] Usuario-Logeado con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [OBJ-0003] Cambiar número secreto con 0 hijos y 0 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>S</rem:type>
 <rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -395,87 +1630,6 @@
 <rem:day>26</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [OBJ-0002] Ingresar Dinero con 0 hijos y 0 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [SEC-0003] Usuario-NoLogeado con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [UC-0001] Rtirar con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [ACT-0002] Usuario-NoLogeado con 0 hijos y 0 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -502,7 +1656,7 @@
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [OBJ-0003] Ingresar el Dinero con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0003]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
@@ -516,24 +1670,6 @@
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -552,6 +1688,24 @@
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -568,17 +1722,17 @@
 <rem:description><![CDATA[Eliminado el objeto [SEC-0004] Casos de Uso con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>S</rem:type>
+<rem:type>D</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
 </rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0003] Ingresar el Dinero con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -597,6 +1751,33 @@
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -606,60 +1787,6 @@
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -695,7 +1822,25 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -713,7 +1858,7 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -745,77 +1890,32 @@
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
 </rem:date>
-<rem:description><![CDATA[Eliminado el objeto [OBJ-0003]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0002] Ingresar Dinero con 0 hijos y 0 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>S</rem:type>
+<rem:type>D</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
 </rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0004] Ver movimientos y saldo de la cuenta con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -824,7 +1924,7 @@
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>27</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -833,25 +1933,7 @@
 <rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -860,25 +1942,7 @@
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -887,7 +1951,16 @@
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>27</rem:day>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -896,31 +1969,94 @@
 <rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>27</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
 </rem:date>
+<rem:description><![CDATA[Eliminado el objeto [SEC-0003] Autores con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [SEC-0001] Actores con 3 hijos y 6 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0003] Cambiar número secreto con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [ACT-0003] Usuario-Logeado con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0001] Retirar Dinero con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [ACT-0001] Administrador con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [SEC-0003] Usuario-NoLogeado con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -937,11 +2073,29 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0001] Rtirar con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0001]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>27</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -955,83 +2109,29 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
+<rem:type>D</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
 </rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [ACT-0002] Usuario-NoLogeado con 0 hijos y 0 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [SEC-0002] Objetivos con 0 hijos y 9 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -1040,16 +2140,25 @@
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -1082,7 +2191,7 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -1092,6 +2201,15 @@
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -1136,7 +2254,43 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -1163,16 +2317,7 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -1190,7 +2335,79 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
 <rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -1208,16 +2425,7 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -1227,6 +2435,213 @@
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
 <rem:day>26</rem:day>
@@ -1280,6 +2695,15 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
 <rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
@@ -1298,24 +2722,6 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
@@ -1325,10 +2731,73 @@
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [ACT-0001] Rubén con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>26</rem:day>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0002]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento creado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [OBJ-0001] Administrar Usuarios con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -1337,555 +2806,25 @@
 <rem:owner>UC-0013</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [FrequencyTimeUnit] actualizada [mes(es)] -> [milisegundo(s)]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [UC-0008]  con 0 hijos y 1 cambios]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº7 (Actor Administrador hará clic ...)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0012</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [mostrará por una ventana con los botones:
-1- Modificar NumCuenta
-2- Modificar Tarjeta
-3-] -> [mostrará por una ventana con los botones:
-1- Modificar NumCuenta
-2- Modificar Tarjeta
-3- Vincular Tarjeta a una cuenta
-4- Modificar Saldo
-5- Volver]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [SEC-0007] Administrar Clientes con 0 hijos y 3 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0012</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 (El sistema mostrará por una ve...)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0012</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [UC-0012]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([UC-0013] Modificar Numero de Cuenta)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>ACT-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [PD] -> [al usuario de la ventana principal que esta sin logear]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>27</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [FrequencyTimeUnit] actualizada [PD] -> [mes(es)]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 (El sistema sacará al Administr...)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
 <rem:owner>UC-0014</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº10 (Actor Administrador escribirá ...)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -1894,16 +2833,7 @@
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -1912,34 +2842,34 @@
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
+<rem:type>C</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>19</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [FrequencyTimeUnit] actualizada [milisegundo(s)] -> [PD]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
+<rem:description><![CDATA[Documento creado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -1948,538 +2878,160 @@
 <rem:owner>SEC-0009</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([SEC-0010] Botones)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
+<rem:description><![CDATA[Eliminado hijo nº3 ([UC-0021] Copia de Administracion de Cuentas)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0011</rem:owner><rem:date>
+<rem:owner>UC-0015</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 (El sistema sacará al usuario a...)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº4 actualizada: [el sistema mostrará por pantalla un campo de texto para que introduzca el DNI del usuario al que quiere ser Vinculada la tarjeta y el botón 'Vincular'] -> [mostrará por pantalla un campo de texto para que introduzca el DNI del usuario al que quiere ser Vinculada la tarjeta y el botón 'Vincular']]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
 <rem:owner>SEC-0009</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([UC-0012] Administracion de Cuentas)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Eliminado hijo nº3 ([UC-0020] Vincular/Desvincular)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
+<rem:owner>UC-0019</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº3 (El sistema el sistema validará...)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [FrequencyValue] actualizada: [2.000000] -> [1.000000]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0011</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 (Actor Administrador escribirá ...)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0009</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 (El sistema llevará al usuario ...)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [pulsar el botón 'Volver'] -> [pulse el botón 'Volver']]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [pulsar el botón 'Modificar Cliente'] -> [pulse el botón 'Modificar Cliente']]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [llevará al usuario a la siguiente ventana 'Modificacion de Cliente' en la cual podrá elegir de todos los datos que conlleva un usuario elegir entre ellos] -> [pedirá al administrador a que usuario quiere modificar]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº4 actualizada: [mostrará por pantalla 'El dato del cliente ha sido actualizado'] -> [mostrará por pantalla 'El dato del cliente ha sido actualizado' y llevará al usuario a la ventana de modificación]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº4 (El sistema mostrará por pantal...)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0016</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [UC-0010] Botón Volver del proyecto F:\eclipseworkspace\DescalzoRuben-Cajero\Documentacion\Casos_de_Uso_Cajero.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº5 ([UC-0017] Volver)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº4 ([UC-0016] Modificar Saldo)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 ([UC-0014] Modificar Tarjeta)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº5 ([UC-0017] Volver)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [UC-0017] Volver con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CHS-0004</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Importance] actualizada [PD] -> [vital]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Botón Volver] -> [Botón Volver]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:owner>SEC-0009</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Modificar Tarjeta] -> [Vincular cuenta a una tarjeta]]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº3 ([UC-0018] Botón Volver)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] de la excepción nº2 del paso #4 actualizada: [el sistema mostrará un mensaje por pantalla 'Este usuario ya está vinculado a la cuenta'] -> [el sistema mostrará un mensaje por pantalla 'Este Cliente ya está vinculado a la cuenta']]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0009</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([UC-0020] Vincular/Desvincular)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:owner>SEC-0012</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Clonado a partir de [UC-0014] Modificar Tarjeta del proyecto F:\eclipseworkspace\DescalzoRuben-Cajero\Documentacion\Casos_de_Uso_Cajero.rem]]></rem:description>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº4 ([UC-0021] Copia de Administracion de Cuentas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0006</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([SEC-0011] Adnministrar Tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] de la excepción nº2 del paso #4 actualizada: [PD] -> [el sistema mostrará un mensaje por pantalla 'Este usuario ya está vinculado a la cuenta']]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([UC-0019] Copia de Botón Volver)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº3 ([UC-0015] Copia de Modificar Tarjeta)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -2488,25 +3040,295 @@
 <rem:owner>UC-0015</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [pulse el botón 'Modificar Tarjeta'] -> [pulse el botón 'Vincular Tarjeta a una Cuenta']]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº7 (Actor Administrador hará clic ...)]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>SEC-0010</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº6 ([UC-0018] Copia de Botón Volver)]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0019</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0018] Botón Volver del proyecto F:\eclipseworkspace\DescalzoRuben-Cajero\Documentacion\Casos_de_Uso_Cajero.rem]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
 <rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 (El sistema mostrará el usuario...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0009</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº3 ([UC-0018] Botón Volver)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] de la excepción nº1 del paso #3 actualizada: [PD] -> [sacara un mensaje por pantalla 'El numero esta mal introducido' el administrador podrá volver a insertar el Numero de la tarjeta]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº4 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Importance] actualizada [PD] -> [vital]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº5 actualizada: [introducirá el DNI del usuario al que se quiere vincular la tarjeta] -> [introducirá el DNI del usuario al que se quiere vincular la tarjeta y hará clic en el botón 'Vincular Tarjeta']]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº12 (Actor Administrador hará clic ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 ([UC-0015] Vincular cuenta a una tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº11 (El sistema el sistema mostrará...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº6 (El sistema mostrará un mensaje...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([UC-0014] Modificar Tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 (Actor Administrador insertará ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº13 (El sistema sacará al usuario a...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] de la excepción nº2 del paso #3 actualizada: [PD] -> [mostrará por pantalla 'Esta tarjeta ya esta vinculada a una cuenta']]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -2515,17 +3337,239 @@
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0016] Modificar Saldo con 0 hijos y 2 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:owner>UC-0015</rem:owner><rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Importance] actualizada [PD] -> [quedaría bien]]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº3 (El sistema validará que el num...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0015</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº5 (Actor Administrador introducir...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0012</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 ([UC-0014] Modificar Tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 ([UC-0019] Botón Volver)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 ([UC-0014] Modificar Tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº1 ([UC-0021] Administracion de Cuentas) y nº2 ([UC-0014] Modificar Tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0021</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [mostrará por una ventana con los botones:
+1- Modificar NumCuenta
+2- Vincular/Desvincular Cliente de la cuenta
+3- Volver] -> [mostrará por una ventana con los botones:
+1- cambiar PIN
+2- Bloquear/desbloquear
+3- Volver]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0012</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([UC-0019] Botón Volver)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 ([UC-0015] Vincular cuenta a una tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0021</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Administracion de Cuentas] -> [Administracion de Cuentas]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº2 ([SEC-0012] botones) y nº3 ([UC-0014] Modificar Tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº5 ([SEC-0012] botones)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0012</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([UC-0014] Modificar Tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0021</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [pulse el botón 'Modificar Cuentas'] -> [pulse el botón 'Modificar Tarjeta']]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0011</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([UC-0014] Modificar Tarjeta)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0012</rem:owner><rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 ([UC-0015] Vincular cuenta a una tarjeta)]]></rem:description>
 </rem:change>
 </rem:log>

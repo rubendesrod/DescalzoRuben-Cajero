@@ -1416,7 +1416,7 @@ Ninguno</rem:comments>
 <rem:name>
 Administracion de Cuentas</rem:name>
 <rem:version>
-<rem:major>1</rem:major>
+<rem:major>2</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2023</rem:year>
@@ -1439,7 +1439,7 @@ Ninguno</rem:comments>
 <rem:tbd/>
 </rem:stability>
 <rem:triggeringEvent>
-<rem:tbd/></rem:triggeringEvent>
+pulse el botón &apos;Modificar Cuentas&apos;</rem:triggeringEvent>
 <rem:precondition>
 <rem:tbd/></rem:precondition>
 <rem:postcondition>
@@ -1451,7 +1451,7 @@ Ninguno</rem:comments>
 <rem:number>1</rem:number>
 <rem:systemAction>
 <rem:description>
-mostrará por una ventana con los botones:<br/>1- Modificar NumCuenta<br/>2- Modificar Tarjeta<br/>3- Vincular Tarjeta a una cuenta<br/>4- Modificar Saldo<br/>5- Volver</rem:description>
+mostrará por una ventana con los botones:<br/>1- Modificar NumCuenta<br/>2- Vincular/Desvincular Cliente de la cuenta<br/>3- Volver</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1512,18 +1512,118 @@ pulse el botón &apos;Modificar NumCuenta&apos;</rem:triggeringEvent>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
+<rem:step oid = "STP-0054">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará al usuario una pantalla en la que tendra que insertar un numero de cuenta a modificar</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0055">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+escribe el numero de cuenta y da clic en el botón de aceptar</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0056">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+validará si el número de cuenta insertado existe</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0017">
+<rem:condition>
+no exista el numero de cuenta</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará un mensaje al usuario por pantalla &apos;El número de cuenta introducido no existe en la Base de Datos&apos;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0059">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla tres campos de texto con un botón &apos;modificar&apos;</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0060">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+escribirá su numero de cuenta actual, dos veces su número nuevo y hará clic en el bóton de &apos;modificar&apos;</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0018">
+<rem:condition>
+no escribir bien el número actual</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla que el numero de cuenta actual no ha sido correctamente escrito</rem:description>
+</rem:systemAction>
+<rem:termination>
+<rem:tbd/>
+</rem:termination>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:stepException oid = "STX-0019">
+<rem:condition>
+no escribe bien el numero nuevo las dos veces</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla un mensaje de que el numero nuevo de cuenta no ha sido introducido correctamente</rem:description>
+</rem:systemAction>
+<rem:termination>
+<rem:tbd/>
+</rem:termination>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0061">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará un mensaje por pantalla &apos;El nuevo número de cuenta ha sido modificado correctamente&apos; y sacará al usuario a la ventana de modificar el número de cuenta</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0070">
+<rem:number>7</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+hará clic en el botón de volver y el sistema le sacara a la ventana principal del administrador</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
 </rem:useCase>
 <rem:useCase
- oid = "UC-0014">
+ oid = "UC-0020">
 <rem:name>
-Modificar Tarjeta</rem:name>
+Vincular/Desvincular</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2023</rem:year>
 <rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
 </rem:version>
 <rem:authors stakeholders ="STK-0001 "/>
@@ -1541,7 +1641,7 @@ Ninguno</rem:comments>
 <rem:tbd/>
 </rem:stability>
 <rem:triggeringEvent>
-pulse el botón &apos;Modificar Tarjeta&apos;</rem:triggeringEvent>
+pulse el boton &apos;Vincular/Desvincular&apos;</rem:triggeringEvent>
 <rem:precondition>
 <rem:tbd/></rem:precondition>
 <rem:postcondition>
@@ -1549,80 +1649,133 @@ pulse el botón &apos;Modificar Tarjeta&apos;</rem:triggeringEvent>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0015">
-<rem:name>
-Vincular cuenta a una tarjeta</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 "/>
-<rem:sources stakeholders ="STK-0002 "/>
+<rem:step oid = "STP-0085">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará el usuario una pantalla en la cuál deberá insertar el numCuenta</rem:description>
+</rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance value = "IMV-0002"/>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
-<rem:triggeringEvent>
-pulse el botón &apos;Vincular Tarjeta a una Cuenta&apos;</rem:triggeringEvent>
-<rem:precondition>
-<rem:tbd/></rem:precondition>
-<rem:postcondition>
-<rem:tbd/></rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0016">
-<rem:name>
-Modificar Saldo</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2023</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 "/>
-<rem:sources stakeholders ="STK-0002 "/>
+</rem:step>
+<rem:step oid = "STP-0086">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+insertará el numero cuenta a la que quiere asociar un cliente o desvincularle y hará clic en el botón enviar</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0032">
+<rem:condition>
+no existe el número de cuenta</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla un mensje el cuál dirá &apos;El número de cuenta es incorrecto&apos;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance value = "IMV-0004"/>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
-<rem:triggeringEvent>
-pulsar el botón &apos;Modificar Saldo&apos;</rem:triggeringEvent>
-<rem:precondition>
-<rem:tbd/></rem:precondition>
-<rem:postcondition>
-<rem:tbd/></rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0088">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+llevará al administrador a la nueva pantalla en la que tendrá que escibir el DNI de un usuario y tendrá la opcion de dar a uno de los dos botones vincular o desvincular</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0089">
+<rem:number>4</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+escribirá el DNI hará clic en el botón Vincular</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0034">
+<rem:condition>
+el DNI esta mal escrito</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla un mensaje de que el DNI es incorrecto</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:stepException oid = "STX-0035">
+<rem:condition>
+ya este vinculado a esa cuenta</rem:condition>
+<rem:systemAction>
+<rem:description>
+el sistema mostrará un mensaje por pantalla &apos;Este Cliente ya está vinculado a la cuenta&apos;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0090">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+escribirá el DNI hará clic en el botón Desvincular</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0036">
+<rem:condition>
+el DNI esta mal escrito</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla un mensaje de que el DNI es incorrecto</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:stepException oid = "STX-0037">
+<rem:condition>
+si ese cliente no este Vinculado a esa cuenta</rem:condition>
+<rem:systemAction>
+<rem:description>
+el sistema mostrará un mensaje por pantalla &apos;Este Cliente ya está vinculado a la cuenta&apos;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0091">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+sacará al Administradir a la pantalla de Desvincular/Vincular</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0092">
+<rem:number>7</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+hará clic en el botón de &apos;volver&apos;</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0093">
+<rem:number>8</rem:number>
+<rem:systemAction>
+<rem:description>
+sacará al administrador a la pantalla principal del Administrador</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
 </rem:useCase>
 <rem:useCase
  oid = "UC-0018">
@@ -1661,6 +1814,460 @@ pulse el botón &apos;Volver&apos;</rem:triggeringEvent>
 <rem:tbd/>
 </rem:frequency>
 <rem:step oid = "STP-0053">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+sacará al Administrador a la ventana principal de este</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0011">
+<rem:name>
+Adnministrar Tarjeta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>4.2.3 </rem:number>
+<rem:useCase
+ oid = "UC-0014">
+<rem:name>
+Modificar Tarjeta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+pulse el botón &apos;Modificar Tarjeta&apos;</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0062">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+el sistema mostrará una nueva pantalla para que el administrrador inserte el numero de tarjeta que quiere modificar</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0064">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+insertará el numero de la tarjeta que quiere modificar y hará clic en el botón &apos;Aceptar&apos;</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0065">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+validará el numero de la tarjeta introducido</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0021">
+<rem:condition>
+el número de la tarjeta introducido no existe</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla que el número de la tarjeta introducido no existe y tendrá que volver a insertar un número válido</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0066">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará la opciones que puede modificar:<br/>1- Bloquear/Desbloquear<br/>2- Cambiar PIN</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0067">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+hará clic en el botón &apos;Bloquear/Desbloquear&apos;</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0068">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará una nueva pantalla en la cual el usuario dará al boton Bloquear o Desbloquear tarjeta</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0022">
+<rem:condition>
+la tarjeta ya esta Bloqueada o Desbloqueada</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará un mensaje por pantalla de que el la tarjeta ya se encuentra en ese estado</rem:description>
+</rem:systemAction>
+<rem:termination>
+<rem:tbd/>
+</rem:termination>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0069">
+<rem:number>7</rem:number>
+<rem:systemAction>
+<rem:description>
+sacará al usuario a la ventana de modificación de la tarjeta</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0071">
+<rem:number>8</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+hará clic en el botón cambiar de numero PIN de la tarjeta</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0072">
+<rem:number>9</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará al usuario una ventana en la cual mostrará dos campo en los cuales seran insertados los datos(Nuevo PIN y repetir el Nuevo PIN)</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0073">
+<rem:number>10</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+escribirá en los dos campos de texto y hará clic en el botón &apos;Cambiar&apos;</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0025">
+<rem:condition>
+el PIN no es el mismo en los dos campo</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla que el PIN no ha sido correctamente escrito y el usuario volverá a meter el PIN</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0074">
+<rem:number>11</rem:number>
+<rem:systemAction>
+<rem:description>
+el sistema mostrará por pantalla que el PIN de la tarjeta ha sido actualizado correctamente</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0075">
+<rem:number>12</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+hará clic en el botón &apos;vovler&apos;</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0076">
+<rem:number>13</rem:number>
+<rem:systemAction>
+<rem:description>
+sacará al usuario a la ventana principal del administrador</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0021">
+<rem:name>
+Administracion de Cuentas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+pulse el botón &apos;Modificar Tarjeta&apos;</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0094">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará por una ventana con los botones:<br/>1- cambiar PIN<br/>2- Bloquear/desbloquear<br/>3- Volver</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:section
+ oid = "SEC-0012">
+<rem:name>
+botones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>4</rem:level>
+<rem:number>4.2.3.1 </rem:number>
+<rem:useCase
+ oid = "UC-0015">
+<rem:name>
+Vincular cuenta a una tarjeta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+pulse el botón &apos;Vincular Tarjeta a una Cuenta&apos;</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0063">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+el sistema mostrará una nueva pantalla para que el administrrador inserte el numero de tarjeta que quiere modificar</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0078">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+insertará el Numero de la tarjeta que quiere vincular a una cuenta</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0079">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+validará que el numero de la tarjeta existe</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0029">
+<rem:condition>
+mal escrito el numero de la tarjeta</rem:condition>
+<rem:systemAction>
+<rem:description>
+sacara un mensaje por pantalla &apos;El numero esta mal introducido&apos; el administrador podrá volver a insertar el Numero de la tarjeta</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:stepException oid = "STX-0030">
+<rem:condition>
+la tarjeta este vinculada a una cuenta</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla &apos;Esta tarjeta ya esta vinculada a una cuenta&apos;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0080">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará por pantalla un campo de texto para que introduzca el DNI del usuario al que quiere ser Vinculada la tarjeta y el botón &apos;Vincular&apos;</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0081">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+introducirá el DNI del usuario al que se quiere vincular la tarjeta y hará clic en el botón &apos;Vincular Tarjeta&apos;</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0031">
+<rem:condition>
+está mal escrito el DNI</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrará un mensaje de que el DNI introducido es Incorrecto y el administradopordrá volver a insertar un DNI</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0082">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrará un mensaje por pantalla que la tarjeta ha sido vinculada correctamente</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0083">
+<rem:number>7</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+hará clic en el botón de &apos;volver&apos; y saldrá a la ventana principal del Administrador</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0019">
+<rem:name>
+Botón Volver</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2023</rem:year>
+<rem:month>4</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+pulse el botón &apos;Volver&apos;</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0084">
 <rem:number>1</rem:number>
 <rem:systemAction>
 <rem:description>
@@ -1849,106 +2456,52 @@ Hour:minutes:seconds</rem:description>
 </rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
-<rem:changeRequestStatusValue oid = "CRV-0006">
-<rem:name>rechazado</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0002">
-<rem:name>pendiente de análisis</rem:name>
-</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0003">
 <rem:name>pendiente de aprobar/rechazar</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0004">
-<rem:name>pendiente de realización</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0005">
-<rem:name>verificado</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0001">
 <rem:name>PD</rem:name>
 </rem:changeRequestStatusValue>
-<rem:conflictStatusValue oid = "CSV-0003">
-<rem:name>en proceso de negociación</rem:name>
-</rem:conflictStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0002">
+<rem:name>pendiente de análisis</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
 <rem:conflictStatusValue oid = "CSV-0004">
 <rem:name>resuelto</rem:name>
-</rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0002">
-<rem:name>no resuelto</rem:name>
 </rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
 </rem:conflictStatusValue>
-<rem:defectStatusValue oid = "DSV-0004">
-<rem:name>eliminado</rem:name>
-</rem:defectStatusValue>
-<rem:defectStatusValue oid = "DSV-0001">
-<rem:name>PD</rem:name>
-</rem:defectStatusValue>
+<rem:conflictStatusValue oid = "CSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
+</rem:conflictStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0014">
-<rem:name>Estabilidad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0015">
-<rem:name>Nivel incorrecto de detalle</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
-</rem:description>
-</rem:defectTypeValue>
+<rem:defectStatusValue oid = "DSV-0004">
+<rem:name>eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
 <rem:defectTypeValue oid = "DTV-0023">
 <rem:name>Otro</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0016">
-<rem:name>No rastreabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0017">
-<rem:name>Organización incorrecta</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0002">
-<rem:name>Ambigüedad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
-<rem:description>
-<![CDATA[Por Determinar]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0007">
-<rem:name>No implementabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0008">
@@ -1957,16 +2510,70 @@ Hour:minutes:seconds</rem:description>
 <![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0004">
 <rem:name>Incomprensibilidad</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0005">
 <rem:name>No verificabilidad</rem:name>
 <rem:description>
 <![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0009">
@@ -1981,44 +2588,44 @@ Hour:minutes:seconds</rem:description>
 <![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0011">
-<rem:name>Imprecisión</rem:name>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0012">
-<rem:name>Incompleción</rem:name>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0006">
-<rem:name>Inconsistencia</rem:name>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:importanceValue oid = "IMV-0004">
-<rem:name>quedaría bien</rem:name>
-</rem:importanceValue>
-<rem:importanceValue oid = "IMV-0003">
-<rem:name>importante</rem:name>
-</rem:importanceValue>
 <rem:importanceValue oid = "IMV-0001">
 <rem:name>PD</rem:name>
 </rem:importanceValue>
 <rem:importanceValue oid = "IMV-0002">
 <rem:name>vital</rem:name>
 </rem:importanceValue>
-<rem:stabilityValue oid = "SBV-0004">
-<rem:name>alta</rem:name>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
+</rem:importanceValue>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0002">
 <rem:name>baja</rem:name>
 </rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0001">
-<rem:name>PD</rem:name>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0003">
 <rem:name>media</rem:name>
@@ -2026,38 +2633,38 @@ Hour:minutes:seconds</rem:description>
 <rem:statusValue oid = "STV-0001">
 <rem:name>PD</rem:name>
 </rem:statusValue>
-<rem:statusValue oid = "STV-0002">
-<rem:name>en construcción</rem:name>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0004">
 <rem:name>pendiente de validación</rem:name>
 </rem:statusValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
 <rem:statusValue oid = "STV-0003">
 <rem:name>pendiente de verificación</rem:name>
 </rem:statusValue>
-<rem:statusValue oid = "STV-0005">
-<rem:name>validado</rem:name>
-</rem:statusValue>
-<rem:terminationValue oid = "TEV-0003">
-<rem:name>queda sin efecto</rem:name>
-</rem:terminationValue>
 <rem:terminationValue oid = "TEV-0001">
 <rem:name>PD</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0003">
+<rem:name>queda sin efecto</rem:name>
 </rem:terminationValue>
 <rem:terminationValue oid = "TEV-0002">
 <rem:name>continúa</rem:name>
 </rem:terminationValue>
-<rem:timeUnitValue oid = "TUV-0001">
-<rem:name>PD</rem:name>
-</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0002">
 <rem:name>año(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0013">
-<rem:name>centésima(s) de segundo</rem:name>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0007">
 <rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0008">
 <rem:name>día(s)</rem:name>
@@ -2065,29 +2672,29 @@ Hour:minutes:seconds</rem:description>
 <rem:timeUnitValue oid = "TUV-0010">
 <rem:name>minuto(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0009">
-<rem:name>hora(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0012">
+<rem:name>décima(s) de segundo</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0011">
 <rem:name>segundo(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0012">
-<rem:name>décima(s) de segundo</rem:name>
+<rem:timeUnitValue oid = "TUV-0009">
+<rem:name>hora(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0005">
-<rem:name>mes(es)</rem:name>
+<rem:timeUnitValue oid = "TUV-0013">
+<rem:name>centésima(s) de segundo</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0014">
 <rem:name>milisegundo(s)</rem:name>
 </rem:timeUnitValue>
-<rem:urgencyValue oid = "URV-0004">
-<rem:name>puede esperar</rem:name>
-</rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0001">
 <rem:name>PD</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0002">
 <rem:name>inmediatamente</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0004">
+<rem:name>puede esperar</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0003">
 <rem:name>hay presión</rem:name>
