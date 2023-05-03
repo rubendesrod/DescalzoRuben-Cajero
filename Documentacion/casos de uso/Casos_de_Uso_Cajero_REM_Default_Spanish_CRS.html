@@ -3120,7 +3120,7 @@ pulse el botón 'Modificar NumCuenta'</em>
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="8">Secuencia normal</th>
+<th align="left" valign="top" rowspan="6">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -3134,27 +3134,8 @@ mostrará al usuario una pantalla en la que tendra que insertar un numero de cuen
 </td>
 </tr>
 <tr>
-<a name="STP-0055" />
-<td align="center" valign="top">2</td>
-<td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
-Administrador (ACT-0003)
-    </a>
-<em>
-escribe el numero de cuenta y da clic en el botón de aceptar</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0056" />
-<td align="center" valign="top">3</td>
-<td>El
-     
-    sistema<em>
-validará si el número de cuenta insertado existe</em>
-</td>
-</tr>
-<tr>
 <a name="STP-0059" />
-<td align="center" valign="top">4</td>
+<td align="center" valign="top">2</td>
 <td>El
      
     sistema<em>
@@ -3163,7 +3144,7 @@ mostrará por pantalla tres campos de texto con un botón 'modificar'</em>
 </tr>
 <tr>
 <a name="STP-0060" />
-<td align="center" valign="top">5</td>
+<td align="center" valign="top">3</td>
 <td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
 Administrador (ACT-0003)
     </a>
@@ -3173,7 +3154,7 @@ escribirá su numero de cuenta actual, dos veces su número nuevo y hará clic en e
 </tr>
 <tr>
 <a name="STP-0061" />
-<td align="center" valign="top">6</td>
+<td align="center" valign="top">4</td>
 <td>El
      
     sistema<em>
@@ -3182,7 +3163,7 @@ mostrará un mensaje por pantalla 'El nuevo número de cuenta ha sido modificado c
 </tr>
 <tr>
 <a name="STP-0070" />
-<td align="center" valign="top">7</td>
+<td align="center" valign="top">5</td>
 <td>El actor<a href="#ACT-0003" title="Este actor representa Al usuario en modo Administrador">
 Administrador (ACT-0003)
     </a>
@@ -3197,27 +3178,13 @@ hará clic en el botón de volver y el sistema le sacara a la ventana principal de
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="4">Excepciones</th>
+<th align="left" valign="top" rowspan="3">Excepciones</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<a name="STX-0017" />
-<td align="center" valign="top">3</td>
-<td>Si<em>
-no exista el numero de cuenta,
-                            </em>el
-     
-    sistema<em>
-mostrará un mensaje al usuario por pantalla 'El número de cuenta introducido no existe en la Base de Datos'</em>,
-                            a continuación este caso de uso
-                             
-                            <em>continúa</em>
-</td>
-</tr>
-<tr>
 <a name="STX-0018" />
-<td align="center" valign="top">5</td>
+<td align="center" valign="top">3</td>
 <td>Si<em>
 no escribir bien el número actual,
                             </em>el
@@ -3226,14 +3193,12 @@ no escribir bien el número actual,
 mostrará por pantalla que el numero de cuenta actual no ha sido correctamente escrito</em>,
                             a continuación este caso de uso
                              
-                            <em>
-<font color="red"><b>PD</b></font>
-</em>
+                            <em>continúa</em>
 </td>
 </tr>
 <tr>
 <a name="STX-0019" />
-<td align="center" valign="top">5</td>
+<td align="center" valign="top">3</td>
 <td>Si<em>
 no escribe bien el numero nuevo las dos veces,
                             </em>el
@@ -3242,9 +3207,7 @@ no escribe bien el numero nuevo las dos veces,
 mostrará por pantalla un mensaje de que el numero nuevo de cuenta no ha sido introducido correctamente</em>,
                             a continuación este caso de uso
                              
-                            <em>
-<font color="red"><b>PD</b></font>
-</em>
+                            <em>continúa</em>
 </td>
 </tr>
 <tr>
@@ -3373,7 +3336,7 @@ mostrará el usuario una pantalla en la cuál deberá insertar el numCuenta</em>
 Administrador (ACT-0003)
     </a>
 <em>
-insertará el numero cuenta a la que quiere asociar un cliente o desvincularle y hará clic en el botón enviar</em>
+elegirá la cuenta a la que quiere vincular o desvincular un cliente</em>
 </td>
 </tr>
 <tr>
@@ -3440,23 +3403,9 @@ sacará al administrador a la pantalla principal del Administrador</em>
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="6">Excepciones</th>
+<th align="left" valign="top" rowspan="5">Excepciones</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<a name="STX-0032" />
-<td align="center" valign="top">2</td>
-<td>Si<em>
-no existe el número de cuenta,
-                            </em>el
-     
-    sistema<em>
-mostrará por pantalla un mensje el cuál dirá 'El número de cuenta es incorrecto'</em>,
-                            a continuación este caso de uso
-                             
-                            <em>continúa</em>
-</td>
 </tr>
 <tr>
 <a name="STX-0034" />
@@ -3508,7 +3457,7 @@ si ese cliente no este Vinculado a esa cuenta,
                             </em>el
      
     sistema<em>
-el sistema mostrará un mensaje por pantalla 'Este Cliente ya está vinculado a la cuenta'</em>,
+el sistema mostrará un mensaje por pantalla 'Este Clienteno estaba vinculado a la cuenta'</em>,
                             a continuación este caso de uso
                              
                             <em>continúa</em>
@@ -4274,7 +4223,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0015</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Vincular tarjeta a una cuenta</th>
+Vincular tarjeta al cliente de una cuenta</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
