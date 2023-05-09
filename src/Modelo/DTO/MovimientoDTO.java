@@ -2,7 +2,7 @@ package Modelo.DTO;
 
 import java.sql.Date;
 
-public class MovimientosDTO {
+public class MovimientoDTO {
 
 	private int cod;
 	private Date fecha;
@@ -10,7 +10,7 @@ public class MovimientosDTO {
 	private String numCuenta;
 	private String dni;
 	
-	public MovimientosDTO() {
+	public MovimientoDTO() {
 		this.cod = 0;
 		this.fecha = null;
 		this.estado = "";
@@ -18,7 +18,7 @@ public class MovimientosDTO {
 		this.dni = "";
 	}
 	
-	public MovimientosDTO(int cod, Date fecha, String estado, String num, String dni) {
+	public MovimientoDTO(int cod, Date fecha, String estado, String num, String dni) {
 		this.cod = cod;
 		this.fecha = fecha;
 		this.estado = estado;

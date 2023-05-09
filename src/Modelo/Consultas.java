@@ -44,8 +44,7 @@ public interface Consultas {
 	public static final String ACTUALIZAR_TARJETA_PIN = "UPDATE tarjetas SET pin = ? WHERE numero = ?";
 	public static final String ACTUALIZAR_TARJETA_CVV = "UPDATE tarjetas SET cvv = ? WHERE numero = ?";
 	public static final String ACTUALIZAR_TARJETA_VALIDEZ = "UPDATE tarjetas SET validez = ? WHERE numero = ?";
-	public static final String ACTUALIZAR_TARJETA_ESTADO_BLOQUEADO = "UPDATE tarjetas SET estado = Bloqueado WHERE numer = ?";
-	public static final String ACTUALIZAR_TARJETA_ESTADO_NOBLOQUEADO = "UPDATE tarjetas SET estado = noBloqueado WHERE numero = ?";
+	public static final String ACTUALIZAR_TARJETA_ESTADO = "UPDATE tarjetas SET estado = ? WHERE numer = ?";
 	public static final String ACTUALIZAR_TARJETA_NUMCUENTA = "UPDATE tarjetas SET numCuenta = ? WHERE numCuenta = ?";
 	public static final String ACTUALZIAR_TARJETA_ADMIN = "UPDATE tarjetas SET admin = ? WHERE numero = ?";
 	

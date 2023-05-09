@@ -2,7 +2,7 @@ package Modelo.DTO;
 
 import java.sql.Date;
 
-public class ClientesDTO {
+public class ClienteDTO {
 
 	private String dni;
 	private String nombre;
@@ -14,7 +14,7 @@ public class ClientesDTO {
 	private Date fechaNac;
 	private String admin;
 	
-	public ClientesDTO() {
+	public ClienteDTO() {
 		this.dni = "";
 		this.nombre = "";
 		this.apell1 = "";
@@ -26,7 +26,7 @@ public class ClientesDTO {
 		this.admin = "";
 	}
 	
-	public ClientesDTO(String dni, String nombre, String apell1, String apell2, String direccion,
+	public ClienteDTO(String dni, String nombre, String apell1, String apell2, String direccion,
 			Integer telefono, String correo, Date fecha, String admin) {
 		this.dni = dni;
 		this.nombre = nombre;

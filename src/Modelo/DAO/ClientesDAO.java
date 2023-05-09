@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 import Modelo.Conectar;
 import Modelo.Consultas;
-import Modelo.DTO.ClientesDTO;
+import Modelo.DTO.ClienteDTO;
 
-public class clientesDAO implements Consultas{
+public class ClientesDAO implements Consultas{
 
 	/**
 	 * @author Ruben
@@ -19,10 +19,10 @@ public class clientesDAO implements Consultas{
 	 * 
 	 */
 	
-	private ClientesDTO cli = new ClientesDTO();
+	private ClienteDTO cli = new ClienteDTO();
 	private PreparedStatement ps = null;
 	private Conectar cn = null;
-	private ArrayList<ClientesDTO> clientes = new ArrayList<ClientesDTO>();
+	private ArrayList<ClienteDTO> clientes = new ArrayList<ClienteDTO>();
 	private ResultSet rs = null;
 	private String msg;
 	
@@ -34,7 +34,7 @@ public class clientesDAO implements Consultas{
 	 * funcion que la paso un ClienteDTO y realiza la consulta para
 	 * crear un cliente
 	 */
-	public void crearCliente(ClientesDTO cli) {
+	public void crearCliente(ClienteDTO cli) {
 		this.cn = new Conectar();
 		try {
 			
@@ -49,7 +49,7 @@ public class clientesDAO implements Consultas{
 				this.ps.setString(5, cli.getDireccion());this.ps.setString(6,cli.getCorreo());
 				this.ps.setInt(7, cli.getTelefono());this.ps.setDate(8, cli.getFechaNac());
 				this.ps.setString(9, "raul");
-				this.msg = "El cliente ha sido dado de alta";
+				this.msg = "El cliente ha sDNIo dado de alta";
 				
 				this.ps.executeUpdate();
 				
@@ -72,7 +72,7 @@ public class clientesDAO implements Consultas{
 	 * funcion a la que paso un ClienteDTO para relaizar 
 	 * el borrado de este de la BBDD
 	 */
-	public void eliminarCliente(ClientesDTO cli) {
+	public void eliminarCliente(ClienteDTO cli) {
 		this.cn = new Conectar();
 		try {
 			this.ps = this.cn.getConnect().prepareStatement(BUSCAR_CLIENTE_DNI);
@@ -102,8 +102,9 @@ public class clientesDAO implements Consultas{
 	 * la busqueda de un cliente
 	 */
 	
-	public void buscarCliente(ClientesDTO cli) {
+	public void buscarCliente(ClienteDTO cli) {
 		this.cn = new Conectar();
+		this.clientes.clear();
 		try {
 			
 		}catch(Exception e) {
@@ -121,9 +122,69 @@ public class clientesDAO implements Consultas{
 	 * modificacion de un cliente
 	 */
 	
-	public void modificarCliente(ClientesDTO cli) {
+	public void modificarCliente(ClienteDTO cli) {
 		this.cn = new Conectar();
+		this.msg = "El cliente ha sido modificado con exito";
 		try {
+			
+			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_CLIENTE_DNI);
+			this.ps.setInt(1, Integer.parseInt(cli.getDni()));
+			this.rs = this.ps.executeQuery();
+			if(this.rs.next()==true) {
+				/*Nombre*/
+				if(null!=cli.getNombre()) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_NOMBRE);
+					this.ps.setString(1, cli.getNombre());
+					this.ps.setString(2, cli.getDni());
+					this.ps.executeUpdate();
+				}
+				/*Apell1*/
+				else if(null!=cli.getApell1()) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_APELLIDO1);
+					this.ps.setString(1, cli.getApell1());
+					this.ps.setString(2, cli.getDni());
+					this.ps.executeUpdate();
+				}
+				/*Apell2*/
+				else if(null!=cli.getApell2()) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_APELLIDO2);
+					this.ps.setString(1, cli.getApell2());
+					this.ps.setString(2, cli.getDni());
+					this.ps.executeUpdate();
+				}
+				/*Direccion*/
+				else if(null!=cli.getDireccion()) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_DIRECCION);
+					this.ps.setString(1, cli.getDireccion());
+					this.ps.setString(2, cli.getDni());
+					this.ps.executeUpdate();
+				}
+				/*correo*/
+				else if(null!=cli.getCorreo()) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_CORREO);
+					this.ps.setString(1, cli.getCorreo());
+					this.ps.setString(2, cli.getDni());
+					this.ps.executeUpdate();
+				}
+				/*Telefono*/
+				else if(null!=cli.getTelefono()) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_DIRECCION);
+					this.ps.setInt(1, cli.getTelefono());
+					this.ps.setString(2, cli.getDni());
+					this.ps.executeUpdate();
+				}
+				/*FechaNacimiento*/
+				else if(null!=cli.getFechaNac()) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_FECHANACIMIENTO);
+					this.ps.setDate(1, cli.getFechaNac());
+					this.ps.setString(2, cli.getDni());
+					this.ps.executeUpdate();
+					this.rs = this.ps.executeQuery(Consultas.BUSCAR_CLIENTE_DNI);
+				}
+			}else {
+				this.msg = "El cliente no existe";
+			}
+			
 			
 		}catch(Exception e) {
 			this.msg = "Error no previsto: "+e;
@@ -135,10 +196,10 @@ public class clientesDAO implements Consultas{
 	
 	
 	
-	public ClientesDTO getCli() {
+	public ClienteDTO getCli() {
 		return cli;
 	}
-	public void setCli(ClientesDTO cli) {
+	public void setCli(ClienteDTO cli) {
 		this.cli = cli;
 	}
 	public PreparedStatement getPs() {
@@ -153,10 +214,10 @@ public class clientesDAO implements Consultas{
 	public void setCn(Conectar cn) {
 		this.cn = cn;
 	}
-	public ArrayList<ClientesDTO> getClientes() {
+	public ArrayList<ClienteDTO> getClientes() {
 		return clientes;
 	}
-	public void setClientes(ArrayList<ClientesDTO> clientes) {
+	public void setClientes(ArrayList<ClienteDTO> clientes) {
 		this.clientes = clientes;
 	}
 	public ResultSet getRs() {

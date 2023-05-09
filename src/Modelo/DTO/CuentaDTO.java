@@ -1,18 +1,18 @@
 package Modelo.DTO;
 
-public class CuentasDTO {
+public class CuentaDTO {
 
 	private String numCuenta;
 	private Double saldo;
 	private String admin;
 	
-	public CuentasDTO() {
+	public CuentaDTO() {
 		this.numCuenta = "";
 		this.saldo = 0.0;
 		this.admin = "";
 	}
 	
-	public CuentasDTO(String num, Double saldo, String admin) {
+	public CuentaDTO(String num, Double saldo, String admin) {
 		this.numCuenta = num;
 		this.saldo = saldo;
 		this.admin = admin;	

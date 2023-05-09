@@ -2,7 +2,7 @@ package Modelo.DTO;
 
 import java.sql.Date;
 
-public class TarjetasDTO {
+public class TarjetaDTO {
 
 	private Integer numTarjeta;
 	private Integer pin;
@@ -11,7 +11,7 @@ public class TarjetasDTO {
 	private String estado;
 	private String admin;
 	
-	public TarjetasDTO() {
+	public TarjetaDTO() {
 		this.numTarjeta = 0;
 		this.pin = 0;
 		this.cvv = 0;
@@ -20,7 +20,7 @@ public class TarjetasDTO {
 		this.admin = "";
 	}
 	
-	public TarjetasDTO(Integer numTarjeta, Integer pin, Integer cvv, Date fecha,
+	public TarjetaDTO(Integer numTarjeta, Integer pin, Integer cvv, Date fecha,
 			String estado, String admin) {
 		this.numTarjeta = numTarjeta;
 		this.pin = pin;
