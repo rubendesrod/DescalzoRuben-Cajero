@@ -26,6 +26,15 @@ public class CuentaDAO {
 	private ResultSet rs = null;
 	private String msg;
 	
+	
+	/**
+	 * 
+	 * @param cDTO
+	 * 
+	 * funcion que la paso un CuentaDTO y realiza la consulta para
+	 * crear una cuenta
+	 */
+	
 	public void crearCuenta(CuentaDTO cDTO) {
 		this.msg = "La cuenta ha sido creada correctamente";
 		this.cn = new Conectar();
@@ -51,16 +60,80 @@ public class CuentaDAO {
 		}
 	}
 	
-	public void borrarCuenta() {
-		
+	/**
+	 * 
+	 * @param cDTO
+	 * 
+	 * funcion a la que paso un CuentaDTO para relaizar 
+	 * el borrado de este de la BBDD
+	 */
+	
+	public void borrarCuenta(CuentaDTO cDTO) {
+		this.msg = "La cuenta ha sido borrada con exito";
+		this.cn = new Conectar();
+		try {
+			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_CUENTA_NUMCUENTA);
+			this.ps.setString(1, cDTO.getNumCuenta());
+			this.rs = this.ps.executeQuery();
+			if(this.rs.next()) {
+				this.ps = this.cn.getConnect().prepareStatement(Consultas.BORRAR_CUENTA);
+				this.ps.setString(1, cDTO.getNumCuenta());
+			
+				this.ps.executeUpdate();
+			}else {
+				this.msg = "La cuenta introducida no existe";
+			}
+		}catch(Exception e) {
+			this.msg = "Error: "+e;
+		}finally {
+			this.cn.cerrarConexion(this.rs, this.cn.getConnect(), this.ps);
+		}
 	}
 	
-	public void buscarCuenta() {
-		
+	/**
+	 * 
+	 * @param cDTO
+	 * 
+	 * Funion a la que paso un CuentaDTO para relizar 
+	 * la busqueda de una Cuenta
+	 */
+	
+	public void buscarCuenta(CuentaDTO cDTO) {
+		this.msg = "La cuenta ha sido encontrada correctamente";
 	}
 	
-	public void modificarCuenta() {
-		
+	
+	/**
+	 * 
+	 * @param cDTO
+	 * 
+	 * Funcion a la que paso un CuentaDTO para realizar la 
+	 * modificacion de una cuenta
+	 */
+	
+	public void modificarCuenta(CuentaDTO cDTO) {
+		this.msg = "La cuenta ha sido modificada correctamente";
+		this.cn = new Conectar();
+		try {
+			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_CUENTA_NUMCUENTA);
+			this.ps.setString(1, cDTO.getNumCuenta());
+			this.rs = this.ps.executeQuery();
+			if(this.rs.next()) {
+				/*Saldo*/
+				if(cDTO.getSaldo()!=null) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CUENTA_SALDO);
+					this.ps.setDouble(1, cDTO.getSaldo());
+					this.ps.setString(2, cDTO.getNumCuenta());
+					this.ps.executeUpdate();
+				}
+			}else {
+				this.msg = "La cuenta introducida no ha sido encontrada";
+			}
+		}catch(Exception e) {
+			this.msg = "Error: "+e;
+		}finally {
+			this.cn.cerrarConexion(this.rs, this.cn.getConnect(), this.ps);
+		}
 	}
 
 	public CuentaDTO getcDTO() {

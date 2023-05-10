@@ -4,14 +4,12 @@ import java.sql.Date;
 
 public class MovimientoDTO {
 
-	private int cod;
 	private Date fecha;
 	private String estado;
 	private String numCuenta;
 	private String dni;
 	
 	public MovimientoDTO() {
-		this.cod = 0;
 		this.fecha = null;
 		this.estado = "";
 		this.numCuenta = "";
@@ -19,19 +17,10 @@ public class MovimientoDTO {
 	}
 	
 	public MovimientoDTO(int cod, Date fecha, String estado, String num, String dni) {
-		this.cod = cod;
 		this.fecha = fecha;
 		this.estado = estado;
 		this.numCuenta = num;
 		this.dni = dni;
-	}
-
-	public int getCod() {
-		return cod;
-	}
-
-	public void setCod(int cod) {
-		this.cod = cod;
 	}
 
 	public Date getFecha() {

@@ -34,6 +34,7 @@ public class ClientesDAO implements Consultas{
 	 * funcion que la paso un ClienteDTO y realiza la consulta para
 	 * crear un cliente
 	 */
+	
 	public void crearCliente(ClienteDTO cli) {
 		this.cn = new Conectar();
 		try {
@@ -64,7 +65,6 @@ public class ClientesDAO implements Consultas{
 		}
 	}
 	
-	
 	/**
 	 * 
 	 * @param cli
@@ -72,6 +72,7 @@ public class ClientesDAO implements Consultas{
 	 * funcion a la que paso un ClienteDTO para relaizar 
 	 * el borrado de este de la BBDD
 	 */
+	
 	public void eliminarCliente(ClienteDTO cli) {
 		this.cn = new Conectar();
 		try {
