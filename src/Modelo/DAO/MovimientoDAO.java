@@ -2,19 +2,21 @@ package Modelo.DAO;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import Modelo.Conectar;
 import Modelo.Consultas;
+import Modelo.DTO.ClienteDTO;
 import Modelo.DTO.MovimientoDTO;
 
 
-public class MovimientoDAO implements Consultas{
+public class MovimientoDAO{
 
 	private MovimientoDTO mDTO = new MovimientoDTO();
 	private PreparedStatement ps = null;
 	private Conectar cn = null;
-	private ArrayList<MovimientoDTO> cuentas = new ArrayList<MovimientoDTO>();
+	private ArrayList<MovimientoDTO> movimientos = new ArrayList<MovimientoDTO>();
 	private ResultSet rs = null;
 	private String msg;
 	
@@ -48,8 +50,26 @@ public class MovimientoDAO implements Consultas{
 	
 	
 	
-	public void buscarMovimiento(MovimientoDTO mDTO) {
-		
+	public void buscarMovimiento(MovimientoDTO mDTO, ClienteDTO cDTO) {
+		this.msg ="Los movimientos han sido encontrados";
+		this.cn = new Conectar();
+		this.movimientos.clear();
+		try {
+			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_MOVIMIENTO_AUTOR);
+			this.ps.setString(1, cDTO.getDni());
+			this.rs = this.ps.executeQuery();
+			if(rs.next()) {
+				this.setmDTO(new MovimientoDTO());
+				this.mDTO.setFecha(rs.getDate(2));
+				this.mDTO.setEstado(rs.getCursorName());
+				this.mDTO.setDni(rs.getCursorName());
+				this.mDTO.setNumCuenta(rs.getCursorName());
+			}
+		}catch (SQLException e) {
+			this.msg = "Error: "+e;
+		}finally {
+			this.cn.cerrarConexion(this.rs, this.cn.getConnect(), this.ps);
+		}
 	}
 	
 	
@@ -74,10 +94,10 @@ public class MovimientoDAO implements Consultas{
 		this.cn = cn;
 	}
 	public ArrayList<MovimientoDTO> getCuentas() {
-		return cuentas;
+		return movimientos;
 	}
 	public void setCuentas(ArrayList<MovimientoDTO> cuentas) {
-		this.cuentas = cuentas;
+		this.movimientos = cuentas;
 	}
 	public ResultSet getRs() {
 		return rs;

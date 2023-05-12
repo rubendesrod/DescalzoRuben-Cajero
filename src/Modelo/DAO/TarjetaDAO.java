@@ -22,7 +22,7 @@ public class TarjetaDAO {
 	private TarjetaDTO tDTO = new TarjetaDTO();
 	private PreparedStatement ps = null;
 	private Conectar cn = null;
-	private ArrayList<TarjetaDTO> tarjetasDTO = new ArrayList<TarjetaDTO>();
+	private ArrayList<TarjetaDTO> tarjetas = new ArrayList<TarjetaDTO>();
 	private ResultSet rs = null;
 	private String msg;
 	
@@ -100,9 +100,22 @@ public class TarjetaDAO {
 	
 	public void buscarTarjeta(TarjetaDTO tDTO) {
 		this.cn = new Conectar();
-		this.tarjetasDTO.clear();
+		this.tarjetas.clear();
 		try {
-			
+			if(tDTO.getNumTarjeta()!=null) {
+				this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_TARJETA_NUMERO);
+				this.ps.setInt(1, tDTO.getNumTarjeta());
+				this.rs = this.ps.executeQuery();
+				if(rs.next()) {
+					this.settDTO(new TarjetaDTO());
+					this.tDTO.setNumTarjeta(rs.getInt(1));
+					this.tDTO.setPin(rs.getInt(2));
+					this.tDTO.setCvv(rs.getInt(3));
+					this.tDTO.setFechaCaducidad(rs.getDate(4));
+					this.tDTO.setEstado(rs.getCursorName());
+					this.tDTO.set
+				}
+			}
 		}catch(Exception e) {
 			this.msg = "Error no previsto: "+e;
 		}finally {
@@ -181,11 +194,11 @@ public class TarjetaDAO {
 	}
 
 	public ArrayList<TarjetaDTO> getTarjetasDTO() {
-		return tarjetasDTO;
+		return tarjetas;
 	}
 
 	public void setTarjetasDTO(ArrayList<TarjetaDTO> tarjetasDTO) {
-		this.tarjetasDTO = tarjetasDTO;
+		this.tarjetas = tarjetasDTO;
 	}
 
 	public ResultSet getRs() {

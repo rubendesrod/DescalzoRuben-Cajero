@@ -2,6 +2,7 @@ package Modelo.DAO;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import Modelo.Conectar;
@@ -100,6 +101,37 @@ public class CuentaDAO {
 	
 	public void buscarCuenta(CuentaDTO cDTO) {
 		this.msg = "La cuenta ha sido encontrada correctamente";
+		this.cn = new Conectar();
+		this.cuentas.clear();
+		
+		try {
+			if(cDTO.getNumCuenta()!=null) {
+				this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_CUENTA_NUMCUENTA);
+				this.ps.setString(1, cDTO.getNumCuenta());
+				this.rs = this.ps.executeQuery();
+				if(rs.next()) {
+					this.setcDTO(new CuentaDTO());
+					this.cDTO.setNumCuenta(rs.getString(1));
+					this.cDTO.setSaldo(rs.getDouble(2));
+					
+				}else {
+					this.msg = "La cuenta no existe";
+				}
+			}else {
+				this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_CUENTAS);
+				this.rs = this.ps.executeQuery();
+				while(rs.next()) {
+					this.setcDTO(new CuentaDTO());
+					this.cDTO.setNumCuenta(rs.getString(1));
+					this.cDTO.setSaldo(rs.getDouble(2));
+				this.cuentas.add(cDTO);
+				}
+			} 
+		}catch (SQLException e) {
+			this.msg = "Error: "+e;
+		}finally {
+			this.cn.cerrarConexion(this.rs, this.cn.getConnect(), this.ps);
+		}
 	}
 	
 	

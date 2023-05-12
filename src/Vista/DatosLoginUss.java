@@ -13,7 +13,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import Controlador.GestorLogin;
+import Controlador.Vista.GestorLogin;
 
 public class DatosLoginUss extends JPanel{
 
@@ -25,7 +25,7 @@ public class DatosLoginUss extends JPanel{
 	private JPasswordField passO;
 	private JTextField passV;
 	private JLabel error;
-	public Boolean mostrar = false;
+	public Boolean mostrar = true;
 	
 	public DatosLoginUss(Vista v) {
 		
@@ -47,7 +47,7 @@ public class DatosLoginUss extends JPanel{
 		ImageIcon oculto = new ImageIcon("img/oculto.png");
 		ImageIcon visible = new ImageIcon("img/visible.png");
 		
-		error = new JLabel("**Mensajes de errores");
+		error = new JLabel(" ");
 		error.setForeground(Color.red);
 		
 		uss = new JTextField();

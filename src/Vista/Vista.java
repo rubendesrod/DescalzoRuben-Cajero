@@ -5,6 +5,8 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -12,7 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import Controlador.Vista.GestorLoginAdm;
+import Controlador.Vista.GestorLogin;
 
 public class Vista extends JFrame{
 
@@ -22,6 +24,7 @@ public class Vista extends JFrame{
 	 private JButton admOption;
 	 private JLabel png;
 	 private JLabel txt;
+	 private boolean ventanas = true; //intercambio de ventanas
 	
 	public Vista() {
 		super("Cajero Automatico");
@@ -49,13 +52,30 @@ public class Vista extends JFrame{
 			png.setLocation(0,60);
 			txt.setSize(200,200);
 			txt.setLocation(35,180);
-			admOption.setSize(50,10);
+			admOption.setSize(50,50);
 			admOption.setLocation(43,173);
 			
 			wMark.add(png);wMark.add(txt);wMark.add(admOption);
 			
 			dl = new DatosLoginUss(this);
-			admOption.addActionListener(new GestorLoginAdm(this));
+			da = new DatosLoginAdm(this);da.setVisible(false);
+			// cuando toque el boton invisble cambia a la otra pantalla
+			admOption.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent ae) {
+						if (ventanas) {
+							dl.setVisible(false);
+							da.setVisible(true);
+							add(da);
+							ventanas = false;
+						} 
+						else {
+							dl.setVisible(true);
+							da.setVisible(false);
+							add(dl);
+							ventanas = true;
+						}
+				}
+			});
 			
 	//	Continua el JFrame
 		this.add(wMark, BorderLayout.EAST);
