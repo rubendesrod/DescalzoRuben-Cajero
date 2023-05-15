@@ -10,6 +10,7 @@ import Modelo.DTO.TarjetaDTO;
 import Vista.DatosLoginAdm;
 import Vista.DatosLoginUss;
 import Vista.Vista;
+import Vista.Cliente.PrincipalUss;
 
 public class GestorLogin implements ActionListener {
 
@@ -68,8 +69,9 @@ public class GestorLogin implements ActionListener {
 				du.getError().setText(tDAO.getMsg());
 				if(tDAO.gettDTO().getPin() == Integer.parseInt(pass)) {
 					du.setVisible(false);
-					v.getwMark().setVisible(false);;
-					//vtnCliente.setVisible(true);
+					v.setVisible(false);;
+					PrincipalUss p = new PrincipalUss(v, du.getUss().getText());
+					p.setVisible(true);
 				}else {
 					du.getError().setText("El PIN es erróneo");
 				}

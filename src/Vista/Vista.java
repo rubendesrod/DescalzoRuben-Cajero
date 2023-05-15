@@ -93,7 +93,7 @@ public class Vista extends JFrame{
 	public static void main(String[] args) {
 		Vista v = new Vista();
 		v.setVisible(false);
-		PrincipalUss p = new PrincipalUss();
+		PrincipalUss p = new PrincipalUss(v, "1111222233334444");
 		p.setVisible(true);
 	}
 
