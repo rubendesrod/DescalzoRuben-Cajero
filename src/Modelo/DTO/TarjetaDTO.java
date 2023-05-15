@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class TarjetaDTO {
 
-	private Integer numTarjeta;
+	private String numTarjeta;
 	private Integer pin;
 	private Integer cvv;
 	private Date fechaCaducidad;
@@ -12,7 +12,7 @@ public class TarjetaDTO {
 	private String admin;
 	
 	public TarjetaDTO() {
-		this.numTarjeta = 0;
+		this.numTarjeta = "";
 		this.pin = 0;
 		this.cvv = 0;
 		this.fechaCaducidad = null;
@@ -20,7 +20,7 @@ public class TarjetaDTO {
 		this.admin = "";
 	}
 	
-	public TarjetaDTO(Integer numTarjeta, Integer pin, Integer cvv, Date fecha,
+	public TarjetaDTO(String numTarjeta, Integer pin, Integer cvv, Date fecha,
 			String estado, String admin) {
 		this.numTarjeta = numTarjeta;
 		this.pin = pin;
@@ -30,11 +30,11 @@ public class TarjetaDTO {
 		this.admin = admin;
 	}
 
-	public Integer getNumTarjeta() {
+	public String getNumTarjeta() {
 		return numTarjeta;
 	}
 
-	public void setNumTarjeta(Integer numTarjeta) {
+	public void setNumTarjeta(String numTarjeta) {
 		this.numTarjeta = numTarjeta;
 	}
 

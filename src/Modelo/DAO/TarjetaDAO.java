@@ -40,11 +40,11 @@ public class TarjetaDAO {
 		try {
 			
 			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_TARJETA_NUMERO);
-			this.ps.setInt(1, tDTO.getNumTarjeta());
+			this.ps.setString(1, tDTO.getNumTarjeta());
 			this.rs = this.ps.executeQuery();
 			if(this.rs.next()==false) {
 				this.ps = this.cn.getConnect().prepareStatement(Consultas.INSERTAR_TARJETA);
-				this.ps.setInt(1, tDTO.getNumTarjeta());
+				this.ps.setString(1, tDTO.getNumTarjeta());
 				this.ps.setInt(2,tDTO.getPin());
 				this.ps.setInt(3, tDTO.getCvv());
 				this.ps.setDate(4, tDTO.getFechaCaducidad());
@@ -75,11 +75,11 @@ public class TarjetaDAO {
 		this.msg = "La tarjeta se ha eliminado correctamente";
 		try {
 			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_TARJETA_NUMERO);
-			this.ps.setInt(1, tDTO.getNumTarjeta());
+			this.ps.setString(1, tDTO.getNumTarjeta());
 			this.rs = this.ps.executeQuery();
 			if(this.rs.next()==true) {
 				this.ps = this.cn.getConnect().prepareStatement(Consultas.BORRAR_TARJETA);
-				this.ps.setInt(1, tDTO.getNumTarjeta());
+				this.ps.setString(1, tDTO.getNumTarjeta());
 				this.ps.executeUpdate();
 			}else {
 				this.msg = "La tarjeta que se intanta borrar no existe";
@@ -101,23 +101,27 @@ public class TarjetaDAO {
 	public void buscarTarjeta(TarjetaDTO tDTO) {
 		this.cn = new Conectar();
 		this.tarjetas.clear();
+		this.msg="La tarjeta ha sido encontrada";
 		try {
 			if(tDTO.getNumTarjeta()!=null) {
 				this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_TARJETA_NUMERO);
-				this.ps.setInt(1, tDTO.getNumTarjeta());
+				this.ps.setString(1, tDTO.getNumTarjeta());
 				this.rs = this.ps.executeQuery();
 				if(rs.next()) {
 					this.settDTO(new TarjetaDTO());
-					this.tDTO.setNumTarjeta(rs.getInt(1));
+					this.tDTO.setNumTarjeta(rs.getString(1));
 					this.tDTO.setPin(rs.getInt(2));
 					this.tDTO.setCvv(rs.getInt(3));
 					this.tDTO.setFechaCaducidad(rs.getDate(4));
-					this.tDTO.setEstado(rs.getCursorName());
-					this.tDTO.set
+					this.tDTO.setEstado(rs.getString(5));
+				}
+				else {
+					this.msg = "La tarjeta introducida no existe";
 				}
 			}
 		}catch(Exception e) {
 			this.msg = "Error no previsto: "+e;
+			System.out.println(e);
 		}finally {
 			cn.cerrarConexion(this.rs, this.cn.getConnect(), this.ps);
 		}
@@ -135,27 +139,27 @@ public class TarjetaDAO {
 		this.msg = "La tarjeta ha sido modificada correctamente";
 		try {
 			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_TARJETA_NUMERO);
-			this.ps.setInt(1, tDTO.getNumTarjeta());
+			this.ps.setString(1, tDTO.getNumTarjeta());
 			this.rs = this.ps.executeQuery();
 			if(this.rs.next()==true) {
 				/*PIN*/
 				if(tDTO.getPin()!=null) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_TARJETA_PIN);
 					this.ps.setInt(1, tDTO.getPin());
-					this.ps.setInt(1, tDTO.getNumTarjeta());
+					this.ps.setString(1, tDTO.getNumTarjeta());
 					this.ps.executeUpdate();
 				}
 				/*CVV*/
 				else if (tDTO.getCvv()!= null) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_TARJETA_CVV);
 					this.ps.setInt(1, tDTO.getCvv());
-					this.ps.setInt(2, tDTO.getNumTarjeta());
+					this.ps.setString(2, tDTO.getNumTarjeta());
 				}
 				/*ESTADO*/
 				else if (tDTO.getEstado()!=null) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_TARJETA_ESTADO);
 					this.ps.setString(1, tDTO.getEstado());
-					this.ps.setInt(2, tDTO.getNumTarjeta());
+					this.ps.setString(2, tDTO.getNumTarjeta());
 				}
 			}else {
 				this.msg = "La tarjeta introducida no existe";

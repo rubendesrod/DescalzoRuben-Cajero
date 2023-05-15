@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import Controlador.Vista.GestorLogin;
+import Vista.Cliente.PrincipalUss;
 
 public class Vista extends JFrame{
 
@@ -24,6 +24,7 @@ public class Vista extends JFrame{
 	 private JButton admOption;
 	 private JLabel png;
 	 private JLabel txt;
+	 private JPanel wMark;
 	 private boolean ventanas = true; //intercambio de ventanas
 	
 	public Vista() {
@@ -32,7 +33,7 @@ public class Vista extends JFrame{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		// 	Panel derecho del Login	
-			JPanel wMark = new JPanel();
+			wMark = new JPanel();
 			wMark.setBackground(new Color(251,224,112));
 			wMark.setPreferredSize(new Dimension(200,50));
 			wMark.setLayout(null);
@@ -64,6 +65,7 @@ public class Vista extends JFrame{
 				public void actionPerformed(ActionEvent ae) {
 						if (ventanas) {
 							dl.setVisible(false);
+							dl.getUss().setText("");dl.getPassO().setText("");dl.getPassV().setText("");
 							da.setVisible(true);
 							add(da);
 							ventanas = false;
@@ -71,6 +73,7 @@ public class Vista extends JFrame{
 						else {
 							dl.setVisible(true);
 							da.setVisible(false);
+							da.getUss().setText("");da.getPassO().setText("");da.getPassV().setText("");
 							add(dl);
 							ventanas = true;
 						}
@@ -89,7 +92,27 @@ public class Vista extends JFrame{
 	
 	public static void main(String[] args) {
 		Vista v = new Vista();
-		v.setVisible(true);
+		v.setVisible(false);
+		PrincipalUss p = new PrincipalUss();
+		p.setVisible(true);
+	}
+
+	
+	
+	public JPanel getwMark() {
+		return wMark;
+	}
+
+	public void setwMark(JPanel wMark) {
+		this.wMark = wMark;
+	}
+
+	public boolean isVentanas() {
+		return ventanas;
+	}
+
+	public void setVentanas(boolean ventanas) {
+		this.ventanas = ventanas;
 	}
 
 	public DatosLoginUss getDl() {
