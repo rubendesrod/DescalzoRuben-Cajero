@@ -49,7 +49,8 @@ public class TarjetaDAO {
 				this.ps.setInt(3, tDTO.getCvv());
 				this.ps.setDate(4, tDTO.getFechaCaducidad());
 				this.ps.setString(5, tDTO.getEstado());
-				this.ps.setString(6, tDTO.getAdmin());
+				this.ps.setString(6, tDTO.getNumCuenta());
+				this.ps.setString(7, tDTO.getAdmin());
 				
 				this.ps.executeUpdate();
 			}else {
@@ -114,6 +115,7 @@ public class TarjetaDAO {
 					this.tDTO.setCvv(rs.getInt(3));
 					this.tDTO.setFechaCaducidad(rs.getDate(4));
 					this.tDTO.setEstado(rs.getString(5));
+					this.tDTO.setNumCuenta(rs.getString(6));
 				}
 				else {
 					this.msg = "La tarjeta introducida no existe";

@@ -9,6 +9,7 @@ public class TarjetaDTO {
 	private Integer cvv;
 	private Date fechaCaducidad;
 	private String estado;
+	private String numCuenta;
 	private String admin;
 	
 	public TarjetaDTO() {
@@ -17,16 +18,18 @@ public class TarjetaDTO {
 		this.cvv = 0;
 		this.fechaCaducidad = null;
 		this.estado = "";
+		this.numCuenta = "";
 		this.admin = "";
 	}
 	
 	public TarjetaDTO(String numTarjeta, Integer pin, Integer cvv, Date fecha,
-			String estado, String admin) {
+			String estado,String numCuenta, String admin) {
 		this.numTarjeta = numTarjeta;
 		this.pin = pin;
 		this.cvv = cvv;
 		this.fechaCaducidad = fecha;
 		this.estado = estado;
+		this.numCuenta = numCuenta;
 		this.admin = admin;
 	}
 
@@ -69,6 +72,14 @@ public class TarjetaDTO {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+	
+	public String getNumCuenta() {
+		return numCuenta;
+	}
+
+	public void setNumCuenta(String numCuenta) {
+		this.numCuenta = numCuenta;
+	}
 
 	public String getAdmin() {
 		return admin;
@@ -77,6 +88,7 @@ public class TarjetaDTO {
 	public void setAdmin(String admin) {
 		this.admin = admin;
 	}
+	
 	
 	
 	

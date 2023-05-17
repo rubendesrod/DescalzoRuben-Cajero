@@ -28,11 +28,10 @@ public class PrincipalUss extends JFrame{
 	private JButton btn5;
 	private JPanel p;
 	private JPanel wMark;
-	private Image imagenDeFondo;
 	private ArrayList<JButton> botonera;
-	
 	private Vista v;
 	private String numTarjeta;
+	
 	
 	public PrincipalUss(Vista v, String n) {
 		super("Ventana Usuario");
@@ -70,17 +69,30 @@ public class PrincipalUss extends JFrame{
 			botonera.get(i).setBackground(new Color(215,189,81));
 		}
 		
-		Retirar r = new Retirar(getNumTarjeta());
+		
 		
 		//Action listener de todos los botones
 		btn1.addActionListener(new ActionListener() {
 			@Override
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent ae) {
+				RetirarIngresar r = new RetirarIngresar(PrincipalUss.this,"retirar", numTarjeta);
 				r.setVisible(true);
 			}	
 		});
-//		btn2.addActionListener(new GestorIngresar());
-//		btn3.addActionListener(new GestorCambiarPin());
+		btn2.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent ae) {
+				RetirarIngresar r = new RetirarIngresar(PrincipalUss.this,"ingresar", numTarjeta);
+				r.setVisible(true);
+			}	
+		});
+		btn3.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent ae) {
+				CambiarPin c = new CambiarPin(PrincipalUss.this,numTarjeta);
+				c.setVisible(true);
+			}	
+		});
 //		btn4.addActionListener(new GestorVerMS());
 //		btn5.addActionListener(new GestorSalir());
 		
@@ -91,6 +103,11 @@ public class PrincipalUss extends JFrame{
 		
 	}
 
+	public void mostrarPanel(JPanel p) {
+		p.setVisible(true);;
+		this.add(p);
+	}
+	
 	public JButton getBtn1() {
 		return btn1;
 	}
@@ -145,14 +162,6 @@ public class PrincipalUss extends JFrame{
 
 	public void setwMark(JPanel wMark) {
 		this.wMark = wMark;
-	}
-
-	public Image getImagenDeFondo() {
-		return imagenDeFondo;
-	}
-
-	public void setImagenDeFondo(Image imagenDeFondo) {
-		this.imagenDeFondo = imagenDeFondo;
 	}
 
 	public ArrayList<JButton> getBotonera() {

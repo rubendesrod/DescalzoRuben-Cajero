@@ -15,6 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import Vista.Cliente.PrincipalUss;
+import Vista.Cliente.RetirarIngresar;
 
 public class Vista extends JFrame{
 
