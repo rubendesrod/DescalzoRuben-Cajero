@@ -93,8 +93,21 @@ public class PrincipalUss extends JFrame{
 				c.setVisible(true);
 			}	
 		});
-//		btn4.addActionListener(new GestorVerMS());
-//		btn5.addActionListener(new GestorSalir());
+		btn4.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VistaMovimientos vm = new VistaMovimientos(PrincipalUss.this, numTarjeta);
+				vm.setVisible(true);
+			}	
+		});
+		btn5.addActionListener(new ActionListener() {
+		@Override
+		public void actionPerformed(ActionEvent ae) {
+			PrincipalUss.this.setVisible(false);
+			v.repaint();
+			v.setVisible(true);
+		}	
+	});
 		
 		p.add(btn1);p.add(btn4);
 		p.add(btn2);p.add(btn5);

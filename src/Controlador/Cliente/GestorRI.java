@@ -2,14 +2,17 @@ package Controlador.Cliente;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
-import javax.swing.JButton;
 import javax.swing.JOptionPane;
-import javax.swing.JTextField;
 
 import Modelo.DAO.CuentaDAO;
+import Modelo.DAO.MovimientoDAO;
 import Modelo.DAO.TarjetaDAO;
 import Modelo.DTO.CuentaDTO;
+import Modelo.DTO.MovimientoDTO;
 import Modelo.DTO.TarjetaDTO;
 import Vista.Cliente.RetirarIngresar;
 
@@ -23,6 +26,8 @@ public class GestorRI implements ActionListener{
 	private TarjetaDTO tDTO;
 	private TarjetaDAO tDAO;
 	private Double dinero;
+	private MovimientoDTO mDTO;
+	private MovimientoDAO mDAO;
 	
 	public GestorRI(RetirarIngresar r, String msg, String tar) {
 		this.r = r;
@@ -33,6 +38,10 @@ public class GestorRI implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
+		LocalDate fechaActual = LocalDate.now();
+		DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		String fecha = fechaActual.format(formato);
+		
 		if(!r.getCant().getText().isEmpty()) {
 			dinero = Double.parseDouble(r.getCant().getText());
 		}else {
@@ -40,6 +49,8 @@ public class GestorRI implements ActionListener{
 			dinero = 0.0;
 		}
 		
+		mDTO = new MovimientoDTO();
+		mDAO = new MovimientoDAO();
 		cDTO = new CuentaDTO();
 		cDAO = new CuentaDAO();
 		tDTO = new TarjetaDTO();
@@ -49,6 +60,14 @@ public class GestorRI implements ActionListener{
 		cDTO.setNumCuenta(tDAO.gettDTO().getNumCuenta());
 		cDAO.buscarCuenta(cDTO);
 		
+		//Creo lo que es el movimiento pero sin darle si es tipo retirar o ingresar
+		mDTO.setFecha(fecha);
+		System.out.println(fecha);
+		mDTO.setEstado(getMsg());
+		System.out.println(getMsg());
+		mDTO.setNumCuenta(cDAO.getcDTO().getNumCuenta());
+		mDTO.setDni(cDAO.getcDTO().getDni());
+		
 		//Primero compruebo desde que clase estoy llamando al action listener
 		// ya que ingresar y retirar comparten el mismo procedimiento
 		
@@ -56,18 +75,23 @@ public class GestorRI implements ActionListener{
 			cDTO.setSaldo(cDAO.getcDTO().getSaldo()+dinero);
 			cDAO.modificarCuenta(cDTO);
 			JOptionPane.showMessageDialog(null,"El dinero se ha ingresado correctamente");
-			
+			mDTO.setCantidad(dinero);
 		}else {
 		//Retirar
 			if(cDAO.getcDTO().getSaldo()>dinero) {
 				cDTO.setSaldo(cDAO.getcDTO().getSaldo()-dinero);
 				cDAO.modificarCuenta(cDTO);
 				JOptionPane.showMessageDialog(null,"Se ha retirado correctamen la cantidad introducida");
+				mDTO.setCantidad(dinero);
 			}else {
 				JOptionPane.showMessageDialog(null,"No dispone de tanta cantidad a retirar","ERROR",JOptionPane.ERROR_MESSAGE);
 			}
 			
 		}
+		//Ahora ya con el ultimo dato que falta del movimiento ya insertar el nuevo movimiento
+		mDAO.crearMovimiento(mDTO);
+		System.out.println(cDAO.getcDTO().getDni()+"///"+cDAO.getcDTO().getNumCuenta());
+		System.out.println(cDAO.getMsg());
 		
 	}
 

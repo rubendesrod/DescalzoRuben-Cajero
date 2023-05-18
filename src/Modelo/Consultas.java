@@ -15,8 +15,8 @@ public interface Consultas {
 	//		INSERT
 	public static final String INSERTAR_CLIENTE = "INSERT INTO clientes VALUES (?,?,?,?,?,?,?,?,?)";
 	public static final String INSERTAR_TARJETA = "INSERT INTO tarjetas VALUES (?,?,?,?,?,?)";
-	public static final String INSERTAR_CUENTA = "INSERT INTO cuentas VALUES (?,?,?)";
-	public static final String INSERTAR_MOVIMIENTO = "INSERT INTO movimientos VALUES (?,?,?,?,?)";
+	public static final String INSERTAR_CUENTA = "INSERT INTO cuentas VALUES (?,?,?,?)";
+	public static final String INSERTAR_MOVIMIENTO = "INSERT INTO movimientos(fecha, tipo,cantidad, autor, numCuenta) VALUES (?,?,?,?,?);";
 	public static final String INSERTAR_PERTENECE = "INSERT INTO pertenece VALUES (?,?)";
 	
 	//		DELETE
@@ -39,6 +39,7 @@ public interface Consultas {
 	
 	public static final String ACTUALIZAR_CUENTA_NUMCUENTA = "UPDATE cuentas SET numCuenta = ? WHERE numCuenta = ?";
 	public static final String ACTUALIZAR_CUENTA_SALDO = "UPDATE cuentas SET saldo = ? WHERE numCuenta = ?";
+	public static final String ACTUALIZAR_CUENTA_DNI = "UPDATE cuentas SET dani = ? WHERE numCuenta = ?";
 	public static final String ACTUALIZAR_CUENTA_ADMIN = "UPDATE cuentas SET admin = ? WHERE numCuenta = ?";
 	
 	public static final String ACTUALIZAR_TARJETA_PIN = "UPDATE tarjetas SET pin = ? WHERE numero = ?";

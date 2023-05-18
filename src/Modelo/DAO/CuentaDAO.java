@@ -47,7 +47,8 @@ public class CuentaDAO {
 				this.ps = this.cn.getConnect().prepareStatement(Consultas.INSERTAR_CUENTA);
 				this.ps.setString(1, cDTO.getNumCuenta());
 				this.ps.setDouble(2, cDTO.getSaldo());
-				this.ps.setString(2, cDTO.getAdmin());
+				this.ps.setString(3, cDTO.getDni());
+				this.ps.setString(4, cDTO.getAdmin());
 				
 				this.ps.executeUpdate();
 			}
@@ -113,6 +114,7 @@ public class CuentaDAO {
 					this.setcDTO(new CuentaDTO());
 					this.cDTO.setNumCuenta(rs.getString(1));
 					this.cDTO.setSaldo(rs.getDouble(2));
+					this.cDTO.setDni(rs.getString(3));
 					
 				}else {
 					this.msg = "La cuenta no existe";
@@ -124,6 +126,7 @@ public class CuentaDAO {
 					this.setcDTO(new CuentaDTO());
 					this.cDTO.setNumCuenta(rs.getString(1));
 					this.cDTO.setSaldo(rs.getDouble(2));
+					this.cDTO.setDni(rs.getString(3));
 				this.cuentas.add(cDTO);
 				}
 			} 
@@ -157,6 +160,10 @@ public class CuentaDAO {
 					this.ps.setDouble(1, cDTO.getSaldo());
 					this.ps.setString(2, cDTO.getNumCuenta());
 					this.ps.executeUpdate();
+				}else if(cDTO.getDni()!=null){
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CUENTA_DNI);
+					this.ps.setString(1, cDTO.getDni());
+					this.ps.setString(2, cDTO.getNumCuenta());
 				}
 			}else {
 				this.msg = "La cuenta introducida no ha sido encontrada";

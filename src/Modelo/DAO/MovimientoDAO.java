@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import Modelo.Conectar;
 import Modelo.Consultas;
 import Modelo.DTO.ClienteDTO;
+import Modelo.DTO.CuentaDTO;
 import Modelo.DTO.MovimientoDTO;
 
 
@@ -22,17 +23,16 @@ public class MovimientoDAO{
 	
 	
 	
-	public void crearMovimiento(MovimientoDTO mDTO, String dni, String numCuenta) {
+	public void crearMovimiento(MovimientoDTO mDTO) {
 		this.msg = "creado";
 		this.cn = new Conectar();
-		int cod = 1;
 		try {
 			this.ps = this.cn.getConnect().prepareStatement(Consultas.INSERTAR_MOVIMIENTO);
-			this.ps.setInt(1, cod);
-			this.ps.setDate(2, mDTO.getFecha());
-			this.ps.setString(3, mDTO.getEstado());
-			this.ps.setString(4, numCuenta);
-			this.ps.setString(5, dni);
+			this.ps.setString(1, mDTO.getFecha());
+			this.ps.setString(2, mDTO.getEstado());
+			this.ps.setDouble(3, mDTO.getCantidad());
+			this.ps.setString(4, mDTO.getDni());
+			this.ps.setString(5, mDTO.getNumCuenta());
 			
 			this.ps.executeUpdate();
 		}catch(Exception e) {
@@ -50,20 +50,21 @@ public class MovimientoDAO{
 	
 	
 	
-	public void buscarMovimiento(MovimientoDTO mDTO, ClienteDTO cDTO) {
+	public void buscarMovimiento(MovimientoDTO mDTO) {
 		this.msg ="Los movimientos han sido encontrados";
 		this.cn = new Conectar();
 		this.movimientos.clear();
 		try {
-			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_MOVIMIENTO_AUTOR);
-			this.ps.setString(1, cDTO.getDni());
+			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUScAR_MOVIMIENTO_NUMCUENTA);
+			this.ps.setString(1, mDTO.getNumCuenta());
 			this.rs = this.ps.executeQuery();
 			if(rs.next()) {
 				this.setmDTO(new MovimientoDTO());
-				this.mDTO.setFecha(rs.getDate(2));
-				this.mDTO.setEstado(rs.getCursorName());
-				this.mDTO.setDni(rs.getCursorName());
-				this.mDTO.setNumCuenta(rs.getCursorName());
+				this.mDTO.setFecha(rs.getString(2));
+				this.mDTO.setEstado(rs.getString(3));
+				this.mDTO.setCantidad(rs.getDouble(4));
+				this.mDTO.setDni(rs.getString(5));
+				this.mDTO.setNumCuenta(rs.getString(6));
 			}
 		}catch (SQLException e) {
 			this.msg = "Error: "+e;

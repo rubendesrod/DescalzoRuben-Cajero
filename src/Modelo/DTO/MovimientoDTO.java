@@ -4,30 +4,33 @@ import java.sql.Date;
 
 public class MovimientoDTO {
 
-	private Date fecha;
+	private String fecha;
 	private String estado;
+	private Double cantidad;
 	private String numCuenta;
 	private String dni;
 	
 	public MovimientoDTO() {
 		this.fecha = null;
 		this.estado = "";
+		this.cantidad = 0.00;
 		this.numCuenta = "";
 		this.dni = "";
 	}
 	
-	public MovimientoDTO(int cod, Date fecha, String estado, String num, String dni) {
+	public MovimientoDTO(String fecha, String estado,Double cantidad, String num, String dni) {
 		this.fecha = fecha;
 		this.estado = estado;
+		this.cantidad = cantidad;
 		this.numCuenta = num;
 		this.dni = dni;
 	}
 
-	public Date getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
 
-	public void setFecha(Date fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 
@@ -37,6 +40,14 @@ public class MovimientoDTO {
 
 	public void setEstado(String estado) {
 		this.estado = estado;
+	}
+	
+	public Double getCantidad() {
+		return cantidad;
+	}
+	
+	public void setCantidad(Double cantidad) {
+		this.cantidad = cantidad;
 	}
 
 	public String getNumCuenta() {
