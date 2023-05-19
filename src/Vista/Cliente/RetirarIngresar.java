@@ -31,11 +31,10 @@ public class RetirarIngresar extends JPanel{
 		this.numTarjeta = n;
 		this.setLayout(null);
 		
-		if(texto.equalsIgnoreCase("retirar")) {
+		if(texto.equalsIgnoreCase("retirada")) {
 			txt = new JLabel("Ingrese la cantidad a retirar:");
 		} else {
 			txt = new JLabel("Cuanto vas a ingresar:");
-
 		}
 		cant = new JTextField();
 		volver = new JButton("volver");

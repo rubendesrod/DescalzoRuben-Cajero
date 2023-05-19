@@ -75,7 +75,7 @@ public class PrincipalUss extends JFrame{
 		btn1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				RetirarIngresar r = new RetirarIngresar(PrincipalUss.this,"retirar", numTarjeta);
+				RetirarIngresar r = new RetirarIngresar(PrincipalUss.this,"retirada", numTarjeta);
 				r.setVisible(true);
 			}	
 		});

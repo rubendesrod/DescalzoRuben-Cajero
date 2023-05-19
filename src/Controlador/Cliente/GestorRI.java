@@ -74,15 +74,15 @@ public class GestorRI implements ActionListener{
 		if(msg.equalsIgnoreCase("ingresar")) {
 			cDTO.setSaldo(cDAO.getcDTO().getSaldo()+dinero);
 			cDAO.modificarCuenta(cDTO);
-			JOptionPane.showMessageDialog(null,"El dinero se ha ingresado correctamente");
 			mDTO.setCantidad(dinero);
+			JOptionPane.showMessageDialog(null,"El dinero se ha ingresado correctamente");
 		}else {
 		//Retirar
 			if(cDAO.getcDTO().getSaldo()>dinero) {
 				cDTO.setSaldo(cDAO.getcDTO().getSaldo()-dinero);
 				cDAO.modificarCuenta(cDTO);
-				JOptionPane.showMessageDialog(null,"Se ha retirado correctamen la cantidad introducida");
 				mDTO.setCantidad(dinero);
+				JOptionPane.showMessageDialog(null,"Se ha retirado correctamen la cantidad introducida");
 			}else {
 				JOptionPane.showMessageDialog(null,"No dispone de tanta cantidad a retirar","ERROR",JOptionPane.ERROR_MESSAGE);
 			}
