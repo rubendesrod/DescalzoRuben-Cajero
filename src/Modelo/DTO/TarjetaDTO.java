@@ -7,7 +7,7 @@ public class TarjetaDTO {
 	private String numTarjeta;
 	private Integer pin;
 	private Integer cvv;
-	private Date fechaCaducidad;
+	private String fechaCaducidad;
 	private String estado;
 	private String numCuenta;
 	private String admin;
@@ -22,7 +22,7 @@ public class TarjetaDTO {
 		this.admin = "";
 	}
 	
-	public TarjetaDTO(String numTarjeta, Integer pin, Integer cvv, Date fecha,
+	public TarjetaDTO(String numTarjeta, Integer pin, Integer cvv, String fecha,
 			String estado,String numCuenta, String admin) {
 		this.numTarjeta = numTarjeta;
 		this.pin = pin;
@@ -57,11 +57,11 @@ public class TarjetaDTO {
 		this.cvv = cvv;
 	}
 
-	public Date getFechaCaducidad() {
+	public String getFechaCaducidad() {
 		return fechaCaducidad;
 	}
 
-	public void setFechaCaducidad(Date fechaCaducidad) {
+	public void setFechaCaducidad(String fechaCaducidad) {
 		this.fechaCaducidad = fechaCaducidad;
 	}
 

@@ -82,7 +82,7 @@ public class PrincipalUss extends JFrame{
 		btn2.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				RetirarIngresar r = new RetirarIngresar(PrincipalUss.this,"ingresar", numTarjeta);
+				RetirarIngresar r = new RetirarIngresar(PrincipalUss.this,"ingreso", numTarjeta);
 				r.setVisible(true);
 			}	
 		});
@@ -103,8 +103,8 @@ public class PrincipalUss extends JFrame{
 		btn5.addActionListener(new ActionListener() {
 		@Override
 		public void actionPerformed(ActionEvent ae) {
-			PrincipalUss.this.setVisible(false);
-			v.repaint();
+			PrincipalUss.this.dispose();
+			Vista v = new Vista();
 			v.setVisible(true);
 		}	
 	});
@@ -112,6 +112,8 @@ public class PrincipalUss extends JFrame{
 		p.add(btn1);p.add(btn4);
 		p.add(btn2);p.add(btn5);
 		p.add(btn3);
+		p.setOpaque(true);
+		p.setBackground(new Color(250,230,150));
 		this.add(p);
 		
 	}

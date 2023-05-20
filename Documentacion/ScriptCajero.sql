@@ -38,7 +38,7 @@ CREATE TABLE  tarjetas (
   numero BIGINT UNSIGNED PRIMARY KEY,
   pin INT UNSIGNED NOT NULL,
   CVV INT UNSIGNED NOT NULL,
-  validez DATE NOT NULL,
+  validez char(10) NOT NULL,
   estado ENUM('noBloqueado' , 'bloqueado') NOT NULL,
   numCuenta VARCHAR(24) NOT NULL,
   usuad VARCHAR(20),

@@ -26,15 +26,26 @@ public class GestorCambiarPin implements ActionListener{
 		tDTO.setNumTarjeta(numTarjeta);
 		tDAO = new TarjetaDAO();
 		tDAO.buscarTarjeta(tDTO);
-		if(tDAO.gettDTO().getPin() == Integer.parseInt(cp.getActualPin().getText())) {
-			String nuevoPin = String.valueOf(cp.getNuevoPin().getPassword());
-			tDTO.setPin(Integer.parseInt(nuevoPin));
-			tDAO.modificarTarjeta(tDTO);
-			cp.getErrores().setForeground(Color.BLUE);
-			cp.getErrores().setText("** PIN ha sido actualizado");
-		}else {
+		
+		String nuevo =  String.valueOf(cp.getNuevoPin().getPassword());
+		
+		if (cp.getActualPin().getText().isEmpty()) {
 			cp.getErrores().setForeground(Color.red);
-			cp.getErrores().setText("** El PIN actual no coincide");
+			cp.getErrores().setText("** Ambos campos son obligatorios");
+		}else if(nuevo.isEmpty()) {
+			cp.getErrores().setForeground(Color.red);
+			cp.getErrores().setText("** Ambos campos son obligatorios");
+		}else {
+			if (tDAO.gettDTO().getPin() == Integer.parseInt(cp.getActualPin().getText())) {
+				String nuevoPin = String.valueOf(cp.getNuevoPin().getPassword());
+				tDTO.setPin(Integer.parseInt(nuevoPin));
+				tDAO.modificarTarjeta(tDTO);
+				cp.getErrores().setForeground(Color.BLUE);
+				cp.getErrores().setText("** PIN ha sido actualizado");
+			} else {
+				cp.getErrores().setForeground(Color.red);
+				cp.getErrores().setText("** El PIN actual no coincide");
+			} 
 		}
 		
 	}

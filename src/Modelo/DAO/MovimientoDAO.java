@@ -55,17 +55,18 @@ public class MovimientoDAO{
 		this.cn = new Conectar();
 		this.movimientos.clear();
 		try {
-			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUScAR_MOVIMIENTO_NUMCUENTA);
+			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_MOVIMIENTO_NUMCUENTA);
 			this.ps.setString(1, mDTO.getNumCuenta());
 			this.rs = this.ps.executeQuery();
-			if(rs.next()) {
-				this.setmDTO(new MovimientoDTO());
-				this.mDTO.setFecha(rs.getString(2));
-				this.mDTO.setEstado(rs.getString(3));
-				this.mDTO.setCantidad(rs.getDouble(4));
-				this.mDTO.setDni(rs.getString(5));
-				this.mDTO.setNumCuenta(rs.getString(6));
-			}
+				while (rs.next()) {
+					this.mDTO = new MovimientoDTO();
+					this.mDTO.setFecha(rs.getString(1));
+					this.mDTO.setEstado(rs.getString(2));
+					this.mDTO.setCantidad(rs.getDouble(3));
+					this.mDTO.setDni(rs.getString(4));
+					this.mDTO.setNumCuenta(rs.getString(5));
+					this.movimientos.add(this.mDTO);			
+				}
 		}catch (SQLException e) {
 			this.msg = "Error: "+e;
 		}finally {
@@ -75,7 +76,7 @@ public class MovimientoDAO{
 	
 	
 	
-	public MovimientoDTO getmDTO(MovimientoDTO mDTO) {
+	public MovimientoDTO getmDTO() {
 		return mDTO;
 	}
 	

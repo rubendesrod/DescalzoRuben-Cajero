@@ -62,16 +62,14 @@ public class GestorRI implements ActionListener{
 		
 		//Creo lo que es el movimiento pero sin darle si es tipo retirar o ingresar
 		mDTO.setFecha(fecha);
-		System.out.println(fecha);
 		mDTO.setEstado(getMsg());
-		System.out.println(getMsg());
 		mDTO.setNumCuenta(cDAO.getcDTO().getNumCuenta());
 		mDTO.setDni(cDAO.getcDTO().getDni());
 		
 		//Primero compruebo desde que clase estoy llamando al action listener
 		// ya que ingresar y retirar comparten el mismo procedimiento
 		
-		if(msg.equalsIgnoreCase("ingresar")) {
+		if(msg.equalsIgnoreCase("ingreso")) {
 			cDTO.setSaldo(cDAO.getcDTO().getSaldo()+dinero);
 			cDAO.modificarCuenta(cDTO);
 			mDTO.setCantidad(dinero);
@@ -90,8 +88,6 @@ public class GestorRI implements ActionListener{
 		}
 		//Ahora ya con el ultimo dato que falta del movimiento ya insertar el nuevo movimiento
 		mDAO.crearMovimiento(mDTO);
-		System.out.println(cDAO.getcDTO().getDni()+"///"+cDAO.getcDTO().getNumCuenta());
-		System.out.println(cDAO.getMsg());
 		
 	}
 

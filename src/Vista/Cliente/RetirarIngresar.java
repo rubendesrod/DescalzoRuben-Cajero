@@ -1,11 +1,13 @@
 package Vista.Cliente;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -37,7 +39,7 @@ public class RetirarIngresar extends JPanel{
 			txt = new JLabel("Cuanto vas a ingresar:");
 		}
 		cant = new JTextField();
-		volver = new JButton("volver");
+		volver = new JButton();
 
 		
 		txt.setLocation(50,80);
@@ -45,7 +47,11 @@ public class RetirarIngresar extends JPanel{
 		cant.setLocation(220,80);
 		cant.setSize(160,25);
 		volver.setLocation(440,80);
-		volver.setSize(70, 25);
+		volver.setSize(40, 40);
+		ImageIcon back = new ImageIcon("img/volver.png");
+		volver.setIcon(back);
+		volver.setBorderPainted(false);
+		volver.setContentAreaFilled(false);
 		
 		this.add(txt);this.add(cant);this.add(volver);
 		
@@ -73,7 +79,7 @@ public class RetirarIngresar extends JPanel{
         retroceder.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				txt.setText("");
+				cant.setText("");
 			}
         });
         
@@ -89,14 +95,15 @@ public class RetirarIngresar extends JPanel{
 		volver.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				usr.remove(RetirarIngresar.this);;
 				usr.remove(botonera);
+				RetirarIngresar.this.repaint();
+				usr.remove(RetirarIngresar.this);
 				usr.repaint();
-				usr.mostrarPanel(usr.getP());;
-				
+				usr.mostrarPanel(usr.getP());
 			}
 		});
 		
+		this.setBackground(new Color(250,230,150));
 		usr.getP().setVisible(false);
 		usr.setLayout(new GridLayout(2,1));
 		usr.remove(usr.getP());

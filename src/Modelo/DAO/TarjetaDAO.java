@@ -47,7 +47,7 @@ public class TarjetaDAO {
 				this.ps.setString(1, tDTO.getNumTarjeta());
 				this.ps.setInt(2,tDTO.getPin());
 				this.ps.setInt(3, tDTO.getCvv());
-				this.ps.setDate(4, tDTO.getFechaCaducidad());
+				this.ps.setString(4, tDTO.getFechaCaducidad());
 				this.ps.setString(5, tDTO.getEstado());
 				this.ps.setString(6, tDTO.getNumCuenta());
 				this.ps.setString(7, tDTO.getAdmin());
@@ -113,7 +113,7 @@ public class TarjetaDAO {
 					this.tDTO.setNumTarjeta(rs.getString(1));
 					this.tDTO.setPin(rs.getInt(2));
 					this.tDTO.setCvv(rs.getInt(3));
-					this.tDTO.setFechaCaducidad(rs.getDate(4));
+					this.tDTO.setFechaCaducidad(rs.getString(4));
 					this.tDTO.setEstado(rs.getString(5));
 					this.tDTO.setNumCuenta(rs.getString(6));
 				}

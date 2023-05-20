@@ -91,7 +91,7 @@ public interface Consultas {
 	public static final String BUSCAR_MOVIMIENTO_TIPO_RETIRADA = "SELECT * FROM movimientos WHERE tipo = retirada";
 	public static final String BUSCAR_MOVIMIENTO_TIPO_TRANSFERENCIA = "SELECT * FROM movimientos WHERE tipo = transferencia";
 	public static final String BUSCAR_MOVIMIENTO_AUTOR = "SELECT * FROM movimientos WHERE autor = ?";
-	public static final String BUScAR_MOVIMIENTO_NUMCUENTA = "SELECT * FROM movientos WHERE numCuenta = ?";
+	public static final String BUSCAR_MOVIMIENTO_NUMCUENTA = "SELECT fecha,tipo,cantidad,autor,numCuenta FROM movimientos WHERE numCuenta = ?";
 	
 	public static final String BUSCAR_PERTENECES = "SELECT * FROM pertenece";
 	public static final String BUSCAR_PERTENECE_DNI = "SELECT * FROM pertenece WHERE dni = ?";

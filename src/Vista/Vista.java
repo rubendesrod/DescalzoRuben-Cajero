@@ -41,7 +41,7 @@ public class Vista extends JFrame{
 			
 			png = new JLabel();
 			png.setIcon(new ImageIcon("img/cajero.png"));
-			txt = new JLabel("Cajero - IES Galileo");
+			txt = new JLabel("Cajero - GALI");
 			Font negrita = new Font("Arial", Font.BOLD, 14);
 			txt.setFont(negrita);txt.setForeground(Color.BLACK);
 			admOption = new JButton("login");

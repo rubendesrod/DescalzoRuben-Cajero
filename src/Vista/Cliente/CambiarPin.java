@@ -52,7 +52,7 @@ public class CambiarPin extends JPanel{
 		
 		JLabel actual = new JLabel("Pin actual:");
 		JLabel nuevo = new JLabel("Pin nuevo:");
-		
+		ImageIcon back = new ImageIcon("img/volver.png");
 
 		actualPin.setLocation(260, 120);
 		actualPin.setSize(40, 20);
@@ -63,9 +63,13 @@ public class CambiarPin extends JPanel{
 		cambiar.setBorderPainted(false);
 		cambiar.setContentAreaFilled(false);
 		errores.setLocation(210, 70);
-		errores.setSize(160, 20);
+		errores.setSize(200, 20);
 		volver.setLocation(340, 200);
 		volver.setSize(70, 30);
+		volver.setSize(40, 40);
+		volver.setIcon(back);
+		volver.setBorderPainted(false);
+		volver.setContentAreaFilled(false);
 		actual.setLocation(195, 120);
 		actual.setSize(60, 20);
 		nuevo.setLocation(195, 150);
@@ -74,7 +78,7 @@ public class CambiarPin extends JPanel{
 		
 		this.add(actualPin);this.add(nuevoPin);this.add(cambiar);
 		this.add(volver);this.add(errores);this.add(nuevo);this.add(actual);
-		
+		this.setBackground(new Color(250,230,150));
 		usr.getP().setVisible(false);
 		usr.remove(usr.getP());
 		usr.repaint();
