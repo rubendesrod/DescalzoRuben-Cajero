@@ -41,7 +41,7 @@ CREATE TABLE  tarjetas (
   CVV INT UNSIGNED NOT NULL,
   validez char(10) NOT NULL,
   estado ENUM('noBloqueado' , 'bloqueado') NOT NULL,
-  numCuenta VARCHAR(24) NOT NULL,
+  numCuenta VARCHAR(24),
   usuad VARCHAR(20),
   FOREIGN KEY (usuad) REFERENCES administrador(usuario),
   FOREIGN KEY (numCuenta) REFERENCES cuentas(numCuenta) ON DELETE CASCADE ON UPDATE CASCADE
@@ -122,5 +122,3 @@ INSERT INTO tarjetas (numero, pin, CVV, validez, estado, numCuenta, usuad) VALUE
 (8888999900001111, 3333, 456, '2025-09-01', 'noBloqueado', 'ES9090123456789012345678', 'admin'),
 (9999000011112222, 9999, 876, '2022-11-01', 'noBloqueado', 'ES0101234567890123456789', 'admin'),
 (1000111122223333, 1111, 321, '2024-07-01', 'noBloqueado', 'ES1012345678901234567890', 'admin');
-
-select * from movimientos;

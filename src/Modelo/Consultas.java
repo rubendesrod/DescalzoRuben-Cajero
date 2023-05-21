@@ -72,7 +72,7 @@ public interface Consultas {
 	public static final String BUSCAR_CLIENTE_TELEFONO = "SELECT * FROM clientes WHERE telefono = ?";
 	public static final String BUSCAR_CLIENTE_FECHANACIMIENTO = "SELECT * FROM clientes WHERE fechaNacimiento = ?";
 	
-	public static final String BUSCAR_CUENTAS = "SELECT * FROM cuentas";
+	public static final String BUSCAR_CUENTAS = "SELECT numCuenta,saldo,dni FROM cuentas";
 	public static final String BUSCAR_CUENTA_NUMCUENTA = "SELECT * FROM cuentas WHERE numCuenta = ?";
 	public static final String BUSCAR_CUENTA_SALDO = "SELECT * FROM cuentas WHERE saldo = ?";
 	

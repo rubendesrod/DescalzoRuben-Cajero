@@ -123,11 +123,11 @@ public class CuentaDAO {
 				this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_CUENTAS);
 				this.rs = this.ps.executeQuery();
 				while(rs.next()) {
-					this.setcDTO(new CuentaDTO());
+					this.cDTO = new CuentaDTO();
 					this.cDTO.setNumCuenta(rs.getString(1));
 					this.cDTO.setSaldo(rs.getDouble(2));
 					this.cDTO.setDni(rs.getString(3));
-				this.cuentas.add(cDTO);
+				this.cuentas.add(this.cDTO);
 				}
 			} 
 		}catch (SQLException e) {

@@ -21,7 +21,6 @@ public class PrincipalAdm extends JFrame{
 
 	private JPanel jp;
 	private JMenuBar menu;
-	private JLabel estado;
 	
 	public PrincipalAdm() {
 		super("Ventana Admin");
@@ -35,63 +34,13 @@ public class PrincipalAdm extends JFrame{
 		this.setIconImage(icono);
 		this.setLayout(null);
 		
-		jp = new JPanel();
-		jp.setLocation(0, 30);
-		jp.setSize(600,420);
-		jp.setBackground(new Color(250,230,150));
-		jp.setLayout(null);
+		jp = new PanelPrincipal();
 		
-		//Todo dentro del JPanel jp
 		
-			JLabel adm = new JLabel("Administrador");
-			Font f = new Font("Montserrat", Font.BOLD, 24);
-			adm.setForeground(Color.black);
-			adm.setFont(f);
-			adm.setLocation(210, 90);
-			adm.setSize(200, 100);
-			jp.add(adm);
-			ImageIcon ad = new ImageIcon("img/adm.png");
-			//Temporizador para cambiar entre texto e imagen
-			Timer tempo = new Timer(2000, new ActionListener() {
-				boolean txt = true;
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					if(txt) {
-						adm.setIcon(null);
-						adm.setText("Administrador");
-						adm.setLocation(210, 90);
-						txt = false;
-					}else {
-						adm.setText("");
-						adm.setIcon(ad);
-						adm.setLocation(260, 90);
-						txt = true;
-					}
-				}	
-			});
-			
-			JLabel txt = new JLabel("Estado del cajero:");
-			txt.setForeground(Color.black);
-			txt.setSize(105, 40);
-			txt.setLocation(380, 5);
-			jp.add(txt);
-			
-			
-			CajeroDAO caDAO = new CajeroDAO();
-			caDAO.buscarCajero();
-			estado = new JLabel(caDAO.getcDTO().getEstado());
-			estado.setSize(60,40);
-			estado.setForeground(Color.black);
-			if(estado.getText().equalsIgnoreCase("apagado")) {
-				estado.setForeground(Color.red);
-			}
-			estado.setLocation(490, 5);
-			jp.add(estado);
-		
-		menu = new MenuAdmin(this);
+		menu = new MenuAdmin(this , jp);
 		menu.setLocation(0, 0);
 		menu.setSize(600,30);
-		tempo.start();
+		
 		this.add(menu);this.add(jp);
 		
 		
@@ -111,14 +60,6 @@ public class PrincipalAdm extends JFrame{
 
 	public void setMenu(JMenuBar menu) {
 		this.menu = menu;
-	}
-	
-	public JLabel getEstado() {
-		return estado;
-	}
-	
-	public void setEstado(JLabel estado) {
-		this.estado = estado;
 	}
 	
 	

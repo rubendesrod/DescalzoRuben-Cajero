@@ -11,6 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.SwingConstants;
+import javax.swing.table.DefaultTableCellRenderer;
 
 import Controlador.Cliente.GestorGuardar;
 import Modelo.DAO.CuentaDAO;
@@ -57,6 +59,14 @@ public class VistaMovimientos extends JPanel{
 		s.setViewportView(tabla);
 		s.setColumnHeaderView(tabla.getTableHeader());
 		s.setBounds(45,140,500,250);
+		
+		DefaultTableCellRenderer centro = new DefaultTableCellRenderer();
+        centro.setHorizontalAlignment(SwingConstants.CENTER);
+        
+        int columnas = tabla.getColumnCount();
+        for(int i = 0; i<columnas;i++) {
+        	tabla.getColumnModel().getColumn(i).setCellRenderer(centro);
+        }
 		
 		// Primero borramos la tabla para que refresque si hay nuevos datos
 		int row = tablaM.getRowCount();
