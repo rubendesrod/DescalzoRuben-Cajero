@@ -29,14 +29,12 @@ public class PrincipalUss extends JFrame{
 	private JPanel p;
 	private JPanel wMark;
 	private ArrayList<JButton> botonera;
-	private Vista v;
 	private String numTarjeta;
 	
 	
-	public PrincipalUss(Vista v, String n) {
+	public PrincipalUss( String n) {
 		super("Ventana Usuario");
 		
-		this.v = v;
 		this.numTarjeta = n;
 		
 		Image icono = Toolkit.getDefaultToolkit().getImage("img/cajero.png");
@@ -187,20 +185,13 @@ public class PrincipalUss extends JFrame{
 		this.botonera = botonera;
 	}
 
-	public Vista getV() {
-		return v;
-	}
-
-	public void setV(Vista v) {
-		this.v = v;
-	}
 
 	public String getNumTarjeta() {
 		return numTarjeta;
 	}
 
 	public void setNumTarjeta(String numTarjeta) {
-		numTarjeta = numTarjeta;
+		this.numTarjeta = numTarjeta;
 	}
 	
 	

@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS tarjetas;
 DROP TABLE IF EXISTS cuentas;
 DROP TABLE IF EXISTS clientes;
 DROP TABLE IF EXISTS administrador;
+DROP TABLE IF EXISTS cajero;
 
 CREATE TABLE  administrador (
   usuario VARCHAR(20) PRIMARY KEY,
@@ -57,7 +58,13 @@ CREATE TABLE  movimientos (
   FOREIGN KEY (numCuenta) REFERENCES cuentas(numCuenta) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+create table cajero(
+	estado enum('apagado','encendido') not null
+);
+
 -- Inserción de datos en la tabla administrador
+insert into cajero values('encendido');
+
 INSERT INTO administrador (usuario, contraseña) 
 VALUES ('admin', 'admin');
 

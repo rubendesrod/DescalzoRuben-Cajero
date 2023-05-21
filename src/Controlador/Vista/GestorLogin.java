@@ -2,6 +2,8 @@ package Controlador.Vista;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import Modelo.DAO.AdminDAO;
 import Modelo.DAO.TarjetaDAO;
@@ -10,6 +12,7 @@ import Modelo.DTO.TarjetaDTO;
 import Vista.DatosLoginAdm;
 import Vista.DatosLoginUss;
 import Vista.Vista;
+import Vista.Admin.PrincipalAdm;
 import Vista.Cliente.PrincipalUss;
 
 public class GestorLogin implements ActionListener {
@@ -20,7 +23,9 @@ public class GestorLogin implements ActionListener {
 	private AdminDTO adm;
 	private TarjetaDTO us;
 	private TarjetaDAO tDAO = new TarjetaDAO();
-	private AdminDAO aDAO = new AdminDAO();;
+	private AdminDAO aDAO = new AdminDAO();
+	
+	public int intentos = 0;
 	
 	public GestorLogin(DatosLoginAdm da ,Vista v) {
 		this.v = v;
@@ -50,7 +55,9 @@ public class GestorLogin implements ActionListener {
 				if(aDAO.getAdm().getContra().equals(pass)) {
 					da.setVisible(false);
 					v.getwMark().setVisible(false);;
-					//vtnAdmin.setVisible(true);
+					PrincipalAdm p = new PrincipalAdm();
+					p.setVisible(true);
+					v.dispose();
 				}
 				else {
 					da.getError().setText("La contraseña es errónea");
@@ -66,14 +73,36 @@ public class GestorLogin implements ActionListener {
 				us.setNumTarjeta(du.getUss().getText());
 				us.setPin(Integer.parseInt(pass));
 				tDAO.buscarTarjeta(us);
-				du.getError().setText(tDAO.getMsg());
-				if(tDAO.gettDTO().getPin() == Integer.parseInt(pass)) {
-					du.setVisible(false);
-					v.setVisible(false);;
-					PrincipalUss p = new PrincipalUss(v, du.getUss().getText());
-					p.setVisible(true);
+				if (tDAO.gettDTO().getEstado().equalsIgnoreCase("bloqueado")) {
+					du.getError().setText("** ESTA TARJETA SE ENCUENTRA BLOQUEADA");
 				}else {
-					du.getError().setText("El PIN es erróneo");
+					
+					DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+					
+					LocalDate fechaTarjeta = LocalDate.parse(tDAO.gettDTO().getFechaCaducidad(),formato);
+					LocalDate fechaActual = LocalDate.now();
+					int comp = fechaTarjeta.compareTo(fechaActual);
+					
+					if (comp < 0) {
+						du.getError().setText("** HA VENCIDO LA FECHA DE CADUCIDAD");
+					}else {
+						if(tDAO.gettDTO().getPin() == Integer.parseInt(pass)) {
+							du.setVisible(false);
+							v.setVisible(false);;
+							PrincipalUss p = new PrincipalUss(du.getUss().getText());
+							p.setVisible(true);
+							
+						}else {
+							du.getError().setText("El PIN es erróneo");
+							intentos++;
+							if(intentos == 3) {
+								us.setPin(null);
+								us.setEstado("bloqueado");
+								tDAO.modificarTarjeta(us);
+								intentos = 0;
+							}
+						}
+					}
 				}
 			}
 			
@@ -81,27 +110,26 @@ public class GestorLogin implements ActionListener {
 	}
 
 	private boolean validarEntradaDatos() {
-		//String passOculta = String.valueOf(da.getPassO().getPassword());
-		return true;
-//		if((da.getUss().getText().isBlank() && passOculta.isBlank() && da.getPassV().getText().isBlank()) ||
-//				(du.getUss().getText().isBlank() && passOculta.isBlank() && da.getPassV().getText().isBlank()))
-//		{
-//			da.getError().setText("**Error: Rellena los dos campos");
-//			da.getUss().setText("");
-//			da.getPassO().setText("");
-//			da.getPassV().setText("");
-//			return false;
-//		}else if (passOculta.isBlank() && da.getPassV().getText().isBlank() || passOculta.isBlank() && du.getPassV().getText().isBlank()) {
-//			da.getError().setText("**Error: Introduce la contraseña");
-//			da.getUss().setText("");
-//			da.getPassO().setText("");
-//			da.getPassV().setText("");
-//			return false;
-//		}else {
-//			da.getError().setText("**Error: Ambos campos son obligatorios");
-//			du.getError().setText("**Error: Ambos campos son obligatorios");
-//		}
-//		return true;
+		
+		if (du != null) {
+			if (du.getUss().getText().isEmpty()) {
+				du.getError().setText("** Falta Numero de Tarjeta");
+				return false;
+			} else if (du.getPassV().getText().isEmpty() && String.valueOf(du.getPassO().getPassword()).isEmpty()) {
+				du.getError().setText("** Falta Pin de la Tarjeta");
+				return false;
+			}
+			return true;
+		}else {
+			if(da.getUss().getText().isEmpty()) {
+				da.getError().setText("** Falta usuario");
+				return false;
+			}else if(da.getPassV().getText().isEmpty() && String.valueOf(da.getPassO().getPassword()).isEmpty()) {
+				da.getError().setText("** Falta Contraseña");
+				return false;
+			}
+			return true;
+		}
 	}
 
 	public DatosLoginAdm getDa() {

@@ -66,8 +66,8 @@ public class DatosLoginUss extends JPanel{
 		contra.setSize(140,30);
 		contra.setLocation(120, 140);
 		
-		error.setSize(250,30);
-		error.setLocation(160,60);
+		error.setSize(370,30);
+		error.setLocation(80,60);
 		
 		uss.setSize(new Dimension(150, 30));
 		uss.setLocation(160,100);

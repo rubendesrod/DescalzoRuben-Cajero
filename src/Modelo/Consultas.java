@@ -45,7 +45,7 @@ public interface Consultas {
 	public static final String ACTUALIZAR_TARJETA_PIN = "UPDATE tarjetas SET pin = ? WHERE numero = ?";
 	public static final String ACTUALIZAR_TARJETA_CVV = "UPDATE tarjetas SET cvv = ? WHERE numero = ?";
 	public static final String ACTUALIZAR_TARJETA_VALIDEZ = "UPDATE tarjetas SET validez = ? WHERE numero = ?";
-	public static final String ACTUALIZAR_TARJETA_ESTADO = "UPDATE tarjetas SET estado = ? WHERE numer = ?";
+	public static final String ACTUALIZAR_TARJETA_ESTADO = "UPDATE tarjetas SET estado = ? WHERE numero = ?";
 	public static final String ACTUALIZAR_TARJETA_NUMCUENTA = "UPDATE tarjetas SET numCuenta = ? WHERE numCuenta = ?";
 	public static final String ACTUALZIAR_TARJETA_ADMIN = "UPDATE tarjetas SET admin = ? WHERE numero = ?";
 	
@@ -59,6 +59,7 @@ public interface Consultas {
 	public static final String ACTUALIZAR_PERTENECE_DNI = "UPDATE pertenece SET dni = ? WHERE numCuenta = ?";
 	public static final String ACTUALIZAR_PERTENECE_NUMCUENTA = "UPDATE pertenece SET numCuenta = ? WHERE dni = ?";
 	
+	public static final String ACTUALIZAR_CAJERO = "UPDATE cajero SET estado = ?";
 	
 	//		BUSCAR
 	public static final String BUSCAR_CLIENTES = "SELECT * FROM clientes";
@@ -93,8 +94,11 @@ public interface Consultas {
 	public static final String BUSCAR_MOVIMIENTO_AUTOR = "SELECT * FROM movimientos WHERE autor = ?";
 	public static final String BUSCAR_MOVIMIENTO_NUMCUENTA = "SELECT fecha,tipo,cantidad,autor,numCuenta FROM movimientos WHERE numCuenta = ?";
 	
+	public static final String BUSCAR_CAJERO = "SELECT * from cajero";
+	
 	public static final String BUSCAR_PERTENECES = "SELECT * FROM pertenece";
 	public static final String BUSCAR_PERTENECE_DNI = "SELECT * FROM pertenece WHERE dni = ?";
 	public static final String BUSCAR_PERTENECE_NUMCUENTA = "SELECT * FROM pertenece WHERE numCuenta = ?";
+	
 	
 }

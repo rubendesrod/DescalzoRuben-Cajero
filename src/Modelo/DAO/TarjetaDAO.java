@@ -151,13 +151,6 @@ public class TarjetaDAO {
 					this.ps.setString(2, tDTO.getNumTarjeta());
 					this.ps.executeUpdate();
 				}
-				/*CVV*/
-				else if (tDTO.getCvv()!= null) {
-					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_TARJETA_CVV);
-					this.ps.setInt(1, tDTO.getCvv());
-					this.ps.setString(2, tDTO.getNumTarjeta());
-					this.ps.executeUpdate();
-				}
 				/*ESTADO*/
 				else if (tDTO.getEstado()!=null) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_TARJETA_ESTADO);
@@ -165,6 +158,14 @@ public class TarjetaDAO {
 					this.ps.setString(2, tDTO.getNumTarjeta());
 					this.ps.executeUpdate();
 				}
+				/*CVV*/
+				else if (tDTO.getCvv()!= null) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_TARJETA_CVV);
+					this.ps.setInt(1, tDTO.getCvv());
+					this.ps.setString(2, tDTO.getNumTarjeta());
+					this.ps.executeUpdate();
+				}
+				
 			}else {
 				this.msg = "La tarjeta introducida no existe";
 			}

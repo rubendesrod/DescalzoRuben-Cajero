@@ -14,8 +14,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import Vista.Admin.PrincipalAdm;
 import Vista.Cliente.PrincipalUss;
-import Vista.Cliente.RetirarIngresar;
 
 public class Vista extends JFrame{
 
@@ -94,8 +94,10 @@ public class Vista extends JFrame{
 	public static void main(String[] args) {
 		Vista v = new Vista();
 		v.setVisible(false);
-		PrincipalUss p = new PrincipalUss(v, "1111222233334444");
-		p.setVisible(true);
+		PrincipalUss p = new PrincipalUss("1111222233334444");
+		p.setVisible(false);
+		PrincipalAdm a = new PrincipalAdm();
+		a.setVisible(true);
 	}
 
 	
