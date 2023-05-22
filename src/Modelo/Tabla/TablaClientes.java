@@ -9,7 +9,7 @@ import javax.swing.table.TableModel;
 import Modelo.DTO.ClienteDTO;
 
 public class TablaClientes implements TableModel{
-public static int COLUMNAS=6;
+public static int COLUMNAS=8;
 	
 	
 	
@@ -55,6 +55,8 @@ public static int COLUMNAS=6;
 		case 3: return "apell2";
 		case 4: return "direccion";
 		case 5: return "correo";
+		case 6: return "Telefono";
+		case 7: return "Fecha-Nacimiento";
 		default: return null;
 		}
 	}
@@ -68,6 +70,8 @@ public static int COLUMNAS=6;
 		case 3: return String.class;
 		case 4: return String.class;
 		case 5: return String.class;
+		case 6: return String.class;
+		case 7: return String.class;
 		default: return Object.class;
 		}
 	}
@@ -91,6 +95,8 @@ public static int COLUMNAS=6;
             case 3: return aux.getApell2();
             case 4: return aux.getDireccion();
             case 5: return aux.getCorreo();
+            case 6: return aux.getTelefono();
+            case 7: return aux.getFechaNac();
             default: return null;
         }
 	}
@@ -106,6 +112,8 @@ public static int COLUMNAS=6;
 			case 3: aux.setApell2((String)valor); break;
 			case 4: aux.setDireccion((String)valor); break;
 			case 5: aux.setCorreo((String)valor); break;
+			case 6: aux.setTelefono((String)valor); break;
+			case 7: aux.setFechaNac((String)valor); break;
 			default: break;
 		}
 		

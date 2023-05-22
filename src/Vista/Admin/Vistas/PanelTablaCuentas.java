@@ -1,7 +1,9 @@
 package Vista.Admin.Vistas;
 
 import java.awt.Color;
+import java.awt.Font;
 
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -54,6 +56,18 @@ public class PanelTablaCuentas extends JPanel{
 			tablac.anadeCuenta(cDAO.getCuentas().get(i));
 		}
 		
+		JLabel jl1 = new JLabel("Tabla");
+		jl1.setFont(new Font("Garamond", Font.BOLD, 32));
+		jl1.setSize(80, 40);
+		jl1.setLocation(20, 5);
+		jl1.setForeground(Color.BLACK);
+		JLabel jl2 = new JLabel("Cuentas");
+		jl2.setFont(new Font("Garamond", Font.BOLD, 32));
+		jl2.setSize(180, 40);
+		jl2.setLocation(20, 35);
+		jl2.setForeground(Color.BLACK);
+		
+		this.add(jl1);this.add(jl2);
 		this.add(s);
 		this.setLocation(0, 0);
 		this.setSize(600,420);

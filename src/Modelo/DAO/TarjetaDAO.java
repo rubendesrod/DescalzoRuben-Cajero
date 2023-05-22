@@ -120,6 +120,19 @@ public class TarjetaDAO {
 				else {
 					this.msg = "La tarjeta introducida no existe";
 				}
+			}else {
+				this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_TARJETAS);
+				this.rs = this.ps.executeQuery();
+				while(rs.next()) {
+					this.tDTO = new TarjetaDTO();
+					this.tDTO.setNumTarjeta(rs.getString(1));
+					this.tDTO.setPin(rs.getInt(2));
+					this.tDTO.setCvv(rs.getInt(3));
+					this.tDTO.setFechaCaducidad(rs.getString(4));
+					this.tDTO.setEstado(rs.getString(5));
+					this.tDTO.setNumCuenta(rs.getString(6));
+				this.tarjetas.add(this.tDTO);
+				}
 			}
 		}catch(Exception e) {
 			this.msg = "Error no previsto: "+e;

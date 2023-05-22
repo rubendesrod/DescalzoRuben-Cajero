@@ -42,14 +42,13 @@ public class ClientesDAO implements Consultas{
 			this.ps = this.cn.getConnect().prepareStatement(BUSCAR_CLIENTE_DNI);
 			this.ps.setString(1, cDTO.getDni());
 			this.rs = this.ps.executeQuery();
-			
 			if(!this.rs.next()) {
 				this.ps = this.cn.getConnect().prepareStatement(INSERTAR_CLIENTE);
 				this.ps.setString(1, cDTO.getDni());this.ps.setString(2, cDTO.getNombre());
 				this.ps.setString(3, cDTO.getApell1());this.ps.setString(4, cDTO.getApell2());
 				this.ps.setString(5, cDTO.getDireccion());this.ps.setString(6,cDTO.getCorreo());
-				this.ps.setInt(7, cDTO.getTelefono());this.ps.setDate(8, cDTO.getFechaNac());
-				this.ps.setString(9, "raul");
+				this.ps.setString(7, cDTO.getTelefono());this.ps.setString(8, cDTO.getFechaNac());
+				this.ps.setString(9, cDTO.getAdmin());
 				this.msg = "El cliente ha sDNIo dado de alta";
 				
 				this.ps.executeUpdate();
@@ -120,8 +119,8 @@ public class ClientesDAO implements Consultas{
 					this.cli.setApell2(rs.getString(4));
 					this.cli.setDireccion(rs.getString(5));
 					this.cli.setCorreo(rs.getString(6));
-					this.cli.setTelefono(rs.getInt(7));
-					this.cli.setFechaNac(rs.getDate(8));
+					this.cli.setTelefono(rs.getString(7));
+					this.cli.setFechaNac(rs.getString(8));
 				}else {
 					this.msg = "El cliente introducido no existe";
 				}
@@ -129,16 +128,16 @@ public class ClientesDAO implements Consultas{
 				this.ps = this.cn.getConnect().prepareStatement(BUSCAR_CLIENTES);
 				this.rs = this.ps.executeQuery();
 				while(rs.next()) {
-					this.setCli(new ClienteDTO());
+					this.cli = new ClienteDTO();
 					this.cli.setDni(rs.getString(1));
 					this.cli.setNombre(rs.getString(2));
 					this.cli.setApell1(rs.getString(3));
 					this.cli.setApell2(rs.getString(4));
 					this.cli.setDireccion(rs.getString(5));
 					this.cli.setCorreo(rs.getString(6));
-					this.cli.setTelefono(rs.getInt(7));
-					this.cli.setFechaNac(rs.getDate(8));
-				this.clientes.add(cDTO);
+					this.cli.setTelefono(rs.getString(7));
+					this.cli.setFechaNac(rs.getString(8));
+				this.clientes.add(this.cli);
 				}
 			}
 		}catch(Exception e) {
@@ -203,14 +202,14 @@ public class ClientesDAO implements Consultas{
 				/*Telefono*/
 				else if(null!=cDTO.getTelefono()) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_DIRECCION);
-					this.ps.setInt(1, cDTO.getTelefono());
+					this.ps.setString(1, cDTO.getTelefono());
 					this.ps.setString(2, cDTO.getDni());
 					this.ps.executeUpdate();
 				}
 				/*FechaNacimiento*/
 				else if(null!=cDTO.getFechaNac()) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_FECHANACIMIENTO);
-					this.ps.setDate(1, cDTO.getFechaNac());
+					this.ps.setString(1, cDTO.getFechaNac());
 					this.ps.setString(2, cDTO.getDni());
 					this.ps.executeUpdate();
 					this.rs = this.ps.executeQuery(Consultas.BUSCAR_CLIENTE_DNI);

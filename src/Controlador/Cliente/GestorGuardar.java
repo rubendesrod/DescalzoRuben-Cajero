@@ -67,8 +67,8 @@ public class GestorGuardar implements ActionListener{
 				esc.print("\n||     FECHA    ||    TIPO   ||   CANTIDAD   ||    AUTOR     ||       NumeroCuenta      ||\n");
 				for (MovimientoDTO m : mDAO.getCuentas()) {
 
-					esc.print("\n||  " + m.getFecha() + "  ||  " + m.getEstado() + "  ||  " + m.getCantidad() + " ||  "
-							+ m.getDni() + "  ||  " + m.getNumCuenta() + "  ||");
+					esc.print("\n||  " + m.getFecha() + "  ||  " + m.getEstado() + "  ||    " + m.getCantidad() + "   ||  "
+							+ m.getDni() + "    ||  " + m.getNumCuenta() + "  ||");
 				}
 
 				esc.print("\n\nSaldo de la cuenta " + mDAO.getmDTO().getNumCuenta() + ": " + cDAO.getcDTO().getSaldo() + "€");

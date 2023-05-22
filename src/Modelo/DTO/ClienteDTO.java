@@ -9,9 +9,9 @@ public class ClienteDTO {
 	private String apell1;
 	private String apell2;
 	private String direccion;
-	private Integer telefono;
+	private String telefono;
 	private String correo;
-	private Date fechaNac;
+	private String fechaNac;
 	private String admin;
 	
 	public ClienteDTO() {
@@ -20,14 +20,14 @@ public class ClienteDTO {
 		this.apell1 = "";
 		this.apell2 = "";
 		this.direccion = "";
-		this.telefono = 0;
+		this.telefono = "";
 		this.correo = "";
 		this.fechaNac = null;
-		this.admin = "";
+		this.admin = "admin";
 	}
 	
 	public ClienteDTO(String dni, String nombre, String apell1, String apell2, String direccion,
-			Integer telefono, String correo, Date fecha, String admin) {
+			String telefono, String correo, String fecha, String admin) {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apell1 = apell1;
@@ -79,11 +79,11 @@ public class ClienteDTO {
 		this.direccion = direccion;
 	}
 
-	public Integer getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
 
-	public void setTelefono(Integer telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 
@@ -95,11 +95,11 @@ public class ClienteDTO {
 		this.correo = correo;
 	}
 
-	public Date getFechaNac() {
+	public String getFechaNac() {
 		return fechaNac;
 	}
 
-	public void setFechaNac(Date fechaNac) {
+	public void setFechaNac(String fechaNac) {
 		this.fechaNac = fechaNac;
 	}
 

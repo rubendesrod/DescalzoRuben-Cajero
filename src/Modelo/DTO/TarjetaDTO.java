@@ -17,7 +17,7 @@ public class TarjetaDTO {
 		this.fechaCaducidad = null;
 		this.estado = "";
 		this.numCuenta = "";
-		this.admin = "";
+		this.admin = "admin";
 	}
 	
 	public TarjetaDTO(String numTarjeta, Integer pin, Integer cvv, String fecha,

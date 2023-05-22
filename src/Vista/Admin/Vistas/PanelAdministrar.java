@@ -28,6 +28,31 @@ public class PanelAdministrar extends JPanel{
 		this.setBackground(new Color(242,250,150));
 		this.add(acli);this.add(acu);this.add(at);
 	}
+
+	public AdministrarCliente getAcli() {
+		return acli;
+	}
+
+	public void setAcli(AdministrarCliente acli) {
+		this.acli = acli;
+	}
+
+	public AdministrarTarjeta getAt() {
+		return at;
+	}
+
+	public void setAt(AdministrarTarjeta at) {
+		this.at = at;
+	}
+
+	public AdministrarCuenta getAcu() {
+		return acu;
+	}
+
+	public void setAcu(AdministrarCuenta acu) {
+		this.acu = acu;
+	}
+	
 	
 	
 }

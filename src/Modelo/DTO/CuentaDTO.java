@@ -11,7 +11,7 @@ public class CuentaDTO {
 		this.numCuenta = "";
 		this.saldo = 0.0;
 		this.dni = "";
-		this.admin = "";
+		this.admin = "admin";
 	}
 	
 	public CuentaDTO(String num, Double saldo,String dni, String admin) {
