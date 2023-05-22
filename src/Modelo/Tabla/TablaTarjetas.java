@@ -6,7 +6,6 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
-import Modelo.DTO.ClienteDTO;
 import Modelo.DTO.TarjetaDTO;
 
 public class TablaTarjetas implements TableModel{

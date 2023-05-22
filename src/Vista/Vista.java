@@ -19,14 +19,14 @@ import Vista.Cliente.PrincipalUss;
 
 public class Vista extends JFrame{
 
-
-	 private DatosLoginUss dl; 
-	 private DatosLoginAdm da;
-	 private JButton admOption;
-	 private JLabel png;
-	 private JLabel txt;
-	 private JPanel wMark;
-	 private boolean ventanas = true; //intercambio de ventanas
+	private static final long serialVersionUID = 1L;
+	private DatosLoginUss dl; 
+	private DatosLoginAdm da;
+	private JButton admOption;
+	private JLabel png;
+	private JLabel txt;
+	private JPanel wMark;
+	private boolean ventanas = true; //intercambio de ventanas
 	
 	public Vista() {
 		super("Cajero Automatico");

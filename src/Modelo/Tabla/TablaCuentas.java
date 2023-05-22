@@ -7,8 +7,6 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
 import Modelo.DTO.CuentaDTO;
-import Modelo.DTO.MovimientoDTO;
-
 
 public class TablaCuentas implements TableModel{
 

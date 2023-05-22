@@ -1,7 +1,5 @@
 package Modelo.DTO;
 
-import java.sql.Date;
-
 public class TarjetaDTO {
 
 	private String numTarjeta;

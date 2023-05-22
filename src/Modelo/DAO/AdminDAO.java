@@ -2,11 +2,8 @@ package Modelo.DAO;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
-
 import Modelo.Conectar;
 import Modelo.DTO.AdminDTO;
-import Modelo.DTO.ClienteDTO;
 
 public class AdminDAO {
 

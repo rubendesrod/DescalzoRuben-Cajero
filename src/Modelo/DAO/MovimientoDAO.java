@@ -7,8 +7,6 @@ import java.util.ArrayList;
 
 import Modelo.Conectar;
 import Modelo.Consultas;
-import Modelo.DTO.ClienteDTO;
-import Modelo.DTO.CuentaDTO;
 import Modelo.DTO.MovimientoDTO;
 
 

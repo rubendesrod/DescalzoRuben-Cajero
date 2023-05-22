@@ -1,7 +1,5 @@
 package Modelo.DTO;
 
-import java.sql.Date;
-
 public class MovimientoDTO {
 
 	private String fecha;

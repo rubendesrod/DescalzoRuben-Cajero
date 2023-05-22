@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import Modelo.Conectar;
 import Modelo.Consultas;
 import Modelo.DTO.CajeroDTO;
-import Modelo.DTO.CuentaDTO;
+
 
 public class CajeroDAO {
 	

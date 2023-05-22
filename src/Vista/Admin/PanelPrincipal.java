@@ -1,15 +1,20 @@
 package Vista.Admin;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+import Controlador.Administrador.GestorApagarEncender;
 import Modelo.DAO.CajeroDAO;
 
 public class PanelPrincipal extends JPanel{
@@ -18,7 +23,7 @@ public class PanelPrincipal extends JPanel{
 	private PrincipalAdm adm;
 	
 	public PanelPrincipal() {
-		this.setLocation(0, 30);
+		this.setLocation(0, 0);
 		this.setSize(600,420);
 		this.setBackground(new Color(250,230,150));
 		this.setLayout(null);
@@ -63,13 +68,26 @@ public class PanelPrincipal extends JPanel{
 		estado = new JLabel(caDAO.getcDTO().getEstado());
 		estado.setSize(60,40);
 		estado.setForeground(Color.black);
-		if(estado.getText().equalsIgnoreCase("apagado")) {
-			estado.setForeground(Color.red);	
-		}
 		estado.setLocation(490, 5);
 		tempo.start();
-		this.add(estado);
-			
+		
+		
+		JButton power = new JButton();
+		power.setBorderPainted(false);
+		power.setContentAreaFilled(false);
+		power.setSize(30, 30);
+		power.setLocation(330, 10);
+		if(estado.getText().equalsIgnoreCase("apagado")) {
+			estado.setForeground(Color.red);
+			ImageIcon on = new ImageIcon("img/powerV.png");
+			power.setIcon(on);
+		}else {
+			ImageIcon on = new ImageIcon("img/powerR.png");
+			power.setIcon(on);
+		}
+		
+		power.addActionListener(new GestorApagarEncender(estado,power));
+		this.add(estado);this.add(power);
 	}
 
 	public JLabel getEstado() {

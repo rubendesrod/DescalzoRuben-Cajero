@@ -13,10 +13,10 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import Controlador.Vista.GestorLogin;
-import Controlador.Vista.GestorLogin;
 
 public class DatosLoginAdm extends JPanel{
 
+	private static final long serialVersionUID = 1L;
 	private JButton login; //
 	private JButton ver ;
 	private JLabel usuario; //

@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 
 import Modelo.DAO.CajeroDAO;
@@ -12,11 +14,14 @@ import Modelo.DTO.CajeroDTO;
 public class GestorApagarEncender implements ActionListener{
 
 	private JLabel estado;
+	private JButton power;
 	private CajeroDTO cDTO;
 	private CajeroDAO cDAO;
+	private ImageIcon img;
 	
-	public GestorApagarEncender(JLabel estado) {
+	public GestorApagarEncender(JLabel estado, JButton power) {
 		this.estado = estado;
+		this.power = power;
 	}
 
 	@Override
@@ -25,15 +30,19 @@ public class GestorApagarEncender implements ActionListener{
 		cDTO = new CajeroDTO();
 		cDAO = new CajeroDAO();
 		if(estado.getText().equalsIgnoreCase("apagado")) {
+			img = new ImageIcon("img/powerR.png");
 			cDTO.setEstado("encendido");
 			cDAO.modificarCajero(cDTO);
 			estado.setText("encendido");
+			power.setIcon(img);
 			estado.setForeground(Color.black);
 		}else {
+			img = new ImageIcon("img/powerV.png");
 			cDTO.setEstado("apagado");
 			cDAO.modificarCajero(cDTO);
 			estado.setText("apagado");
 			estado.setForeground(Color.red);
+			power.setIcon(img);
 		}
 		
 		

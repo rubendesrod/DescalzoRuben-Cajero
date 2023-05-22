@@ -12,77 +12,53 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 import Controlador.Administrador.GestorApagarEncender;
-import Controlador.Administrador.GestorTablas;
+import Controlador.Administrador.GestorVentanasAdm;
 import Vista.Vista;
 
 public class MenuAdmin extends JMenuBar{
 
 	private PrincipalAdm adm;
-	private JPanel jp;
+	private PanelPrincipal p;
 	
-	public MenuAdmin(PrincipalAdm adm, JPanel jp) {
+	public MenuAdmin(PrincipalAdm adm, PanelPrincipal p) {
 		
 		this.adm = adm;
-		this.jp = jp;
+		this.p = p;
 		
-		//Principales
+		//Principales JMenu
 		JMenu ayu = new JMenu("Configuracion");
-		JMenu conf = new JMenu("Administracion");
-		//Secundarios
-		JMenu cu = new JMenu("Cuentas");
-		JMenu cli = new JMenu("Clientes");
-		JMenu tar = new JMenu("Tarjeta");
-		JMenu flech = new JMenu("--->");
+		JMenu conf = new JMenu("Tablas");
+		
 		//MenuItem
-		JMenuItem ay1 = new JMenuItem("Encender y Apagar");
-		if (jp instanceof PanelPrincipal) {	
-			ay1.addActionListener(new GestorApagarEncender(((PanelPrincipal) jp).getEstado()));
-		}
+		
+		JMenuItem cu = new JMenuItem("Cuentas");
+		JMenuItem cli = new JMenuItem("Clientes");
+		JMenuItem tar = new JMenuItem("Tarjeta");
+		
+		JMenuItem admi = new JMenuItem("Administrar");
+		admi.addActionListener(new GestorVentanasAdm(adm, "administrar"));
 		JMenuItem ay2 = new JMenuItem("Inicio");
-		ay2.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				PanelPrincipal pp = new PanelPrincipal();
-				adm.remove(adm.getJp());
-				adm.repaint();
-				adm.add(pp);
-			}
-		});
+		ay2.addActionListener(new GestorVentanasAdm(adm, "inicio"));
 		JMenuItem ay3 = new JMenuItem("Salir");
 		ay3.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.CTRL_MASK));
 		ay3.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				adm.remove(adm.getMenu());
-				adm.remove(adm.getJp());
 				adm.dispose();
 				Vista v = new Vista();
 				v.setVisible(true);
 				v.setLocationRelativeTo(adm);
-				
 			}
 			
 		});
 		
-		
-		JMenuItem cu1 = new JMenuItem("Tabla");
-		cu1.addActionListener(new GestorTablas(adm, "cuenta"));
-		JMenuItem cu2 = new JMenuItem("Administrar");
-		
-		JMenuItem cli1 = new JMenuItem("Tabla");
-		cli1.addActionListener(new GestorTablas(adm, "cliente"));
-		JMenuItem cli2 = new JMenuItem("Administrar");
-		
-		JMenuItem tar1 = new JMenuItem("Tabla");
-		tar1.addActionListener(new GestorTablas(adm, "tarjeta"));
-		JMenuItem tar2 = new JMenuItem("Administrar");
-		
-		cu.add(cu1);cu.add(cu2);
-		cli.add(cli1);cli.add(cli2);
-		tar.add(tar1);tar.add(tar2);
+
+		cu.addActionListener(new GestorVentanasAdm(adm, "cuenta"));
+		cli.addActionListener(new GestorVentanasAdm(adm, "cliente"));
+		tar.addActionListener(new GestorVentanasAdm(adm, "tarjeta"));
 		
 		conf.add(cu);conf.add(cli);conf.add(tar);
-		ayu.add(ay1);ayu.add(ay2);ayu.add(ay3);
+		ayu.add(ay2);ayu.add(admi);ayu.add(ay3);
 		
 		this.add(conf);this.add(ayu);
 		

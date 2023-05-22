@@ -8,25 +8,22 @@ import javax.swing.JTable;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
 
-import Modelo.DAO.CuentaDAO;
-import Modelo.DTO.CuentaDTO;
-import Modelo.Tabla.TablaCuentas;
+import Modelo.DAO.TarjetaDAO;
+import Modelo.DTO.TarjetaDTO;
+import Modelo.Tabla.TablaTarjetas;
 
+public class PanelTablaTarjetas extends JPanel{
 
-
-public class PanelTablaCuentas extends JPanel{
-
-	private CuentaDTO cDTO;
-	private CuentaDAO cDAO;
+	private TarjetaDTO tDTO;
+	private TarjetaDAO tDAO;
 	
-	public PanelTablaCuentas() {
+	public PanelTablaTarjetas() {
+		tDTO = new TarjetaDTO();
+		tDTO.setNumTarjeta(null);
+		tDAO = new TarjetaDAO();
+		tDAO.buscarTarjeta(tDTO);
 		
-		cDTO = new CuentaDTO();
-		cDTO.setNumCuenta(null);
-		cDAO = new CuentaDAO();
-		cDAO.buscarCuenta(cDTO);
-		
-		TablaCuentas tablac = new TablaCuentas();
+		TablaTarjetas tablac = new TablaTarjetas();
 		JTable tabla =new JTable(tablac);
 		JScrollPane s = new JScrollPane();
 		s.setViewportView(tabla);
@@ -46,12 +43,12 @@ public class PanelTablaCuentas extends JPanel{
 		int row = tablac.getRowCount();
 		while(row>0) {
 			row--;
-			tablac.borrarCuenta(row);
+			tablac.borrarCliente(row);
 		}
 		
 		//Ahora anyadimos los datos de nuevo
-		for(int i = 0; i<cDAO.getCuentas().size();i++) {
-			tablac.anadeCuenta(cDAO.getCuentas().get(i));
+		for(int i = 0; i<tDAO.getTarjetasDTO().size();i++) {
+			tablac.anadeCliente(tDAO.getTarjetasDTO().get(i));
 		}
 		
 		this.add(s);
@@ -59,7 +56,6 @@ public class PanelTablaCuentas extends JPanel{
 		this.setSize(600,420);
 		this.setLayout(null);
 		this.setBackground(new Color(250,230,150));
-		
 	}
 	
 }

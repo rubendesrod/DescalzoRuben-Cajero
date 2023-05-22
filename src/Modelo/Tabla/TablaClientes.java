@@ -7,7 +7,6 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
 import Modelo.DTO.ClienteDTO;
-import Modelo.DTO.CuentaDTO;
 
 public class TablaClientes implements TableModel{
 public static int COLUMNAS=6;

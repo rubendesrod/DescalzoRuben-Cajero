@@ -19,8 +19,8 @@ import Modelo.DAO.CajeroDAO;
 
 public class PrincipalAdm extends JFrame{
 
-	private JPanel jp;
 	private JMenuBar menu;
+	private JPanel content;
 	
 	public PrincipalAdm() {
 		super("Ventana Admin");
@@ -34,26 +34,31 @@ public class PrincipalAdm extends JFrame{
 		this.setIconImage(icono);
 		this.setLayout(null);
 		
-		jp = new PanelPrincipal();
+		content = new JPanel();
+		content.setLocation(0, 30);
+		content.setSize(600,420);
+		content.setLayout(null);
 		
+		PanelPrincipal p = new PanelPrincipal();
+		content.add(p);
 		
-		menu = new MenuAdmin(this , jp);
+		menu = new MenuAdmin(this, p);
 		menu.setLocation(0, 0);
 		menu.setSize(600,30);
 		
-		this.add(menu);this.add(jp);
+		this.add(menu);
+		this.add(content);
 		
-		
 	}
 
-	public JPanel getJp() {
-		return jp;
+	public JPanel getContent() {
+		return content;
 	}
-
-	public void setJp(JPanel jp) {
-		this.jp = jp;
+	
+	public void setContent(JPanel content) {
+		this.content = content;
 	}
-
+	
 	public JMenuBar getMenu() {
 		return menu;
 	}
