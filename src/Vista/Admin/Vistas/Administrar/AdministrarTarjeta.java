@@ -74,19 +74,19 @@ public class AdministrarTarjeta extends JPanel{
 		crear.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				FrameCrear fc = new FrameCrear("cliente");
+				FrameCrear fc = new FrameCrear("tarjeta");
 				fc.setVisible(true);
 		}});
 		borrar.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				FrameBorrar fb = new FrameBorrar("cliente");
+				FrameBorrar fb = new FrameBorrar("tarjeta");
 				fb.setVisible(true);
 		}});
 		modificar.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				FrameModificar fm = new FrameModificar("cliente");
+				FrameModificar fm = new FrameModificar("tarjeta");
 				fm.setVisible(true);
 		}});
 		

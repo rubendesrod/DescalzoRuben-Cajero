@@ -36,7 +36,7 @@ public class TarjetaDAO {
 	
 	public void crearTarjeta(TarjetaDTO tDTO) {
 		this.cn = new Conectar();
-		this.msg = "La consulta se ha realizado con exito";
+		this.msg = "La Tarjeta sa creado con éxito";
 		try {
 			
 			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_TARJETA_NUMERO);
@@ -49,8 +49,7 @@ public class TarjetaDAO {
 				this.ps.setInt(3, tDTO.getCvv());
 				this.ps.setString(4, tDTO.getFechaCaducidad());
 				this.ps.setString(5, tDTO.getEstado());
-				this.ps.setString(6, tDTO.getNumCuenta());
-				this.ps.setString(7, tDTO.getAdmin());
+				this.ps.setString(6, tDTO.getAdmin());
 				
 				this.ps.executeUpdate();
 			}else {

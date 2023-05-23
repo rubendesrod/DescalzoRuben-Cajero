@@ -49,7 +49,7 @@ public class ClientesDAO implements Consultas{
 				this.ps.setString(5, cDTO.getDireccion());this.ps.setString(6,cDTO.getCorreo());
 				this.ps.setString(7, cDTO.getTelefono());this.ps.setString(8, cDTO.getFechaNac());
 				this.ps.setString(9, cDTO.getAdmin());
-				this.msg = "El cliente ha sDNIo dado de alta";
+				this.msg = "El cliente ha sido dado de alta";
 				
 				this.ps.executeUpdate();
 				

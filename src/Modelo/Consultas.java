@@ -14,8 +14,8 @@ public interface Consultas {
 
 	//		INSERT
 	public static final String INSERTAR_CLIENTE = "INSERT INTO clientes VALUES (?,?,?,?,?,?,?,?,?)";
-	public static final String INSERTAR_TARJETA = "INSERT INTO tarjetas VALUES (?,?,?,?,?,?)";
-	public static final String INSERTAR_CUENTA = "INSERT INTO cuentas VALUES (?,?,?,?)";
+	public static final String INSERTAR_TARJETA = "INSERT INTO tarjetas(numero,pin,cvv,validez,estado,usuad) VALUES (?,?,?,?,?,?)";
+	public static final String INSERTAR_CUENTA = "INSERT INTO cuentas(numCuenta, saldo,usuad) VALUES (?,?,?)";
 	public static final String INSERTAR_MOVIMIENTO = "INSERT INTO movimientos(fecha, tipo,cantidad, autor, numCuenta) VALUES (?,?,?,?,?);";
 	public static final String INSERTAR_PERTENECE = "INSERT INTO pertenece VALUES (?,?)";
 	

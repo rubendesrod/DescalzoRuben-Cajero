@@ -77,19 +77,19 @@ public class AdministrarCuenta extends JPanel{
 		crear.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				FrameCrear fc = new FrameCrear("cliente");
+				FrameCrear fc = new FrameCrear("cuenta");
 				fc.setVisible(true);
 		}});
 		borrar.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				FrameBorrar fb = new FrameBorrar("cliente");
+				FrameBorrar fb = new FrameBorrar("cuenta");
 				fb.setVisible(true);
 		}});
 		modificar.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				FrameModificar fm = new FrameModificar("cliente");
+				FrameModificar fm = new FrameModificar("cuenta");
 				fm.setVisible(true);
 		}});
 		

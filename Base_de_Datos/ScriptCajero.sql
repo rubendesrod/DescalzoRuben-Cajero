@@ -14,22 +14,22 @@ CREATE TABLE  administrador (
 );
 
 CREATE TABLE  clientes (
-  dni VARCHAR(9) PRIMARY KEY,
+  dni CHAR(9) PRIMARY KEY,
   nombre VARCHAR(20) NOT NULL,
   apell1 VARCHAR(20) NOT NULL,
   apell2 VARCHAR(20),
   direccion VARCHAR(20) NOT NULL,
   correo VARCHAR(40),
   telefono VARCHAR(9) NOT NULL,
-  fechaNacimiento DATE NOT NULL,
+  fechaNacimiento char(10) NOT NULL,
   usuad VARCHAR(20),
   FOREIGN KEY (usuad) REFERENCES administrador(usuario)
 );
 
 CREATE TABLE  cuentas (
-  numCuenta VARCHAR(24) PRIMARY KEY, 
+  numCuenta CHAR(24) PRIMARY KEY, 
   saldo DOUBLE NOT NULL,
-  dni VARCHAR(9), 
+  dni CHAR(9), 
   usuad VARCHAR(20),
   FOREIGN KEY (usuad) REFERENCES administrador(usuario),
   FOREIGN KEY (dni) REFERENCES clientes(dni)
@@ -41,7 +41,7 @@ CREATE TABLE  tarjetas (
   CVV INT UNSIGNED NOT NULL,
   validez char(10) NOT NULL,
   estado ENUM('noBloqueado' , 'bloqueado') NOT NULL,
-  numCuenta VARCHAR(24),
+  numCuenta CHAR(24),
   usuad VARCHAR(20),
   FOREIGN KEY (usuad) REFERENCES administrador(usuario),
   FOREIGN KEY (numCuenta) REFERENCES cuentas(numCuenta) ON DELETE CASCADE ON UPDATE CASCADE
@@ -52,8 +52,8 @@ CREATE TABLE  movimientos (
   fecha char(10) NOT NULL,
   tipo ENUM('ingreso' , 'retirada'),
   cantidad DOUBLE,
-  autor VARCHAR(9) NOT NULL,
-  numCuenta VARCHAR(24),
+  autor CHAR(9) NOT NULL,
+  numCuenta CHAR(24),
   FOREIGN KEY (autor) REFERENCES cuentas(dni) ON DELETE CASCADE ON UPDATE CASCADE , 
   FOREIGN KEY (numCuenta) REFERENCES cuentas(numCuenta) ON DELETE CASCADE ON UPDATE CASCADE
 );

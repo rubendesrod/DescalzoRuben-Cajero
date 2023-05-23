@@ -47,8 +47,7 @@ public class CuentaDAO {
 				this.ps = this.cn.getConnect().prepareStatement(Consultas.INSERTAR_CUENTA);
 				this.ps.setString(1, cDTO.getNumCuenta());
 				this.ps.setDouble(2, cDTO.getSaldo());
-				this.ps.setString(3, cDTO.getDni());
-				this.ps.setString(4, cDTO.getAdmin());
+				this.ps.setString(3, cDTO.getAdmin());
 				
 				this.ps.executeUpdate();
 			}
