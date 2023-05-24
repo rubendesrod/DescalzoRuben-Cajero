@@ -83,7 +83,7 @@ public class ClientesDAO implements Consultas{
 				this.ps.setString(1, cDTO.getDni());
 				
 				this.ps.executeUpdate();
-				this.msg = "El cliente se ha dado de baja con exito";
+				this.msg = "El cliente se ha dado de baja";
 			}else {
 				this.msg = "El cliente no existe";
 			}

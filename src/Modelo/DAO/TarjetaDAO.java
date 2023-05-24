@@ -72,7 +72,7 @@ public class TarjetaDAO {
 	
 	public void eliminarTarjeta(TarjetaDTO tDTO) {
 		this.cn = new Conectar();
-		this.msg = "La tarjeta se ha eliminado correctamente";
+		this.msg = "ELIMINACION CON EXITO";
 		try {
 			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_TARJETA_NUMERO);
 			this.ps.setString(1, tDTO.getNumTarjeta());
