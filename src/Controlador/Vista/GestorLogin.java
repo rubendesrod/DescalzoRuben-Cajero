@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+import Modelo.Validador;
 import Modelo.DAO.AdminDAO;
 import Modelo.DAO.TarjetaDAO;
 import Modelo.DTO.AdminDTO;
@@ -24,6 +25,7 @@ public class GestorLogin implements ActionListener {
 	private TarjetaDTO us;
 	private TarjetaDAO tDAO = new TarjetaDAO();
 	private AdminDAO aDAO = new AdminDAO();
+	private Validador val;
 	
 	public int intentos = 0;
 	
@@ -39,9 +41,10 @@ public class GestorLogin implements ActionListener {
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		val = new Validador();
 		boolean enter = validarEntradaDatos();
 		if(enter) {
-		
+
 			if(da != null) {
 				String pass;
 				if(da.getPassV().getText().isBlank()) {
@@ -60,52 +63,52 @@ public class GestorLogin implements ActionListener {
 					v.dispose();
 				}
 				else {
-					da.getError().setText("La contraseña es errónea");
+				da.getError().setText("La contraseña es errónea");
 				}
+				
 			}else {
 				String pass;
-				if(du.getPassV().getText().isBlank()) {
+				if (du.getPassV().getText().isBlank()) {
 					pass = String.valueOf(du.getPassO().getPassword());
-				}else {
+				} else {
 					pass = du.getPassV().getText();
 				}
-				us = new TarjetaDTO();
-				us.setNumTarjeta(du.getUss().getText());
-				us.setPin(Integer.parseInt(pass));
-				tDAO.buscarTarjeta(us);
-				if (tDAO.gettDTO().getEstado().equalsIgnoreCase("bloqueado")) {
-					du.getError().setText("** ESTA TARJETA SE ENCUENTRA BLOQUEADA");
-				}else {
-					
-					DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-					
-					LocalDate fechaTarjeta = LocalDate.parse(tDAO.gettDTO().getFechaCaducidad(),formato);
-					LocalDate fechaActual = LocalDate.now();
-					int comp = fechaTarjeta.compareTo(fechaActual);
-					
-					if (comp < 0) {
-						du.getError().setText("** HA VENCIDO LA FECHA DE CADUCIDAD");
-					}else {
-						if(tDAO.gettDTO().getPin() == Integer.parseInt(pass)) {
-							du.setVisible(false);
-							v.setVisible(false);;
-							PrincipalUss p = new PrincipalUss(du.getUss().getText());
-							p.setVisible(true);
-							
-						}else {
-							du.getError().setText("El PIN es erróneo");
-							intentos++;
-							if(intentos == 3) {
-								us.setPin(null);
-								us.setEstado("bloqueado");
-								tDAO.modificarTarjeta(us);
-								intentos = 0;
+			if (val.validarNumTarjeta(du.getUss().getText()) && val.validarPin(pass)) {
+					us = new TarjetaDTO();
+					us.setNumTarjeta(du.getUss().getText());
+					us.setPin(Integer.parseInt(pass));
+					tDAO.buscarTarjeta(us);
+					if (tDAO.gettDTO().getEstado().equalsIgnoreCase("bloqueado")) {
+						du.getError().setText("** ESTA TARJETA SE ENCUENTRA BLOQUEADA");
+					} else {
+						DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+						LocalDate fechaTarjeta = LocalDate.parse(tDAO.gettDTO().getFechaCaducidad(), formato);
+						LocalDate fechaActual = LocalDate.now();
+						int comp = fechaTarjeta.compareTo(fechaActual);
+						if (comp < 0) {
+							du.getError().setText("** HA VENCIDO LA FECHA DE CADUCIDAD");
+						} else {
+							if (tDAO.gettDTO().getPin() == Integer.parseInt(pass)) {
+								du.setVisible(false);
+								v.setVisible(false);
+								PrincipalUss p = new PrincipalUss(du.getUss().getText());
+								p.setVisible(true);
+							} else {
+								du.getError().setText("El PIN es erróneo");
+								intentos++;
+								if (intentos == 3) {
+									us.setPin(null);
+									us.setEstado("bloqueado");
+									tDAO.modificarTarjeta(us);
+									intentos = 0;
+								}
 							}
 						}
-					}
+					} 
+				}else {
+					du.getError().setText(val.getMsg());
 				}
-			}
-			
+			}	
 		}
 	}
 

@@ -22,6 +22,7 @@ public class GestorModificarAdm implements ActionListener{
 	private CuentaDTO cDTO;
 	private CuentaDAO cDAO;
 	
+	
 	public GestorModificarAdm(FrameModificar fm, String objeto) {
 		this.fm = fm;
 		this.objeto = objeto;
@@ -29,6 +30,7 @@ public class GestorModificarAdm implements ActionListener{
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		
 		
 		
 	}

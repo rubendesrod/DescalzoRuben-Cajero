@@ -20,7 +20,7 @@ CREATE TABLE  clientes (
   apell2 VARCHAR(20),
   direccion VARCHAR(20) NOT NULL,
   correo VARCHAR(40),
-  telefono VARCHAR(9) NOT NULL,
+  telefono CHAR(9) NOT NULL,
   fechaNacimiento char(10) NOT NULL,
   usuad VARCHAR(20),
   FOREIGN KEY (usuad) REFERENCES administrador(usuario)

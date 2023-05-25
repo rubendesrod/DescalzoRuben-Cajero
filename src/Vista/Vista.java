@@ -14,6 +14,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import Modelo.DAO.CajeroDAO;
+import Modelo.DTO.CajeroDTO;
 import Vista.Admin.PrincipalAdm;
 import Vista.Cliente.PrincipalUss;
 
@@ -26,6 +28,8 @@ public class Vista extends JFrame{
 	private JLabel png;
 	private JLabel txt;
 	private JPanel wMark;
+	private CajeroDTO cDTO;
+	private CajeroDAO cDAO;
 	private boolean ventanas = true; //intercambio de ventanas
 	
 	public Vista() {
