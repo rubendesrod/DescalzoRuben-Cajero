@@ -15,7 +15,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import Modelo.DAO.CajeroDAO;
-import Modelo.DTO.CajeroDTO;
 import Vista.Admin.PrincipalAdm;
 import Vista.Cliente.PrincipalUss;
 
@@ -24,11 +23,11 @@ public class Vista extends JFrame{
 	private static final long serialVersionUID = 1L;
 	private DatosLoginUss dl; 
 	private DatosLoginAdm da;
+	private cajeroApagado capa;
 	private JButton admOption;
 	private JLabel png;
 	private JLabel txt;
 	private JPanel wMark;
-	private CajeroDTO cDTO;
 	private CajeroDAO cDAO;
 	private boolean ventanas = true; //intercambio de ventanas
 	
@@ -37,57 +36,91 @@ public class Vista extends JFrame{
 		Image icono = Toolkit.getDefaultToolkit().getImage("img/cajero.png");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		// 	Panel derecho del Login	
-			wMark = new JPanel();
-			wMark.setBackground(new Color(251,224,112));
-			wMark.setPreferredSize(new Dimension(200,50));
-			wMark.setLayout(null);
-			
-			png = new JLabel();
-			png.setIcon(new ImageIcon("img/cajero.png"));
-			txt = new JLabel("Cajero - GALI");
-			Font negrita = new Font("Arial", Font.BOLD, 14);
-			txt.setFont(negrita);txt.setForeground(Color.BLACK);
-			admOption = new JButton("login");
-			admOption.setFocusPainted(false);
-			admOption.setBorderPainted(false);
-			admOption.setContentAreaFilled(false);	
-			admOption.setForeground(new Color(251,224,112));
-			
-			png.setSize(200,200);
-			png.setLocation(0,60);
-			txt.setSize(200,200);
-			txt.setLocation(35,180);
-			admOption.setSize(50,50);
-			admOption.setLocation(43,173);
-			
-			wMark.add(png);wMark.add(txt);wMark.add(admOption);
-			
+		wMark = new JPanel();
+		wMark.setBackground(new Color(251, 224, 112));
+		wMark.setPreferredSize(new Dimension(200, 50));
+		wMark.setLayout(null);
+
+		png = new JLabel();
+		png.setIcon(new ImageIcon("img/cajero.png"));
+		txt = new JLabel("Cajero - GALI");
+		Font negrita = new Font("Arial", Font.BOLD, 14);
+		txt.setFont(negrita);
+		txt.setForeground(Color.BLACK);
+		admOption = new JButton("login");
+		admOption.setFocusPainted(false);
+		admOption.setBorderPainted(false);
+		admOption.setContentAreaFilled(false);
+		admOption.setForeground(new Color(251, 224, 112));
+		png.setSize(200, 200);
+		png.setLocation(0, 60);
+		txt.setSize(200, 200);
+		txt.setLocation(35, 180);
+		admOption.setSize(50, 50);
+		admOption.setLocation(43, 173);
+
+		wMark.add(png);
+		wMark.add(txt);
+		wMark.add(admOption);
+		
+		cDAO = new CajeroDAO();
+		cDAO.buscarCajero();
+		if (cDAO.getcDTO().getEstado().equalsIgnoreCase("encendido")) {
 			dl = new DatosLoginUss(this);
-			da = new DatosLoginAdm(this);da.setVisible(false);
+			da = new DatosLoginAdm(this);
+			da.setVisible(false);
 			// cuando toque el boton invisble cambia a la otra pantalla
+			this.add(dl, BorderLayout.WEST);
 			admOption.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent ae) {
-						if (ventanas) {
-							dl.setVisible(false);
-							dl.getUss().setText("");dl.getPassO().setText("");dl.getPassV().setText("");
-							da.setVisible(true);
-							add(da);
-							ventanas = false;
-						} 
-						else {
-							dl.setVisible(true);
-							da.setVisible(false);
-							da.getUss().setText("");da.getPassO().setText("");da.getPassV().setText("");
-							add(dl);
-							ventanas = true;
-						}
+					if (ventanas) {
+						dl.setVisible(false);
+						dl.getUss().setText("");
+						dl.getPassO().setText("");
+						dl.getPassV().setText("");
+						da.setVisible(true);
+						add(da);
+						ventanas = false;
+					} else {
+						dl.setVisible(true);
+						da.setVisible(false);
+						da.getUss().setText("");
+						da.getPassO().setText("");
+						da.getPassV().setText("");
+						add(dl);
+						ventanas = true;
+					}
 				}
 			});
-			
+		}else {
+			capa = new cajeroApagado();
+			da = new DatosLoginAdm(this);
+			da.setVisible(false);
+			this.add(capa, BorderLayout.EAST);
+			admOption.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent ae) {
+					if (ventanas) {
+						capa.setVisible(false);
+						da.setVisible(true);
+						add(da);
+						ventanas = false;
+					} else {
+						capa.setVisible(true);
+						da.setVisible(false);
+						da.getUss().setText("");
+						da.getPassO().setText("");
+						da.getPassV().setText("");
+						add(capa);
+						ventanas = true;
+					}
+				}
+			});
+		}
+		
+		
+		
 	//	Continua el JFrame
 		this.add(wMark, BorderLayout.EAST);
-		this.add(dl, BorderLayout.WEST);
 		this.setLocationRelativeTo(null);
 		this.setPreferredSize(new Dimension(600,450));
 		this.pack();

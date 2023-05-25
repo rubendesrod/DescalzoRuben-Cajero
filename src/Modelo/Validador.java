@@ -14,9 +14,9 @@ public class Validador {
 	//Validadores de Tarjeta
 	
 	public boolean validarNumTarjeta(String n) {
-		if (n.matches("\\d+")) {
-	        int num = Integer.parseInt(n);
-	        
+		if (n.matches("\\[0-9]+")) {
+	        Integer num = Integer.parseInt(n);
+	    
 	        if (num > 0) {
 	            if (n.length() == 16) {
 	                return true;
@@ -29,14 +29,14 @@ public class Validador {
 	            return false;
 	        }
 	    } else {
-	        this.msg = "El número debe contener solo números";
+	        this.msg = "FORMATO DEL NUMERO";
 	        return false;
 	    }		
 	}
 	
 	public boolean validarPin(String n) {
-		if (n.matches("\\d+")) {
-	        int num = Integer.parseInt(n);
+		if (n.matches("\\[0-9]+")) {
+	        Integer num = Integer.parseInt(n);
 	        if (num > 0) {
 	            if (n.length() == 4) {
 	                this.msg = "ok";
@@ -56,8 +56,8 @@ public class Validador {
 	}
 	
 	public boolean validarCvv(String n) {
-		 if (n.matches("\\d+")) {
-		        int num = Integer.parseInt(n);
+		 if (n.matches("\\[0-9]+")) {
+			 Integer num = Integer.parseInt(n);
 		        if (num > 0) {
 		            if (n.length() == 3) {
 		                this.msg = "ok";
@@ -102,7 +102,7 @@ public class Validador {
 			if(n.startsWith("ES")) {
 				return true;
 			}else {
-				this.msg = "NUMERO DE CUENTA -ES...";
+				this.msg = "NUMERO DE CUENTA *ES...";
 				return false;
 			}
 		}else {
@@ -124,7 +124,7 @@ public class Validador {
 	//Validadores de Cliente
 	
 	public boolean validarDni(String n) {
-		String patron = "\\d{8}[A-Z]";
+		String patron = "\\[0-9]{8}[A-Z]";
 		if(n.length()==9) {
 			if(n.matches(patron)) {
 				return true;
