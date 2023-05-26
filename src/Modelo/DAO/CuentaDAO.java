@@ -159,7 +159,8 @@ public class CuentaDAO {
 					this.ps.setDouble(1, cDTO.getSaldo());
 					this.ps.setString(2, cDTO.getNumCuenta());
 					this.ps.executeUpdate();
-				}else if(cDTO.getDni()!=null){
+				}
+				if(cDTO.getDni()!=null){
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CUENTA_DNI);
 					this.ps.setString(1, cDTO.getDni());
 					this.ps.setString(2, cDTO.getNumCuenta());

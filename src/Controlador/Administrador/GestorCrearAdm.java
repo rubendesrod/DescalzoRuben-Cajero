@@ -72,8 +72,7 @@ public class GestorCrearAdm implements ActionListener{
 		
 		}else if (objeto.equalsIgnoreCase("tarjeta")) {
 			
-			if(fc.getTxt1().getText().isEmpty()||fc.getTxt2().getText().isEmpty() || fc.getTxt3().getText().isEmpty()||fc.getTxt4().getText().isEmpty() 
-			){
+			if(fc.getTxt1().getText().isEmpty()||fc.getTxt2().getText().isEmpty() || fc.getTxt3().getText().isEmpty()||fc.getTxt4().getText().isEmpty() ){
 				fc.getErrores().setText("FALTAN CAMPOS OBLIGATORIOS [*]");	
 			}else {
 				if (v.validarNumTarjeta(fc.getTxt1().getText()) && v.validarPin(fc.getTxt2().getText())&& v.validarCvv(fc.getTxt3().getText()) 
@@ -121,10 +120,7 @@ public class GestorCrearAdm implements ActionListener{
 					fc.getErrores().setText(v.getMsg());
 				}
 			}
-			
-			
 		}
-		
 	}
 
 

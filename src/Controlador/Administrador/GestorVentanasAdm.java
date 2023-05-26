@@ -22,6 +22,14 @@ public class GestorVentanasAdm implements ActionListener{
 	private PanelAdministrar padmi;
 	private String tipo;
 	
+	/**
+	 * Contrusctor de la GestorVentanasAdm, esta clase se encarga de poder
+	 * realizar intercambio de ventana desde el menu de administrado
+	 * @author Ruben
+	 * @param adm [Frame principal del administrador]
+	 * @param tipo [Texto que indicar a que ventana se le hace la llamada]
+	 */
+	
 	public GestorVentanasAdm(PrincipalAdm adm, String tipo) {
 		this.adm = adm;
 		this.tipo = tipo;

@@ -48,7 +48,6 @@ public class DatosLoginAdm extends JPanel{
 		passV.setVisible(false);
 		ver.setIcon(visible);
 		
-		//Booleano para mostrar o no la contrasena
 		
 		this.setPreferredSize(new Dimension(350,300));
 		

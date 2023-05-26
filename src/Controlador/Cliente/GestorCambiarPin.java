@@ -17,6 +17,15 @@ public class GestorCambiarPin implements ActionListener{
 	private String numTarjeta;
 	private Validador v;
 	
+	/**
+	 * Constructor de la clase GestorCambiarPin, la cual se encargar de recibir datos
+	 * ,verificar y setear el nuevo PIN con una llamada a la base de datos
+	 * 
+	 * @author Ruben
+	 * @param cp [Panel desde el cual se insertan los datos]
+	 * @param num [Numero de la Tarjeta con la que trabaja el cliente]
+	 */
+	
 	public GestorCambiarPin(CambiarPin cp, String num) {
 		this.cp = cp;
 		this.numTarjeta = num;

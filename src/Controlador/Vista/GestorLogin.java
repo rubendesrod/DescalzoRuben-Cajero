@@ -29,10 +29,28 @@ public class GestorLogin implements ActionListener {
 	
 	public int intentos = 0;
 	
+	/**
+	 * Constructor de la clase GestorLogin, la cual se encarga de la entrada de datos
+	 * del administrador cuando intenta iniciar sesion
+	 * 
+	 * @author Ruben
+	 * @param da [Panel donde se encuentran los datos del administrador]
+	 * @param v [Frame principal]
+	 */
+	
 	public GestorLogin(DatosLoginAdm da ,Vista v) {
 		this.v = v;
 		this.da = da;
 	}
+	
+	/**
+	 * constructor de la clase GestorLogin, la cual se encarga de la entrada de datos
+	 * cuando un cliente intenta inciar en el cajero
+	 * 
+	 * @author Ruben
+	 * @param du [Panel donde se encuentran los datos del usuario]
+	 * @param v [Frame principal]
+	 */
 	
 	public GestorLogin(DatosLoginUss du, Vista v) {
 		this.du = du;

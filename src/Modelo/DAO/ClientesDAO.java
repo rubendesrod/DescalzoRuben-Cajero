@@ -161,7 +161,7 @@ public class ClientesDAO implements Consultas{
 		try {
 			
 			this.ps = this.cn.getConnect().prepareStatement(Consultas.BUSCAR_CLIENTE_DNI);
-			this.ps.setInt(1, Integer.parseInt(cDTO.getDni()));
+			this.ps.setString(1, cDTO.getDni());
 			this.rs = this.ps.executeQuery();
 			if(this.rs.next()==true) {
 				/*Nombre*/
@@ -172,47 +172,46 @@ public class ClientesDAO implements Consultas{
 					this.ps.executeUpdate();
 				}
 				/*Apell1*/
-				else if(null!=cDTO.getApell1()) {
+				if(null!=cDTO.getApell1()) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_APELLIDO1);
 					this.ps.setString(1, cDTO.getApell1());
 					this.ps.setString(2, cDTO.getDni());
 					this.ps.executeUpdate();
 				}
 				/*Apell2*/
-				else if(null!=cDTO.getApell2()) {
+				if(null!=cDTO.getApell2()) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_APELLIDO2);
 					this.ps.setString(1, cDTO.getApell2());
 					this.ps.setString(2, cDTO.getDni());
 					this.ps.executeUpdate();
 				}
 				/*Direccion*/
-				else if(null!=cDTO.getDireccion()) {
+				if(null!=cDTO.getDireccion()) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_DIRECCION);
 					this.ps.setString(1, cDTO.getDireccion());
 					this.ps.setString(2, cDTO.getDni());
 					this.ps.executeUpdate();
 				}
 				/*correo*/
-				else if(null!=cDTO.getCorreo()) {
+				if(null!=cDTO.getCorreo()) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_CORREO);
 					this.ps.setString(1, cDTO.getCorreo());
 					this.ps.setString(2, cDTO.getDni());
 					this.ps.executeUpdate();
 				}
 				/*Telefono*/
-				else if(null!=cDTO.getTelefono()) {
+				if(null!=cDTO.getTelefono()) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_DIRECCION);
 					this.ps.setString(1, cDTO.getTelefono());
 					this.ps.setString(2, cDTO.getDni());
 					this.ps.executeUpdate();
 				}
 				/*FechaNacimiento*/
-				else if(null!=cDTO.getFechaNac()) {
+				if(null!=cDTO.getFechaNac()) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_FECHANACIMIENTO);
 					this.ps.setString(1, cDTO.getFechaNac());
 					this.ps.setString(2, cDTO.getDni());
 					this.ps.executeUpdate();
-					this.rs = this.ps.executeQuery(Consultas.BUSCAR_CLIENTE_DNI);
 				}
 			}else {
 				this.msg = "El cliente no existe";

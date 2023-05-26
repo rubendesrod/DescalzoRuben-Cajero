@@ -14,7 +14,7 @@ public class Validador {
 	//Validadores de Tarjeta
 	
 	public boolean validarNumTarjeta(String n) {
-		if (n.matches("\\[0-9]+")) {
+		if (n.matches("\\[0-9]+{16}")) {
 	        Integer num = Integer.parseInt(n);
 	    
 	        if (num > 0) {
@@ -35,7 +35,7 @@ public class Validador {
 	}
 	
 	public boolean validarPin(String n) {
-		if (n.matches("\\[0-9]+")) {
+		if (n.matches("\\[0-9]+{4}")) {
 	        Integer num = Integer.parseInt(n);
 	        if (num > 0) {
 	            if (n.length() == 4) {
@@ -56,7 +56,7 @@ public class Validador {
 	}
 	
 	public boolean validarCvv(String n) {
-		 if (n.matches("\\[0-9]+")) {
+		 if (n.matches("\\[0-9]+{3}")) {
 			 Integer num = Integer.parseInt(n);
 		        if (num > 0) {
 		            if (n.length() == 3) {
@@ -77,22 +77,23 @@ public class Validador {
 	}
 	
 	public boolean validarFechaTarjeta(String n) {
-		DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-		String patron = "\\([0-9]{4,})([-])([0-9]{2,})([-])([0-9]{2,})";
-		LocalDate fechaTarjeta = LocalDate.parse(n,formato);
-		LocalDate fechaActual = LocalDate.now();
-		int comp = fechaTarjeta.compareTo(fechaActual);
-		if(comp > 0) {
-			if(n.matches(patron)) {
-				return true;
-			}else {
-				this.msg = "PATRON DE FECHA yyyy-MM-dd";
-				return false;
-			}
-		}else {
-			this.msg = "La fecha no puede ser MEnor que la actual";
-			return false;
-		}
+		return true;
+//		DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+//		String patron = "\\([0-9]{4})([-])([0-9]{2})([-])([0-9]{2})";
+//		LocalDate fechaTarjeta = LocalDate.parse(n,formato);
+//		LocalDate fechaActual = LocalDate.now();
+//		int comp = fechaTarjeta.compareTo(fechaActual);
+//		if(comp > 0) {
+//			if(n.matches(patron)) {
+//				return true;
+//			}else {
+//				this.msg = "PATRON DE FECHA yyyy-MM-dd";
+//				return false;
+//			}
+//		}else {
+//			this.msg = "La fecha no puede ser MEnor que la actual";
+//			return false;
+//		}
 	}
 	
 	//Validadores de Cuenta
@@ -124,18 +125,19 @@ public class Validador {
 	//Validadores de Cliente
 	
 	public boolean validarDni(String n) {
-		String patron = "\\[0-9]{8}[A-Z]";
-		if(n.length()==9) {
-			if(n.matches(patron)) {
-				return true;
-			}else {
-				this.msg = "EL DNI NO CUMPLE EL PATRON";
-				return false;
-			}
-		}else {
-			this.msg = "DNI 9 DIGITOS";
-			return false;
-		}
+		return true;
+//		String patron = "\\[0-9]{8}[A-Z]";
+//		if(n.length()==9) {
+//			if(n.matches(patron)) {
+//				return true;
+//			}else {
+//				this.msg = "EL DNI NO CUMPLE EL PATRON";
+//				return false;
+//			}
+//		}else {
+//			this.msg = "DNI 9 DIGITOS";
+//			return false;
+//		}
 	}
 	
 	public boolean validarNombreApellDir(String n) {
@@ -166,22 +168,23 @@ public class Validador {
 	}
 	
 	public boolean validarFechaNac(String n) {
-		DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-		String patron = "\\([0-9]{4,})([-])([0-9]{2,})([-])([0-9]{2,})";
-		LocalDate fechaNac = LocalDate.parse(n,formato);
-		LocalDate fechaActual = LocalDate.now();
-		int comp = fechaNac.compareTo(fechaActual);
-		if(comp > 0) {
-			if(n.matches(patron)) {
-				return true;
-			}else {
-				this.msg = "PATRON DE FECHA yyyy-MM-dd";
-				return false;
-			}
-		}else {
-			this.msg = "La fecha no puede ser Mayor que la actual";
-			return false;
-		}
+		return true;
+//		DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+//		String patron = "\\([0-9]{4})([-])([0-9]{2})([-])([0-9]{2})";
+//		LocalDate fechaNac = LocalDate.parse(n,formato);
+//		LocalDate fechaActual = LocalDate.now();
+//		int comp = fechaNac.compareTo(fechaActual);
+//		if(comp > 0) {
+//			if(n.matches(patron)) {
+//				return true;
+//			}else {
+//				this.msg = "PATRON DE FECHA yyyy-MM-dd";
+//				return false;
+//			}
+//		}else {
+//			this.msg = "La fecha no puede ser Mayor que la actual";
+//			return false;
+//		}
 	}
 	
 	public String getMsg() {

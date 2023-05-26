@@ -24,6 +24,14 @@ public class GestorBuscarMod implements ActionListener{
 	private TarjetaDAO tDAO;
 	private Validador v;
 	
+	/**
+	 * Constructor de la clase GestorBuscarMod la cual se encarga de buscar
+	 * con un dato del frame
+	 * @author Ruben
+	 * @param fm [Frame que contiene los datos que se van a usar]
+	 * @param objeto [String que indica, sobre que tabla de la base de datos se va a trabajar]
+	 */
+	
 	public GestorBuscarMod(FrameModificar fm, String objeto) {
 		this.fm = fm;
 		this.objeto = objeto;
@@ -49,6 +57,7 @@ public class GestorBuscarMod implements ActionListener{
 					fm.getTxt2().setText(cliDAO.getCli().getNombre());fm.getTxt3().setText(cliDAO.getCli().getApell1());fm.getTxt4().setText(cliDAO.getCli().getApell2());
 					fm.getTxt5().setText(cliDAO.getCli().getDireccion());fm.getTxt6().setText(cliDAO.getCli().getCorreo());fm.getTxt7().setText(cliDAO.getCli().getTelefono());
 					fm.getTxt8().setText(cliDAO.getCli().getFechaNac());
+					fm.getPk().setEditable(false);fm.getBuscar().setEnabled(false);
 				}else {
 					fm.getErrores().setText("No existe el DNI");
 				}
@@ -79,7 +88,7 @@ public class GestorBuscarMod implements ActionListener{
 						fm.getC().add("noBloqueado");
 						fm.getC().add("bloqueado");
 					}
-					
+					fm.getPk().setEditable(false);fm.getBuscar().setEnabled(false);
 				}else{
 					fm.getErrores().setText("No existe el Numero de Tarjeta");
 				}
@@ -100,6 +109,7 @@ public class GestorBuscarMod implements ActionListener{
 					fm.getTxt2().setEditable(true);fm.getTxt3().setEditable(true);
 					fm.getTxt2().setText(String.valueOf(cDAO.getcDTO().getSaldo()));
 					fm.getTxt3().setText(cDAO.getcDTO().getDni());
+					fm.getPk().setEditable(false);fm.getBuscar().setEnabled(false);
 				}else {
 					fm.getErrores().setText("No existe el Numero de Cuena");
 				}

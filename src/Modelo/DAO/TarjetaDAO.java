@@ -164,16 +164,22 @@ public class TarjetaDAO {
 					this.ps.executeUpdate();
 				}
 				/*ESTADO*/
-				else if (tDTO.getEstado()!=null) {
+				if (tDTO.getEstado()!=null) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_TARJETA_ESTADO);
 					this.ps.setString(1, tDTO.getEstado());
 					this.ps.setString(2, tDTO.getNumTarjeta());
 					this.ps.executeUpdate();
 				}
 				/*CVV*/
-				else if (tDTO.getCvv()!= null) {
+				if (tDTO.getCvv()!= null) {
 					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_TARJETA_CVV);
 					this.ps.setInt(1, tDTO.getCvv());
+					this.ps.setString(2, tDTO.getNumTarjeta());
+					this.ps.executeUpdate();
+				}
+				if(tDTO.getNumCuenta()!= null) {
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_TARJETA_NUMCUENTA);
+					this.ps.setString(1, tDTO.getNumCuenta());
 					this.ps.setString(2, tDTO.getNumTarjeta());
 					this.ps.executeUpdate();
 				}

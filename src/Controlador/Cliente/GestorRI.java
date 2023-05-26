@@ -29,6 +29,16 @@ public class GestorRI implements ActionListener{
 	private MovimientoDAO mDAO;
 	private Validador v;
 	
+	/**
+	 * Constructor de la clase GestorRI, la cual se encarga de realizar los retiros
+	 * o lo ingresos que desea el cliente, validando sus datos con los de la base de datos
+	 * 
+	 * @author Ruben
+	 * @param r [Panel del cual se recogen los datos necesarios]
+	 * @param msg [Texto que contiene la accion que quiere realizar el cliente]
+	 * @param tar [Numero de tarjeta con el que trabaja el cliente]
+	 */
+	
 	public GestorRI(RetirarIngresar r, String msg, String tar) {
 		this.r = r;
 		this.msg = msg;

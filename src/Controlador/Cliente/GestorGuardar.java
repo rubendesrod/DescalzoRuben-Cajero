@@ -28,6 +28,15 @@ public class GestorGuardar implements ActionListener{
 	private PrincipalUss usr;
 	private String numTarjeta;
 	
+	
+	/**
+	 * Constructor de la clase GestorGuardar, la cual se encarga de que el cliente elija
+	 * una ruta donde guardar el comprobante de sus movimientos
+	 * 
+	 * @author Ruben 
+	 * @param numTarjeta
+	 * @param usr
+	 */
 	public GestorGuardar(String numTarjeta, PrincipalUss usr) {
 		
 		this.numTarjeta = numTarjeta;

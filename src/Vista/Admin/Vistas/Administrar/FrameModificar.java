@@ -20,8 +20,8 @@ public class FrameModificar extends JFrame{
 	private JLabel txt;
 	private JTextField pk;
 	private JButton buscar, modificar;
-	private JLabel lb1,lb2,lb3,lb4,lb5,lb6,lb7,lb8;
-	private JTextField txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8;
+	private JLabel lb2,lb3,lb4,lb5,lb6,lb7,lb8;
+	private JTextField txt2, txt3, txt4, txt5, txt6, txt7, txt8;
 	private Choice c;
 	
 	public FrameModificar(String objeto) {
@@ -160,14 +160,6 @@ public class FrameModificar extends JFrame{
 		this.modificar = modificar;
 	}
 
-	public JLabel getLb1() {
-		return lb1;
-	}
-
-	public void setLb1(JLabel lb1) {
-		this.lb1 = lb1;
-	}
-
 	public JLabel getLb2() {
 		return lb2;
 	}
@@ -222,14 +214,6 @@ public class FrameModificar extends JFrame{
 
 	public void setLb8(JLabel lb8) {
 		this.lb8 = lb8;
-	}
-
-	public JTextField getTxt1() {
-		return txt1;
-	}
-
-	public void setTxt1(JTextField txt1) {
-		this.txt1 = txt1;
 	}
 
 	public JTextField getTxt2() {

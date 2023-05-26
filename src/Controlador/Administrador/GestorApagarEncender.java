@@ -19,11 +19,19 @@ public class GestorApagarEncender implements ActionListener{
 	private CajeroDAO cDAO;
 	private ImageIcon img;
 	
+	/**
+	 * Constructor de la clase , la cual se encarga de cambiar el icono de color
+	 * y el texto dependiendo de si el cajero esta apagado o encendido
+	 * @author Ruben
+	 * @param estado [Texto que indica si esta encendido o apagado el cajero]
+	 * @param power [Boton de encendido y apagado]
+	 */
+	
 	public GestorApagarEncender(JLabel estado, JButton power) {
 		this.estado = estado;
 		this.power = power;
 	}
-
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		

@@ -24,6 +24,12 @@ public class GestorBorrarAdm implements ActionListener{
 	private CuentaDTO cDTO;
 	private CuentaDAO cDAO;
 	private Validador v;
+	/**
+	 * Constructo de la GestorBorrar, la cual se encarga de borrar en la base de datos
+	 * @author Ruben
+	 * @param fb [Panel donde se encuentran los campos de texto]
+	 * @param objeto [String que indica, sobre que tabla de la base de datos se va a trabajar]
+	 */
 	
 	public GestorBorrarAdm(FrameBorrar fb, String objeto) {
 		
