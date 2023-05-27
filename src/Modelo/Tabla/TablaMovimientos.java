@@ -8,11 +8,16 @@ import javax.swing.table.TableModel;
 
 import Modelo.DTO.MovimientoDTO;
 
+/**
+ * Clase que implemeta el TableMode y crear el Modelo de la Tabla Movimientos
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
 
 public class TablaMovimientos implements TableModel{
 
 	public static int COLUMNAS=5;
-	
 	
 	
 	@SuppressWarnings("rawtypes")
@@ -20,6 +25,10 @@ public class TablaMovimientos implements TableModel{
 	@SuppressWarnings("rawtypes")
 	private LinkedList listener = new LinkedList();
 	
+	/**
+	 * Metodo que borra un movimiento pasandole la fila en la que se encuentra
+	 * @param row
+	 */
 	
 	public void borrarMovimiento(int row) {
 		datos.remove(row);
@@ -28,6 +37,11 @@ public class TablaMovimientos implements TableModel{
 		
 		avisaEvento(evento);
 	}
+	
+	/**
+	 * Metodo que añade un clienteDTO
+	 * @param cDTO
+	 */
 	
 	@SuppressWarnings("unchecked")
 	public void anadeMovimiento (MovimientoDTO mDTO) {
@@ -42,12 +56,27 @@ public class TablaMovimientos implements TableModel{
 		avisaEvento(evento);
 	}
 	
+	/**
+	 * Metodo que devuelve el numero de Filas
+	 * @return int
+	 */
+	
 	@Override
 	public int getRowCount() {return datos.size();}
 
+	/**
+	 * Metodo que devuelve el numero de Columnas
+	 * @return int
+	 */
+	
 	@Override
 	public int getColumnCount() {return COLUMNAS;}
 
+	/**
+	 * Metodo que devuelvo el nombre de cada Columna
+	 * @return String
+	 */
+	
 	@Override
 	public String getColumnName(int columnIndex) {
 		switch(columnIndex) {
@@ -60,6 +89,11 @@ public class TablaMovimientos implements TableModel{
 		}
 	}
 
+	/**
+	 * Metodo que devuelve de que clase es cada columna
+	 * @return Class<?>
+	 */
+	
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 		switch(columnIndex) {
@@ -72,9 +106,24 @@ public class TablaMovimientos implements TableModel{
 		}
 	}
 
+	/**
+	 * Metodo que devuelve un booleano con que columa es editable o fila.
+	 * @param rowIndex
+	 * @param columnIndex
+	 * @return true, si es editable
+	 * @return false, si no es editables
+	 */
+	
 	@Override
 	public boolean isCellEditable(int rowIndex, int columnIndex) {return false;}
 
+	/**
+	 * Metodo que devuelve un valor de ClienteDTO
+	 * @param rowIndex
+	 * @param columnIndex
+	 * @return Object
+	 */
+	
 	@Override
 	public Object getValueAt(int rowIndex, int columnIndex) {
 		MovimientoDTO aux = (MovimientoDTO)(datos.get(rowIndex));
@@ -90,6 +139,13 @@ public class TablaMovimientos implements TableModel{
         }
 	}
 
+	/**
+	 * Metodo que setea un Valor en una columna o fila
+	 * @param valor
+	 * @param rowIndex
+	 * @param columnIndex
+	 */
+	
 	@Override
 	public void setValueAt(Object valor, int rowIndex, int columnIndex) {
 		MovimientoDTO aux = (MovimientoDTO)(datos.get(rowIndex));
@@ -105,17 +161,33 @@ public class TablaMovimientos implements TableModel{
 		
 	}
 
+	/**
+	 * Metodo que añade TableModelistener a una columna o fila
+	 * @param l
+	 */
+	
 	@Override
 	public void addTableModelListener(TableModelListener l) {
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	/**
+	 * Metodo que borra TableModelistener a una columna o fila
+	 * @param l
+	 */
+	
 	@Override
 	public void removeTableModelListener(TableModelListener l) {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	/**
+	 * Metodo que avisa si se produce algun cambio en la tabla
+	 * @param evento
+	 */
+	
 	private void avisaEvento(TableModelEvent evento) {
 		int i;
 		

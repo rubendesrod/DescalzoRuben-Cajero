@@ -8,6 +8,13 @@ import javax.swing.table.TableModel;
 
 import Modelo.DTO.CuentaDTO;
 
+/**
+ * Clase que implemeta el TableMode y crear el Modelo de la Tabla Cuentas
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class TablaCuentas implements TableModel{
 
 	public static int COLUMNAS=3;
@@ -19,6 +26,10 @@ public class TablaCuentas implements TableModel{
 	@SuppressWarnings("rawtypes")
 	private LinkedList listener = new LinkedList();
 	
+	/**
+	 * Metodo que borra una cuenta pasandole la fila en la que se encuentra
+	 * @param row
+	 */
 	
 	public void borrarCuenta(int row) {
 		datos.remove(row);
@@ -27,6 +38,11 @@ public class TablaCuentas implements TableModel{
 		
 		avisaEvento(evento);
 	}
+	
+	/**
+	 * Metodo que añade un CuentaDTO
+	 * @param cDTO
+	 */
 	
 	@SuppressWarnings("unchecked")
 	public void anadeCuenta (CuentaDTO cDTO) {
@@ -41,12 +57,29 @@ public class TablaCuentas implements TableModel{
 		avisaEvento(evento);
 	}
 	
+	/**
+	 * Metodo que devuelve el numero de Filas
+	 * @return int
+	 */
+	
 	@Override
 	public int getRowCount() {return datos.size();}
 
+	
+	/**
+	 * Metodo que devuelve el numero de Columnas
+	 * @return int
+	 */
+	
 	@Override
 	public int getColumnCount() {return COLUMNAS;}
 
+	
+	/**
+	 * Metodo que devuelvo el nombre de cada Columna
+	 * @return String
+	 */
+	
 	@Override
 	public String getColumnName(int columnIndex) {
 		switch(columnIndex) {
@@ -57,6 +90,11 @@ public class TablaCuentas implements TableModel{
 		}
 	}
 
+	/**
+	 * Metodo que devuelve de que clase es cada columna
+	 * @return Class<?>
+	 */
+	
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 		switch(columnIndex) {
@@ -67,6 +105,14 @@ public class TablaCuentas implements TableModel{
 		}
 	}
 
+	/**
+	 * Metodo que devuelve un booleano con que columa es editable o fila.
+	 * @param rowIndex
+	 * @param columnIndex
+	 * @return true, si es editable
+	 * @return false, si no es editables
+	 */
+	
 	@Override
 	public boolean isCellEditable(int rowIndex, int columnIndex) {
 		if(columnIndex == 0)
@@ -74,6 +120,13 @@ public class TablaCuentas implements TableModel{
         return false;
 	}
 
+	/**
+	 * Metodo que devuelve un valor de CuentaDTO
+	 * @param rowIndex
+	 * @param columnIndex
+	 * @return Object
+	 */
+	
 	@Override
 	public Object getValueAt(int rowIndex, int columnIndex) {
 		CuentaDTO aux = (CuentaDTO)(datos.get(rowIndex));
@@ -87,6 +140,13 @@ public class TablaCuentas implements TableModel{
         }
 	}
 
+	/**
+	 * Metodo que setea un Valor en una columna o fila
+	 * @param valor
+	 * @param rowIndex
+	 * @param columnIndez
+	 */
+	
 	@Override
 	public void setValueAt(Object valor, int rowIndex, int columnIndex) {
 		CuentaDTO aux = (CuentaDTO)(datos.get(rowIndex));
@@ -100,17 +160,33 @@ public class TablaCuentas implements TableModel{
 		
 	}
 
+	/**
+	 * Metodo que añade TableModelistener a una columna o fila
+	 * @param l
+	 */
+	
 	@Override
 	public void addTableModelListener(TableModelListener l) {
 		// TODO Auto-generated method stub
 		
 	}
 
+	/**
+	 * Metodo que borra TableModelistener a una columna o fila
+	 * @param l
+	 */
+	
 	@Override
 	public void removeTableModelListener(TableModelListener l) {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	/**
+	 * Metodo que avisa si se produce algun cambio en la tabla
+	 * @param evento
+	 */
+	
 	private void avisaEvento(TableModelEvent evento) {
 		int i;
 		

@@ -16,6 +16,13 @@ import Modelo.DTO.MovimientoDTO;
 import Modelo.DTO.TarjetaDTO;
 import Vista.Cliente.PrincipalUss;
 
+/**
+ * Clase que se encarga de guardar los movimientos de una cuenta y exportarlos.
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
 
 public class GestorGuardar implements ActionListener{
 
@@ -30,10 +37,8 @@ public class GestorGuardar implements ActionListener{
 	
 	
 	/**
-	 * Constructor de la clase GestorGuardar, la cual se encarga de que el cliente elija
-	 * una ruta donde guardar el comprobante de sus movimientos
+	 * Constructor de la clase 
 	 * 
-	 * @author Ruben 
 	 * @param numTarjeta
 	 * @param usr
 	 */

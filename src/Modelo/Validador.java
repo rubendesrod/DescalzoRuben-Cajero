@@ -2,143 +2,198 @@ package Modelo;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.util.regex.Pattern;
+
+/**
+ * Clase que se encarga de recibir los datos y validar si cada uno de ellos
+ * tiene el formato correcto
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
 
 public class Validador {
 	
 	private String msg;
 	
+	/**
+	 * Constructor de la clase
+	 */
+	
 	public Validador() {
 		this.msg = null;
 	}
 
-	//Validadores de Tarjeta
+//Validadores de Tarjeta
+	
+	/**
+	 * Funcion que valida el Numero de una Tarjeta
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
 	
 	public boolean validarNumTarjeta(String n) {
-		if (n.matches("\\[0-9]+{16}")) {
-	        Integer num = Integer.parseInt(n);
-	    
-	        if (num > 0) {
-	            if (n.length() == 16) {
-	                return true;
-	            } else {
-	                this.msg = "Número debe tener 16 dígitos";
-	                return false;
-	            }
-	        } else {
-	            this.msg = "El número debe ser mayor a 0";
-	            return false;
-	        }
-	    } else {
-	        this.msg = "FORMATO DEL NUMERO";
-	        return false;
-	    }		
+		if (!n.matches("\\d+")) {
+			this.msg = "NumTarjeta Solo Numeros";
+			return false;
+	    }else {
+	    	if(n.length() == 16) {
+	    		return true;
+	    	}else {
+	    		this.msg = "NumTarjeta 16 DIGITOS";
+	    		return false;
+	    	}
+	    }
+		
 	}
 	
+	/**
+	 * Funcion que valida el PIN de una Tarjeta
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
+	
 	public boolean validarPin(String n) {
-		if (n.matches("\\[0-9]+{4}")) {
-	        Integer num = Integer.parseInt(n);
-	        if (num > 0) {
-	            if (n.length() == 4) {
-	                this.msg = "ok";
-	                return true;
-	            } else {
-	                this.msg = "PIN debe tener 4 dígitos";
-	                return false;
-	            }
-	        } else {
-	            this.msg = "El PIN debe ser mayor a 0";
-	            return false;
-	        }
+		if (n.matches("\\d{4}") && n.length() == 4) {
+	        return true;
 	    } else {
-	        this.msg = "El PIN debe contener solo números";
+	    	this.msg = "PIN 4 DIGITOS, SOLO NUMEROS";
 	        return false;
 	    }
 	}
 	
+	/**
+	 * Funcion que valida el Numero de una Tarjeta
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
+	
 	public boolean validarCvv(String n) {
-		 if (n.matches("\\[0-9]+{3}")) {
-			 Integer num = Integer.parseInt(n);
-		        if (num > 0) {
-		            if (n.length() == 3) {
-		                this.msg = "ok";
-		                return true;
-		            } else {
-		                this.msg = "CVV debe tener 3 dígitos";
-		                return false;
-		            }
-		        } else {
-		            this.msg = "El CVV debe ser mayor a 0";
-		            return false;
+		if (n.matches("\\d{3}") && n.length() == 3) {
+	        return true;
+	    } else {
+	    	this.msg = "CVV 4 DIGITOS, SOLO NUMEROS";
+	        return false;
+	    }
+	}
+	
+	/**
+	 * Funcion que valida la Fecha de una Tarjeta
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
+	
+	public boolean validarFechaTarjeta(String n) {
+		 String patron = "yyyy-MM-dd";
+		    try {
+		        LocalDate fechaIngresada = LocalDate.parse(n, DateTimeFormatter.ofPattern(patron));
+		        LocalDate fechaActual = LocalDate.now();
+		        if(fechaIngresada.isAfter(fechaActual)) {
+		        	return true;
+		        }else {
+		        	this.msg = "LA FECHA ES MENOR QUE LA ACTUAL";
+		        	return false;
 		        }
-		    } else {
-		        this.msg = "El CVV debe contener solo números";
+		    } catch (DateTimeParseException e) {
+		    	this.msg = "FORMATO DE FECHA ERRONEO";
 		        return false;
 		    }
 	}
 	
-	public boolean validarFechaTarjeta(String n) {
-		return true;
-//		DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-//		String patron = "\\([0-9]{4})([-])([0-9]{2})([-])([0-9]{2})";
-//		LocalDate fechaTarjeta = LocalDate.parse(n,formato);
-//		LocalDate fechaActual = LocalDate.now();
-//		int comp = fechaTarjeta.compareTo(fechaActual);
-//		if(comp > 0) {
-//			if(n.matches(patron)) {
-//				return true;
-//			}else {
-//				this.msg = "PATRON DE FECHA yyyy-MM-dd";
-//				return false;
-//			}
-//		}else {
-//			this.msg = "La fecha no puede ser MEnor que la actual";
-//			return false;
-//		}
-	}
+//Validadores de Cuenta
 	
-	//Validadores de Cuenta
+	/**
+	 * Funcion que valida el Numero de una Cuenta
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
 	
 	public boolean validarNumCuenta(String n) {
-		if(n.length()==24) {
-			if(n.startsWith("ES")) {
-				return true;
-			}else {
-				this.msg = "NUMERO DE CUENTA *ES...";
-				return false;
-			}
-		}else {
-			this.msg = "NUMERO CUENTA 24 DIGITOS";
-			return false;
-		}
+		 String patron = "^ES\\d{22}$";
+		 if(n.matches(patron)) {
+			 return true;
+		 }else {
+			 this.msg = "NumCuenta 24 DIGITOS y ES..";
+			 return false;
+		 }
 	}
 
+	/**
+	 * Funcion que valida el Saldo de una Cuenta
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
+	
 	public boolean validarSaldo(String n) {
-		Double num = Double.parseDouble(n);
-		if(num > 0) {
-			return true;
-		}else {
-			this.msg = "SALDO MAYOR DE 0";
-			return false;
-		}
+		 try {
+		        double saldo = Double.parseDouble(n);
+		        if(saldo > 0) {
+		        	return true;
+		        }else {
+		        	this.msg = "Saldo mayor que 0";
+		        	return false;
+		        }
+		    } catch (NumberFormatException e) {
+		    	this.msg = "SALDO SON NUMEROS";
+		        return false;
+		    }
 	}
 	
 	//Validadores de Cliente
 	
+	/**
+	 * Funcion que valida el DNI de un Cliente
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
+	
 	public boolean validarDni(String n) {
-		return true;
-//		String patron = "\\[0-9]{8}[A-Z]";
-//		if(n.length()==9) {
-//			if(n.matches(patron)) {
-//				return true;
-//			}else {
-//				this.msg = "EL DNI NO CUMPLE EL PATRON";
-//				return false;
-//			}
-//		}else {
-//			this.msg = "DNI 9 DIGITOS";
-//			return false;
-//		}
+		if (n.length() != 9) {
+			this.msg = "DNI 9 DIGITOS";
+	        return false;
+	    }
+		//Parto el string que ha sido pasado y le divido por numero y la ultima letra
+	    String numeros = n.substring(0, 8);
+	    String letra = n.substring(8);
+	    //creo el try para cuando haga el parseInt no de error
+	    try {
+	    	//Parseo los numeros
+	        Integer.parseInt(numeros);
+	        if(letra.matches("[a-zA-Z]")) {
+	        	return true;
+	        }else {
+	        	this.msg = "LETRA CARACTER NO VALIDO DNI";
+	        	return false;
+	        }
+	    } catch (NumberFormatException e) {
+	    	this.msg = "Tienen que ser numero";
+	        return false;
+	    }
 	}
+	
+	/**
+	 * Funcion que valida el Nombre, los dos apellidos y la Direccion de un Cliente
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
 	
 	public boolean validarNombreApellDir(String n) {
 		if(n.length()<=20) {
@@ -149,48 +204,87 @@ public class Validador {
 		}
 	}
 	
+	/**
+	 * Funcion que valida el correo de un Cliente
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
+	
 	public boolean validarCorreo(String n) {
-		if(n.length()<=40) {
-			return true;
-		}else {
-			this.msg = "CORREO 40 DIGITOS MAX";
+		if (n.length() > 40) {
+			this.msg = "CORREO max 40 caracteres";
 			return false;
-		}
+	    }else {
+	    	return true;
+	    }
 	}
+	
+	/**
+	 * Funcion que valida el Telefono de un Cliente
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
 	
 	public boolean validarTelefono(String n) {
-		if(n.length()==9) {
-			return true;
-		}else {
-			this.msg = "TELEFONO 9 DIGITOS";
-			return false;
-		}
+		  if (n.length() != 9) {
+			  this.msg = "TELEFONO 9 DIGITOS";
+		      return false;
+		    }
+
+		    try {
+		    	Integer.parseInt(n);
+		    	return true;
+		    }catch(NumberFormatException e) {
+		    	this.msg = "TELEFONO SOLO NUMEROS";
+		    	return false;
+		    }    
 	}
 	
+	/**
+	 * Funcion que valida la fecha de Nacimiento de un Cliente
+	 * 
+	 * @param n
+	 * @return true, si tiene el formato correcto.
+	 * @return false, si no tiene el formato correcto.
+	 */
+	
 	public boolean validarFechaNac(String n) {
-		return true;
-//		DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-//		String patron = "\\([0-9]{4})([-])([0-9]{2})([-])([0-9]{2})";
-//		LocalDate fechaNac = LocalDate.parse(n,formato);
-//		LocalDate fechaActual = LocalDate.now();
-//		int comp = fechaNac.compareTo(fechaActual);
-//		if(comp > 0) {
-//			if(n.matches(patron)) {
-//				return true;
-//			}else {
-//				this.msg = "PATRON DE FECHA yyyy-MM-dd";
-//				return false;
-//			}
-//		}else {
-//			this.msg = "La fecha no puede ser Mayor que la actual";
-//			return false;
-//		}
+		String patron = "yyyy-MM-dd";
+	    try {
+	        LocalDate fechaIngresada = LocalDate.parse(n, DateTimeFormatter.ofPattern(patron));
+	        LocalDate fechaActual = LocalDate.now();
+	        if(fechaIngresada.isBefore(fechaActual)) {
+	        	return true;
+	        }else {
+	        	this.msg = "LA FECHA ES MAYOR QUE LA ACTUAL";
+	        	return false;
+	        }
+	    } catch (DateTimeParseException e) {
+	    	this.msg = "FORMATO DE FECHA ERRONEO";
+	        return false;
+	    }
 	}
+	
+	/**
+	 * Metodo get de Msg
+	 * 
+	 * @return String
+	 */
 	
 	public String getMsg() {
 		return msg;
 	}
 
+	/**
+	 * Metodo set de Msg
+	 * 
+	 * @param msg
+	 */
+	
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}

@@ -14,6 +14,14 @@ import javax.swing.JTextField;
 
 import Controlador.Vista.GestorLogin;
 
+/**
+ * Clase que extiende de JPanel, donde el administrador va a poner sus datos
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
+
 public class DatosLoginAdm extends JPanel{
 
 	private static final long serialVersionUID = 1L;
@@ -26,6 +34,11 @@ public class DatosLoginAdm extends JPanel{
 	private JTextField passV;
 	private JLabel error;
 	public Boolean mostrar = true;
+	
+	/**
+	 * Constructor de la clase DatosLoginAdm
+	 * @param v [Frame principal]
+	 */
 	
 	public DatosLoginAdm(Vista v) {
 		
@@ -111,70 +124,129 @@ public class DatosLoginAdm extends JPanel{
 		this.add(ver);
 		
 	}
-
-//	@SuppressWarnings("unused")
-//	private void ussKeyTyped(java.awt.event.KeyEvent evt) {
-//		int key = evt.getKeyChar();
-//		
-//		boolean numero = key >= 48 && key <= 57;
-//		
-//		if(!numero) {
-//			evt.consume();
-//		}
-//	}
+	
+	/**
+	 * Metodo get del boton login
+	 * @return JButton
+	 */
 	
 	public JButton getLogin() {
 		return login;
 	}
+	
+	/**
+	 * Metodo set de Login
+	 * @param login
+	 */
 
 	public void setLogin(JButton login) {
 		this.login = login;
 	}
 
+	/**
+	 * Metodo get del usuario
+	 * @return JLabel
+	 */
+	
 	public JLabel getUsuario() {
 		return usuario;
 	}
 
+	/**
+	 * Metodo set del texto usuario
+	 * @param usuario
+	 */
+	
 	public void setUsuario(JLabel usuario) {
 		this.usuario = usuario;
 	}
 
+	/**
+	 * Metodo get del texto contraseña
+	 * @return JLabel
+	 */
+	
 	public JLabel getContra() {
 		return contra;
 	}
 
+	/**
+	 * Metodo set del Texto Contra
+	 * @param contra
+	 */
+	
 	public void setContra(JLabel contra) {
 		this.contra = contra;
 	}
 
+	/**
+	 * Metodo get del nombre de usuario
+	 * @return JTextField
+	 */
+	
 	public JTextField getUss() {
 		return uss;
 	}
+	
+	/**
+	 * Metodo set del nombre de usuario
+	 * @param uss
+	 */
 
 	public void setUss(JTextField uss) {
 		this.uss = uss;
 	}
 
+	/**
+	 * Metodo get de la contraseña oculta
+	 * @return JPasswordField
+	 */
+	
 	public JPasswordField getPassO() {
 		return passO;
 	}
+	
+	/**
+	 * Metodo set de la contraseña oculta
+	 * @param passO
+	 */
 
 	public void setPassO(JPasswordField passO) {
 		this.passO = passO;
 	}
 
+	/**
+	 * Metodo get de la contraña visible
+	 * @return JTextField
+	 */
+	
 	public JTextField getPassV() {
 		return passV;
 	}
 
+	/**
+	 * Metodo set de la contraseña visible
+	 * @param passV
+	 */
+	
 	public void setPassV(JTextField passV) {
 		this.passV = passV;
 	}
 
+	/**
+	 * Metodo get del texto Errores
+	 * @return JLabel
+	 */
+	
 	public JLabel getError() {
 		return error;
 	}
 
+	/**
+	 * Metodo set del texto Errores
+	 * @param error
+	 */
+	
 	public void setError(JLabel error) {
 		this.error = error;
 	}

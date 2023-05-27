@@ -15,6 +15,15 @@ import Modelo.DTO.MovimientoDTO;
 import Modelo.DTO.TarjetaDTO;
 import Vista.Cliente.RetirarIngresar;
 
+/**
+ * Clase que se encarga de retirar o ingresar dinero dependiendo de la accion que quiere
+ * realizar el cliente
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
+
 public class GestorRI implements ActionListener{
 
 	private RetirarIngresar r;
@@ -30,10 +39,8 @@ public class GestorRI implements ActionListener{
 	private Validador v;
 	
 	/**
-	 * Constructor de la clase GestorRI, la cual se encarga de realizar los retiros
-	 * o lo ingresos que desea el cliente, validando sus datos con los de la base de datos
+	 * Constructor de la clase 
 	 * 
-	 * @author Ruben
 	 * @param r [Panel del cual se recogen los datos necesarios]
 	 * @param msg [Texto que contiene la accion que quiere realizar el cliente]
 	 * @param tar [Numero de tarjeta con el que trabaja el cliente]
@@ -108,35 +115,26 @@ public class GestorRI implements ActionListener{
 		
 	}
 
-	public RetirarIngresar getCant() {
-		return r;
-	}
-
-	public void setCant(RetirarIngresar r) {
-		this.r = r;
-	}
-
+	/**
+	 * Metodo get de Msg
+	 * 
+	 * @return String
+	 */
+	
 	public String getMsg() {
 		return msg;
 	}
 
+	/**
+	 * Metodo set de Msg pasandole un String
+	 * 
+	 * @param msg
+	 */
+	
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
-
-	public String getNumTarjeta() {
-		return numTarjeta;
-	}
-
-	public void setNumTarjeta(String numTarjeta) {
-		this.numTarjeta = numTarjeta;
-	}
-
-	public Double getDinero() {
-		return dinero;
-	}	
 	
-	public void setDinero(Double dinero) {
-		this.dinero = dinero;
-	}
+	
+	
 }

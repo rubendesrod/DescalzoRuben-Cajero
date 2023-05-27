@@ -16,6 +16,14 @@ import javax.swing.JTextField;
 
 import Controlador.Cliente.GestorRI;
 
+/**
+ * Clase que extiende de JPanel, muestra al usuario la informacion
+ * para realizar un retiro o un ingreso dependiendo de que boton haya dado
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class RetirarIngresar extends JPanel{
 
 	private JLabel txt;
@@ -25,6 +33,13 @@ public class RetirarIngresar extends JPanel{
 	private String numTarjeta;
 	private JPanel botonera;
 	private String texto;
+	
+	/**
+	 * Constructor de la clase
+	 * @param usr [Ventana principal del usuario]
+	 * @param texto [La accion a realizar]
+	 * @param n [Numero de la Tarjeta]
+	 */
 	
 	public RetirarIngresar(PrincipalUss usr, String texto,String n) {
 		
@@ -113,46 +128,91 @@ public class RetirarIngresar extends JPanel{
 		
 	}
 
-
+	/**
+	 * Metodo get de usr
+	 * @return PrincipalUsr
+	 */
+	
 	public PrincipalUss getUsr() {
 		return usr;
 	}
+	
+	/**
+	 * Metodo set de usr
+	 * @param usr
+	 */
 
 	public void setUsr(PrincipalUss usr) {
 		this.usr = usr;
 	}
 
+	/**
+	 * Metodo del txt
+	 * @return JLabel
+	 */
+	
 	public JLabel getTxt() {
 		return txt;
 	}
+	
+	/**
+	 * Metodo set del txt
+	 * @param txt
+	 */
 
 	public void setTxt(JLabel txt) {
 		this.txt = txt;
 	}
+	
+	/**
+	 * Metodo get de la Cantidad
+	 * @return JTextField
+	 */
 
 	public JTextField getCant() {
 		return cant;
 	}
 
+	/**
+	 * Metodo set de la Cantidad
+	 * @param cant
+	 */
+	
 	public void setCant(JTextField cant) {
 		this.cant = cant;
 	}
 
-
+	/**
+	 * Metodo get de volver
+	 * @return JButton
+	 */
+	
 	public JButton getVolver() {
 		return volver;
 	}
 
+	/**
+	 * Metodo set de volver
+	 * @param volver
+	 */
 
 	public void setVolver(JButton volver) {
 		this.volver = volver;
 	}
 
+	/**
+	 * Metodo get del Numero de la Tarjeta
+	 * @return String
+	 */
 
 	public String getNumTarjeta() {
 		return numTarjeta;
 	}
 
+	/**
+	 * Metodo se del Numero de la Tarjeta
+	 * @param numTarjeta
+	 */
 
 	public void setNumTarjeta(String numTarjeta) {
 		this.numTarjeta = numTarjeta;

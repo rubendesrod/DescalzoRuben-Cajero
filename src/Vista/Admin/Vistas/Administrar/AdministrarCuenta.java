@@ -11,11 +11,23 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.TitledBorder;
 
+/**
+ * Clase que extiende de JPanel, contiene lo que se puede admnistrar de las Cuentas
+ * como crear, borrar, y modificar
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class AdministrarCuenta extends JPanel{
 
 	private JButton crear;
 	private JButton borrar;
 	private JButton modificar;
+	
+	/**
+	 * Constructor de la clase AdministrarCuenta
+	 */
 	
 	public AdministrarCuenta() {
 		
@@ -100,31 +112,5 @@ public class AdministrarCuenta extends JPanel{
 		this.setBackground(new Color(250,230,150));
 		this.setSize(600,140);
 	}
-
-	public JButton getCrear() {
-		return crear;
-	}
-
-	public void setCrear(JButton crear) {
-		this.crear = crear;
-	}
-
-	public JButton getBorrar() {
-		return borrar;
-	}
-
-	public void setBorrar(JButton borrar) {
-		this.borrar = borrar;
-	}
-
-	public JButton getModificar() {
-		return modificar;
-	}
-
-	public void setModificar(JButton modificar) {
-		this.modificar = modificar;
-	}
-	
-	
 	
 }

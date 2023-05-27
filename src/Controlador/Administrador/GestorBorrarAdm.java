@@ -13,6 +13,16 @@ import Modelo.DTO.CuentaDTO;
 import Modelo.DTO.TarjetaDTO;
 import Vista.Admin.Vistas.Administrar.FrameBorrar;
 
+
+/**
+ *Clase que implementa el ActionListener 
+ *la que se encarga de Borrar tarjetas, cuentas o clientes
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
+
 public class GestorBorrarAdm implements ActionListener{
 
 	private FrameBorrar fb;
@@ -25,8 +35,8 @@ public class GestorBorrarAdm implements ActionListener{
 	private CuentaDAO cDAO;
 	private Validador v;
 	/**
-	 * Constructo de la GestorBorrar, la cual se encarga de borrar en la base de datos
-	 * @author Ruben
+	 * Constructo de la clase
+	 * 
 	 * @param fb [Panel donde se encuentran los campos de texto]
 	 * @param objeto [String que indica, sobre que tabla de la base de datos se va a trabajar]
 	 */
@@ -84,7 +94,7 @@ public class GestorBorrarAdm implements ActionListener{
 				fb.getErrores().setText(v.getMsg());
 			}
 		}else if(objeto.equalsIgnoreCase("cuenta")) {
-			if (v.validarNumTarjeta(fb.getPk().getText())) {
+			if (v.validarNumCuenta(fb.getPk().getText())) {
 				if(fb.getErrores().getText().isEmpty()) {
 					fb.getErrores().setText("** CAMPO OBLIGATORIO");
 				}else {

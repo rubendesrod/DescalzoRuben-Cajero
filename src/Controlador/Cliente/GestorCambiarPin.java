@@ -9,6 +9,14 @@ import Modelo.DAO.TarjetaDAO;
 import Modelo.DTO.TarjetaDTO;
 import Vista.Cliente.CambiarPin;
 
+/**
+ * Clase que se encarga del cambiar el PIN de una tarjeta
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
+
 public class GestorCambiarPin implements ActionListener{
 
 	private CambiarPin cp;
@@ -18,10 +26,8 @@ public class GestorCambiarPin implements ActionListener{
 	private Validador v;
 	
 	/**
-	 * Constructor de la clase GestorCambiarPin, la cual se encargar de recibir datos
-	 * ,verificar y setear el nuevo PIN con una llamada a la base de datos
+	 * Constructor de la clase atos
 	 * 
-	 * @author Ruben
 	 * @param cp [Panel desde el cual se insertan los datos]
 	 * @param num [Numero de la Tarjeta con la que trabaja el cliente]
 	 */

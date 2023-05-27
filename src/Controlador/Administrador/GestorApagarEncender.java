@@ -11,6 +11,14 @@ import javax.swing.JLabel;
 import Modelo.DAO.CajeroDAO;
 import Modelo.DTO.CajeroDTO;
 
+/**
+ * Clase que implementa el ActionListener y se encarga de encender y apagar el cajero
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
+
 public class GestorApagarEncender implements ActionListener{
 
 	private JLabel estado;
@@ -20,9 +28,8 @@ public class GestorApagarEncender implements ActionListener{
 	private ImageIcon img;
 	
 	/**
-	 * Constructor de la clase , la cual se encarga de cambiar el icono de color
-	 * y el texto dependiendo de si el cajero esta apagado o encendido
-	 * @author Ruben
+	 * Constructor de la clase 
+	 *
 	 * @param estado [Texto que indica si esta encendido o apagado el cajero]
 	 * @param power [Boton de encendido y apagado]
 	 */

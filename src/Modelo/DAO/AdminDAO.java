@@ -5,6 +5,14 @@ import java.sql.ResultSet;
 import Modelo.Conectar;
 import Modelo.DTO.AdminDTO;
 
+/**
+ * Clase que se encarga de realizar consultas a la BB.DD sobre el Administrador
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
+
 public class AdminDAO {
 
 	private AdminDTO adm = new AdminDTO();
@@ -13,7 +21,13 @@ public class AdminDAO {
 	private ResultSet rs = null;
 	private String msg;
 	
-	public boolean buscarAdmin(AdminDTO aDTO) {
+	/**
+	 * Metodo que se encarga de un admin
+	 * 
+	 * @param AdminDTO
+	 */
+	
+	public void buscarAdmin(AdminDTO aDTO) {
 		this.cn = new Conectar();
 		this.msg = "El administrador ha sido encontrado";
 		try {
@@ -36,64 +50,107 @@ public class AdminDAO {
 		}finally {
 			this.cn.cerrarConexion(this.rs, this.cn.getConnect(), this.ps);
 		}
-		return true;
+		
 	}
 
+	/**
+	 * Metodo get de AdminDTO
+	 * 
+	 * @return AdminDTO
+	 */
+	
 	public AdminDTO getAdm() {
 		return adm;
 	}
 
+	/**
+	 * Metodo set AdminDTO
+	 * 
+	 * @param adm
+	 */
+	
 	public void setAdm(AdminDTO adm) {
 		this.adm = adm;
 	}
 
+	/**
+	 * Metodo get de PreparedStatement
+	 * 
+	 * @return PreparedStatement
+	 */
+	
 	public PreparedStatement getPs() {
 		return ps;
 	}
 
+	/**
+	 * Metodo set de PreparedStatement
+	 * 
+	 * @param ps
+	 */
+	
 	public void setPs(PreparedStatement ps) {
 		this.ps = ps;
 	}
 
+	/**
+	 * Metodo get de Conectar
+	 * 
+	 * @return Conectar
+	 */
+	
 	public Conectar getCn() {
 		return cn;
 	}
 
+	/**
+	 * Metodo set de Conectar
+	 * 
+	 * @param cn
+	 */
+	
 	public void setCn(Conectar cn) {
 		this.cn = cn;
 	}
 
+	/**
+	 * Metodo get de ResultSet
+	 * 
+	 * @return ResultSet
+	 */
+	
 	public ResultSet getRs() {
 		return rs;
 	}
 
+	/**
+	 * Metodo set de ResultSet
+	 * 
+	 * @param rs
+	 */
+	
 	public void setRs(ResultSet rs) {
 		this.rs = rs;
 	}
 
+	/**
+	 * Metodo get de Msg
+	 * 
+	 * @return String
+	 */
+	
 	public String getMsg() {
 		return msg;
 	}
 
+	/**
+	 * Metodo set de Msg
+	 * 
+	 * @param msg
+	 */
+	
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
 	
-	
-	
 }
-
-/*this.ps = this.cn.getConnect().prepareStatement("select usuario from administrador where usuario = ?");
-this.ps.setString(1, aDTO.getUsuario());
-this.rs = this.ps.executeQuery();
-if(rs.next()) {
-	adm.setUsuario(this.rs.getNString(1));
-	adm.setContra(rs.getString(2));
-	if(aDTO.getUsuario().equalsIgnoreCase(adm.getUsuario()) && aDTO.getContra().equals(adm.getContra())) {
-		re = true;
-	}
-}else {
-	this.msg = "El administrador no se ha encontrado";
-	this.cn.cerrarConexion(this.rs, this.cn.getConnect(), this.ps);
-	return false;
-}*/

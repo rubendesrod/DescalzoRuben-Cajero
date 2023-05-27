@@ -13,6 +13,14 @@ import javax.swing.JTextField;
 import Controlador.Administrador.GestorBuscarMod;
 import Controlador.Administrador.GestorModificarAdm;
 
+/**
+ * Clase que extiende de JFrame, muestra al administrador
+ * que datos puede modificar del objeto que haya seleccionado
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class FrameModificar extends JFrame{
 
 	private String objeto;
@@ -23,6 +31,11 @@ public class FrameModificar extends JFrame{
 	private JLabel lb2,lb3,lb4,lb5,lb6,lb7,lb8;
 	private JTextField txt2, txt3, txt4, txt5, txt6, txt7, txt8;
 	private Choice c;
+	
+	/**
+	 * Constructor de la clase FrameModificar
+	 * @param objeto [Texto del objeto seleccionados]
+	 */
 	
 	public FrameModificar(String objeto) {
 		
@@ -61,8 +74,8 @@ public class FrameModificar extends JFrame{
 			pk = new JTextField(12);
 			lb2 = new JLabel("PIN");lb3 = new JLabel("CVV");lb4 = new JLabel("FechaValidez");
 			lb5 = new JLabel("Estado");lb6 = new JLabel("Cuenta");
-			txt2 = new JTextField(6);txt3 = new JTextField(6);txt4 = new JTextField(6);
-			txt5 = new JTextField(6);txt6 = new JTextField(16);
+			txt2 = new JTextField(6);txt3 = new JTextField(6);
+			txt4 = new JTextField(6);txt6 = new JTextField(16);
 			txt2.setEditable(false);txt3.setEditable(false);txt4.setEditable(false);
 			txt6.setEditable(false);
 			buscar.addActionListener(new GestorBuscarMod(this, "tarjeta"));
@@ -101,172 +114,199 @@ public class FrameModificar extends JFrame{
 		this.setResizable(false);
 	}
 
+	/**
+	 * Metodo get de buscar
+	 * @return JButton
+	 */
 	
-	public Choice getC() {
-		return c;
-	}
-
-	public void setC(Choice c) {
-		this.c = c;
-	}
-
-
-
-	public String getObjeto() {
-		return objeto;
-	}
-
-	public void setObjeto(String objeto) {
-		this.objeto = objeto;
-	}
-
-	public JLabel getErrores() {
-		return errores;
-	}
-
-	public void setErrores(JLabel errores) {
-		this.errores = errores;
-	}
-
-	public JLabel getTxt() {
-		return txt;
-	}
-
-	public void setTxt(JLabel txt) {
-		this.txt = txt;
-	}
-
-	public JTextField getPk() {
-		return pk;
-	}
-
-	public void setPk(JTextField pk) {
-		this.pk = pk;
-	}
-
 	public JButton getBuscar() {
 		return buscar;
 	}
+
+	/**
+	 * Metodo set de buscar
+	 * @param buscar
+	 */
 
 	public void setBuscar(JButton buscar) {
 		this.buscar = buscar;
 	}
 
-	public JButton getModificar() {
-		return modificar;
+	/**
+	 * Metodo get de c
+	 * @return Choice
+	 */
+	
+	public Choice getC() {
+		return c;
 	}
 
-	public void setModificar(JButton modificar) {
-		this.modificar = modificar;
+	/**
+	 * Metodo set de c
+	 * @param c
+	 */
+	
+	public void setC(Choice c) {
+		this.c = c;
 	}
 
-	public JLabel getLb2() {
-		return lb2;
+	/**
+	 * Metodo get de errores
+	 * @return JLabel
+	 */
+	
+	public JLabel getErrores() {
+		return errores;
 	}
 
-	public void setLb2(JLabel lb2) {
-		this.lb2 = lb2;
+	/**
+	 * Metodo set de errores
+	 * @param errores
+	 */
+	
+	public void setErrores(JLabel errores) {
+		this.errores = errores;
 	}
 
-	public JLabel getLb3() {
-		return lb3;
+	/**
+	 * Metodo set de Pk
+	 * @return JTextField
+	 */
+	
+	public JTextField getPk() {
+		return pk;
 	}
 
-	public void setLb3(JLabel lb3) {
-		this.lb3 = lb3;
+	/**
+	 * Metodo set de Pk
+	 * @param pk
+	 */
+	
+	public void setPk(JTextField pk) {
+		this.pk = pk;
 	}
 
-	public JLabel getLb4() {
-		return lb4;
-	}
-
-	public void setLb4(JLabel lb4) {
-		this.lb4 = lb4;
-	}
-
-	public JLabel getLb5() {
-		return lb5;
-	}
-
-	public void setLb5(JLabel lb5) {
-		this.lb5 = lb5;
-	}
-
-	public JLabel getLb6() {
-		return lb6;
-	}
-
-	public void setLb6(JLabel lb6) {
-		this.lb6 = lb6;
-	}
-
-	public JLabel getLb7() {
-		return lb7;
-	}
-
-	public void setLb7(JLabel lb7) {
-		this.lb7 = lb7;
-	}
-
-	public JLabel getLb8() {
-		return lb8;
-	}
-
-	public void setLb8(JLabel lb8) {
-		this.lb8 = lb8;
-	}
-
+	/**
+	 * Metodo get de txt2
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt2() {
 		return txt2;
 	}
 
+	/**
+	 * Metodo set de txt2
+	 * @param txt2
+	 */
+	
 	public void setTxt2(JTextField txt2) {
 		this.txt2 = txt2;
 	}
 
+	/**
+	 * Metodo get de txt3
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt3() {
 		return txt3;
 	}
+	
+	/**
+	 * Metodo set de txt3
+	 * @param txt3
+	 */
 
 	public void setTxt3(JTextField txt3) {
 		this.txt3 = txt3;
 	}
 
+	/**
+	 * Metodo get de txt4
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt4() {
 		return txt4;
 	}
+	
+	/**
+	 * Metodo set de txt4
+	 * @param txt4
+	 */
 
 	public void setTxt4(JTextField txt4) {
 		this.txt4 = txt4;
 	}
 
+	/**
+	 * Metodo get de txt5
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt5() {
 		return txt5;
 	}
+	
+	/**
+	 * Metodo set de txt5
+	 * @param txt5
+	 */
 
 	public void setTxt5(JTextField txt5) {
 		this.txt5 = txt5;
 	}
 
+	/**
+	 * Metodo get de txt6
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt6() {
 		return txt6;
 	}
 
+	/**
+	 * Metodo set de txt6
+	 * @param txt6
+	 */
+	
 	public void setTxt6(JTextField txt6) {
 		this.txt6 = txt6;
 	}
 
+	/**
+	 * Metodo get de txt7
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt7() {
 		return txt7;
 	}
 
+	/**
+	 * Metodo set de txt7
+	 * @param txt7
+	 */
+	
 	public void setTxt7(JTextField txt7) {
 		this.txt7 = txt7;
 	}
 
+	/**
+	 * Metodo get de txt8
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt8() {
 		return txt8;
 	}
+	
+	/**
+	 * Metodo set de txt8
+	 * @param txt8
+	 */
 
 	public void setTxt8(JTextField txt8) {
 		this.txt8 = txt8;

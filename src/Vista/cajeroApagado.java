@@ -7,11 +7,22 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * Clase que extiende de JPanel y contiene los datos del cajero apagado
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
 
 public class cajeroApagado extends JPanel{
 
 	
 	private JLabel txt;
+	
+	/**
+	 * Constructor de la clase cajeroApagado
+	 */
 	
 	public cajeroApagado() {
 		

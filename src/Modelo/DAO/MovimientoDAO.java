@@ -9,6 +9,13 @@ import Modelo.Conectar;
 import Modelo.Consultas;
 import Modelo.DTO.MovimientoDTO;
 
+/**
+ * Clase que se encarga de comunicar el MovimientoDTO con la BB.DD
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
 
 public class MovimientoDAO{
 
@@ -19,7 +26,11 @@ public class MovimientoDAO{
 	private ResultSet rs = null;
 	private String msg;
 	
-	
+	/**
+	 * Metodo que se encarga de crear un Movimiento
+	 * 
+	 * @param MovimientoDTO
+	 */
 	
 	public void crearMovimiento(MovimientoDTO mDTO) {
 		this.msg = "creado";
@@ -40,13 +51,11 @@ public class MovimientoDAO{
 		}
 	}
 	
-	
-	
-	public void modificarMovmiento(MovimientoDTO mDTO) {
-		
-	}
-	
-	
+	/**
+	 * Metodo que se encarga de buscar un movimiento
+	 * 
+	 * @param mDTO
+	 */
 	
 	public void buscarMovimiento(MovimientoDTO mDTO) {
 		this.msg ="Los movimientos han sido encontrados";
@@ -72,49 +81,125 @@ public class MovimientoDAO{
 		}
 	}
 	
-	
+	/**
+	 * Metodo get de MovimientoDTO
+	 * 
+	 * @return MovimientoDTO
+	 */
 	
 	public MovimientoDTO getmDTO() {
 		return mDTO;
 	}
 	
+	/**
+	 * Metodo set de MovimientoDTO
+	 * 
+	 * @param mDTO
+	 */
+	
 	public void setmDTO(MovimientoDTO mDTO) {
 		this.mDTO = mDTO;
 	}
+	
+	/**
+	 * Metodo get de PreparedStatement
+	 * 
+	 * @return PreparedStatement
+	 */
+	
 	public PreparedStatement getPs() {
 		return ps;
 	}
+
+	/**
+	 * Metodo set de PreparedStatement
+	 * 
+	 * @param ps
+	 */
+	
 	public void setPs(PreparedStatement ps) {
 		this.ps = ps;
 	}
+
+	/**
+	 * Metodo get de Conectar
+	 * 
+	 * @return Conectar
+	 */
+	
 	public Conectar getCn() {
 		return cn;
 	}
+
+	/**
+	 * Metodo set de Conectar
+	 * 
+	 * @param cn
+	 */
+	
 	public void setCn(Conectar cn) {
 		this.cn = cn;
 	}
+	
+	/**
+	 * Metodo get de ArrayList de MovimientoDTO
+	 * 
+	 * @return Arraylist de MovimientoDTO
+	 */
+	
 	public ArrayList<MovimientoDTO> getCuentas() {
 		return movimientos;
 	}
+	
+	/**
+	 * Metodo set de ArrayList de MovimientoDTO
+	 * 
+	 * @param cuentas
+	 */
+	
 	public void setCuentas(ArrayList<MovimientoDTO> cuentas) {
 		this.movimientos = cuentas;
 	}
+	
+	
+	/**
+	 * Metodo get de ResultSet
+	 * 
+	 * @return ResultSet
+	 */
+	
 	public ResultSet getRs() {
 		return rs;
 	}
+
+	/**
+	 * Metodo set de ResultSet
+	 * 
+	 * @param rs
+	 */
+	
 	public void setRs(ResultSet rs) {
 		this.rs = rs;
 	}
+
+	/**
+	 * Metodo get de Msg
+	 * 
+	 * @return String
+	 */
+	
 	public String getMsg() {
 		return msg;
 	}
+
+	/**
+	 * Metodo set de Msg
+	 * 
+	 * @param msg
+	 */
+	
 	public void setMsg(String msg) {
 		this.msg = msg;
-	}
-	
-	
-	
-	
-	
+	}	
 	
 }

@@ -9,11 +9,23 @@ import Vista.Admin.Vistas.Administrar.AdministrarCliente;
 import Vista.Admin.Vistas.Administrar.AdministrarCuenta;
 import Vista.Admin.Vistas.Administrar.AdministrarTarjeta;
 
+/**
+ * Clase que extiende de JPanel, muestra 3 paneles al administrador
+ * que contienes botones para que seleccione lo que quiere modificar
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class PanelAdministrar extends JPanel{
 
 	private AdministrarCliente acli;
 	private AdministrarTarjeta at;
 	private AdministrarCuenta acu;
+	
+	/**
+	 * Constructor de la clase PanelAdministrar
+	 */
 	
 	public PanelAdministrar() {
 		
@@ -29,26 +41,56 @@ public class PanelAdministrar extends JPanel{
 		this.add(acli);this.add(acu);this.add(at);
 	}
 
+	/**
+	 * Metodo get acli
+	 * @return AdministrarCliente
+	 */
+	
 	public AdministrarCliente getAcli() {
 		return acli;
 	}
+	
+	/**
+	 * Metodo set acli
+	 * @param acli
+	 */
 
 	public void setAcli(AdministrarCliente acli) {
 		this.acli = acli;
 	}
 
+	/**
+	 * Metodo get at
+	 * @return AdministrarTarjeta
+	 */
+	
 	public AdministrarTarjeta getAt() {
 		return at;
 	}
 
+	/**
+	 * Metodo set at
+	 * @param at
+	 */
+	
 	public void setAt(AdministrarTarjeta at) {
 		this.at = at;
 	}
 
+	/**
+	 * Metodo get acu
+	 * @return AdministrarCuenta
+	 */
+	
 	public AdministrarCuenta getAcu() {
 		return acu;
 	}
 
+	/**
+	 * Metodo set acu
+	 * @param acu
+	 */
+	
 	public void setAcu(AdministrarCuenta acu) {
 		this.acu = acu;
 	}

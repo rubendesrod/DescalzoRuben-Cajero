@@ -14,12 +14,22 @@ import Modelo.DAO.CuentaDAO;
 import Modelo.DTO.CuentaDTO;
 import Modelo.Tabla.TablaCuentas;
 
-
+/**
+ * Clase que extiende de JPanel, contiene el Modelo de la Tabla Cuentas
+ * y la muestra en el panel
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
 
 public class PanelTablaCuentas extends JPanel{
 
 	private CuentaDTO cDTO;
 	private CuentaDAO cDAO;
+	
+	/**
+	 * Constructor de la Clase PanelTablaTarjetas
+	 */
 	
 	public PanelTablaCuentas() {
 		

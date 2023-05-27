@@ -16,11 +16,26 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 import Modelo.DAO.CajeroDAO;
+import Vista.Admin.Vistas.PanelPrincipal;
+
+/**
+ * Clase principal del Administrador extiende de JFrame, es la que muestra
+ * constantemente el menu por el que se mueve el administrador y todos los paneles
+ * que haya
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
 
 public class PrincipalAdm extends JFrame{
 
 	private JMenuBar menu;
 	private JPanel content;
+	
+	/**
+	 * Constructor de la clase PrincipalAdm
+	 */
 	
 	public PrincipalAdm() {
 		super("Ventana Admin");
@@ -51,17 +66,37 @@ public class PrincipalAdm extends JFrame{
 		
 	}
 
+	/**
+	 * Metodo get content
+	 * @return JPanel
+	 */
+	
 	public JPanel getContent() {
 		return content;
 	}
+	
+	/**
+	 * Metodo set content
+	 * @param content
+	 */
 	
 	public void setContent(JPanel content) {
 		this.content = content;
 	}
 	
+	/**
+	 * Metodo get menu
+	 * @return
+	 */
+	
 	public JMenuBar getMenu() {
 		return menu;
 	}
+	
+	/**
+	 * Metodo set menu
+	 * @param menu
+	 */
 
 	public void setMenu(JMenuBar menu) {
 		this.menu = menu;

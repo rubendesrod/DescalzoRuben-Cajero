@@ -13,6 +13,15 @@ import Modelo.DTO.CuentaDTO;
 import Modelo.DTO.TarjetaDTO;
 import Vista.Admin.Vistas.Administrar.FrameModificar;
 
+/**
+ * Clase que se encarga de modificar los datos en la BB.DD de un cliente
+ * , una cuenta o una tarjeta.
+ * 
+ *@version 1.0
+ * @author Ruben
+ *
+ */
+
 public class GestorModificarAdm implements ActionListener{
 
 	private FrameModificar fm;
@@ -26,9 +35,8 @@ public class GestorModificarAdm implements ActionListener{
 	private Validador v;
 	
 	/**
-	 * Constructor de la clase GestorModificarAdm, el cual se encarga de modificar una
-	 * tabla de la base de datos
-	 * @author Ruben
+	 * Constructor de la clase 
+	 * 
 	 * @param fm [FrameModificar del cual se van a sacar los datos a utilizar]
 	 * @param objeto [String que indica, sobre que tabla de la base de datos se va a trabajar]
 	 */
@@ -91,12 +99,21 @@ public class GestorModificarAdm implements ActionListener{
 						tDTO.setCvv(Integer.parseInt(fm.getTxt3().getText()));
 						tDTO.setFechaCaducidad(fm.getTxt4().getText());
 						tDTO.setEstado(fm.getC().getSelectedItem());
+						tDTO.setNumCuenta(fm.getTxt6().getText());
 						tDAO.buscarTarjeta(tDTO);
 						if(tDAO.gettDTO().getNumTarjeta().equalsIgnoreCase(tDTO.getNumTarjeta())) {
-							tDAO.modificarTarjeta(tDTO);
-							fm.getErrores().setForeground(Color.blue);
-							fm.getErrores().setText(tDAO.getMsg());
-							fm.getPk().setEditable(true);fm.getBuscar().setEnabled(true);
+							cDTO = new CuentaDTO();
+							cDAO = new CuentaDAO();
+							cDTO.setNumCuenta(fm.getTxt6().getText());
+							cDAO.buscarCuenta(cDTO);
+							if (cDAO.getcDTO().getNumCuenta().equalsIgnoreCase(cDTO.getNumCuenta())) {
+								tDAO.modificarTarjeta(tDTO);
+								fm.getErrores().setForeground(Color.blue);
+								fm.getErrores().setText(tDAO.getMsg());
+								fm.getPk().setEditable(true);fm.getBuscar().setEnabled(true);
+							}else {
+								fm.getErrores().setText("No existe el numero de cuenta que has introducido");
+							}
 						}else {
 							fm.getErrores().setText("Esta Tarjeta ya existe en la base de datos");
 							
@@ -120,10 +137,18 @@ public class GestorModificarAdm implements ActionListener{
 					cDTO.setDni(fm.getTxt3().getText());
 					cDAO.buscarCuenta(cDTO);
 					if(cDAO.getcDTO().getNumCuenta().equalsIgnoreCase(cDTO.getNumCuenta())) {
-						cDAO.modificarCuenta(cDTO);
-						fm.getErrores().setForeground(Color.blue);
-						fm.getErrores().setText(cDAO.getMsg());
-						fm.getPk().setEditable(true);fm.getBuscar().setEnabled(true);
+						cliDTO = new ClienteDTO();
+						cliDAO = new ClientesDAO();
+						cliDTO.setDni(fm.getTxt3().getText());
+						cliDAO.buscarCliente(cliDTO);
+						if (cliDAO.getCli().getDni().equalsIgnoreCase(cliDTO.getDni())) {
+							cDAO.modificarCuenta(cDTO);
+							fm.getErrores().setForeground(Color.blue);
+							fm.getErrores().setText(cDAO.getMsg());
+							fm.getPk().setEditable(true);fm.getBuscar().setEnabled(true);
+						}else {
+							fm.getErrores().setText("El DNI no existe");
+						}
 					}else {
 						fm.getErrores().setText("El Numero de cuenta ya existe");
 					}

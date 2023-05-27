@@ -11,6 +11,14 @@ import javax.swing.JTextField;
 
 import Controlador.Administrador.GestorBorrarAdm;
 
+/**
+ * Clase que extiende de JFrame, se encarga de recibir un dato
+ * y de borrar de la BB.DD el objeto.
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class FrameBorrar extends JFrame{
 
 	private String objeto;
@@ -19,6 +27,10 @@ public class FrameBorrar extends JFrame{
 	private JLabel txt;
 	private JLabel errores;
 	
+	/**
+	 * Constructor de la clase FrameBorrar
+	 * @param objeto [Texto que dice sobre quien realizar la accion]
+	 */
 	
 	public FrameBorrar(String objeto) {
 		
@@ -59,51 +71,37 @@ public class FrameBorrar extends JFrame{
 		}	
 	}
 
-
-	public String getObjeto() {
-		return objeto;
-	}
-
-
-	public void setObjeto(String objeto) {
-		this.objeto = objeto;
-	}
-
-
-	public JButton getAceptar() {
-		return aceptar;
-	}
-
-
-	public void setAceptar(JButton aceptar) {
-		this.aceptar = aceptar;
-	}
-
-
+	/**
+	 * Metodo get de PK
+	 * @return JTextField
+	 */
+	
 	public JTextField getPk() {
 		return pk;
 	}
-
+	
+	/**
+	 * Metodo set de Pk
+	 * @param pk
+	 */
 
 	public void setPk(JTextField pk) {
 		this.pk = pk;
 	}
 
-
-	public JLabel getTxt() {
-		return txt;
-	}
-
-
-	public void setTxt(JLabel txt) {
-		this.txt = txt;
-	}
-
-
+	/**
+	 * Metodo get errores
+	 * @return JLabel
+	 */
+	
 	public JLabel getErrores() {
 		return errores;
 	}
 
+	/**
+	 * Metodo set de errores
+	 * @param errores
+	 */
 
 	public void setErrores(JLabel errores) {
 		this.errores = errores;

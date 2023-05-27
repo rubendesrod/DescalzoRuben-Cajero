@@ -14,10 +14,22 @@ import Modelo.DAO.TarjetaDAO;
 import Modelo.DTO.TarjetaDTO;
 import Modelo.Tabla.TablaTarjetas;
 
+/**
+ * Clase que extiende de JPanel, contiene el Modelo de la Tabla Tarjetas
+ * y la muestra en el panel
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class PanelTablaTarjetas extends JPanel{
 
 	private TarjetaDTO tDTO;
 	private TarjetaDAO tDAO;
+	
+	/**
+	 * Constructor de la Clase PanelTablaTarjetas
+	 */
 	
 	public PanelTablaTarjetas() {
 		tDTO = new TarjetaDTO();
@@ -45,12 +57,12 @@ public class PanelTablaTarjetas extends JPanel{
 		int row = tablac.getRowCount();
 		while(row>0) {
 			row--;
-			tablac.borrarCliente(row);
+			tablac.borrarTarjeta(row);
 		}
 		
 		//Ahora anyadimos los datos de nuevo
 		for(int i = 0; i<tDAO.getTarjetasDTO().size();i++) {
-			tablac.anadeCliente(tDAO.getTarjetasDTO().get(i));
+			tablac.anadeTarjeta(tDAO.getTarjetasDTO().get(i));
 		}
 		
 		JLabel jl1 = new JLabel("Tabla");

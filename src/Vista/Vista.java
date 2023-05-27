@@ -18,6 +18,14 @@ import Modelo.DAO.CajeroDAO;
 import Vista.Admin.PrincipalAdm;
 import Vista.Cliente.PrincipalUss;
 
+/**
+ * Clase que extiende de JFrame, es la clase principal del programa
+ * es la que contiene el metodo main
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class Vista extends JFrame{
 
 	private static final long serialVersionUID = 1L;
@@ -30,6 +38,10 @@ public class Vista extends JFrame{
 	private JPanel wMark;
 	private CajeroDAO cDAO;
 	private boolean ventanas = true; //intercambio de ventanas
+	
+	/**
+	 * Constructor de la clase
+	 */
 	
 	public Vista() {
 		super("Cajero Automatico");
@@ -130,67 +142,136 @@ public class Vista extends JFrame{
 	
 	public static void main(String[] args) {
 		Vista v = new Vista();
-		v.setVisible(false);
+		v.setVisible(true);
 		PrincipalUss p = new PrincipalUss("1111222233334444");
 		p.setVisible(false);
 		PrincipalAdm a = new PrincipalAdm();
-		a.setVisible(true);
+		a.setVisible(false);
 	}
 
-	
+	/**
+	 * Metodo get del panel de la Marca de Agua
+	 * @return JPanel
+	 */
 	
 	public JPanel getwMark() {
 		return wMark;
 	}
 
+	/**
+	 * Metodo set del panel de la Marca de Agua
+	 * @param wMark
+	 */
+	
 	public void setwMark(JPanel wMark) {
 		this.wMark = wMark;
 	}
 
-	public boolean isVentanas() {
+	/**
+	 * Metodo get de las ventanas
+	 * @return true, si se hace clic en un boton
+	 * @return flase, si se vuelve ha hacer clic en el boton
+	 */
+	
+	public boolean getVentanas() {
 		return ventanas;
 	}
 
+	/**
+	 * Metodo set Ventanas
+	 * @param ventanas
+	 */
+	
 	public void setVentanas(boolean ventanas) {
 		this.ventanas = ventanas;
 	}
 
+	/**
+	 * Metodo get del Panel DatosLoginUss
+	 * @return DatosLoginUss
+	 */
+	
 	public DatosLoginUss getDl() {
 		return dl;
 	}
 
+	/**
+	 * Metodo set de DatosLoginUss
+	 * @param dl
+	 */
+	
 	public void setDl(DatosLoginUss dl) {
 		this.dl = dl;
 	}
+	
+	/**
+	 * Metodo get del Panel DatosLoginAdm
+	 * @return
+	 */
 
 	public DatosLoginAdm getDa() {
 		return da;
 	}
 
+	/**
+	 * Metofo set de DatosLoginAdm
+	 * @param da
+	 */
+	
 	public void setDa(DatosLoginAdm da) {
 		this.da = da;
 	}
 
+	/**
+	 * Metodo get de Opcion Admin
+	 * @return JButton
+	 */
+	
 	public JButton getAdmOption() {
 		return admOption;
 	}
 
+	/**
+	 * Metodo set de la Opcion Admin
+	 * @param admOption
+	 */
+	
 	public void setAdmOption(JButton admOption) {
 		this.admOption = admOption;
 	}
 
+	/**
+	 * Metodo get de imagen .png
+	 * @return JLabel
+	 */
+	
 	public JLabel getPng() {
 		return png;
 	}
 
+	/**
+	 * Metodo set de imagen .png
+	 * @param png
+	 */
+	
 	public void setPng(JLabel png) {
 		this.png = png;
 	}
 
+	/**
+	 * Metodo get del texto
+	 * @return JLabel
+	 */
+	
 	public JLabel getTxt() {
 		return txt;
 	}
 
+	/**
+	 * Metodo set del texto
+	 * @param txt
+	 */
+	
 	public void setTxt(JLabel txt) {
 		this.txt = txt;
 	}

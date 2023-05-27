@@ -19,6 +19,14 @@ import javax.swing.border.EmptyBorder;
 
 import Vista.Vista;
 
+/**
+ * Clase que extiende de JFrame, es la principal del usuario
+ * muestra al usuario las Opciones que puede realizar en el cajero
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class PrincipalUss extends JFrame{
 
 	private JButton btn1;
@@ -31,6 +39,10 @@ public class PrincipalUss extends JFrame{
 	private ArrayList<JButton> botonera;
 	private String numTarjeta;
 	
+	/**
+	 * Constructor de la clase PrincipalUss
+	 * @param n
+	 */
 	
 	public PrincipalUss( String n) {
 		super("Ventana Usuario");
@@ -116,80 +128,174 @@ public class PrincipalUss extends JFrame{
 		
 	}
 
+	/**
+	 * Metodo mostrar Panel
+	 * @param p
+	 */
+	
 	public void mostrarPanel(JPanel p) {
 		p.setVisible(true);;
 		this.add(p);
 	}
 	
+	/**
+	 * Metodo get Btn1
+	 * @return JButton
+	 */
+	
 	public JButton getBtn1() {
 		return btn1;
 	}
+	
+	/**
+	 * Metodo set Btn1
+	 * @param btn1
+	 */
 
 	public void setBtn1(JButton btn1) {
 		this.btn1 = btn1;
 	}
 
+	/**
+	 * Metodo get Btn2
+	 * @return JButton
+	 */
+	
 	public JButton getBtn2() {
 		return btn2;
 	}
 
+	/**
+	 * Metodo set Btn2
+	 * @param btn2
+	 */
+	
 	public void setBtn2(JButton btn2) {
 		this.btn2 = btn2;
 	}
 
+	/**
+	 * Metodo get Btn3
+	 * @return JButton
+	 */
+	
 	public JButton getBtn3() {
 		return btn3;
 	}
 
+	/**
+	 * Metodo set Btn3
+	 * @param btn3
+	 */
+	
 	public void setBtn3(JButton btn3) {
 		this.btn3 = btn3;
 	}
 
+	/**
+	 * Metodo get Btn4
+	 * @return JButton
+	 */
+	
 	public JButton getBtn4() {
 		return btn4;
 	}
 
+	/**
+	 * Metodo set Btn4
+	 * @param btn4
+	 */
+	
 	public void setBtn4(JButton btn4) {
 		this.btn4 = btn4;
 	}
 
+	/**
+	 * Metodo get Btn5
+	 * @return JButton
+	 */
+	
 	public JButton getBtn5() {
 		return btn5;
 	}
 
+	/**
+	 * Metodo set Btn5
+	 * @param btn5
+	 */
+	
 	public void setBtn5(JButton btn5) {
 		this.btn5 = btn5;
 	}
 
+	/**
+	 * Metodo gep de P
+	 * @return JPanel
+	 */
+	
 	public JPanel getP() {
 		return p;
 	}
 
+	/**
+	 * Metodo set de P
+	 * @param p
+	 */
+	
 	public void setP(JPanel p) {
 		this.p = p;
 	}
 
+	/**
+	 * Metodo get de la Marca de Agua
+	 * @return JPanel
+	 */
+	
 	public JPanel getwMark() {
 		return wMark;
 	}
 
+	/**
+	 * Metodo set de la Marca de Agua
+	 * @param wMark
+	 */
+	
 	public void setwMark(JPanel wMark) {
 		this.wMark = wMark;
 	}
 
+	/**
+	 * Metodo get de Botonera
+	 * @return ArrayList<JButton>
+	 */
+	
 	public ArrayList<JButton> getBotonera() {
 		return botonera;
 	}
 
+	/**
+	 * Metodo set de Botonera
+	 * @param botonera
+	 */
+	
 	public void setBotonera(ArrayList<JButton> botonera) {
 		this.botonera = botonera;
 	}
 
+	/**
+	 * Metodo set del Numero de la Tarjeta
+	 * @return String
+	 */
 
 	public String getNumTarjeta() {
 		return numTarjeta;
 	}
 
+	/**
+	 * Metodo set del Numero de la Tarjeta
+	 * @param numTarjeta
+	 */
+	
 	public void setNumTarjeta(String numTarjeta) {
 		this.numTarjeta = numTarjeta;
 	}

@@ -1,4 +1,4 @@
-package Vista.Admin;
+package Vista.Admin.Vistas;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -16,11 +16,25 @@ import javax.swing.Timer;
 
 import Controlador.Administrador.GestorApagarEncender;
 import Modelo.DAO.CajeroDAO;
+import Vista.Admin.PrincipalAdm;
+
+/**
+ * Panel principal del Administrador extiende de JPanel, es el primer panel que se muestraç
+ * el cual muestra el estado del cajero y se puede apagar o encender el cajero (es mas que esta en mantenimiento)
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
 
 public class PanelPrincipal extends JPanel{
 
 	private JLabel estado;
 	private PrincipalAdm adm;
+	
+	/**
+	 * Constructor de la clase PanelPrincipal
+	 */
 	
 	public PanelPrincipal() {
 		this.setLocation(0, 0);
@@ -90,18 +104,38 @@ public class PanelPrincipal extends JPanel{
 		this.add(estado);this.add(power);
 	}
 
+	/**
+	 * Metodo get del estado
+	 * @return JLabel
+	 */
+	
 	public JLabel getEstado() {
 		return estado;
 	}
 
+	/**
+	 * Metodo set del estado
+	 * @param estado
+	 */
+	
 	public void setEstado(JLabel estado) {
 		this.estado = estado;
 	}
+	
+	/**
+	 * Metodo get de adm
+	 * @return PrincipalAdm
+	 */
 
 	public PrincipalAdm getAdm() {
 		return adm;
 	}
 
+	/**
+	 * Metodo set de adm
+	 * @param adm
+	 */
+	
 	public void setAdm(PrincipalAdm adm) {
 		this.adm = adm;
 	}

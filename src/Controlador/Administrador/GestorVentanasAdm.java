@@ -4,13 +4,21 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import Vista.Admin.PanelPrincipal;
 import Vista.Admin.PrincipalAdm;
 import Vista.Admin.Vistas.PanelAdministrar;
+import Vista.Admin.Vistas.PanelPrincipal;
 import Vista.Admin.Vistas.PanelTablaClientes;
 import Vista.Admin.Vistas.PanelTablaCuentas;
 import Vista.Admin.Vistas.PanelTablaTarjetas;
 import Vista.Admin.Vistas.Administrar.AdministrarCliente;
+
+/**
+ * Clase que se encarga de Gestionar las ventanas a la que quiere moverse el administrador
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
 
 public class GestorVentanasAdm implements ActionListener{
 
@@ -23,9 +31,8 @@ public class GestorVentanasAdm implements ActionListener{
 	private String tipo;
 	
 	/**
-	 * Contrusctor de la GestorVentanasAdm, esta clase se encarga de poder
-	 * realizar intercambio de ventana desde el menu de administrado
-	 * @author Ruben
+	 * Contrusctor de la clae
+	 *
 	 * @param adm [Frame principal del administrador]
 	 * @param tipo [Texto que indicar a que ventana se le hace la llamada]
 	 */

@@ -14,10 +14,22 @@ import Modelo.DAO.ClientesDAO;
 import Modelo.DTO.ClienteDTO;
 import Modelo.Tabla.TablaClientes;
 
+/**
+ * Clase que extiende de JPanel, contiene el Modelo de la Tabla Clientes
+ * y la muestra en el panel
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class PanelTablaClientes extends JPanel{
 
 	private ClienteDTO cDTO;
 	private ClientesDAO cDAO;
+	
+	/**
+	 * Constructor de la Clase PanelTablaTarjetas
+	 */
 	
 	public PanelTablaClientes() {
 		cDTO = new ClienteDTO();

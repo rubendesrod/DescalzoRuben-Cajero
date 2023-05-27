@@ -23,6 +23,13 @@ import Modelo.DTO.MovimientoDTO;
 import Modelo.DTO.TarjetaDTO;
 import Modelo.Tabla.TablaMovimientos;
 
+/**
+ * Clas que extiende de JPanel, muestra al usuario la informacion de sus movientos realizados
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class VistaMovimientos extends JPanel{
 
 	private PrincipalUss usr;
@@ -33,6 +40,12 @@ public class VistaMovimientos extends JPanel{
 	private TarjetaDAO tDAO;
 	private CuentaDTO cDTO;
 	private CuentaDAO cDAO;
+	
+	/**
+	 * Constructor de la clase VistaMovimientoss
+	 * @param usr [Ventana principal del usuario]
+	 * @param numTarjeta [Su numero de la tarjeta]
+	 */
 	
 	public VistaMovimientos(PrincipalUss usr, String numTarjeta){
 		

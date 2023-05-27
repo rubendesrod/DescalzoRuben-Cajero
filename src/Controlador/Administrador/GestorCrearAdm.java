@@ -13,6 +13,15 @@ import Modelo.DTO.CuentaDTO;
 import Modelo.DTO.TarjetaDTO;
 import Vista.Admin.Vistas.Administrar.FrameCrear;
 
+/**
+ * Clase que implementa el ActionListener y se encarga de crear Clientes,
+ * cuentas o tarjetas en la base de datos.
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
+
 public class GestorCrearAdm implements ActionListener{
 
 	private String objeto;
@@ -24,6 +33,13 @@ public class GestorCrearAdm implements ActionListener{
 	private CuentaDTO cDTO;
 	private CuentaDAO cDAO;
 	private Validador v;
+	
+	/**
+	 * Constructor de la Clase GestorCrearAdm
+	 * 
+	 * @param objeto [Objeto sobre el que se va a trabajar en la BB.DD]
+	 * @param fc [Frame del que se sacan los datos que se van a ser utilizados]
+	 */
 	
 	public GestorCrearAdm(String objeto, FrameCrear fc) {
 		

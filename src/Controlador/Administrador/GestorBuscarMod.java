@@ -12,6 +12,15 @@ import Modelo.DTO.CuentaDTO;
 import Modelo.DTO.TarjetaDTO;
 import Vista.Admin.Vistas.Administrar.FrameModificar;
 
+/**
+ * Clase que implementa el ActionListener y se encarga de buscar
+ * clientes, tarjeta  cuentas en la base de datos
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
+
 public class GestorBuscarMod implements ActionListener{
 
 	private FrameModificar fm;
@@ -25,9 +34,8 @@ public class GestorBuscarMod implements ActionListener{
 	private Validador v;
 	
 	/**
-	 * Constructor de la clase GestorBuscarMod la cual se encarga de buscar
-	 * con un dato del frame
-	 * @author Ruben
+	 * Constructor de la clase  
+	 * 
 	 * @param fm [Frame que contiene los datos que se van a usar]
 	 * @param objeto [String que indica, sobre que tabla de la base de datos se va a trabajar]
 	 */

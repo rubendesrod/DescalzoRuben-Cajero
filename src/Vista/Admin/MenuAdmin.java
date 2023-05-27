@@ -14,11 +14,27 @@ import javax.swing.KeyStroke;
 import Controlador.Administrador.GestorApagarEncender;
 import Controlador.Administrador.GestorVentanasAdm;
 import Vista.Vista;
+import Vista.Admin.Vistas.PanelPrincipal;
+
+/**
+ * Clase que extiende de JMenuBar, muestra al administrador un menu
+ * con las diferentes opciones que puede elegir 
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
 
 public class MenuAdmin extends JMenuBar{
 
 	private PrincipalAdm adm;
 	private PanelPrincipal p;
+	
+	/**
+	 * Constructor de la clase MenuAdmin
+	 * @param adm [Ventana principal de Administrador]
+	 * @param p [Panel principal donde iran todos los demas paneles]
+	 */
 	
 	public MenuAdmin(PrincipalAdm adm, PanelPrincipal p) {
 		
@@ -61,10 +77,6 @@ public class MenuAdmin extends JMenuBar{
 		ayu.add(ay2);ayu.add(admi);ayu.add(ay3);
 		
 		this.add(conf);this.add(ayu);
-		
-		
-		
-		
 		
 	}
 	

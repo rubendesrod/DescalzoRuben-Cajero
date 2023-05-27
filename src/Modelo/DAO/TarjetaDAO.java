@@ -194,52 +194,122 @@ public class TarjetaDAO {
 		}
 	}
 
-	
+	/**
+	 * Metodo get de TarjetaDTO
+	 * 
+	 * @return TarjetaDTO
+	 */
 	
 	public TarjetaDTO gettDTO() {
 		return tDTO;
 	}
-
+	
+	/**
+	 * Metodo set de TarjetaDTO
+	 * 
+	 * @param tDTO
+	 */
+	
 	public void settDTO(TarjetaDTO tDTO) {
 		this.tDTO = tDTO;
 	}
 
+	/**
+	 * Metodo get de PreparedStatement
+	 * 
+	 * @return PreparedStatement
+	 */
+	
 	public PreparedStatement getPs() {
 		return ps;
 	}
 
+	/**
+	 * Metodo set de PreparedStatement
+	 * 
+	 * @param ps
+	 */
+	
 	public void setPs(PreparedStatement ps) {
 		this.ps = ps;
 	}
 
+	/**
+	 * Metodo get de Conectar
+	 * 
+	 * @return Conectar
+	 */
+	
 	public Conectar getCn() {
 		return cn;
 	}
 
+	/**
+	 * Metodo set de Conectar
+	 * 
+	 * @param cn
+	 */
+	
 	public void setCn(Conectar cn) {
 		this.cn = cn;
 	}
 
+	/**
+	 * Metodo que devuelve un ArrayList de TarjetaDTO
+	 * 
+	 * @return ArrayList de TarjetaDTO
+	 */
+	
 	public ArrayList<TarjetaDTO> getTarjetasDTO() {
 		return tarjetas;
 	}
 
+	/**
+	 * Metodo set de ArrayList de TarjetaDTO
+	 * 
+	 * @param TarjetasDTO
+	 */
+	
 	public void setTarjetasDTO(ArrayList<TarjetaDTO> tarjetasDTO) {
 		this.tarjetas = tarjetasDTO;
 	}
-
+	
+	/**
+	 * Metodo get de ResultSet
+	 * 
+	 * @return ResultSet
+	 */
+	
 	public ResultSet getRs() {
 		return rs;
 	}
 
+	/**
+	 * Metodo set de ResultSet
+	 * 
+	 * @param rs
+	 */
+	
 	public void setRs(ResultSet rs) {
 		this.rs = rs;
 	}
 
+	/**
+	 * Metodo get de Msg
+	 * 
+	 * @return String
+	 */
+	
 	public String getMsg() {
 		return msg;
 	}
 
+	/**
+	 * Metodo set de Msg
+	 * 
+	 * @param msg
+	 */
+	
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}

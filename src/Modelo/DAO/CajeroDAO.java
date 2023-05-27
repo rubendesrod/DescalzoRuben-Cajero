@@ -9,6 +9,15 @@ import Modelo.Consultas;
 import Modelo.DTO.CajeroDTO;
 
 
+/**
+ * Clase que se encarga de realizar consultas a la BB.DD sobre el Cajero
+ * 
+ * @version 1.0
+ * 
+ * @author Ruben
+ *
+ */
+
 public class CajeroDAO {
 	
 	private CajeroDTO cDTO = new CajeroDTO();
@@ -52,46 +61,105 @@ public class CajeroDAO {
 		}
 	}
 
+	/**
+	 * Metodo get de CajeroDTO
+	 * 
+	 * @return CajeroDTO
+	 */
+	
 	public CajeroDTO getcDTO() {
 		return cDTO;
 	}
 
+	/**
+	 * Metodo set de CajeroDTO
+	 * 
+	 * @param cDTO
+	 */
+	
 	public void setcDTO(CajeroDTO cDTO) {
 		this.cDTO = cDTO;
 	}
 
+	/**
+	 * Metodo get de PreparedStatement
+	 * 
+	 * @return PreparedStatement
+	 */
+	
 	public PreparedStatement getPs() {
 		return ps;
 	}
 
+	/**
+	 * Metodo set de PreparedStatement
+	 * 
+	 * @param ps
+	 */
+	
 	public void setPs(PreparedStatement ps) {
 		this.ps = ps;
 	}
 
+	/**
+	 * Metodo get de Conectar
+	 * 
+	 * @return Conectar
+	 */
+	
 	public Conectar getCn() {
 		return cn;
 	}
 
+	/**
+	 * Metodo set de Conectar
+	 * 
+	 * @param cn
+	 */
+	
 	public void setCn(Conectar cn) {
 		this.cn = cn;
 	}
 
+	/**
+	 * Metodo get de ResultSet
+	 * 
+	 * @return ResultSet
+	 */
+	
 	public ResultSet getRs() {
 		return rs;
 	}
 
+	/**
+	 * Metodo set de ResultSet
+	 * 
+	 * @param rs
+	 */
+	
 	public void setRs(ResultSet rs) {
 		this.rs = rs;
 	}
 
+	/**
+	 * Metodo get de Msg
+	 * 
+	 * @return String
+	 */
+	
 	public String getMsg() {
 		return msg;
 	}
 
+	/**
+	 * Metodo set de Msg
+	 * 
+	 * @param msg
+	 */
+	
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
-	
 	
 	
 }

@@ -148,7 +148,6 @@ public class ClientesDAO implements Consultas{
 	}
 	
 	/**
-	 * 
 	 * @param cDTO
 	 * 
 	 * Funcion a la que paso un ClienteDTO para realizar la 
@@ -226,41 +225,122 @@ public class ClientesDAO implements Consultas{
 	}
 	
 	
-	
+	/**
+	 * Metodo get de ClienteDTO
+	 * 
+	 * @return ClienteDTO
+	 */
 	
 	public ClienteDTO getCli() {
 		return cli;
 	}
+	
+	/**
+	 * Metodo set de ClienteDTO
+	 * 
+	 * @param cDTO
+	 */
+	
 	public void setCli(ClienteDTO cDTO) {
 		this.cli = cDTO;
 	}
+	
+	/**
+	 * Metodo get de PreparedStatement
+	 * 
+	 * @return PreparedStatement
+	 */
+	
 	public PreparedStatement getPs() {
 		return ps;
 	}
+
+	/**
+	 * Metodo set de PreparedStatement
+	 * 
+	 * @param ps
+	 */
+	
 	public void setPs(PreparedStatement ps) {
 		this.ps = ps;
 	}
+
+	/**
+	 * Metodo get de Conectar
+	 * 
+	 * @return Conectar
+	 */
+	
 	public Conectar getCn() {
 		return cn;
 	}
+
+	/**
+	 * Metodo set de Conectar
+	 * 
+	 * @param cn
+	 */
+	
 	public void setCn(Conectar cn) {
 		this.cn = cn;
 	}
+	
+	/**
+	 * Metodo que devuelve un ArrayList de ClienteDTO
+	 * 
+	 * @return ArrayList de ClienteDTO
+	 */
+	
 	public ArrayList<ClienteDTO> getClientes() {
 		return clientes;
 	}
+	
+	/**
+	 * Metodo set del ArrayList de cliente
+	 * 
+	 * @param clientes
+	 */
+	
 	public void setClientes(ArrayList<ClienteDTO> clientes) {
 		this.clientes = clientes;
 	}
+	
+	/**
+	 * Metodo get de ResultSet
+	 * 
+	 * @return ResultSet
+	 */
+	
 	public ResultSet getRs() {
 		return rs;
 	}
+
+	/**
+	 * Metodo set de ResultSet
+	 * 
+	 * @param rs
+	 */
+	
 	public void setRs(ResultSet rs) {
 		this.rs = rs;
 	}
+
+	/**
+	 * Metodo get de Msg
+	 * 
+	 * @return String
+	 */
+	
 	public String getMsg() {
 		return msg;
 	}
+
+	/**
+	 * Metodo set de Msg
+	 * 
+	 * @param msg
+	 */
+	
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}

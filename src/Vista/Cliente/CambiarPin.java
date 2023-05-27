@@ -13,6 +13,12 @@ import javax.swing.JTextField;
 
 import Controlador.Cliente.GestorCambiarPin;
 
+/**
+ * Clase que extiende de JPanel, muestra al usuario como realizar el cambio
+ * 
+ *  @version 1.0
+ * @author Ruben
+ */
 
 public class CambiarPin extends JPanel{
 
@@ -24,6 +30,12 @@ public class CambiarPin extends JPanel{
 	private JPasswordField nuevoPin;
 	private JButton cambiar;
 	private JLabel errores;
+	
+	/**
+	 * Constructor de la clase CambiarPin
+	 * @param usr [Ventana principal del usuario]
+	 * @param numTarjeta [Tarjeta del usuario]
+	 */
 	
 	public CambiarPin(PrincipalUss usr,String numTarjeta) {
 		this.numTarjeta = numTarjeta;
@@ -86,57 +98,127 @@ public class CambiarPin extends JPanel{
 		
 	}
 
+	/**
+	 * Metodo get del Numero de la Tarjeta
+	 * @return String
+	 */
+	
 	public String getNumTarjeta() {
 		return numTarjeta;
 	}
 
+	/**
+	 * Metodo set del Numero de la Tarjeta
+	 * @param numTarjeta
+	 */
+	
 	public void setNumTarjeta(String numTarjeta) {
 		this.numTarjeta = numTarjeta;
 	}
 
+	/**
+	 * Metodo get de usr
+	 * @return PrincipalUss
+	 */
+	
 	public PrincipalUss getUsr() {
 		return usr;
 	}
 
+	/**
+	 * Metodo set de usr
+	 * @param usr
+	 */
+	
 	public void setUsr(PrincipalUss usr) {
 		this.usr = usr;
 	}
 
+	/**
+	 * Metodo get de volver
+	 * @return JButton
+	 */
+	
 	public JButton getVolver() {
 		return volver;
 	}
 
+	/**
+	 * Metodo set de volver
+	 * @param volver
+	 */
+	
 	public void setVolver(JButton volver) {
 		this.volver = volver;
 	}
 
+	/**
+	 * Metodo get de PIN Actual
+	 * @return JTextField
+	 */
+	
 	public JTextField getActualPin() {
 		return actualPin;
 	}
 
+	/**
+	 * Metodo set de PIN Actual
+	 * @param actualPin
+	 */
+	
 	public void setActualPin(JTextField actualPin) {
 		this.actualPin = actualPin;
 	}
 
+	/**
+	 * Metodo get de Nuevo PIN
+	 * @return JPasswordField
+	 */
+	
 	public JPasswordField getNuevoPin() {
 		return nuevoPin;
 	}
 
+	/**
+	 * Metodo set de Nuevo PIN
+	 * @param nuevoPin
+	 */
+	
 	public void setNuevoPin(JPasswordField nuevoPin) {
 		this.nuevoPin = nuevoPin;
 	}
 
+	/**
+	 * Metodo get de cambiar
+	 * @return JButton
+	 */
+	
 	public JButton getCambiar() {
 		return cambiar;
 	}
 
+	/**
+	 * Metodo set de cambiar
+	 * @param cambiar
+	 */
+	
 	public void setCambiar(JButton cambiar) {
 		this.cambiar = cambiar;
 	}
 
+	/**
+	 * Metodo get del texto errores
+	 * @return JLabel
+	 */
+	
 	public JLabel getErrores() {
 		return errores;
 	}
+	
+	/**
+	 * Metodo set del texto errores
+	 * @param errores
+	 */
 
 	public void setErrores(JLabel errores) {
 		this.errores = errores;

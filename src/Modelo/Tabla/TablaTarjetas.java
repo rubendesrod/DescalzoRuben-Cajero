@@ -8,9 +8,16 @@ import javax.swing.table.TableModel;
 
 import Modelo.DTO.TarjetaDTO;
 
+/**
+ * Clase que implemeta el TableMode y crear el Modelo de la Tabla Tarjetas
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
+
 public class TablaTarjetas implements TableModel{
-public static int COLUMNAS=6;
 	
+	public static int COLUMNAS=6;
 	
 	
 	@SuppressWarnings("rawtypes")
@@ -18,8 +25,12 @@ public static int COLUMNAS=6;
 	@SuppressWarnings("rawtypes")
 	private LinkedList listener = new LinkedList();
 	
+	/**
+	 * Metodo que borra una tarjeta pasandole la fila en la que se encuentra
+	 * @param row
+	 */
 	
-	public void borrarCliente(int row) {
+	public void borrarTarjeta(int row) {
 		datos.remove(row);
 		
 		TableModelEvent evento = new TableModelEvent(this, row, row, TableModelEvent.ALL_COLUMNS, TableModelEvent.DELETE);
@@ -27,8 +38,13 @@ public static int COLUMNAS=6;
 		avisaEvento(evento);
 	}
 	
+	/**
+	 * Metodo que añade un TarjetaDTO
+	 * @param tDTO
+	 */
+	
 	@SuppressWarnings("unchecked")
-	public void anadeCliente (TarjetaDTO tDTO) {
+	public void anadeTarjeta (TarjetaDTO tDTO) {
 		TarjetaDTO m = tDTO;
 		datos.add(m);
 		
@@ -40,12 +56,27 @@ public static int COLUMNAS=6;
 		avisaEvento(evento);
 	}
 	
+	/**
+	 * Metodo que devuelve el numero de Filas
+	 * @return int
+	 */
+	
 	@Override
 	public int getRowCount() {return datos.size();}
 
+	/**
+	 * Metodo que devuelve el numero de Columnas
+	 * @return int
+	 */
+	
 	@Override
 	public int getColumnCount() {return COLUMNAS;}
 
+	/**
+	 * Metodo que devuelvo el nombre de cada Columna
+	 * @return String
+	 */
+	
 	@Override
 	public String getColumnName(int columnIndex) {
 		switch(columnIndex) {
@@ -59,6 +90,11 @@ public static int COLUMNAS=6;
 		}
 	}
 
+	/**
+	 * Metodo que devuelve de que clase es cada columna
+	 * @return Class<?>
+	 */
+	
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 		switch(columnIndex) {
@@ -72,6 +108,14 @@ public static int COLUMNAS=6;
 		}
 	}
 
+	/**
+	 * Metodo que devuelve un booleano con que columa es editable o fila.
+	 * @param rowIndex
+	 * @param columnIndex
+	 * @return true, si es editable
+	 * @return false, si no es editables
+	 */
+	
 	@Override
 	public boolean isCellEditable(int rowIndex, int columnIndex) {
 		if(columnIndex == 0)
@@ -79,6 +123,13 @@ public static int COLUMNAS=6;
         return false;
 	}
 
+	/**
+	 * Metodo que devuelve un valor de TarjetaDTO
+	 * @param rowIndex
+	 * @param columnIndex
+	 * @return Object
+	 */
+	
 	@Override
 	public Object getValueAt(int rowIndex, int columnIndex) {
 		TarjetaDTO aux = (TarjetaDTO)(datos.get(rowIndex));
@@ -95,6 +146,13 @@ public static int COLUMNAS=6;
         }
 	}
 
+	/**
+	 * Metodo que setea un Valor en una columna o fila
+	 * @param valor
+	 * @param rowIndex
+	 * @param columnIndez
+	 */
+	
 	@Override
 	public void setValueAt(Object valor, int rowIndex, int columnIndex) {
 		TarjetaDTO aux = (TarjetaDTO)(datos.get(rowIndex));
@@ -111,17 +169,33 @@ public static int COLUMNAS=6;
 		
 	}
 
+	/**
+	 * Metodo que añade TableModelistener a una columna o fila
+	 * @param l
+	 */
+	
 	@Override
 	public void addTableModelListener(TableModelListener l) {
 		// TODO Auto-generated method stub
 		
 	}
 
+	/**
+	 * Metodo que borra TableModelistener a una columna o fila
+	 * @param l
+	 */
+	
 	@Override
 	public void removeTableModelListener(TableModelListener l) {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	/**
+	 * Metodo que avisa si se produce algun cambio en la tabla
+	 * @param evento
+	 */
+	
 	private void avisaEvento(TableModelEvent evento) {
 		int i;
 		

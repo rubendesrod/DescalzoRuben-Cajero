@@ -175,54 +175,125 @@ public class CuentaDAO {
 		}
 	}
 
+	/**
+	 * Metodo get de CuentaDTO
+	 * 
+	 * @return CuentaDTO
+	 */
+	
 	public CuentaDTO getcDTO() {
 		return cDTO;
 	}
 
+	/**
+	 * Metodo set de CuentaDTO
+	 * 
+	 * @param cDTO
+	 */
+	
 	public void setcDTO(CuentaDTO cDTO) {
 		this.cDTO = cDTO;
 	}
 
+	/**
+	 * Metodo get de PreparedStatement
+	 * 
+	 * @return PreparedStatement
+	 */
+	
 	public PreparedStatement getPs() {
 		return ps;
 	}
 
+	/**
+	 * Metodo set de PreparedStatement
+	 * 
+	 * @param ps
+	 */
+	
 	public void setPs(PreparedStatement ps) {
 		this.ps = ps;
 	}
 
+	/**
+	 * Metodo get de Conectar
+	 * 
+	 * @return Conectar
+	 */
+	
 	public Conectar getCn() {
 		return cn;
 	}
 
+	/**
+	 * Metodo set de Conectar
+	 * 
+	 * @param cn
+	 */
+	
 	public void setCn(Conectar cn) {
 		this.cn = cn;
 	}
+	
+	/**
+	 * Metodo que devuelve un ArrayList de CuentaDTO
+	 * 
+	 * @return ArrayList de CuentaDTO
+	 */
 
 	public ArrayList<CuentaDTO> getCuentas() {
 		return cuentas;
 	}
 
+	/**
+	 * Metodo set de ArrayList de CuentaDTO
+	 * 
+	 * @param cuentas
+	 */
+	
 	public void setCuentas(ArrayList<CuentaDTO> cuentas) {
 		this.cuentas = cuentas;
 	}
 
+	/**
+	 * Metodo get de ResultSet
+	 * 
+	 * @return ResultSet
+	 */
+	
 	public ResultSet getRs() {
 		return rs;
 	}
 
+	/**
+	 * Metodo set de ResultSet
+	 * 
+	 * @param rs
+	 */
+	
 	public void setRs(ResultSet rs) {
 		this.rs = rs;
 	}
 
+	/**
+	 * Metodo get de Msg
+	 * 
+	 * @return String
+	 */
+	
 	public String getMsg() {
 		return msg;
 	}
 
+	/**
+	 * Metodo set de Msg
+	 * 
+	 * @param msg
+	 */
+	
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
-	
 	
 	
 }

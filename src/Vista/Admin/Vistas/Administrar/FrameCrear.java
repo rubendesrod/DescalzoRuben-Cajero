@@ -12,6 +12,13 @@ import javax.swing.JTextField;
 
 import Controlador.Administrador.GestorCrearAdm;
 
+/**
+ * Clase que extiende de JFrame, muestra al administrador
+ * que datos puede crear del objeto que haya seleccionado
+ * 
+ * @version 1.0
+ * @author Ruben
+ */
 
 public class FrameCrear extends JFrame{
 
@@ -21,6 +28,11 @@ public class FrameCrear extends JFrame{
 	private JTextField txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8;
 	private JButton aceptar;
 	private Choice c;
+	
+	/**
+	 * Constructor de la clase FrameCrear
+	 * @param objeto [Texto del objeto seleccionados]
+	 */
 	
 	public FrameCrear(String objeto) {
 		super("Menu Crear");
@@ -77,171 +89,180 @@ public class FrameCrear extends JFrame{
 		this.setResizable(false);
 	}
 
-	
+	/**
+	 * Metodo get de errores
+	 * @return JLabel
+	 */
 	
 	public JLabel getErrores() {
 		return errores;
 	}
 
-
-
+	/**
+	 * Metodo set de errores
+	 * @param errores
+	 */
+	
 	public void setErrores(JLabel errores) {
 		this.errores = errores;
 	}
 
-
-
+	/**
+	 * Metodo get de c
+	 * @return Choice
+	 */
+	
 	public Choice getC() {
 		return c;
 	}
-
-
+	
+	/**
+	 * Metodo set de c
+	 * @param c
+	 */
 
 	public void setC(Choice c) {
 		this.c = c;
 	}
-
-
-
-	public String getObjeto() {
-		return objeto;
-	}
-
-	public void setObjeto(String objeto) {
-		this.objeto = objeto;
-	}
-
-	public JLabel getLb1() {
-		return lb1;
-	}
-
-	public void setLb1(JLabel lb1) {
-		this.lb1 = lb1;
-	}
-
-	public JLabel getLb2() {
-		return lb2;
-	}
-
-	public void setLb2(JLabel lb2) {
-		this.lb2 = lb2;
-	}
-
-	public JLabel getLb3() {
-		return lb3;
-	}
-
-	public void setLb3(JLabel lb3) {
-		this.lb3 = lb3;
-	}
-
-	public JLabel getLb4() {
-		return lb4;
-	}
-
-	public void setLb4(JLabel lb4) {
-		this.lb4 = lb4;
-	}
-
-	public JLabel getLb5() {
-		return lb5;
-	}
-
-	public void setLb5(JLabel lb5) {
-		this.lb5 = lb5;
-	}
-
-	public JLabel getLb6() {
-		return lb6;
-	}
-
-	public void setLb6(JLabel lb6) {
-		this.lb6 = lb6;
-	}
-
-	public JLabel getLb7() {
-		return lb7;
-	}
-
-	public void setLb7(JLabel lb7) {
-		this.lb7 = lb7;
-	}
-
-	public JLabel getLb8() {
-		return lb8;
-	}
-
-	public void setLb8(JLabel lb8) {
-		this.lb8 = lb8;
-	}
-
-	public JButton getAceptar() {
-		return aceptar;
-	}
-
-	public void setAceptar(JButton aceptar) {
-		this.aceptar = aceptar;
-	}
+	
+	/**
+	 * Metodo get de txt1
+	 * @return JTextField
+	 */
 
 	public JTextField getTxt1() {
 		return txt1;
 	}
+	
+	/**
+	 * Metodo set de txt1
+	 * @param txt1
+	 */
 
 	public void setTxt1(JTextField txt1) {
 		this.txt1 = txt1;
 	}
-
+	/**
+	 * Metodo get de txt2
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt2() {
 		return txt2;
 	}
 
+	/**
+	 * Metodo set de txt2
+	 * @param txt2
+	 */
+	
 	public void setTxt2(JTextField txt2) {
 		this.txt2 = txt2;
 	}
 
+	/**
+	 * Metodo get de txt3
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt3() {
 		return txt3;
 	}
+	
+	/**
+	 * Metodo set de txt3
+	 * @param txt3
+	 */
 
 	public void setTxt3(JTextField txt3) {
 		this.txt3 = txt3;
 	}
 
+	/**
+	 * Metodo get de txt4
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt4() {
 		return txt4;
 	}
+	
+	/**
+	 * Metodo set de txt4
+	 * @param txt4
+	 */
 
 	public void setTxt4(JTextField txt4) {
 		this.txt4 = txt4;
 	}
 
+	/**
+	 * Metodo get de txt5
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt5() {
 		return txt5;
 	}
+	
+	/**
+	 * Metodo set de txt5
+	 * @param txt5
+	 */
 
 	public void setTxt5(JTextField txt5) {
 		this.txt5 = txt5;
 	}
 
+	/**
+	 * Metodo get de txt6
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt6() {
 		return txt6;
 	}
 
+	/**
+	 * Metodo set de txt6
+	 * @param txt6
+	 */
+	
 	public void setTxt6(JTextField txt6) {
 		this.txt6 = txt6;
 	}
 
+	/**
+	 * Metodo get de txt7
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt7() {
 		return txt7;
 	}
 
+	/**
+	 * Metodo set de txt7
+	 * @param txt7
+	 */
+	
 	public void setTxt7(JTextField txt7) {
 		this.txt7 = txt7;
 	}
 
+	/**
+	 * Metodo get de txt8
+	 * @return JTextField
+	 */
+	
 	public JTextField getTxt8() {
 		return txt8;
 	}
+	
+	/**
+	 * Metodo set de txt8
+	 * @param txt8
+	 */
 
 	public void setTxt8(JTextField txt8) {
 		this.txt8 = txt8;

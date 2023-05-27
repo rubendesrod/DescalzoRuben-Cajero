@@ -8,9 +8,9 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 
 /**
- * Clase que pretende conectar con la base de datos Supermercado Galileo.
+ * Clase que pretende conectar con la base de datos Cajero Galileo.
  * 
- * @author Iván
+ * @author Ruben
  *
  */
 

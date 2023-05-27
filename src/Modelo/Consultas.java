@@ -2,7 +2,7 @@ package Modelo;
 
 /**
  * 
- * @author Rubens
+ * @author Ruben
  * 
  * @version 1.0
  * 
@@ -39,14 +39,14 @@ public interface Consultas {
 	
 	public static final String ACTUALIZAR_CUENTA_NUMCUENTA = "UPDATE cuentas SET numCuenta = ? WHERE numCuenta = ?";
 	public static final String ACTUALIZAR_CUENTA_SALDO = "UPDATE cuentas SET saldo = ? WHERE numCuenta = ?";
-	public static final String ACTUALIZAR_CUENTA_DNI = "UPDATE cuentas SET dani = ? WHERE numCuenta = ?";
+	public static final String ACTUALIZAR_CUENTA_DNI = "UPDATE cuentas SET dni = ? WHERE numCuenta = ?";
 	public static final String ACTUALIZAR_CUENTA_ADMIN = "UPDATE cuentas SET admin = ? WHERE numCuenta = ?";
 	
 	public static final String ACTUALIZAR_TARJETA_PIN = "UPDATE tarjetas SET pin = ? WHERE numero = ?";
 	public static final String ACTUALIZAR_TARJETA_CVV = "UPDATE tarjetas SET cvv = ? WHERE numero = ?";
 	public static final String ACTUALIZAR_TARJETA_VALIDEZ = "UPDATE tarjetas SET validez = ? WHERE numero = ?";
 	public static final String ACTUALIZAR_TARJETA_ESTADO = "UPDATE tarjetas SET estado = ? WHERE numero = ?";
-	public static final String ACTUALIZAR_TARJETA_NUMCUENTA = "UPDATE tarjetas SET numCuenta = ? WHERE numCuenta = ?";
+	public static final String ACTUALIZAR_TARJETA_NUMCUENTA = "UPDATE tarjetas SET numCuenta = ? WHERE numero = ?";
 	public static final String ACTUALZIAR_TARJETA_ADMIN = "UPDATE tarjetas SET admin = ? WHERE numero = ?";
 	
 	public static final String ACTUALIZAR_MOVIMIENTO_FECHA = "UPDATE movimientos SET fecha = ? WHERE codigo = ?";
