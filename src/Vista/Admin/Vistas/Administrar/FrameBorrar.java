@@ -19,9 +19,9 @@ import Controlador.Administrador.GestorBorrarAdm;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class FrameBorrar extends JFrame{
 
-	private String objeto;
 	private JButton aceptar;
 	private JTextField pk;
 	private JLabel txt;
@@ -36,7 +36,6 @@ public class FrameBorrar extends JFrame{
 		
 		super("Adminitar borrar");
 		
-		this.objeto = objeto;
 		this.setLayout(new FlowLayout());
 		this.setLocationRelativeTo(null);
 		this.pack();
@@ -82,7 +81,7 @@ public class FrameBorrar extends JFrame{
 	
 	/**
 	 * Metodo set de Pk
-	 * @param pk
+	 * @param pk Clave Primaria de cada objeto
 	 */
 
 	public void setPk(JTextField pk) {
@@ -100,7 +99,7 @@ public class FrameBorrar extends JFrame{
 
 	/**
 	 * Metodo set de errores
-	 * @param errores
+	 * @param errores Texto donde se encuentran los errores
 	 */
 
 	public void setErrores(JLabel errores) {

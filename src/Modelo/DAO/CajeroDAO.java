@@ -26,6 +26,10 @@ public class CajeroDAO {
 	private ResultSet rs = null;
 	private String msg;
 	
+	/**
+	 * Metodo que busca el Cajero realizando una consulta a la BB.DD
+	 */
+	
 	public void buscarCajero() {
 		this.msg ="Los movimientos han sido encontrados";
 		this.cn = new Conectar();
@@ -42,6 +46,11 @@ public class CajeroDAO {
 			this.cn.cerrarConexion(this.rs, this.cn.getConnect(), this.ps);
 		}
 	}
+	
+	/**
+	 * Metodo que relaiza una modificacion del cajero en la BB.DD
+	 * @param cDTO [CajeroDTO]
+	 */
 	
 	public void modificarCajero(CajeroDTO cDTO) {
 		this.msg = "La cuenta ha sido modificada correctamente";
@@ -74,7 +83,7 @@ public class CajeroDAO {
 	/**
 	 * Metodo set de CajeroDTO
 	 * 
-	 * @param cDTO
+	 * @param cDTO [CajeroDTO]
 	 */
 	
 	public void setcDTO(CajeroDTO cDTO) {
@@ -94,7 +103,7 @@ public class CajeroDAO {
 	/**
 	 * Metodo set de PreparedStatement
 	 * 
-	 * @param ps
+	 * @param ps [PreparedStatement]
 	 */
 	
 	public void setPs(PreparedStatement ps) {
@@ -114,7 +123,7 @@ public class CajeroDAO {
 	/**
 	 * Metodo set de Conectar
 	 * 
-	 * @param cn
+	 * @param cn [Conectar]
 	 */
 	
 	public void setCn(Conectar cn) {
@@ -134,7 +143,7 @@ public class CajeroDAO {
 	/**
 	 * Metodo set de ResultSet
 	 * 
-	 * @param rs
+	 * @param rs [ResultSet]
 	 */
 	
 	public void setRs(ResultSet rs) {
@@ -154,7 +163,7 @@ public class CajeroDAO {
 	/**
 	 * Metodo set de Msg
 	 * 
-	 * @param msg
+	 * @param msg [Mensaje de si se ha realizado la consulta o no]
 	 */
 	
 	public void setMsg(String msg) {

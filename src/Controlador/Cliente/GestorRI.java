@@ -128,7 +128,7 @@ public class GestorRI implements ActionListener{
 	/**
 	 * Metodo set de Msg pasandole un String
 	 * 
-	 * @param msg
+	 * @param msg Mensaje de texto
 	 */
 	
 	public void setMsg(String msg) {

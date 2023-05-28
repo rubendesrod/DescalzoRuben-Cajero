@@ -1,12 +1,9 @@
 package Vista.Admin.Vistas;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -27,6 +24,7 @@ import Vista.Admin.PrincipalAdm;
  *
  */
 
+@SuppressWarnings("serial")
 public class PanelPrincipal extends JPanel{
 
 	private JLabel estado;
@@ -115,7 +113,7 @@ public class PanelPrincipal extends JPanel{
 
 	/**
 	 * Metodo set del estado
-	 * @param estado
+	 * @param estado Estado del Cajero
 	 */
 	
 	public void setEstado(JLabel estado) {
@@ -133,7 +131,7 @@ public class PanelPrincipal extends JPanel{
 
 	/**
 	 * Metodo set de adm
-	 * @param adm
+	 * @param adm Panel Principal de Adm
 	 */
 	
 	public void setAdm(PrincipalAdm adm) {

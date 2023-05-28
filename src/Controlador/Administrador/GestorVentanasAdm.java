@@ -10,7 +10,6 @@ import Vista.Admin.Vistas.PanelPrincipal;
 import Vista.Admin.Vistas.PanelTablaClientes;
 import Vista.Admin.Vistas.PanelTablaCuentas;
 import Vista.Admin.Vistas.PanelTablaTarjetas;
-import Vista.Admin.Vistas.Administrar.AdministrarCliente;
 
 /**
  * Clase que se encarga de Gestionar las ventanas a la que quiere moverse el administrador

@@ -20,6 +20,7 @@ import Controlador.Cliente.GestorCambiarPin;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class CambiarPin extends JPanel{
 
 	private String numTarjeta;
@@ -109,7 +110,7 @@ public class CambiarPin extends JPanel{
 
 	/**
 	 * Metodo set del Numero de la Tarjeta
-	 * @param numTarjeta
+	 * @param numTarjeta [Numero de la tarjeta]
 	 */
 	
 	public void setNumTarjeta(String numTarjeta) {
@@ -127,7 +128,7 @@ public class CambiarPin extends JPanel{
 
 	/**
 	 * Metodo set de usr
-	 * @param usr
+	 * @param usr [Panel principal del usuario]
 	 */
 	
 	public void setUsr(PrincipalUss usr) {
@@ -145,7 +146,7 @@ public class CambiarPin extends JPanel{
 
 	/**
 	 * Metodo set de volver
-	 * @param volver
+	 * @param volver [Volver al Panel principal]
 	 */
 	
 	public void setVolver(JButton volver) {
@@ -163,7 +164,7 @@ public class CambiarPin extends JPanel{
 
 	/**
 	 * Metodo set de PIN Actual
-	 * @param actualPin
+	 * @param actualPin [Pin Actual de la tarjeta]
 	 */
 	
 	public void setActualPin(JTextField actualPin) {
@@ -181,7 +182,7 @@ public class CambiarPin extends JPanel{
 
 	/**
 	 * Metodo set de Nuevo PIN
-	 * @param nuevoPin
+	 * @param nuevoPin [Nuevo PIN introducido]
 	 */
 	
 	public void setNuevoPin(JPasswordField nuevoPin) {
@@ -199,7 +200,7 @@ public class CambiarPin extends JPanel{
 
 	/**
 	 * Metodo set de cambiar
-	 * @param cambiar
+	 * @param cambiar [Modifica el PIN]
 	 */
 	
 	public void setCambiar(JButton cambiar) {
@@ -217,7 +218,7 @@ public class CambiarPin extends JPanel{
 	
 	/**
 	 * Metodo set del texto errores
-	 * @param errores
+	 * @param errores [Texto de los errores]
 	 */
 
 	public void setErrores(JLabel errores) {

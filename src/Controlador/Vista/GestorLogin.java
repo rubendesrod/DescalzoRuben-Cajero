@@ -35,8 +35,7 @@ public class GestorLogin implements ActionListener {
 	private TarjetaDAO tDAO = new TarjetaDAO();
 	private AdminDAO aDAO = new AdminDAO();
 	private Validador val;
-	
-	public int intentos = 0;
+	private int intentos = 0;
 	
 	/**
 	 * Constructor de la clase 
@@ -187,7 +186,7 @@ public class GestorLogin implements ActionListener {
 	/**
 	 * Metodo set de DatosLoginAdm
 	 * 
-	 * @param da
+	 * @param da Panel de dartos del Administrador
 	 */
 	
 	public void setDa(DatosLoginAdm da) {
@@ -207,7 +206,7 @@ public class GestorLogin implements ActionListener {
 	/**
 	 * Metodo set de DatosLoginUss
 	 * 
-	 * @param du
+	 * @param du Panel de datos del cliente
 	 */
 	
 	public void setDu(DatosLoginUss du) {
@@ -227,7 +226,7 @@ public class GestorLogin implements ActionListener {
 	/**
 	 * Metodo set de Vista
 	 * 
-	 * @param v
+	 * @param v Frame principal
 	 */
 	
 	public void setV(Vista v) {
@@ -247,7 +246,7 @@ public class GestorLogin implements ActionListener {
 	/**
 	 * Metodo get de AdminDTO
 	 * 
-	 * @param AdminDTO
+	 * @param adm AdministradorDTO
 	 */
 	
 	public void setAdm(AdminDTO adm) {
@@ -267,7 +266,7 @@ public class GestorLogin implements ActionListener {
 	/**
 	 * Metodo set de TarjetaDTO
 	 * 
-	 * @param us
+	 * @param us TarjetaDTO
 	 */
 	
 	public void setUs(TarjetaDTO us) {
@@ -287,7 +286,7 @@ public class GestorLogin implements ActionListener {
 	/**
 	 * Metodo set de TarjetaDAO
 	 * 
-	 * @param tDAO
+	 * @param tDAO TarjetaDAO
 	 */
 	
 	public void settDAO(TarjetaDAO tDAO) {
@@ -307,7 +306,7 @@ public class GestorLogin implements ActionListener {
 	/**
 	 * Metodo set de AdminDAO
 	 * 
-	 * @param aDAO
+	 * @param aDAO AdminDAO
 	 */
 	
 	public void setaDAO(AdminDAO aDAO) {

@@ -29,11 +29,11 @@ public class MovimientoDTO {
 	
 	/**
 	 * Constructor de la clase MovimientoDTO con parametros
-	 * @param fecha
-	 * @param estado
-	 * @param cantidad
-	 * @param num
-	 * @param dni
+	 * @param fecha Fecha en la que se ha realizado
+	 * @param estado Si ha sido Ingreso o Retiro
+	 * @param cantidad Cantidad de dinero
+	 * @param num Numero de cuenta
+	 * @param dni DNI del cliente
 	 */
 	
 	public MovimientoDTO(String fecha, String estado,Double cantidad, String num, String dni) {
@@ -55,7 +55,7 @@ public class MovimientoDTO {
 
 	/**
 	 * Metodo set de la Fehca
-	 * @param fecha
+	 * @param fecha Fecha en la que se ha realizado
 	 */
 	
 	public void setFecha(String fecha) {
@@ -73,7 +73,7 @@ public class MovimientoDTO {
 
 	/**
 	 * Metodo set del Estado
-	 * @param estado
+	 * @param estado Tipo de accion
 	 */
 	
 	public void setEstado(String estado) {
@@ -91,7 +91,7 @@ public class MovimientoDTO {
 	
 	/**
 	 * Metodo set de la Cantidad
-	 * @param cantidad
+	 * @param cantidad Dinero
 	 */
 	
 	public void setCantidad(Double cantidad) {
@@ -109,7 +109,7 @@ public class MovimientoDTO {
 
 	/**
 	 * Metodo set del Numero de Cuenta
-	 * @param numCuenta
+	 * @param numCuenta Numero de la Cuenta
 	 */
 	
 	public void setNumCuenta(String numCuenta) {
@@ -127,7 +127,7 @@ public class MovimientoDTO {
 
 	/**
 	 * Metodo set del DNI
-	 * @param dni
+	 * @param dni DNI del cliente
 	 */
 	
 	public void setDni(String dni) {

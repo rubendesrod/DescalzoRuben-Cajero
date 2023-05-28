@@ -19,6 +19,7 @@ import javax.swing.border.TitledBorder;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class AdministrarCliente extends JPanel{
 
 	private JButton crear;

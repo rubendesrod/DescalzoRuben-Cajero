@@ -29,7 +29,7 @@ public class MovimientoDAO{
 	/**
 	 * Metodo que se encarga de crear un Movimiento
 	 * 
-	 * @param MovimientoDTO
+	 * @param mDTO MovimientoDTO
 	 */
 	
 	public void crearMovimiento(MovimientoDTO mDTO) {
@@ -54,7 +54,7 @@ public class MovimientoDAO{
 	/**
 	 * Metodo que se encarga de buscar un movimiento
 	 * 
-	 * @param mDTO
+	 * @param mDTO MovimientoDTO
 	 */
 	
 	public void buscarMovimiento(MovimientoDTO mDTO) {
@@ -94,7 +94,7 @@ public class MovimientoDAO{
 	/**
 	 * Metodo set de MovimientoDTO
 	 * 
-	 * @param mDTO
+	 * @param mDTO MovimientoDTO
 	 */
 	
 	public void setmDTO(MovimientoDTO mDTO) {
@@ -114,7 +114,7 @@ public class MovimientoDAO{
 	/**
 	 * Metodo set de PreparedStatement
 	 * 
-	 * @param ps
+	 * @param ps PreparedStatement
 	 */
 	
 	public void setPs(PreparedStatement ps) {
@@ -134,7 +134,7 @@ public class MovimientoDAO{
 	/**
 	 * Metodo set de Conectar
 	 * 
-	 * @param cn
+	 * @param cn Conectar
 	 */
 	
 	public void setCn(Conectar cn) {
@@ -154,7 +154,7 @@ public class MovimientoDAO{
 	/**
 	 * Metodo set de ArrayList de MovimientoDTO
 	 * 
-	 * @param cuentas
+	 * @param cuentas ArrayList de Movimientos
 	 */
 	
 	public void setCuentas(ArrayList<MovimientoDTO> cuentas) {
@@ -175,7 +175,7 @@ public class MovimientoDAO{
 	/**
 	 * Metodo set de ResultSet
 	 * 
-	 * @param rs
+	 * @param rs ResultSet
 	 */
 	
 	public void setRs(ResultSet rs) {
@@ -195,7 +195,7 @@ public class MovimientoDAO{
 	/**
 	 * Metodo set de Msg
 	 * 
-	 * @param msg
+	 * @param msg Mensaje si se ha realizado la consulta o no
 	 */
 	
 	public void setMsg(String msg) {

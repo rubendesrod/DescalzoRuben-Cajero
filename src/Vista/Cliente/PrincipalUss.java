@@ -27,6 +27,7 @@ import Vista.Vista;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class PrincipalUss extends JFrame{
 
 	private JButton btn1;
@@ -41,7 +42,7 @@ public class PrincipalUss extends JFrame{
 	
 	/**
 	 * Constructor de la clase PrincipalUss
-	 * @param n
+	 * @param n Numero de la Tarjeta
 	 */
 	
 	public PrincipalUss( String n) {
@@ -130,7 +131,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo mostrar Panel
-	 * @param p
+	 * @param p Panel principal
 	 */
 	
 	public void mostrarPanel(JPanel p) {
@@ -149,7 +150,7 @@ public class PrincipalUss extends JFrame{
 	
 	/**
 	 * Metodo set Btn1
-	 * @param btn1
+	 * @param btn1 JButton Retirar
 	 */
 
 	public void setBtn1(JButton btn1) {
@@ -167,7 +168,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo set Btn2
-	 * @param btn2
+	 * @param btn2 JButton Ver Movimientos
 	 */
 	
 	public void setBtn2(JButton btn2) {
@@ -185,7 +186,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo set Btn3
-	 * @param btn3
+	 * @param btn3 JButton retirar
 	 */
 	
 	public void setBtn3(JButton btn3) {
@@ -203,7 +204,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo set Btn4
-	 * @param btn4
+	 * @param btn4 JButton Salir
 	 */
 	
 	public void setBtn4(JButton btn4) {
@@ -221,7 +222,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo set Btn5
-	 * @param btn5
+	 * @param btn5 JButton cambiar PIN
 	 */
 	
 	public void setBtn5(JButton btn5) {
@@ -239,7 +240,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo set de P
-	 * @param p
+	 * @param p Panel
 	 */
 	
 	public void setP(JPanel p) {
@@ -257,7 +258,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo set de la Marca de Agua
-	 * @param wMark
+	 * @param wMark Panel Marca de Agua
 	 */
 	
 	public void setwMark(JPanel wMark) {
@@ -266,7 +267,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo get de Botonera
-	 * @return ArrayList<JButton>
+	 * @return ArrayList
 	 */
 	
 	public ArrayList<JButton> getBotonera() {
@@ -275,7 +276,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo set de Botonera
-	 * @param botonera
+	 * @param botonera ArrayList de Botones
 	 */
 	
 	public void setBotonera(ArrayList<JButton> botonera) {
@@ -293,7 +294,7 @@ public class PrincipalUss extends JFrame{
 
 	/**
 	 * Metodo set del Numero de la Tarjeta
-	 * @param numTarjeta
+	 * @param numTarjeta Numero de la Tarjeta
 	 */
 	
 	public void setNumTarjeta(String numTarjeta) {

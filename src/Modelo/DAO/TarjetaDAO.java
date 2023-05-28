@@ -8,16 +8,16 @@ import Modelo.Conectar;
 import Modelo.Consultas;
 import Modelo.DTO.TarjetaDTO;
 
-public class TarjetaDAO {
+/**
+ * @author Ruben
+ * 
+ * @version 1.0
+ * 
+ * Clase que comunica TarjetaDTO con la BBDD
+ * 
+ */
 
-	/**
-	 * @author Ruben
-	 * 
-	 * @version 1.0
-	 * 
-	 * Clase que comunica TarjetaDTO con la BBDD
-	 * 
-	 */
+public class TarjetaDAO {
 	
 	private TarjetaDTO tDTO = new TarjetaDTO();
 	private PreparedStatement ps = null;
@@ -207,7 +207,7 @@ public class TarjetaDAO {
 	/**
 	 * Metodo set de TarjetaDTO
 	 * 
-	 * @param tDTO
+	 * @param tDTO TarjetaDTO
 	 */
 	
 	public void settDTO(TarjetaDTO tDTO) {
@@ -227,7 +227,7 @@ public class TarjetaDAO {
 	/**
 	 * Metodo set de PreparedStatement
 	 * 
-	 * @param ps
+	 * @param ps PreparedStatement
 	 */
 	
 	public void setPs(PreparedStatement ps) {
@@ -247,7 +247,7 @@ public class TarjetaDAO {
 	/**
 	 * Metodo set de Conectar
 	 * 
-	 * @param cn
+	 * @param cn Conectar
 	 */
 	
 	public void setCn(Conectar cn) {
@@ -267,7 +267,7 @@ public class TarjetaDAO {
 	/**
 	 * Metodo set de ArrayList de TarjetaDTO
 	 * 
-	 * @param TarjetasDTO
+	 * @param tarjetasDTO ArrayList de TarjetasDTO
 	 */
 	
 	public void setTarjetasDTO(ArrayList<TarjetaDTO> tarjetasDTO) {
@@ -287,7 +287,7 @@ public class TarjetaDAO {
 	/**
 	 * Metodo set de ResultSet
 	 * 
-	 * @param rs
+	 * @param rs ResultSet
 	 */
 	
 	public void setRs(ResultSet rs) {
@@ -307,7 +307,7 @@ public class TarjetaDAO {
 	/**
 	 * Metodo set de Msg
 	 * 
-	 * @param msg
+	 * @param msg Mensaje de error o confirmacion
 	 */
 	
 	public void setMsg(String msg) {

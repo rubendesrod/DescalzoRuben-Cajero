@@ -16,8 +16,11 @@ import Modelo.DTO.ClienteDTO;
  */
 
 public class TablaClientes implements TableModel{
-public static int COLUMNAS=8;
 	
+	/**
+	 * Indica las columnas de la tabla
+	 */
+	public static int COLUMNAS=8;
 	@SuppressWarnings("rawtypes")
 	private LinkedList datos = new LinkedList();
 	@SuppressWarnings("rawtypes")
@@ -25,7 +28,7 @@ public static int COLUMNAS=8;
 	
 	/**
 	 * Metodo que borra un cliente pasandole la fila en la que se encuentra
-	 * @param row
+	 * @param row Fila
 	 */
 	
 	public void borrarCliente(int row) {
@@ -38,7 +41,7 @@ public static int COLUMNAS=8;
 	
 	/**
 	 * Metodo que añade un clienteDTO
-	 * @param cDTO
+	 * @param cDTO ClienteDTO
 	 */
 	
 	@SuppressWarnings("unchecked")
@@ -92,7 +95,7 @@ public static int COLUMNAS=8;
 
 	/**
 	 * Metodo que devuelve de que clase es cada columna
-	 * @return Class<?>
+	 * @return Class
 	 */
 	
 	@Override
@@ -113,10 +116,9 @@ public static int COLUMNAS=8;
 	
 	/**
 	 * Metodo que devuelve un booleano con que columa es editable o fila.
-	 * @param rowIndex
-	 * @param columnIndex
-	 * @return true, si es editable
-	 * @return false, si no es editables
+	 * @param rowIndex Fila
+	 * @param columnIndex Columna
+	 * @return true, si es editable o false, si no es editables
 	 */
 	
 	@Override
@@ -128,8 +130,8 @@ public static int COLUMNAS=8;
 
 	/**
 	 * Metodo que devuelve un valor de ClienteDTO
-	 * @param rowIndex
-	 * @param columnIndex
+	 * @param rowIndex Indice de Fila
+	 * @param columnIndex Indice de Columna
 	 * @return Object
 	 */
 	
@@ -153,9 +155,9 @@ public static int COLUMNAS=8;
 
 	/**
 	 * Metodo que setea un Valor en una columna o fila
-	 * @param valor
-	 * @param rowIndex
-	 * @param columnIndex
+	 * @param valor objeto
+	 * @param rowIndex Indice de Fila
+	 * @param columnIndex Indice de Columna
 	 */
 	
 	@Override
@@ -178,7 +180,7 @@ public static int COLUMNAS=8;
 
 	/**
 	 * Metodo que añade TableModelistener a una columna o fila
-	 * @param l
+	 * @param l Listener de la Tabla
 	 */
 	
 	@Override
@@ -189,7 +191,7 @@ public static int COLUMNAS=8;
 	
 	/**
 	 * Metodo que borra TableModelistener a una columna o fila
-	 * @param l
+	 * @param l Listener de la Tabla
 	 */
 	
 	@Override
@@ -200,7 +202,7 @@ public static int COLUMNAS=8;
 	
 	/**
 	 * Metodo que avisa si se produce algun cambio en la tabla
-	 * @param evento
+	 * @param evento Al activar un Listener de la tabla
 	 */
 	
 	private void avisaEvento(TableModelEvent evento) {

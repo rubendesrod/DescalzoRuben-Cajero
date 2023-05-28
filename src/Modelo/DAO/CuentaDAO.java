@@ -9,16 +9,16 @@ import Modelo.Conectar;
 import Modelo.Consultas;
 import Modelo.DTO.CuentaDTO;
 
-public class CuentaDAO {
+/**
+ * @author Ruben
+ * 
+ * @version 1.0
+ * 
+ * Clase que comunica CuentaDTO con la BBDD
+ * 
+ */
 
-	/**
-	 * @author Ruben
-	 * 
-	 * @version 1.0
-	 * 
-	 * Clase que comunica CuentaDTO con la BBDD
-	 * 
-	 */
+public class CuentaDAO {
 	
 	private CuentaDTO cDTO = new CuentaDTO();
 	private PreparedStatement ps = null;
@@ -188,7 +188,7 @@ public class CuentaDAO {
 	/**
 	 * Metodo set de CuentaDTO
 	 * 
-	 * @param cDTO
+	 * @param cDTO [CuentaDTO]
 	 */
 	
 	public void setcDTO(CuentaDTO cDTO) {
@@ -208,7 +208,7 @@ public class CuentaDAO {
 	/**
 	 * Metodo set de PreparedStatement
 	 * 
-	 * @param ps
+	 * @param ps [PreparedStatement]
 	 */
 	
 	public void setPs(PreparedStatement ps) {
@@ -228,7 +228,7 @@ public class CuentaDAO {
 	/**
 	 * Metodo set de Conectar
 	 * 
-	 * @param cn
+	 * @param cn [Conectar]
 	 */
 	
 	public void setCn(Conectar cn) {
@@ -248,7 +248,7 @@ public class CuentaDAO {
 	/**
 	 * Metodo set de ArrayList de CuentaDTO
 	 * 
-	 * @param cuentas
+	 * @param cuentas [ArrayList de CuentaDTO]
 	 */
 	
 	public void setCuentas(ArrayList<CuentaDTO> cuentas) {
@@ -268,7 +268,7 @@ public class CuentaDAO {
 	/**
 	 * Metodo set de ResultSet
 	 * 
-	 * @param rs
+	 * @param rs [ResultSet]
 	 */
 	
 	public void setRs(ResultSet rs) {
@@ -288,7 +288,7 @@ public class CuentaDAO {
 	/**
 	 * Metodo set de Msg
 	 * 
-	 * @param msg
+	 * @param msg [Mensaje de la consulta]
 	 */
 	
 	public void setMsg(String msg) {

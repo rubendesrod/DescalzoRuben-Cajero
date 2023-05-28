@@ -17,6 +17,7 @@ import Vista.Admin.Vistas.Administrar.AdministrarTarjeta;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class PanelAdministrar extends JPanel{
 
 	private AdministrarCliente acli;
@@ -52,7 +53,7 @@ public class PanelAdministrar extends JPanel{
 	
 	/**
 	 * Metodo set acli
-	 * @param acli
+	 * @param acli Panel Administrar Cliente
 	 */
 
 	public void setAcli(AdministrarCliente acli) {
@@ -70,7 +71,7 @@ public class PanelAdministrar extends JPanel{
 
 	/**
 	 * Metodo set at
-	 * @param at
+	 * @param at Panel Administrar Tarjeta
 	 */
 	
 	public void setAt(AdministrarTarjeta at) {
@@ -88,7 +89,7 @@ public class PanelAdministrar extends JPanel{
 
 	/**
 	 * Metodo set acu
-	 * @param acu
+	 * @param acu Panel Administrar Cuenta
 	 */
 	
 	public void setAcu(AdministrarCuenta acu) {

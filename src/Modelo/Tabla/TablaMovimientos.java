@@ -17,9 +17,10 @@ import Modelo.DTO.MovimientoDTO;
 
 public class TablaMovimientos implements TableModel{
 
+	/**
+	 * Indica las columnas de la tabla
+	 */
 	public static int COLUMNAS=5;
-	
-	
 	@SuppressWarnings("rawtypes")
 	private LinkedList datos = new LinkedList();
 	@SuppressWarnings("rawtypes")
@@ -27,7 +28,7 @@ public class TablaMovimientos implements TableModel{
 	
 	/**
 	 * Metodo que borra un movimiento pasandole la fila en la que se encuentra
-	 * @param row
+	 * @param row Fila
 	 */
 	
 	public void borrarMovimiento(int row) {
@@ -40,7 +41,7 @@ public class TablaMovimientos implements TableModel{
 	
 	/**
 	 * Metodo que añade un clienteDTO
-	 * @param cDTO
+	 * @param mDTO Movimiento DTO
 	 */
 	
 	@SuppressWarnings("unchecked")
@@ -91,7 +92,7 @@ public class TablaMovimientos implements TableModel{
 
 	/**
 	 * Metodo que devuelve de que clase es cada columna
-	 * @return Class<?>
+	 * @return Class
 	 */
 	
 	@Override
@@ -108,10 +109,9 @@ public class TablaMovimientos implements TableModel{
 
 	/**
 	 * Metodo que devuelve un booleano con que columa es editable o fila.
-	 * @param rowIndex
-	 * @param columnIndex
-	 * @return true, si es editable
-	 * @return false, si no es editables
+	 * @param rowIndex Indice de la Fila
+	 * @param columnIndex Indice de la Columna
+	 * @return true, si es editable o false, si no es editable
 	 */
 	
 	@Override
@@ -119,8 +119,8 @@ public class TablaMovimientos implements TableModel{
 
 	/**
 	 * Metodo que devuelve un valor de ClienteDTO
-	 * @param rowIndex
-	 * @param columnIndex
+	 * @param rowIndex Indice de la Fila
+	 * @param columnIndex Indice de la Columna
 	 * @return Object
 	 */
 	
@@ -141,9 +141,9 @@ public class TablaMovimientos implements TableModel{
 
 	/**
 	 * Metodo que setea un Valor en una columna o fila
-	 * @param valor
-	 * @param rowIndex
-	 * @param columnIndex
+	 * @param valor Objeto
+	 * @param rowIndex Indice de la Fila
+	 * @param columnIndex Indice de la Columna
 	 */
 	
 	@Override
@@ -163,7 +163,7 @@ public class TablaMovimientos implements TableModel{
 
 	/**
 	 * Metodo que añade TableModelistener a una columna o fila
-	 * @param l
+	 * @param l Listener de la tabla
 	 */
 	
 	@Override
@@ -174,7 +174,7 @@ public class TablaMovimientos implements TableModel{
 	
 	/**
 	 * Metodo que borra TableModelistener a una columna o fila
-	 * @param l
+	 * @param l Listener de la Tabla
 	 */
 	
 	@Override
@@ -185,7 +185,7 @@ public class TablaMovimientos implements TableModel{
 	
 	/**
 	 * Metodo que avisa si se produce algun cambio en la tabla
-	 * @param evento
+	 * @param evento Escucha si se activa un listener
 	 */
 	
 	private void avisaEvento(TableModelEvent evento) {

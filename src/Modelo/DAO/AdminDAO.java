@@ -24,7 +24,7 @@ public class AdminDAO {
 	/**
 	 * Metodo que se encarga de un admin
 	 * 
-	 * @param AdminDTO
+	 * @param aDTO [AdminDTO]
 	 */
 	
 	public void buscarAdmin(AdminDTO aDTO) {
@@ -66,7 +66,7 @@ public class AdminDAO {
 	/**
 	 * Metodo set AdminDTO
 	 * 
-	 * @param adm
+	 * @param adm [AdminDTO]
 	 */
 	
 	public void setAdm(AdminDTO adm) {
@@ -86,7 +86,7 @@ public class AdminDAO {
 	/**
 	 * Metodo set de PreparedStatement
 	 * 
-	 * @param ps
+	 * @param ps [PreparedStatement]
 	 */
 	
 	public void setPs(PreparedStatement ps) {
@@ -106,7 +106,7 @@ public class AdminDAO {
 	/**
 	 * Metodo set de Conectar
 	 * 
-	 * @param cn
+	 * @param cn [Conectar]
 	 */
 	
 	public void setCn(Conectar cn) {
@@ -126,7 +126,7 @@ public class AdminDAO {
 	/**
 	 * Metodo set de ResultSet
 	 * 
-	 * @param rs
+	 * @param rs [ResultSet]
 	 */
 	
 	public void setRs(ResultSet rs) {
@@ -146,7 +146,7 @@ public class AdminDAO {
 	/**
 	 * Metodo set de Msg
 	 * 
-	 * @param msg
+	 * @param msg [Mensaje si se ha realizado o no la consulta]
 	 */
 	
 	public void setMsg(String msg) {

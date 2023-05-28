@@ -23,8 +23,8 @@ public class AdminDTO {
 	
 	/**
 	 * Constructor de la clase con parametros
-	 * @param u
-	 * @param con
+	 * @param u [Usuario de log del admin]
+	 * @param con [Contraseña del admin]
 	 */
 	
 	public AdminDTO(String u, String con) {
@@ -44,7 +44,7 @@ public class AdminDTO {
 
 	/**
 	 * Metodo set de Usuario
-	 * @param usuario
+	 * @param usuario [usuario con el que se logea el admin]
 	 */
 	
 	public void setUsuario(String usuario) {
@@ -63,7 +63,7 @@ public class AdminDTO {
 
 	/**
 	 * Metodo set de Contraseña
-	 * @param contra
+	 * @param contra [Contraseña del administrador]
 	 */
 	
 	public void setContra(String contra) {

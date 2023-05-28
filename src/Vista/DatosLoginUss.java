@@ -33,7 +33,7 @@ public class DatosLoginUss extends JPanel{
 	private JPasswordField passO;
 	private JTextField passV;
 	private JLabel error;
-	public Boolean mostrar = true;
+	private Boolean mostrar;
 	
 	/**
 	 * Constructor de la clase DatosLoginUss
@@ -55,7 +55,7 @@ public class DatosLoginUss extends JPanel{
 		}
 		
 		
-		
+		mostrar = true;
 		ver = new JButton();
 		ImageIcon oculto = new ImageIcon("img/oculto.png");
 		ImageIcon visible = new ImageIcon("img/visible.png");
@@ -144,7 +144,7 @@ public class DatosLoginUss extends JPanel{
 		
 		/**
 		 * Metodo set de Login
-		 * @param login
+		 * @param login Boton de login
 		 */
 
 		public void setLogin(JButton login) {
@@ -162,7 +162,7 @@ public class DatosLoginUss extends JPanel{
 
 		/**
 		 * Metodo set del texto usuario
-		 * @param usuario
+		 * @param usuario Texto que indica donde poner la Tarjeta
 		 */
 		
 		public void setUsuario(JLabel usuario) {
@@ -180,7 +180,7 @@ public class DatosLoginUss extends JPanel{
 
 		/**
 		 * Metodo set del Texto Contra
-		 * @param contra
+		 * @param contra Texto que indica donde poner el PIN
 		 */
 		
 		public void setContra(JLabel contra) {
@@ -198,7 +198,7 @@ public class DatosLoginUss extends JPanel{
 		
 		/**
 		 * Metodo set del nombre de usuario
-		 * @param uss
+		 * @param uss Campo donde se pone el Numero de Tarjeta
 		 */
 
 		public void setUss(JTextField uss) {
@@ -216,7 +216,7 @@ public class DatosLoginUss extends JPanel{
 		
 		/**
 		 * Metodo set de la contraseña oculta
-		 * @param passO
+		 * @param passO Campo donde se pone el PIN y no es visible
 		 */
 
 		public void setPassO(JPasswordField passO) {
@@ -234,7 +234,7 @@ public class DatosLoginUss extends JPanel{
 
 		/**
 		 * Metodo set de la contraseña visible
-		 * @param passV
+		 * @param passV Campo donde se pone el PIN y es visible
 		 */
 		
 		public void setPassV(JTextField passV) {
@@ -243,7 +243,7 @@ public class DatosLoginUss extends JPanel{
 
 		/**
 		 * Metodo get del texto Errores
-		 * @return JLabel
+		 * @return JLabel 
 		 */
 		
 		public JLabel getError() {
@@ -252,7 +252,7 @@ public class DatosLoginUss extends JPanel{
 
 		/**
 		 * Metodo set del texto Errores
-		 * @param error
+		 * @param error Texto donde aparecer los errores del intento de login
 		 */
 		
 		public void setError(JLabel error) {

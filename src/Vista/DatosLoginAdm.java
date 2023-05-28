@@ -25,15 +25,15 @@ import Controlador.Vista.GestorLogin;
 public class DatosLoginAdm extends JPanel{
 
 	private static final long serialVersionUID = 1L;
-	private JButton login; //
+	private JButton login; 
 	private JButton ver ;
-	private JLabel usuario; //
-	private JLabel contra; //
+	private JLabel usuario; 
+	private JLabel contra; 
 	private JTextField uss;
 	private JPasswordField passO;
 	private JTextField passV;
 	private JLabel error;
-	public Boolean mostrar = true;
+	private Boolean mostrar = true;
 	
 	/**
 	 * Constructor de la clase DatosLoginAdm
@@ -136,7 +136,7 @@ public class DatosLoginAdm extends JPanel{
 	
 	/**
 	 * Metodo set de Login
-	 * @param login
+	 * @param login Boton de Login
 	 */
 
 	public void setLogin(JButton login) {
@@ -154,7 +154,7 @@ public class DatosLoginAdm extends JPanel{
 
 	/**
 	 * Metodo set del texto usuario
-	 * @param usuario
+	 * @param usuario Texto que indica donde escribir
 	 */
 	
 	public void setUsuario(JLabel usuario) {
@@ -172,7 +172,7 @@ public class DatosLoginAdm extends JPanel{
 
 	/**
 	 * Metodo set del Texto Contra
-	 * @param contra
+	 * @param contra Texto que indica donde Escribirla
 	 */
 	
 	public void setContra(JLabel contra) {
@@ -190,7 +190,7 @@ public class DatosLoginAdm extends JPanel{
 	
 	/**
 	 * Metodo set del nombre de usuario
-	 * @param uss
+	 * @param uss Campo de texto nombre de usuario
 	 */
 
 	public void setUss(JTextField uss) {
@@ -208,7 +208,7 @@ public class DatosLoginAdm extends JPanel{
 	
 	/**
 	 * Metodo set de la contraseña oculta
-	 * @param passO
+	 * @param passO Campo de Contraseña oculta
 	 */
 
 	public void setPassO(JPasswordField passO) {
@@ -226,7 +226,7 @@ public class DatosLoginAdm extends JPanel{
 
 	/**
 	 * Metodo set de la contraseña visible
-	 * @param passV
+	 * @param passV Campo de Contraseña Visible
 	 */
 	
 	public void setPassV(JTextField passV) {
@@ -244,7 +244,7 @@ public class DatosLoginAdm extends JPanel{
 
 	/**
 	 * Metodo set del texto Errores
-	 * @param error
+	 * @param error Texto que indica si hay algun error en el intento de login
 	 */
 	
 	public void setError(JLabel error) {

@@ -3,7 +3,6 @@ package Modelo;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.regex.Pattern;
 
 /**
  * Clase que se encarga de recibir los datos y validar si cada uno de ellos
@@ -31,9 +30,8 @@ public class Validador {
 	/**
 	 * Funcion que valida el Numero de una Tarjeta
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarNumTarjeta(String n) {
@@ -54,9 +52,8 @@ public class Validador {
 	/**
 	 * Funcion que valida el PIN de una Tarjeta
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarPin(String n) {
@@ -71,9 +68,8 @@ public class Validador {
 	/**
 	 * Funcion que valida el Numero de una Tarjeta
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarCvv(String n) {
@@ -88,9 +84,8 @@ public class Validador {
 	/**
 	 * Funcion que valida la Fecha de una Tarjeta
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarFechaTarjeta(String n) {
@@ -115,9 +110,8 @@ public class Validador {
 	/**
 	 * Funcion que valida el Numero de una Cuenta
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarNumCuenta(String n) {
@@ -133,9 +127,8 @@ public class Validador {
 	/**
 	 * Funcion que valida el Saldo de una Cuenta
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarSaldo(String n) {
@@ -158,9 +151,8 @@ public class Validador {
 	/**
 	 * Funcion que valida el DNI de un Cliente
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarDni(String n) {
@@ -190,9 +182,8 @@ public class Validador {
 	/**
 	 * Funcion que valida el Nombre, los dos apellidos y la Direccion de un Cliente
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarNombreApellDir(String n) {
@@ -207,9 +198,8 @@ public class Validador {
 	/**
 	 * Funcion que valida el correo de un Cliente
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarCorreo(String n) {
@@ -224,9 +214,8 @@ public class Validador {
 	/**
 	 * Funcion que valida el Telefono de un Cliente
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarTelefono(String n) {
@@ -247,9 +236,8 @@ public class Validador {
 	/**
 	 * Funcion que valida la fecha de Nacimiento de un Cliente
 	 * 
-	 * @param n
-	 * @return true, si tiene el formato correcto.
-	 * @return false, si no tiene el formato correcto.
+	 * @param n String que se va a validar
+	 * @return true, si tiene el formato correcto. o false, si no tiene el formato correcto.
 	 */
 	
 	public boolean validarFechaNac(String n) {
@@ -282,7 +270,7 @@ public class Validador {
 	/**
 	 * Metodo set de Msg
 	 * 
-	 * @param msg
+	 * @param msg Mensaje del error
 	 */
 	
 	public void setMsg(String msg) {

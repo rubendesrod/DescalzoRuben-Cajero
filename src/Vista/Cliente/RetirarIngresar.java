@@ -1,15 +1,12 @@
 package Vista.Cliente;
 
 import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -24,6 +21,7 @@ import Controlador.Cliente.GestorRI;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class RetirarIngresar extends JPanel{
 
 	private JLabel txt;
@@ -32,7 +30,6 @@ public class RetirarIngresar extends JPanel{
 	private JButton volver;
 	private String numTarjeta;
 	private JPanel botonera;
-	private String texto;
 	
 	/**
 	 * Constructor de la clase
@@ -43,7 +40,6 @@ public class RetirarIngresar extends JPanel{
 	
 	public RetirarIngresar(PrincipalUss usr, String texto,String n) {
 		
-		this.texto = texto;
 		this.usr = usr;
 		this.numTarjeta = n;
 		this.setLayout(null);
@@ -139,7 +135,7 @@ public class RetirarIngresar extends JPanel{
 	
 	/**
 	 * Metodo set de usr
-	 * @param usr
+	 * @param usr Panel Principal del Usuario
 	 */
 
 	public void setUsr(PrincipalUss usr) {
@@ -157,7 +153,7 @@ public class RetirarIngresar extends JPanel{
 	
 	/**
 	 * Metodo set del txt
-	 * @param txt
+	 * @param txt Texto
 	 */
 
 	public void setTxt(JLabel txt) {
@@ -175,7 +171,7 @@ public class RetirarIngresar extends JPanel{
 
 	/**
 	 * Metodo set de la Cantidad
-	 * @param cant
+	 * @param cant Cantidad de Dinero
 	 */
 	
 	public void setCant(JTextField cant) {
@@ -193,7 +189,7 @@ public class RetirarIngresar extends JPanel{
 
 	/**
 	 * Metodo set de volver
-	 * @param volver
+	 * @param volver Volver al panel Principal
 	 */
 
 	public void setVolver(JButton volver) {
@@ -211,7 +207,7 @@ public class RetirarIngresar extends JPanel{
 
 	/**
 	 * Metodo se del Numero de la Tarjeta
-	 * @param numTarjeta
+	 * @param numTarjeta Numero de la Tarjeta
 	 */
 
 	public void setNumTarjeta(String numTarjeta) {

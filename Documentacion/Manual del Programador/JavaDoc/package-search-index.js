@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"Controlador.Administrador"},{"l":"Controlador.Cliente"},{"l":"Controlador.Vista"},{"l":"Modelo"},{"l":"Modelo.DAO"},{"l":"Modelo.DTO"},{"l":"Modelo.Tabla"},{"l":"Vista"},{"l":"Vista.Admin"},{"l":"Vista.Admin.Vistas"},{"l":"Vista.Admin.Vistas.Administrar"},{"l":"Vista.Cliente"}];updateSearchResults();

@@ -1,7 +1,5 @@
 package Modelo.DTO;
 
-import java.sql.Date;
-
 /**
  * Clase que contiene los datos de la tabla en la BB.DD
  * 
@@ -39,15 +37,15 @@ public class ClienteDTO {
 	
 	/**
 	 * Constructor de la clase con parametros
-	 * @param dni
-	 * @param nombre
-	 * @param apell1
-	 * @param apell2
-	 * @param direccion
-	 * @param telefono
-	 * @param correo
-	 * @param fecha
-	 * @param admin
+	 * @param dni [DNI del Cliente]
+	 * @param nombre [Nombre del Cliente]
+	 * @param apell1 [Primer Apellido del Cliente]
+	 * @param apell2 [Segundo Apellido del Cliente]
+	 * @param direccion [Direccion del Cliente]
+	 * @param telefono [Telefono del cliente]
+	 * @param correo [Correo del cliente]
+	 * @param fecha [Fecha de Nacimiento del Cliente]
+	 * @param admin [Nombre del admin]
 	 */
 	
 	public ClienteDTO(String dni, String nombre, String apell1, String apell2, String direccion,
@@ -74,7 +72,7 @@ public class ClienteDTO {
 	
 	/**
 	 * Metodo set del DNI
-	 * @param dni
+	 * @param dni [DNI del cliente]
 	 */
 	
 	public void setDni(String dni) {
@@ -92,7 +90,7 @@ public class ClienteDTO {
 
 	/**
 	 * Metodo set del nombre
-	 * @param nombre
+	 * @param nombre [Nombre del cliente]
 	 */
 	
 	public void setNombre(String nombre) {
@@ -110,7 +108,7 @@ public class ClienteDTO {
 
 	/**
 	 * Metodo set del Primer Apellido
-	 * @param apell1
+	 * @param apell1 [Primer Apellido]
 	 */
 	
 	public void setApell1(String apell1) {
@@ -128,7 +126,7 @@ public class ClienteDTO {
 
 	/**
 	 * Metodo set del Segundo Apellido
-	 * @param apell2
+	 * @param apell2 [Segundo Apellido]
 	 */
 	
 	public void setApell2(String apell2) {
@@ -146,7 +144,7 @@ public class ClienteDTO {
 
 	/**
 	 * Metodo set de la Direccion
-	 * @param direccion
+	 * @param direccion [Direccion del cliente]
 	 */
 	
 	public void setDireccion(String direccion) {
@@ -164,7 +162,7 @@ public class ClienteDTO {
 	
 	/**
 	 * Metodo set del Telefono
-	 * @param telefono
+	 * @param telefono [Telefono del cliente]
 	 */
 
 	public void setTelefono(String telefono) {
@@ -182,7 +180,7 @@ public class ClienteDTO {
 
 	/**
 	 * Metodo set del Correo
-	 * @param correo
+	 * @param correo [Correo del cliente]
 	 */
 	
 	public void setCorreo(String correo) {
@@ -200,7 +198,7 @@ public class ClienteDTO {
 
 	/**
 	 * Metodo set de la Fecha de Nacimiento
-	 * @param fechaNac
+	 * @param fechaNac [Fecha de Nacimiento]
 	 */
 	
 	public void setFechaNac(String fechaNac) {
@@ -218,7 +216,7 @@ public class ClienteDTO {
 
 	/**
 	 * Metotodo set del Administrador
-	 * @param admin
+	 * @param admin [Nombre del admin]
 	 */
 	
 	public void setAdmin(String admin) {

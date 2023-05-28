@@ -33,13 +33,13 @@ public class TarjetaDTO {
 	
 	/**
 	 * COnstructor de la clase TarjetaDTO con parametros
-	 * @param numTarjeta
-	 * @param pin
-	 * @param cvv
-	 * @param fecha
-	 * @param estado
-	 * @param numCuenta
-	 * @param admin
+	 * @param numTarjeta Numero de la Tarjeta
+	 * @param pin Pin de la Tarjeta
+	 * @param cvv CVV de la tarjeta
+	 * @param fecha Fecha de Validez de la Tarjeta
+	 * @param estado Estado en el que se encuentra la tarjeta
+	 * @param numCuenta Numero de cuenta al que esta asociado esa Tarjeta
+	 * @param admin usuario del administrador
 	 */
 	
 	public TarjetaDTO(String numTarjeta, Integer pin, Integer cvv, String fecha,
@@ -64,7 +64,7 @@ public class TarjetaDTO {
 
 	/**
 	 * Metodo set del Numero de la Tarjeta
-	 * @param numTarjeta
+	 * @param numTarjeta Numero de la Tarjeta
 	 */
 	
 	public void setNumTarjeta(String numTarjeta) {
@@ -82,7 +82,7 @@ public class TarjetaDTO {
 
 	/**
 	 * Metodo set del PIN
-	 * @param pin
+	 * @param pin PIN de la Tarjeta
 	 */
 	
 	public void setPin(Integer pin) {
@@ -100,7 +100,7 @@ public class TarjetaDTO {
 
 	/**
 	 * Metodo set del CVV
-	 * @param cvv
+	 * @param cvv CVV de la Tarjeta
 	 */
 	
 	public void setCvv(Integer cvv) {
@@ -118,7 +118,7 @@ public class TarjetaDTO {
 
 	/**
 	 * Metodo set de la Fecha de Validez
-	 * @param fechaCaducidad
+	 * @param fechaCaducidad Fecha de validez de la tarjeta
 	 */
 	
 	public void setFechaCaducidad(String fechaCaducidad) {
@@ -136,7 +136,7 @@ public class TarjetaDTO {
 
 	/**
 	 * Metodo set del Estado
-	 * @param estado
+	 * @param estado Estado en que se ecuentra la Tarjeta
 	 */
 	
 	public void setEstado(String estado) {
@@ -154,7 +154,7 @@ public class TarjetaDTO {
 
 	/**
 	 * Metodo set del Numero de la Cuenta
-	 * @param numCuenta
+	 * @param numCuenta Numero de Cuenta de la Tarjeta
 	 */
 	
 	public void setNumCuenta(String numCuenta) {
@@ -172,7 +172,7 @@ public class TarjetaDTO {
 
 	/**
 	 * Metodo set del Admin
-	 * @param admin
+	 * @param admin Usuario Administrador
 	 */
 	
 	public void setAdmin(String admin) {

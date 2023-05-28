@@ -22,6 +22,7 @@ import Modelo.Tabla.TablaCuentas;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class PanelTablaCuentas extends JPanel{
 
 	private CuentaDTO cDTO;

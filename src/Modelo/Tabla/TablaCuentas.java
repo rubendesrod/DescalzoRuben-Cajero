@@ -16,11 +16,11 @@ import Modelo.DTO.CuentaDTO;
  */
 
 public class TablaCuentas implements TableModel{
-
+	
+	/**
+	 * Indica las columnas de la tabla
+	 */
 	public static int COLUMNAS=3;
-	
-	
-	
 	@SuppressWarnings("rawtypes")
 	private LinkedList datos = new LinkedList();
 	@SuppressWarnings("rawtypes")
@@ -28,7 +28,7 @@ public class TablaCuentas implements TableModel{
 	
 	/**
 	 * Metodo que borra una cuenta pasandole la fila en la que se encuentra
-	 * @param row
+	 * @param row Fila
 	 */
 	
 	public void borrarCuenta(int row) {
@@ -41,7 +41,7 @@ public class TablaCuentas implements TableModel{
 	
 	/**
 	 * Metodo que añade un CuentaDTO
-	 * @param cDTO
+	 * @param cDTO CuentaDTO
 	 */
 	
 	@SuppressWarnings("unchecked")
@@ -92,7 +92,7 @@ public class TablaCuentas implements TableModel{
 
 	/**
 	 * Metodo que devuelve de que clase es cada columna
-	 * @return Class<?>
+	 * @return Class
 	 */
 	
 	@Override
@@ -107,10 +107,9 @@ public class TablaCuentas implements TableModel{
 
 	/**
 	 * Metodo que devuelve un booleano con que columa es editable o fila.
-	 * @param rowIndex
-	 * @param columnIndex
-	 * @return true, si es editable
-	 * @return false, si no es editables
+	 * @param rowIndex Indice de Fila
+	 * @param columnIndex Indice de Columna
+	 * @return true, si es editable o false, si no es editables
 	 */
 	
 	@Override
@@ -122,8 +121,8 @@ public class TablaCuentas implements TableModel{
 
 	/**
 	 * Metodo que devuelve un valor de CuentaDTO
-	 * @param rowIndex
-	 * @param columnIndex
+	 * @param rowIndex Indice de Fila
+	 * @param columnIndex Indice de Columna
 	 * @return Object
 	 */
 	
@@ -142,9 +141,9 @@ public class TablaCuentas implements TableModel{
 
 	/**
 	 * Metodo que setea un Valor en una columna o fila
-	 * @param valor
-	 * @param rowIndex
-	 * @param columnIndez
+	 * @param valor objeto
+	 * @param rowIndex Indice de Fila
+	 * @param columnIndex Indice de Columna
 	 */
 	
 	@Override
@@ -162,7 +161,7 @@ public class TablaCuentas implements TableModel{
 
 	/**
 	 * Metodo que añade TableModelistener a una columna o fila
-	 * @param l
+	 * @param l Listener de la Tabla
 	 */
 	
 	@Override
@@ -173,7 +172,7 @@ public class TablaCuentas implements TableModel{
 
 	/**
 	 * Metodo que borra TableModelistener a una columna o fila
-	 * @param l
+	 * @param l Listener de la Tabla
 	 */
 	
 	@Override
@@ -184,7 +183,7 @@ public class TablaCuentas implements TableModel{
 	
 	/**
 	 * Metodo que avisa si se produce algun cambio en la tabla
-	 * @param evento
+	 * @param evento Escucha cuando se activa un listener
 	 */
 	
 	private void avisaEvento(TableModelEvent evento) {

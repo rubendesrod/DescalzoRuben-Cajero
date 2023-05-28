@@ -140,6 +140,11 @@ public class Vista extends JFrame{
 		this.setIconImage(icono);
 	}
 	
+	/**
+	 * Metodo main que inicia el programa
+	 * @param args Argumentos
+	 */
+	
 	public static void main(String[] args) {
 		Vista v = new Vista();
 		v.setVisible(true);
@@ -160,7 +165,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metodo set del panel de la Marca de Agua
-	 * @param wMark
+	 * @param wMark Panel de la Marca de Agua
 	 */
 	
 	public void setwMark(JPanel wMark) {
@@ -169,8 +174,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metodo get de las ventanas
-	 * @return true, si se hace clic en un boton
-	 * @return flase, si se vuelve ha hacer clic en el boton
+	 * @return true, si se hace clic en un boton o  false, si se vuelve ha hacer clic en el boton
 	 */
 	
 	public boolean getVentanas() {
@@ -179,7 +183,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metodo set Ventanas
-	 * @param ventanas
+	 * @param ventanas ayuda para mostrar un panel u otro
 	 */
 	
 	public void setVentanas(boolean ventanas) {
@@ -197,7 +201,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metodo set de DatosLoginUss
-	 * @param dl
+	 * @param dl Panel de los Datos del usuario
 	 */
 	
 	public void setDl(DatosLoginUss dl) {
@@ -206,7 +210,7 @@ public class Vista extends JFrame{
 	
 	/**
 	 * Metodo get del Panel DatosLoginAdm
-	 * @return
+	 * @return DatosLoginAdm
 	 */
 
 	public DatosLoginAdm getDa() {
@@ -215,7 +219,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metofo set de DatosLoginAdm
-	 * @param da
+	 * @param da Panel de datos del administrador
 	 */
 	
 	public void setDa(DatosLoginAdm da) {
@@ -224,7 +228,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metodo get de Opcion Admin
-	 * @return JButton
+	 * @return JButton 
 	 */
 	
 	public JButton getAdmOption() {
@@ -233,7 +237,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metodo set de la Opcion Admin
-	 * @param admOption
+	 * @param admOption Boton para entrar al Panel del Admin
 	 */
 	
 	public void setAdmOption(JButton admOption) {
@@ -242,7 +246,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metodo get de imagen .png
-	 * @return JLabel
+	 * @return JLabel 
 	 */
 	
 	public JLabel getPng() {
@@ -251,7 +255,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metodo set de imagen .png
-	 * @param png
+	 * @param png Imagen del Cajero
 	 */
 	
 	public void setPng(JLabel png) {
@@ -269,7 +273,7 @@ public class Vista extends JFrame{
 
 	/**
 	 * Metodo set del texto
-	 * @param txt
+	 * @param txt texto del panel
 	 */
 	
 	public void setTxt(JLabel txt) {

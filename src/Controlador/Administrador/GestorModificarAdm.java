@@ -16,8 +16,10 @@ import Vista.Admin.Vistas.Administrar.FrameModificar;
 /**
  * Clase que se encarga de modificar los datos en la BB.DD de un cliente
  * , una cuenta o una tarjeta.
+ * En las cuales modificar tarjeta te permite vincularla a una cuenta
+ * y en cuenta te permite vincular un cliente
  * 
- *@version 1.0
+ * @version 1.0
  * @author Ruben
  *
  */
@@ -92,31 +94,38 @@ public class GestorModificarAdm implements ActionListener{
 					if (v.validarPin(fm.getTxt2().getText())&& v.validarCvv(fm.getTxt3().getText()) && v.validarNumCuenta(fm.getTxt6().getText()) 
 							&& v.validarFechaTarjeta(fm.getTxt4().getText())) {
 						
-						tDTO = new TarjetaDTO();
-						tDAO = new TarjetaDAO();
-						tDTO.setNumTarjeta(fm.getPk().getText());
-						tDTO.setPin(Integer.parseInt(fm.getTxt2().getText()));
-						tDTO.setCvv(Integer.parseInt(fm.getTxt3().getText()));
-						tDTO.setFechaCaducidad(fm.getTxt4().getText());
-						tDTO.setEstado(fm.getC().getSelectedItem());
-						tDTO.setNumCuenta(fm.getTxt6().getText());
-						tDAO.buscarTarjeta(tDTO);
-						if(tDAO.gettDTO().getNumTarjeta().equalsIgnoreCase(tDTO.getNumTarjeta())) {
-							cDTO = new CuentaDTO();
-							cDAO = new CuentaDAO();
-							cDTO.setNumCuenta(fm.getTxt6().getText());
-							cDAO.buscarCuenta(cDTO);
-							if (cDAO.getcDTO().getNumCuenta().equalsIgnoreCase(cDTO.getNumCuenta())) {
-								tDAO.modificarTarjeta(tDTO);
-								fm.getErrores().setForeground(Color.blue);
-								fm.getErrores().setText(tDAO.getMsg());
-								fm.getPk().setEditable(true);fm.getBuscar().setEnabled(true);
+						if (buscarCuentaExistente()) {	
+							
+							tDTO = new TarjetaDTO();
+							tDAO = new TarjetaDAO();
+							tDTO.setNumTarjeta(fm.getPk().getText());
+							tDTO.setPin(Integer.parseInt(fm.getTxt2().getText()));
+							tDTO.setCvv(Integer.parseInt(fm.getTxt3().getText()));
+							tDTO.setFechaCaducidad(fm.getTxt4().getText());
+							tDTO.setEstado(fm.getC().getSelectedItem());
+							tDTO.setNumCuenta(fm.getTxt6().getText());
+							tDAO.buscarTarjeta(tDTO);
+							if(tDAO.gettDTO().getNumTarjeta().equalsIgnoreCase(tDTO.getNumTarjeta())) {
+								
+								cDTO = new CuentaDTO();
+								cDAO = new CuentaDAO();
+								cDTO.setNumCuenta(fm.getTxt6().getText());
+								cDAO.buscarCuenta(cDTO);
+								if (cDAO.getcDTO().getNumCuenta().equalsIgnoreCase(cDTO.getNumCuenta())) {
+									
+									tDAO.modificarTarjeta(tDTO);
+									fm.getErrores().setForeground(Color.blue);
+									fm.getErrores().setText(tDAO.getMsg());
+									fm.getPk().setEditable(true);fm.getBuscar().setEnabled(true);
+								}else {
+									fm.getErrores().setText("No existe el numero de cuenta que has introducido");
+								}
 							}else {
-								fm.getErrores().setText("No existe el numero de cuenta que has introducido");
+								fm.getErrores().setText("Esta tarjeta no existe en la BB.DD");
+								
 							}
 						}else {
-							fm.getErrores().setText("Esta Tarjeta ya existe en la base de datos");
-							
+							fm.getErrores().setText("LA CUENTA INTRODUCIDA \n PERTENECE A OTRA TARJETA");
 						}
 					}else {
 						fm.getErrores().setText(v.getMsg());
@@ -130,27 +139,33 @@ public class GestorModificarAdm implements ActionListener{
 				fm.getErrores().setText("FALTAN CAMPOS OBLIGATORIOS [*]");
 			}else {
 				if (v.validarSaldo(fm.getTxt2().getText()) && v.validarDni(fm.getTxt3().getText())) {
-					cDTO = new CuentaDTO();
-					cDAO = new CuentaDAO();	
-					cDTO.setNumCuenta(fm.getPk().getText());
-					cDTO.setSaldo(Double.parseDouble(fm.getTxt2().getText()));
-					cDTO.setDni(fm.getTxt3().getText());
-					cDAO.buscarCuenta(cDTO);
-					if(cDAO.getcDTO().getNumCuenta().equalsIgnoreCase(cDTO.getNumCuenta())) {
-						cliDTO = new ClienteDTO();
-						cliDAO = new ClientesDAO();
-						cliDTO.setDni(fm.getTxt3().getText());
-						cliDAO.buscarCliente(cliDTO);
-						if (cliDAO.getCli().getDni().equalsIgnoreCase(cliDTO.getDni())) {
-							cDAO.modificarCuenta(cDTO);
-							fm.getErrores().setForeground(Color.blue);
-							fm.getErrores().setText(cDAO.getMsg());
-							fm.getPk().setEditable(true);fm.getBuscar().setEnabled(true);
+					
+					if (buscarDniExistente()) {
+						
+						cDTO = new CuentaDTO();
+						cDAO = new CuentaDAO();	
+						cDTO.setNumCuenta(fm.getPk().getText());
+						cDTO.setSaldo(Double.parseDouble(fm.getTxt2().getText()));
+						cDTO.setDni(fm.getTxt3().getText());
+						cDAO.buscarCuenta(cDTO);
+						if(cDAO.getcDTO().getNumCuenta().equalsIgnoreCase(cDTO.getNumCuenta())) {
+							cliDTO = new ClienteDTO();
+							cliDAO = new ClientesDAO();
+							cliDTO.setDni(fm.getTxt3().getText());
+							cliDAO.buscarCliente(cliDTO);
+							if (cliDAO.getCli().getDni().equalsIgnoreCase(cliDTO.getDni())) {
+								cDAO.modificarCuenta(cDTO);
+								fm.getErrores().setForeground(Color.blue);
+								fm.getErrores().setText(cDAO.getMsg());
+								fm.getPk().setEditable(true);fm.getBuscar().setEnabled(true);
+							}else {
+								fm.getErrores().setText("El DNI no existe");
+							}
 						}else {
-							fm.getErrores().setText("El DNI no existe");
+							fm.getErrores().setText("El Numero de cuenta no existe");
 						}
 					}else {
-						fm.getErrores().setText("El Numero de cuenta ya existe");
+						fm.getErrores().setText("EL DNI Ya esta osiciado a otra cuenta");
 					}
 				}else {
 					fm.getErrores().setText(v.getMsg());
@@ -159,6 +174,44 @@ public class GestorModificarAdm implements ActionListener{
 			
 		}
 		
+	}
+	
+	/**
+	 * Funcion que se encarga de busca si el Numero de Cuenta
+	 * esta asociado a otra tarjeta
+	 * @return true, si no esta asociada y false, si ya esta asociada
+	 */
+	
+	public boolean buscarCuentaExistente() {
+		tDTO = new TarjetaDTO();
+		tDTO.setNumTarjeta(null);
+		tDAO = new TarjetaDAO();
+		tDAO.buscarTarjeta(tDTO);
+		for(TarjetaDTO t: tDAO.getTarjetasDTO()) {
+			if(t.getNumCuenta().equalsIgnoreCase(fm.getTxt6().getText())) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	/**
+	 * Funcion que se encarga de buscar si el DNI
+	 * esta asociado a otra de las cuentas
+	 * @return true, si no lo encuentra y false, si lo encuentra
+	 */
+	
+	public boolean buscarDniExistente() {
+		cDTO = new CuentaDTO();
+		cDTO.setNumCuenta(null);
+		cDAO = new CuentaDAO();
+		cDAO.buscarCuenta(cDTO);
+		for(CuentaDTO c: cDAO.getCuentas()) {
+			if(c.getDni().equalsIgnoreCase(fm.getTxt3().getText())) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 }

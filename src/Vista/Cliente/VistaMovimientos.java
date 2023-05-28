@@ -30,10 +30,9 @@ import Modelo.Tabla.TablaMovimientos;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class VistaMovimientos extends JPanel{
 
-	private PrincipalUss usr;
-	private String numTarjeta;
 	private MovimientoDTO mDTO;
 	private MovimientoDAO mDAO;
 	private TarjetaDTO tDTO;
@@ -48,9 +47,6 @@ public class VistaMovimientos extends JPanel{
 	 */
 	
 	public VistaMovimientos(PrincipalUss usr, String numTarjeta){
-		
-		this.usr = usr;
-		this.numTarjeta = numTarjeta;
 		
 		tDTO = new TarjetaDTO();
 		tDTO.setNumTarjeta(numTarjeta);

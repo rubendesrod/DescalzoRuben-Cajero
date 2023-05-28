@@ -22,6 +22,7 @@ import Modelo.Tabla.TablaTarjetas;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class PanelTablaTarjetas extends JPanel{
 
 	private TarjetaDTO tDTO;

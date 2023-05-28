@@ -22,6 +22,7 @@ import Modelo.Tabla.TablaClientes;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class PanelTablaClientes extends JPanel{
 
 	private ClienteDTO cDTO;

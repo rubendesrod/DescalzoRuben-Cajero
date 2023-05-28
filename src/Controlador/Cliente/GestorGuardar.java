@@ -39,8 +39,8 @@ public class GestorGuardar implements ActionListener{
 	/**
 	 * Constructor de la clase 
 	 * 
-	 * @param numTarjeta
-	 * @param usr
+	 * @param numTarjeta Numero de la Tarjeta del Cliente
+	 * @param usr Panel Principal del Cliente
 	 */
 	public GestorGuardar(String numTarjeta, PrincipalUss usr) {
 		

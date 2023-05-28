@@ -15,9 +15,12 @@ import javax.swing.JPanel;
  *
  */
 
+@SuppressWarnings("serial")
 public class cajeroApagado extends JPanel{
 
-	
+	/**
+	 * Mostrar por pantalla cual es el estado del cajero
+	 */
 	private JLabel txt;
 	
 	/**

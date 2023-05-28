@@ -17,9 +17,10 @@ import Modelo.DTO.TarjetaDTO;
 
 public class TablaTarjetas implements TableModel{
 	
+	/**
+	 * Indica las columnas de la tabla
+	 */
 	public static int COLUMNAS=6;
-	
-	
 	@SuppressWarnings("rawtypes")
 	private LinkedList datos = new LinkedList();
 	@SuppressWarnings("rawtypes")
@@ -27,7 +28,7 @@ public class TablaTarjetas implements TableModel{
 	
 	/**
 	 * Metodo que borra una tarjeta pasandole la fila en la que se encuentra
-	 * @param row
+	 * @param row Fila
 	 */
 	
 	public void borrarTarjeta(int row) {
@@ -40,7 +41,7 @@ public class TablaTarjetas implements TableModel{
 	
 	/**
 	 * Metodo que añade un TarjetaDTO
-	 * @param tDTO
+	 * @param tDTO TarjetaDTO
 	 */
 	
 	@SuppressWarnings("unchecked")
@@ -92,7 +93,7 @@ public class TablaTarjetas implements TableModel{
 
 	/**
 	 * Metodo que devuelve de que clase es cada columna
-	 * @return Class<?>
+	 * @return Class
 	 */
 	
 	@Override
@@ -110,10 +111,9 @@ public class TablaTarjetas implements TableModel{
 
 	/**
 	 * Metodo que devuelve un booleano con que columa es editable o fila.
-	 * @param rowIndex
-	 * @param columnIndex
-	 * @return true, si es editable
-	 * @return false, si no es editables
+	 * @param rowIndex Indice de la Fila
+	 * @param columnIndex Indice de la Columna
+	 * @return true, si es editable o false, si no es editables
 	 */
 	
 	@Override
@@ -125,8 +125,8 @@ public class TablaTarjetas implements TableModel{
 
 	/**
 	 * Metodo que devuelve un valor de TarjetaDTO
-	 * @param rowIndex
-	 * @param columnIndex
+	 * @param rowIndex Indice de la Fila
+	 * @param columnIndex Indice de la Columna
 	 * @return Object
 	 */
 	
@@ -148,9 +148,9 @@ public class TablaTarjetas implements TableModel{
 
 	/**
 	 * Metodo que setea un Valor en una columna o fila
-	 * @param valor
-	 * @param rowIndex
-	 * @param columnIndez
+	 * @param valor objeto
+	 * @param rowIndex Indice de la Fila
+	 * @param columnIndex Indice de la Columna
 	 */
 	
 	@Override
@@ -171,7 +171,7 @@ public class TablaTarjetas implements TableModel{
 
 	/**
 	 * Metodo que añade TableModelistener a una columna o fila
-	 * @param l
+	 * @param l Listener de la Tabla
 	 */
 	
 	@Override
@@ -182,7 +182,7 @@ public class TablaTarjetas implements TableModel{
 
 	/**
 	 * Metodo que borra TableModelistener a una columna o fila
-	 * @param l
+	 * @param l Listener de la Tabla
 	 */
 	
 	@Override
@@ -193,7 +193,7 @@ public class TablaTarjetas implements TableModel{
 	
 	/**
 	 * Metodo que avisa si se produce algun cambio en la tabla
-	 * @param evento
+	 * @param evento escucha si se activa un Listener
 	 */
 	
 	private void avisaEvento(TableModelEvent evento) {

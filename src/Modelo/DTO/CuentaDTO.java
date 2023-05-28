@@ -27,10 +27,10 @@ public class CuentaDTO {
 	
 	/**
 	 * Constructor de la clase CuentaDTO con parametros
-	 * @param num
-	 * @param saldo
-	 * @param dni
-	 * @param admin
+	 * @param num [Numero de Cuenta]
+	 * @param saldo [Saldo de la Cuenta]
+	 * @param dni [DNI del cliente]
+	 * @param admin [Usuario Administrador]
 	 */
 	
 	public CuentaDTO(String num, Double saldo,String dni, String admin) {
@@ -51,7 +51,7 @@ public class CuentaDTO {
 
 	/**
 	 * Metodo set del Numero de cuenta
-	 * @param numCuenta
+	 * @param numCuenta [Numero de Cuenta]
 	 */
 	
 	public void setNumCuenta(String numCuenta) {
@@ -69,7 +69,7 @@ public class CuentaDTO {
 
 	/**
 	 * Metodo set del Saldo
-	 * @param saldo
+	 * @param saldo Saldo de la Cuenta
 	 */
 	
 	public void setSaldo(Double saldo) {
@@ -87,7 +87,7 @@ public class CuentaDTO {
 	
 	/**
 	 * Metodo set del DNI
-	 * @param dni
+	 * @param dni DNI del cliente
 	 */
 	
 	public void setDni(String dni) {
@@ -105,7 +105,7 @@ public class CuentaDTO {
 	
 	/**
 	 * Metodo set del Admin
-	 * @param admin
+	 * @param admin Usuario Administrador
 	 */
 
 	public void setAdmin(String admin) {

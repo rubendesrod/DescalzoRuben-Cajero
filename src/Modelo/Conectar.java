@@ -23,6 +23,9 @@ public class Conectar {
 	private Connection connect = null;
 	private Statement statement = null;
 	
+	/**
+	 * Constructor de la clase Conectar
+	 */
 	
 	public Conectar() {
 		try {
@@ -76,7 +79,7 @@ public class Conectar {
 	/**
 	 * Método set de Statement.
 	 * 
-	 * @param statement
+	 * @param statement [Realiza la consulta a la BB.DD]
 	 */
 
 	public void setStatement(Statement statement) {
@@ -86,9 +89,9 @@ public class Conectar {
 	/**
 	 * Método para cerrar la conexión a la base de datos.
 	 * 
-	 * @param resultSet
-	 * @param connect
-	 * @param statement
+	 * @param resultSet [Coge los resultados de la consulta]
+	 * @param connect [Realiza la conexion con la BB.DD]
+	 * @param statement [Para realizar las consultas]
 	 */
 
 	public void cerrarConexion(ResultSet resultSet, Connection connect, Statement statement) {

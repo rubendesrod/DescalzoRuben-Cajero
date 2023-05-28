@@ -8,16 +8,17 @@ import Modelo.Conectar;
 import Modelo.Consultas;
 import Modelo.DTO.ClienteDTO;
 
+/**
+ * Clase que implementa Consultas
+ * Es la que comunica con la tabla clientes de la BB.DD
+ * 
+ * @version 1.0
+ * @author Ruben
+ *
+ */
+
 public class ClientesDAO implements Consultas{
 
-	/**
-	 * @author Ruben
-	 * 
-	 * @version 1.0
-	 * 
-	 * Clase que comunica clienteDTO con la BBDD
-	 * 
-	 */
 	
 	private ClienteDTO cli = new ClienteDTO();
 	private PreparedStatement ps = null;
@@ -238,7 +239,7 @@ public class ClientesDAO implements Consultas{
 	/**
 	 * Metodo set de ClienteDTO
 	 * 
-	 * @param cDTO
+	 * @param cDTO [ClienteDTO]
 	 */
 	
 	public void setCli(ClienteDTO cDTO) {
@@ -258,7 +259,7 @@ public class ClientesDAO implements Consultas{
 	/**
 	 * Metodo set de PreparedStatement
 	 * 
-	 * @param ps
+	 * @param ps [PreparedStatement]
 	 */
 	
 	public void setPs(PreparedStatement ps) {
@@ -278,7 +279,7 @@ public class ClientesDAO implements Consultas{
 	/**
 	 * Metodo set de Conectar
 	 * 
-	 * @param cn
+	 * @param cn [Conectar]
 	 */
 	
 	public void setCn(Conectar cn) {
@@ -298,7 +299,7 @@ public class ClientesDAO implements Consultas{
 	/**
 	 * Metodo set del ArrayList de cliente
 	 * 
-	 * @param clientes
+	 * @param clientes [ArrayList de clientes]
 	 */
 	
 	public void setClientes(ArrayList<ClienteDTO> clientes) {
@@ -308,7 +309,7 @@ public class ClientesDAO implements Consultas{
 	/**
 	 * Metodo get de ResultSet
 	 * 
-	 * @return ResultSet
+	 * @return ResultSet [Contiene los resultados de la consulta]
 	 */
 	
 	public ResultSet getRs() {
@@ -318,7 +319,7 @@ public class ClientesDAO implements Consultas{
 	/**
 	 * Metodo set de ResultSet
 	 * 
-	 * @param rs
+	 * @param rs [ResultSet]
 	 */
 	
 	public void setRs(ResultSet rs) {
@@ -338,7 +339,7 @@ public class ClientesDAO implements Consultas{
 	/**
 	 * Metodo set de Msg
 	 * 
-	 * @param msg
+	 * @param msg [mensaje]
 	 */
 	
 	public void setMsg(String msg) {

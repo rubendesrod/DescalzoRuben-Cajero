@@ -21,9 +21,9 @@ import Controlador.Administrador.GestorModificarAdm;
  * @author Ruben
  */
 
+@SuppressWarnings("serial")
 public class FrameModificar extends JFrame{
 
-	private String objeto;
 	private JLabel errores;
 	private JLabel txt;
 	private JTextField pk;
@@ -39,7 +39,6 @@ public class FrameModificar extends JFrame{
 	
 	public FrameModificar(String objeto) {
 		
-		this.objeto = objeto;
 		errores = new JLabel("");
 		errores.setForeground(Color.red);
 		buscar = new JButton();
@@ -125,7 +124,7 @@ public class FrameModificar extends JFrame{
 
 	/**
 	 * Metodo set de buscar
-	 * @param buscar
+	 * @param buscar Boton para buscar un objeto
 	 */
 
 	public void setBuscar(JButton buscar) {
@@ -143,7 +142,7 @@ public class FrameModificar extends JFrame{
 
 	/**
 	 * Metodo set de c
-	 * @param c
+	 * @param c Seleccionar los estados de la tarjeta
 	 */
 	
 	public void setC(Choice c) {
@@ -161,7 +160,7 @@ public class FrameModificar extends JFrame{
 
 	/**
 	 * Metodo set de errores
-	 * @param errores
+	 * @param errores texto que muestra los errores producidos
 	 */
 	
 	public void setErrores(JLabel errores) {
@@ -179,7 +178,7 @@ public class FrameModificar extends JFrame{
 
 	/**
 	 * Metodo set de Pk
-	 * @param pk
+	 * @param pk clave primaria de los objetos
 	 */
 	
 	public void setPk(JTextField pk) {
@@ -197,7 +196,7 @@ public class FrameModificar extends JFrame{
 
 	/**
 	 * Metodo set de txt2
-	 * @param txt2
+	 * @param txt2 Campo de texto
 	 */
 	
 	public void setTxt2(JTextField txt2) {
@@ -215,7 +214,7 @@ public class FrameModificar extends JFrame{
 	
 	/**
 	 * Metodo set de txt3
-	 * @param txt3
+	 * @param txt3 Campo de texto
 	 */
 
 	public void setTxt3(JTextField txt3) {
@@ -233,7 +232,7 @@ public class FrameModificar extends JFrame{
 	
 	/**
 	 * Metodo set de txt4
-	 * @param txt4
+	 * @param txt4 Campo de texto
 	 */
 
 	public void setTxt4(JTextField txt4) {
@@ -251,7 +250,7 @@ public class FrameModificar extends JFrame{
 	
 	/**
 	 * Metodo set de txt5
-	 * @param txt5
+	 * @param txt5 Campo de texto
 	 */
 
 	public void setTxt5(JTextField txt5) {
@@ -269,7 +268,7 @@ public class FrameModificar extends JFrame{
 
 	/**
 	 * Metodo set de txt6
-	 * @param txt6
+	 * @param txt6 Campo de texto
 	 */
 	
 	public void setTxt6(JTextField txt6) {
@@ -287,7 +286,7 @@ public class FrameModificar extends JFrame{
 
 	/**
 	 * Metodo set de txt7
-	 * @param txt7
+	 * @param txt7 Campo de texto
 	 */
 	
 	public void setTxt7(JTextField txt7) {
@@ -305,7 +304,7 @@ public class FrameModificar extends JFrame{
 	
 	/**
 	 * Metodo set de txt8
-	 * @param txt8
+	 * @param txt8 Campo de texto
 	 */
 
 	public void setTxt8(JTextField txt8) {

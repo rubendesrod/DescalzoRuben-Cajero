@@ -1,21 +1,13 @@
 package Vista.Admin;
 
-import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JMenuBar;
 import javax.swing.JPanel;
-import javax.swing.Timer;
 
-import Modelo.DAO.CajeroDAO;
 import Vista.Admin.Vistas.PanelPrincipal;
 
 /**
@@ -28,6 +20,7 @@ import Vista.Admin.Vistas.PanelPrincipal;
  *
  */
 
+@SuppressWarnings("serial")
 public class PrincipalAdm extends JFrame{
 
 	private JMenuBar menu;
@@ -77,7 +70,7 @@ public class PrincipalAdm extends JFrame{
 	
 	/**
 	 * Metodo set content
-	 * @param content
+	 * @param content Panel que va a Contener Muchos mas
 	 */
 	
 	public void setContent(JPanel content) {
@@ -86,7 +79,7 @@ public class PrincipalAdm extends JFrame{
 	
 	/**
 	 * Metodo get menu
-	 * @return
+	 * @return JMenuBar
 	 */
 	
 	public JMenuBar getMenu() {
@@ -95,7 +88,7 @@ public class PrincipalAdm extends JFrame{
 	
 	/**
 	 * Metodo set menu
-	 * @param menu
+	 * @param menu Menu del Administrador
 	 */
 
 	public void setMenu(JMenuBar menu) {

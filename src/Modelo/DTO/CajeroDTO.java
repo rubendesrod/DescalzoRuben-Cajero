@@ -20,7 +20,7 @@ public class CajeroDTO {
 	/**
 	 * Constructor de la clase con parametros
 	 * 
-	 * @param s
+	 * @param s [Estado en el que se encuentra el Cajero]
 	 */
 	
 	public CajeroDTO(String s) {this.estado = s;}
@@ -37,7 +37,7 @@ public class CajeroDTO {
 	/**
 	 * Metodo set del Estado
 	 * 
-	 * @param estado
+	 * @param estado [Estado del Cajero]
 	 */
 
 	public void setEstado(String estado) {
