@@ -189,7 +189,11 @@ public class GestorModificarAdm implements ActionListener{
 		tDAO.buscarTarjeta(tDTO);
 		for(TarjetaDTO t: tDAO.getTarjetasDTO()) {
 			if(t.getNumCuenta().equalsIgnoreCase(fm.getTxt6().getText())) {
-				return false;
+				if(t.getNumTarjeta().equalsIgnoreCase(fm.getPk().getText())) {
+					return true;
+				}else {
+					return false;
+				}
 			}
 		}
 		return true;
@@ -208,7 +212,11 @@ public class GestorModificarAdm implements ActionListener{
 		cDAO.buscarCuenta(cDTO);
 		for(CuentaDTO c: cDAO.getCuentas()) {
 			if(c.getDni().equalsIgnoreCase(fm.getTxt3().getText())) {
-				return false;
+				if(c.getNumCuenta().equalsIgnoreCase(fm.getPk().getText())) {
+					return true;
+				}else {
+					return false;
+				}
 			}
 		}
 		return true;

@@ -84,7 +84,7 @@ public class GestorBuscarMod implements ActionListener{
 				tDTO.setNumTarjeta(fm.getPk().getText());
 				tDAO.buscarTarjeta(tDTO);
 				if(tDAO.gettDTO().getNumTarjeta().equalsIgnoreCase(fm.getPk().getText())) {
-					fm.getTxt2().setEditable(true);fm.getTxt3().setEditable(true);fm.getTxt4().setEditable(true);fm.getTxt5().setEditable(true);
+					fm.getTxt2().setEditable(true);fm.getTxt3().setEditable(true);fm.getTxt4().setEditable(true);
 					fm.getTxt6().setEditable(true);
 					aux = tDAO.gettDTO();
 					fm.getTxt2().setText(String.valueOf(aux.getPin()));fm.getTxt3().setText(String.valueOf(aux.getCvv()));fm.getTxt4().setText(aux.getFechaCaducidad());
@@ -119,7 +119,7 @@ public class GestorBuscarMod implements ActionListener{
 					fm.getTxt3().setText(cDAO.getcDTO().getDni());
 					fm.getPk().setEditable(false);fm.getBuscar().setEnabled(false);
 				}else {
-					fm.getErrores().setText("No existe el Numero de Cuena");
+					fm.getErrores().setText("No existe el Numero de Cuenta");
 				}
 				
 			}else {
