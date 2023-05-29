@@ -51,7 +51,10 @@ public class RetirarIngresar extends JPanel{
 		}
 		cant = new JTextField();
 		volver = new JButton();
-
+		
+		//panel Content
+		JPanel content = new JPanel();
+		content.setLayout(new GridLayout(2,1));
 		
 		txt.setLocation(50,80);
 		txt.setSize(180, 20);
@@ -70,7 +73,7 @@ public class RetirarIngresar extends JPanel{
 		
 		botonera = new JPanel();
 		botonera.setLayout(new GridLayout(4, 3));
-
+		
         // Crear los botones del 0 al 9
         for (int i = 0; i <= 9; i++) {
             JButton btn = new JButton(String.valueOf(i));
@@ -82,11 +85,11 @@ public class RetirarIngresar extends JPanel{
             });
             botonera.add(btn);
         }
-
+        
         
         // Crear el botón de borrar
         JButton retroceder = new JButton("Borrar");
-
+        
         retroceder.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -95,32 +98,29 @@ public class RetirarIngresar extends JPanel{
         });
         
         botonera.add(retroceder);
-
+        
         // Crear el botón de aceptar
         JButton aceptar = new JButton("Aceptar");
         aceptar.addActionListener(new GestorRI(this,texto, numTarjeta));
         botonera.add(aceptar);
 		
-		
 		// Action listyener boton volver
 		volver.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				usr.remove(botonera);
-				RetirarIngresar.this.repaint();
-				usr.remove(RetirarIngresar.this);
+				usr.remove(content);
 				usr.repaint();
 				usr.mostrarPanel(usr.getP());
 			}
 		});
 		
 		this.setBackground(new Color(250,230,150));
+		content.add(this);content.add(botonera);
+		content.setVisible(true);
 		usr.getP().setVisible(false);
-		usr.setLayout(new GridLayout(2,1));
 		usr.remove(usr.getP());
 		usr.repaint();
-		usr.add(this);
-		usr.add(botonera);
+		usr.add(content);
 		
 	}
 
@@ -213,8 +213,6 @@ public class RetirarIngresar extends JPanel{
 	public void setNumTarjeta(String numTarjeta) {
 		this.numTarjeta = numTarjeta;
 	}
-	
-	
 	
 	
 }
