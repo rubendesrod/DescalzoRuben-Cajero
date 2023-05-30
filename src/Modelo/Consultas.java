@@ -32,7 +32,7 @@ public interface Consultas {
 	public static final String ACTUALIZAR_CLIENTE_APELLIDO2 = "update clientes set apell2 = ? WHERE dni = ?";
 	public static final String ACTUALIZAR_CLIENTE_DIRECCION = "update clientes set direccion = ? WHERE dni = ?";
 	public static final String ACTUALIZAR_CLIENTE_CORREO = "UPDATE clientes SET correo = ? WHERE dni = ?";
-	public static final String ACTUALIZAR_CLIENTE_TELEFONO = "UPDATE cliente SET telefono = ? WHERE dni = ?";
+	public static final String ACTUALIZAR_CLIENTE_TELEFONO = "UPDATE clientes SET telefono = ? WHERE dni = ?";
 	public static final String ACTUALIZAR_CLIENTE_FECHANACIMIENTO = "UPDATE clientes SET fechaNacimiento = ? WHERE dni = ?";
 	public static final String ACTUALIZAR_CLIENTE_ADMIN = "UPDATE clientes SET admin = ? WHERE dni = ?";
 	public static final String ACTUALIZAR_CUENTA_NUMCUENTA = "UPDATE cuentas SET numCuenta = ? WHERE numCuenta = ?";
@@ -45,12 +45,6 @@ public interface Consultas {
 	public static final String ACTUALIZAR_TARJETA_ESTADO = "UPDATE tarjetas SET estado = ? WHERE numero = ?";
 	public static final String ACTUALIZAR_TARJETA_NUMCUENTA = "UPDATE tarjetas SET numCuenta = ? WHERE numero = ?";
 	public static final String ACTUALZIAR_TARJETA_ADMIN = "UPDATE tarjetas SET admin = ? WHERE numero = ?";
-	public static final String ACTUALIZAR_MOVIMIENTO_FECHA = "UPDATE movimientos SET fecha = ? WHERE codigo = ?";
-	public static final String ACTUALIZAR_MOVIMIENTO_TIPO_INGRESO = "UPDATE movimientos SET tipo = ingreso WHERE codigo = ?";
-	public static final String ACTUALIZAR_MOVIMIENTO_TIPO_RETIRADA = "UPDATE movimientos SET tipo = retirada WHERE codigo = ?";
-	public static final String ACTUALIZAR_MOVIMIENTO_TIPO_TRANSFERENCIA = "UPDATE movimientos SET tipo = transferencia WHERE codigo = ?";
-	public static final String ACTUALIZAR_MOVIMIENTO_AUTOR = "UPDATE movimientos SET autor = ? WHERE codigo = ?";
-	public static final String ACTUALIZAR_MOVIMIENTO_NUMCUENTA = "UPDATE movimientos SET numCuenta = ? WHERE codigo = ?";
 	public static final String ACTUALIZAR_CAJERO = "UPDATE cajero SET estado = ?";
 	
 	//		BUSCAR

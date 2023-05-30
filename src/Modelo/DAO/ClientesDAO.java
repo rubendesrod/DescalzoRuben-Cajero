@@ -201,7 +201,7 @@ public class ClientesDAO implements Consultas{
 				}
 				/*Telefono*/
 				if(null!=cDTO.getTelefono()) {
-					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_DIRECCION);
+					this.ps = this.cn.getConnect().prepareStatement(Consultas.ACTUALIZAR_CLIENTE_TELEFONO);
 					this.ps.setString(1, cDTO.getTelefono());
 					this.ps.setString(2, cDTO.getDni());
 					this.ps.executeUpdate();

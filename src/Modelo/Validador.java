@@ -57,10 +57,15 @@ public class Validador {
 	 */
 	
 	public boolean validarPin(String n) {
-		if (n.matches("\\d{4}") && n.length() == 4) {
-	        return true;
+		if (n.matches("\\d{4}")) {
+	       if( n.length() == 4) {
+	    	   return true;
+	       }else {
+	    	   this.msg = "PIN 4 DIGITOS";
+	    	   return false;
+	       }
 	    } else {
-	    	this.msg = "PIN 4 DIGITOS, SOLO NUMEROS";
+	    	this.msg = "PIN SOLO NUMEROS";
 	        return false;
 	    }
 	}
@@ -73,12 +78,17 @@ public class Validador {
 	 */
 	
 	public boolean validarCvv(String n) {
-		if (n.matches("\\d{3}") && n.length() == 3) {
-	        return true;
-	    } else {
-	    	this.msg = "CVV 4 DIGITOS, SOLO NUMEROS";
-	        return false;
-	    }
+		if (n.matches("\\d{3}")) {
+		       if( n.length() == 3) {
+		    	   return true;
+		       }else {
+		    	   this.msg = "CVV 3 DIGITOS";
+		    	   return false;
+		       }
+		    } else {
+		    	this.msg = "CVV SOLO NUMEROS";
+		        return false;
+		    }
 	}
 	
 	/**
