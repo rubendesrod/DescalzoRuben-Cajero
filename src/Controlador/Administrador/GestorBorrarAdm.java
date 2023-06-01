@@ -87,7 +87,7 @@ public class GestorBorrarAdm implements ActionListener{
 						fb.getErrores().setForeground(Color.blue);
 						fb.getErrores().setText(tDAO.getMsg());
 					}else {
-						fb.getErrores().setText("** EL DNI NO EXISTE");
+						fb.getErrores().setText("** LA TARJETA NO EXISTE");
 					}
 				}	
 			}else {

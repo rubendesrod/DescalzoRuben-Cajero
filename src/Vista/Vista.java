@@ -15,9 +15,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import Modelo.DAO.CajeroDAO;
-import Vista.Admin.PrincipalAdm;
-import Vista.Cliente.PrincipalUss;
-
 /**
  * Clase que extiende de JFrame, es la clase principal del programa
  * es la que contiene el metodo main
