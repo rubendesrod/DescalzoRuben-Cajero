@@ -217,6 +217,8 @@ public class GestorModificarAdm implements ActionListener{
 				}else {
 					return false;
 				}
+			}else {
+				return true;
 			}
 		}
 		return true;
